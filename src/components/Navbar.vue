@@ -1,14 +1,5 @@
 <template>
   <b-navbar :transparent="true" :type="type" wrapper-class="container">
-    <template v-if="logo" slot="brand">
-      <b-navbar-item tag="router-link" :to="{ path: '/' }">
-        <img
-          class="logo"
-          src="../assets/logo.png"
-          alt="Corporación Niñas Pro"
-        />
-      </b-navbar-item>
-    </template>
     <template slot="end">
       <b-navbar-item tag="router-link" :to="{ path: '/' }">
         Inicio
@@ -30,19 +21,12 @@
 export default {
   name: "Navbar",
   props: {
-    "logo": Boolean,
     "type": String,
-  }
+  },
 };
 </script>
 
 <style scoped>
-.logo {
-  position: fixed;
-  top: -10px;
-  width: 400px;
-  max-height: 350px;
-}
 .navbar-item {
   font-size: 18px;
   font-weight: bold;

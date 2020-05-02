@@ -10,7 +10,6 @@
   "dependencies": {
     "buefy": "^0.8.17",
     "core-js": "^3.4.4",
-    "node-sass": "^4.14.0",
     "vue": "^2.6.10",
     "vue-router": "^3.1.6"
   },
@@ -21,6 +20,8 @@
     "babel-eslint": "^10.0.3",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.14.0",
+    "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {

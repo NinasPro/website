@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-    <Navbar :logo="true" type="is-primary"/>
+    <Navbar type="is-info"/>
+    <Carrousel type="is-info"/>
   </div>
 </template>
 
 <script>
 import Navbar from "./components/Navbar.vue";
+import Carrousel from "./components/Carrousel.vue";
 
 export default {
   name: "app",
   components: {
-    Navbar
+    Navbar,
+    Carrousel
   }
 };
 </script>
@@ -20,7 +23,6 @@ export default {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 </style>
