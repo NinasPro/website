@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Navbar type="is-info"/>
-    <Carrousel type="is-info"/>
+    <Navbar type="is-primary"/>
+    <Carrousel type="is-primary"/>
   </div>
 </template>
 
