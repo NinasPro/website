@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-    <Carrousel type="is-primary"/>
+    <Carrousel :type="type"/>
     <div class="container">
       <div class="columns">
         <div class="column">
@@ -26,6 +26,9 @@ export default {
   components: {
     Carrousel,
     ImageButton,
+  },
+  props: {
+    type: String
   }
 };
 </script>

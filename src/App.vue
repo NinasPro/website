@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Navbar type="is-primary"/>
+    <Navbar v-bind:type="$route.matched[0] ? $route.matched[0].props.default.type : 'is-primary'"/>
     <router-view></router-view>
   </div>
 </template>

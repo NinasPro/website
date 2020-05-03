@@ -8,22 +8,26 @@ export default new Router({
     {
       name: "home",
       path: "/",
-      component: () => import("@/views/Home")
+      component: () => import("@/views/Home"),
+      props: { type: "is-primary" }
     },
     {
       name: "about",
       path: "/somos/",
-      component: () => import("@/views/About")
+      component: () => import("@/views/About"),
+      props: { type: "is-info" }
     },
     {
       name: "projects",
       path: "/proyectos/",
-      component: () => import("@/views/Projects")
+      component: () => import("@/views/Projects"),
+      props: { type: "is-warning" }
     },
     {
       name: "volunteer",
       path: "/voluntariado/",
-      component: () => import("@/views/Volunteer")
+      component: () => import("@/views/Volunteer"),
+      props: { type: "is-success" }
     }
   ]
 });
