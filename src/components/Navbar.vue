@@ -4,13 +4,13 @@
       <b-navbar-item tag="router-link" :to="{ path: '/' }">
         Inicio
       </b-navbar-item>
-      <b-navbar-item tag="router-link" :to="{ path: '/' }">
+      <b-navbar-item tag="router-link" :to="{ path: '/somos/' }">
         Somos
       </b-navbar-item>
-      <b-navbar-item tag="router-link" :to="{ path: '/' }">
+      <b-navbar-item tag="router-link" :to="{ path: '/proyectos/' }">
         Proyectos
       </b-navbar-item>
-      <b-navbar-item tag="router-link" :to="{ path: '/' }">
+      <b-navbar-item tag="router-link" :to="{ path: '/voluntariado/' }">
         Voluntariado
       </b-navbar-item>
     </template>

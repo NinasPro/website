@@ -1,7 +1,7 @@
 <template>
   <div class="np-image-button">
     <figure class="image is-square">
-      <router-link :to="`{ path: ${path} }`">
+      <router-link :to="path">
         <img
            :src="getImgUrl(image)"
            alt="Corporación Niñas Pro"
@@ -10,7 +10,7 @@
     </figure>
     <div class="np-footer">
       <router-link
-        :to="`{ path: ${path} }`">
+        :to="path">
       <b-button :class="`${type} is-rounded is-medium`">
         {{text}}
       </b-button>

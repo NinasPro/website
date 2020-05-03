@@ -1,19 +1,17 @@
 <template>
   <div id="app">
     <Navbar type="is-primary"/>
-    <Carrousel type="is-primary"/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 import Navbar from "./components/Navbar.vue";
-import Carrousel from "./components/Carrousel.vue";
 
 export default {
   name: "app",
   components: {
     Navbar,
-    Carrousel
   }
 };
 </script>
