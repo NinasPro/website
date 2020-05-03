@@ -64,7 +64,7 @@ export default {
         {
           title: 'Django Girls',
           subtitle: 'En Enero más de 45 mujeres participaron en Django Girls Santiago, una jornada para conocer este framework y desarrollar su primer sitio web.',
-          image: 'banner-djago-girls.jpg'
+          image: 'banner-django-girls.jpg'
         },
         {
           title: 'Curso Virtual',
