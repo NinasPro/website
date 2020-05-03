@@ -1,6 +1,14 @@
 <template>
   <div id="volunteer">
-    <h1>Voluntariado</h1>
+    <section :class="`hero ${type}`">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Voluntariado
+          </h1>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -9,6 +17,9 @@
 export default {
   name: "Volunteer",
   components: {
+  },
+  props: {
+    type: String
   }
 };
 </script>
