@@ -18,7 +18,13 @@
               <article class="tile is-child notification is-primary">
                 <p class="title">Este 2020</p>
                 <p class="subtitle">
-                ¡Nuevas sedes en Conce, Coquimbo y Santiago!
+                ¡Nuevas sedes en Concepción, Coquimbo y Santiago!
+                </p>
+                <p>
+                  El crecimiento de nuestra red de voluntarias y voluntarios a otras regiones
+                  nos ha permitido crear estas nuevas sedes, albergadas en la Universidad
+                  Católica del Norte, la Universidad de Concepción, la Universidad de los Andes
+                  y la Universidad de Chile.
                 </p>
               </article>
               <div class="tile is-ancestor">
@@ -73,7 +79,7 @@ export default {
       border-radius: 25px;
 
       .title {
-        font-size: 2.5rem;
+        font-size: 2rem;
       }
       .subtitle {
         font-size: 1.5rem;
