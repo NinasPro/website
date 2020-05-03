@@ -9,11 +9,8 @@
       </router-link>
     </figure>
     <div class="np-footer">
-      <router-link
-        :to="path">
-      <b-button :class="`${type} is-rounded is-medium`">
+      <router-link :to="path" :class="`button ${type} is-rounded is-medium`">
         {{text}}
-      </b-button>
       </router-link>
     </div>
   </div>
