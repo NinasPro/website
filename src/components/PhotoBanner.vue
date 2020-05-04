@@ -30,7 +30,7 @@ export default {
 <style lang="scss" scoped>
 .hero.is-medium .hero-body {
     padding-bottom: 2rem;
-    padding-top: 20rem;
+    padding-top: 30rem;
 }
 
 .banner-title {
