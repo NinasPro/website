@@ -10,7 +10,7 @@
           <ImageButton type="is-warning" image="ninastic.jpg" text="Proyectos" path="/proyectos/"/>
         </div>
         <div class="column">
-          <ImageButton type="is-success" image="sororidad.jpg" text="Voluntariado" path="/voluntariado/"/>
+          <ImageButton type="is-success" image="sororidad.jpg" text="¿Cómo participar?" path="/voluntariado/"/>
         </div>
       </div>
     </div>
