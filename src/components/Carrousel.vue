@@ -12,7 +12,7 @@
         <div class="hero-body">
           <div class="container">
             <div class="columns is-8">
-              <div class="column np-banner-header">
+              <div class="column np-banner-header is-three-fifths">
                 <img
                    src="@/assets/logo.png"
                    alt="Corporación Niñas Pro"

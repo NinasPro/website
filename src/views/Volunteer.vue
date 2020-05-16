@@ -4,21 +4,21 @@
     
     <div class="container">
       <div class="tile is-ancestor">
-        <!-- All other tile elements -->
         <div class="tile is-6 is-vertical is-parent">
           <div class="tile is-child box notification is-primary">
             <p class="title">Voluntariado</p>
             <p class="subtitle">¡Únete y trabajemos juntos para disminuir la brecha de género en STEAM!
               Puedes apoyar en las siguientes áreas:
               <ol class="star">
-                <li>Marketing</li>
-                <li>Diseño</li>
-                <li>Talleres de programación</li>
-                <li>Captación de fondos</li>
+                <li>Equipo de RRSS y difusión</li>
+                <li>Equipo de diseño</li>
+                <li>Equipo de tutorías</li>
+                <li>Equipo de gestión</li>
+                <li>Equipo de investigación en género y educación</li>
               </ol>              
             </p>
           </div>
-          <div class="tile is-child box notification is-warning">
+          <div class="tile is-child box notification is-info">
             <p class="title">Crea tu sede</p>
             <p class="subtitle">Con tu ayuda podremos llegar a todos los rincones de Latinoamérica. </p>
             <p class="subtitle">Completa el siguiente formulario para postular a crear una nueva sede de Niñas Pro en tu ciudad.
@@ -62,9 +62,10 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-  margin: 3rem 0.25rem 0.25rem 3rem;
+  margin-top: 3rem;
 }
 ol.star {
   list-style-type: circle;
+  padding-left: 3rem;
 }
 </style>
