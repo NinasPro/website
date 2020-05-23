@@ -1,0 +1,21 @@
+stages:
+  - lint
+  - build
+
+lint:
+  image: node:12
+  stage: lint
+  script:
+    - npm ci --progress=false
+    - npm run lint -- --no-fix
+
+build:
+  image: node:12
+  stage: build
+  artifacts:
+    paths:
+      - dist
+    expire_in: 1 week
+  script:
+    - npm ci --progress=false
+    - npm run build
