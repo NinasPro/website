@@ -16,13 +16,21 @@
                 <li>Equipo de gestión</li>
                 <li>Equipo de investigación en género y educación</li>
               </ol>              
-            </p>
+            </p>          
+            <div class="np-buttons">
+              <a href="https://forms.gle/Y2pqXdFFV6KYTCwJA" target="_blank" class="button is-primary is-rounded is-inverted">
+                Postula aquí
+              </a>  
+            </div>
           </div>
           <div class="tile is-child box notification is-info">
             <p class="title">Crea tu sede</p>
             <p class="subtitle">Con tu ayuda podremos llegar a todos los rincones de Latinoamérica. </p>
-            <p class="subtitle">Completa el siguiente formulario para postular a crear una nueva sede de Niñas Pro en tu ciudad.
-            </p>
+            <div class="np-buttons">
+              <a href="https://forms.gle/QmdFW83XghDiAZZk8" target="_blank" class="button is-info is-rounded is-inverted">
+                Completa el formulario aquí
+              </a>
+            </div>
           </div>          
         </div>
         <div class="tile is-6 is-vertical is-parent">
@@ -34,9 +42,11 @@
             <p class="title">Prácticas profesionales y oportunidades laborales</p>
             <p class="subtitle">¡Desarrolla tus competencias profesionales y expande tus conocimientos con nosotras! 
               </p>  
-            <p class="subtitle">Si estás interesada(o) en realizar tu práctica o pasantía con nosotras, no dudes en escribirnos a 
-              laboral@ninaspro.cl, indicando en qué podrías ayudarnos, currículum y pretensiones de sueldo.
-            </p> 
+            <div class="np-buttons">
+              <a href="https://www.linkedin.com/company/niñas-pro" target="_blank" class="button is-success is-rounded is-inverted">
+                Ver ofertas disponibles
+              </a>              
+            </div>
           </div>          
         </div>        
       </div>    
@@ -68,4 +78,13 @@ ol.star {
   list-style-type: circle;
   padding-left: 3rem;
 }
+.np-buttons {
+  text-align: center;
+
+  .button {
+    padding: 0px 50px;
+    font-weight: bold;
+  }
+}
 </style>
+
