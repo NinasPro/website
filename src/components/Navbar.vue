@@ -11,7 +11,7 @@
         Proyectos
       </b-navbar-item>
       <b-navbar-item tag="router-link" :to="{ path: '/voluntariado/' }">
-        Voluntariado
+        ¿Cómo participar?
       </b-navbar-item>
     </template>
   </b-navbar>
