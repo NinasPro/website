@@ -1,5 +1,13 @@
 <template>
   <b-navbar :transparent="true" :type="type" wrapper-class="container">
+    <template slot="brand">
+      <b-navbar-item tag="router-link" :to="{ path: '/' }">
+        <img
+         src="@/assets/logo.png"
+         alt="Corporación Niñas Pro"
+        />
+      </b-navbar-item>
+    </template>
     <template slot="end">
       <b-navbar-item tag="router-link" :to="{ path: '/' }">
         Inicio
@@ -26,10 +34,18 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
 .navbar-item {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
-  margin: 0px 40px;
+  padding: 0px 40px;
+
+  img {
+    height: 7rem;
+    margin-top: 1rem;
+    max-height: 10rem;
+  }
+
 }
 </style>

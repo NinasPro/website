@@ -4,10 +4,6 @@
       <div class="container">
         <div class="columns is-8">
           <div class="column is-three-quarters np-banner-header">
-            <img
-               src="@/assets/logo.png"
-               alt="Corporación Niñas Pro"
-             />
             <h1 class="title">
               {{title}}
             </h1>
@@ -17,7 +13,10 @@
             </router-link>
           </div>
           <div class="column is-one-quarter np-banner-symbol">
-            <div class="np-symbol">;</div>
+            <img
+               :src="getColouredSymbolUrl(type)"
+               alt="Coloured Star"
+            />
           </div>
           <div class="column">
           </div>
@@ -31,13 +30,19 @@
 
 export default {
   name: "Banner",
-  components: {
-  },
   props: {
     type: String,
     title: String,
     button: String,
     link: String
+  },
+  methods: {
+    getColouredSymbolUrl(type) {
+      if(type === "is-primary" || type === "is-warning")
+          return require(`@/assets/estrella-rosada.png`);
+      else
+          return require(`@/assets/estrella-amarilla.png`);
+    }
   }
 };
 </script>
@@ -45,47 +50,54 @@ export default {
 <style lang="scss" scoped>
 
 .hero.is-medium .hero-body {
-  padding-bottom: 0rem;
-  padding-top: 0rem;
-  height: 500px;
-}
+  padding: 3rem 5rem;
+  height: 20rem;
 
-.np-banner-header {
-  .title {
-    margin-top: 60px;
-    font-size: 7rem;
+  .np-banner-header {
+    .title {
+      font-size: 7rem;
+    }
+    .button {
+      padding: 0px 50px;
+    }
   }
 
-  .button {
-    padding: 0px 50px;
-  }
-}
+  .np-banner-symbol {
+    text-align: center;
 
-.np-banner-symbol {
-  .np-symbol {
-    margin-top: 100px;
-    font-family: sans-serif;
-    font-size: 12rem;
-    font-weight: bold;
+    img {
+      height: 8rem;
+    }
   }
+
 }
 
 @media only screen and (max-device-width: 1220px) {
-  .np-banner-header {
-    .title {
-      font-size: 3rem;
+  .hero.is-medium .hero-body {
+    .np-banner-header {
+      .title {
+        font-size: 5rem;
+      }
     }
   }
 }
 
 @media only screen and (max-device-width: 768px) {
   .hero.is-medium .hero-body {
+    padding: 3rem 3rem;
     height: inherit;
-  }
 
-  .np-banner-header {
-    .title {
-      margin-top: 20px;
+    .np-banner-header {
+      .title {
+        font-size: 3rem;
+      }
+    }
+
+    .np-banner-symbol {
+      img {
+        height: 0rem;
+        visibility: hidden;
+      }
     }
   }
 }
