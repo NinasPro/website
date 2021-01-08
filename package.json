@@ -11,9 +11,11 @@
     "buefy": "^0.8.17",
     "core-js": "^3.4.4",
     "vue": "^2.6.10",
+    "vue-coverflow": "^2.2.0",
     "vue-router": "^3.1.6"
   },
   "devDependencies": {
+    "@babel/helper-compilation-targets": "^7.12.5",
     "@vue/cli-plugin-babel": "^4.1.0",
     "@vue/cli-plugin-eslint": "^4.1.0",
     "@vue/cli-service": "^4.1.0",
