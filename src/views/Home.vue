@@ -14,18 +14,21 @@
         </div>
       </div>
     </div>
+    <News/>
   </div>
 </template>
 
 <script>
 import Carrousel from "../components/Carrousel.vue";
 import ImageButton from "../components/ImageButton.vue";
+import News from "../components/News.vue";
 
 export default {
   name: "Home",
   components: {
     Carrousel,
     ImageButton,
+    News,
   },
   props: {
     type: String
