@@ -2,7 +2,7 @@
   <div class="card">
   <div class="card-image">
     <figure>
-      <img src="https://picsum.photos/230" alt="Placeholder image">
+      <img src="https://picsum.photos/210" alt="Placeholder image">
     </figure>
   </div>
   <div class="card-content">
@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="content">
-      <b-button type="is-info is-light">Ver Más</b-button>
+      <b-button type="is-primary">Ver Más</b-button>
     </div>
   </div>
 </div>
@@ -20,15 +20,20 @@
 
 <script>
 export default {
-    props: {
-      "type": String,
-    },
-    data() {
-      return {
-        title: "Noticia",
-        moreinfo: "url del sitio"
-      }
+  props: {
+    "type": String,
+  },
+  data() {
+    return {
+      title: "Noticia",
+      moreinfo: "url del sitio"
     }
+  },
+  methods: {
+    clickMe() {
+      this.$buefy.notification.open('Clicked!!')
+    }
+  }
 }
 </script>
 
@@ -43,8 +48,8 @@ export default {
 }
 figure {
   display: block;
-  padding-top: 10px;
-  margin-left: 40px;
-  margin-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  margin-left: 20px;
 }
 </style>
