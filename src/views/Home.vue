@@ -22,6 +22,10 @@
       </div>
       
     </div>
+  <div>
+    
+    <Events > </Events>
+  </div>
   </div>
  
 
@@ -31,13 +35,15 @@
 import Carrousel from "../components/Carrousel.vue";
 import ImageButton from "../components/ImageButton.vue";
 import Collaborators from '../components/Collaborators.vue';
+import Events from '../components/Events.vue';
 
 export default {
   name: "Home",
   components: {
     Carrousel,
     ImageButton,
-    Collaborators
+    Collaborators,
+    Events
   },
   props: {
     type: String
