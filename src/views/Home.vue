@@ -14,21 +14,30 @@
         </div>
       </div>
     </div>
-    <Colaboradores :type="type"></Colaboradores>
+    <div class="title">
+      <h1 class="title"> Colaboradores </h1>
+      <div >
+        <Collaborators type="is-collaborators" ></Collaborators>
+        
+      </div>
+      
+    </div>
   </div>
+ 
+
 </template>
 
 <script>
 import Carrousel from "../components/Carrousel.vue";
 import ImageButton from "../components/ImageButton.vue";
-import Colaboradores from "../components/colaboradores.vue";
+import Collaborators from '../components/Collaborators.vue';
 
 export default {
   name: "Home",
   components: {
     Carrousel,
     ImageButton,
-    Colaboradores
+    Collaborators
   },
   props: {
     type: String
