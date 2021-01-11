@@ -14,18 +14,23 @@
         </div>
       </div>
     </div>
-  </div>
+    
+    <ProjectsHome/>
+    
+    </div>
 </template>
 
 <script>
 import Carrousel from "../components/Carrousel.vue";
 import ImageButton from "../components/ImageButton.vue";
+import ProjectsHome from "../components/ProjectsHome.vue";
 
 export default {
   name: "Home",
   components: {
     Carrousel,
     ImageButton,
+    ProjectsHome,
   },
   props: {
     type: String
