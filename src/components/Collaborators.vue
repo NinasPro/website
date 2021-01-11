@@ -1,6 +1,6 @@
 <template>
   
-  <div>
+  <div class="fondo">
     <div class="level-item has-text-centered" >
         <a href="https://stackoverflow.com/questions/60723501/vue-how-can-i-do-click-in-image-and-redirect-to-page">
         <img  src="@/assets/images/angular.png" width="100px" height="100px">
@@ -46,6 +46,9 @@ export default {
 </script>
 
 <style scoped>
-
+  .fondo
+  {
+    background-color: whitesmoke;
+  }
 
 </style>
