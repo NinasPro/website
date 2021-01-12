@@ -8,19 +8,44 @@
     </div>
     <div class= "level-right" >
         
-        <b-table class="eventos" :data="isEmpty ? [] : data">
-            <template scope="props">
-                <b-table-column field="id" label="ID" width="40" numeric sortable>
-                    {{ props.row.id }}
+        <b-table class="eventos" 
+            :data="isEmpty ? [] : data"
+            default-sort="date"
+            >
+            <template slot-scope="props">
+
+                <b-table-column field="date" label="Fecha" sortable>
+                    {{new Date( props.row.date).toLocaleDateString() }}
                 </b-table-column>
 
-                <b-table-column field="date" label="Fecha">
-                    {{ props.row.date }}
-                </b-table-column>
-
-                <b-table-column field="event" label="Evento">
-                    {{ props.row.event }}
-                </b-table-column>
+                <b-table-column field="event" label="Evento" sortable>
+                    <template v-if="showDetailIcon">
+                        {{ props.row.event }}
+                    </template>
+                    <template v-else>
+                    <a @click=información>
+                        <details>
+                            <summary>{{props.row.event}}</summary>
+                            <article class="media">
+                                
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <br>
+                                            {{props.row.information}}
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class = "level-right">
+                            <button class="button" name="Mas información" title="Mas información">
+                                Inscríbete
+                            </button>
+                            </div>
+                        </details>
+                    </a>
+                    </template>
+                </b-table-column>   
             </template>
         </b-table>
     </div>
@@ -36,23 +61,15 @@
     export default {
         data() {
             const data = [
-                    { 'id':1, 'date': '2019-10-15 13:43:27', 'event': 'Jesse'},
-                    { 'id':2, 'date': '2016-12-15 06:00:53', 'event': 'John'},
-                    { 'id':3, 'date': '2016-04-26 06:26:28', 'event': 'Tina'},
-                    { 'id':4, 'date': '2016-04-10 10:28:46', 'event': 'Clarence'},
-                    { 'id':5, 'date': '2016-12-06 14:38:38', 'event': 'Anne'}
+                    { 'date': '2019-10-15 13:43:27', 'event': 'Jesse', 'information': "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Proin ornare magna eros, eu pellentesque tortor vestibulum ut."},
+                    { 'date': '2016-12-15 06:00:53', 'event': 'John', 'information':'Esta es una prueba para ver si se ve la informacion correspondiente'},
+                    { 'date': '2016-04-26 06:26:28', 'event': 'Tina','information': 'Esto es una prueba'},
+                    { 'date': '2016-04-10 10:28:46', 'event': 'Clarence', 'information': 'Esto es una prueba'},
+                    { 'date': '2016-12-06 14:38:38', 'event': 'Anne','information': 'Esto es una prueba'}
                 ]
             
             return {
                 data,
-                isEmpty: false,
-                isBordered: false,
-                isStriped: false,
-                isNarrowed: false,
-                isHoverable: false,
-                isFocusable: false,
-                isLoading: false,
-                hasMobileCards: true
             }
         },
         methods:
