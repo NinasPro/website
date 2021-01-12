@@ -17,16 +17,13 @@
     <div class="container">
       <div class="columns">
         <div class="column">
-          <ProjectsHome/>
+          <ProjectsHome title="Proyecto 1" type="is-info" image="lamarr.jpg" path="/somos/"/>
         </div>
         <div class="column">
-          <ProjectsHome/>
+          <ProjectsHome title="Proyecto 2" type="is-warning" image="ninastic.jpg" path="/proyectos/"/>
         </div>
         <div class="column">
-          <ProjectsHome/>
-        </div>
-        <div class="column">
-          <ProjectsHome/>
+          <ProjectsHome title="Proyecto 3" type="is-success" image="sororidad.jpg" path="/voluntariado/"/>
         </div>
       </div>
     </div>
