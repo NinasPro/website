@@ -14,10 +14,23 @@
         </div>
       </div>
     </div>
-    
-    <ProjectsHome/>
-    
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <ProjectsHome/>
+        </div>
+        <div class="column">
+          <ProjectsHome/>
+        </div>
+        <div class="column">
+          <ProjectsHome/>
+        </div>
+        <div class="column">
+          <ProjectsHome/>
+        </div>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
