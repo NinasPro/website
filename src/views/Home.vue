@@ -13,15 +13,13 @@
           <ImageButton type="is-success" image="sororidad.jpg" text="¿Cómo participar?" path="/voluntariado/"/>
         </div>
       </div>
-    </div>
-    <div class="title">
-      <h1 class="title"> Colaboradores </h1>
+      <h1 class="title"> Nos apoyan </h1>
       <div >
         <Collaborators type="is-collaborators" ></Collaborators>
         
       </div>
-      
     </div>
+
   <div>
     
     <Events > </Events>
@@ -43,7 +41,7 @@ export default {
     Carrousel,
     ImageButton,
     Collaborators,
-    Events
+    Events,
   },
   props: {
     type: String

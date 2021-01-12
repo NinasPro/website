@@ -1,28 +1,48 @@
 <template>
   
   <div>
-    <div class="level-item has-text-centered" >
-        <a href="https://stackoverflow.com/questions/60723501/vue-how-can-i-do-click-in-image-and-redirect-to-page">
-        <img  src="@/assets/images/angular.png" width="100px" height="100px">
-        </a>
-        <a href="https://www.uandes.cl/">
-        <img  src="https://www.uandes.cl/extra/imagen-corporativa/marca-uandes/Marca_vertical.jpg" width="100px" height="100px">
-        </a>
-        <a href="https://www.uchile.cl/">
-        <img  src="https://www.uchile.cl/image/f159277-0-h.jpeg?3144" width="100px" height="100px">
-        </a>
-        <router-link :to="/somos/">
-        <img  src="@/assets/images/angular.png" width="100px" height="100px" >
-        </router-link>
+    <div class="columns is-multiline is-mobile" >
+      <div class="column is-3">
+          <a href="https://www.uandes.cl/">
+          <img  src="@/assets/logos/logo-uandes.jpg" width="350px" >
+          </a>
+      </div>
+      <div class="column is-3">
+          <a href="https://www.uandes.cl/">
+          <img  src="@/assets/logos/logo-fcfm.png" width="350px">
+          </a>
+      </div>
+      <div class="column is-3">
+          <a href="https://www.uchile.cl/">
+          <img  src="@/assets/logos/logo-udec.png" width="350px" >
+          </a>
+      </div>
+      <div class="column is-3">
+          <a href="https://www.uandes.cl/">
+          <img  src="@/assets/logos/logo-imfd.png" width="350px" >
+          </a>
+      </div>
+      <div class="column is-3">
+          <a href="https://www.uandes.cl/">
+          <img  src="@/assets/logos/logo-technovation.jpg" width="350px">
+          </a>
+      </div>
+      <div class="column is-3">
+          <a href="https://www.uchile.cl/">
+          <img  src="@/assets/logos/logo-oci.png" width="350px" >
+          </a>
+      </div>
+      <div class="column is-3">
+          <a href="https://www.uandes.cl/">
+          <img  src="@/assets/logos/logo-fintual.png" width="350px">
+          </a>
+      </div>
+      <div class="column is-3">
+          <a href="https://www.uchile.cl/">
+          <img  src="@/assets/logos/logo-cornershop.png" width="350px" >
+          </a>
+      </div>
       
-    </div>
-    <div class="level-item has-text-centered">
-      <a href="https://www.uchile.cl/">
-        <img  src="https://www.uchile.cl/image/f159277-0-h.jpeg?3144" width="100px" height="100px">
-        </a>
-        <router-link :to="/somos/">
-        <img  src="@/assets/images/angular.png" width="100px" height="100px" >
-        </router-link>
     </div>
   </div>
 
@@ -36,6 +56,7 @@ export default {
   name: 'Demo',
 
   data () {
+
     return {
       
     }
