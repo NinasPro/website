@@ -8,8 +8,20 @@
     </div>
     <div class= "level-right" >
         
-        <b-table   class = "eventos" :data="data" :columns="columns" >
+        <b-table class="eventos" :data="isEmpty ? [] : data">
+            <template scope="props">
+                <b-table-column field="id" label="ID" width="40" numeric sortable>
+                    {{ props.row.id }}
+                </b-table-column>
 
+                <b-table-column field="date" label="Fecha">
+                    {{ props.row.date }}
+                </b-table-column>
+
+                <b-table-column field="event" label="Evento">
+                    {{ props.row.event }}
+                </b-table-column>
+            </template>
         </b-table>
     </div>
     <div class = "level-right">
@@ -24,28 +36,23 @@
     export default {
         data() {
             const data = [
-                    { 'date': '2019-10-15 13:43:27','events': 'Jesse'   },
-                    { 'date': '2016-12-15 06:00:53','events': 'John'  },
-                    { 'date': '2016-04-26 06:26:28','events': 'Tina'  },
-                    { 'date': '2016-04-10 10:28:46','events': 'Clarence' },
-                    { 'date': '2016-12-06 14:38:38','events': 'Anne' }
+                    { 'id':1, 'date': '2019-10-15 13:43:27', 'event': 'Jesse'},
+                    { 'id':2, 'date': '2016-12-15 06:00:53', 'event': 'John'},
+                    { 'id':3, 'date': '2016-04-26 06:26:28', 'event': 'Tina'},
+                    { 'id':4, 'date': '2016-04-10 10:28:46', 'event': 'Clarence'},
+                    { 'id':5, 'date': '2016-12-06 14:38:38', 'event': 'Anne'}
                 ]
+            
             return {
-                data
-                ,
-                columns: [
-                    {
-                        field: 'date',
-                        label: 'Date',
-                        centered: true,
-                        
-                    },
-                    {
-                        field: 'events',
-                        label: 'Events',
-                    }
-                    
-                ]
+                data,
+                isEmpty: false,
+                isBordered: false,
+                isStriped: false,
+                isNarrowed: false,
+                isHoverable: false,
+                isFocusable: false,
+                isLoading: false,
+                hasMobileCards: true
             }
         },
         methods:
