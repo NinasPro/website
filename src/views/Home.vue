@@ -14,7 +14,19 @@
         </div>
       </div>
     </div>
-    <News/>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <News title="Titulo 1" url="http://ksjkfjs"/>
+        </div>
+        <div class="column">
+          <News title="Titulo 2" url="http://ksjkfjs"/>
+        </div>
+        <div class="column">
+          <News title="Titulo 3" url="http://ksjkfjs"/>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
