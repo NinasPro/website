@@ -1,7 +1,5 @@
 <template>
-  <div class="columns">
-    <div class="column">
-      <div class="card">
+  <div class="card">
         <div class="card-image">
           <figure>
             <img src="https://picsum.photos/210" alt="Placeholder image">
@@ -21,74 +19,6 @@
           </div>
         </div>
       </div>
-  </div>
-  <div class="column">
-    <div class="card">
-        <div class="card-image">
-          <figure>
-            <img src="https://picsum.photos/210" alt="Placeholder image">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-            <div class="media-content">
-              <p class="title"> {{ title }} </p>
-            </div>
-          </div>
-          <div class="content">
-            <div class="content-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-            </div>
-            <b-button @click="clickMe" type="is-primary">Ver Más</b-button>
-          </div>
-        </div>
-      </div>
-  </div>
-  <div class="column">
-    <div class="card">
-        <div class="card-image">
-          <figure>
-            <img src="https://picsum.photos/210" alt="Placeholder image">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-            <div class="media-content">
-              <p class="title"> {{ title }} </p>
-            </div>
-          </div>
-          <div class="content">
-            <div class="content-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-            </div>
-            <b-button @click="clickMe" type="is-primary">Ver Más</b-button>
-          </div>
-        </div>
-      </div>
-  </div>
-  <div class="column">
-    <div class="card">
-        <div class="card-image">
-          <figure>
-            <img src="https://picsum.photos/210" alt="Placeholder image">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-            <div class="media-content">
-              <p class="title"> {{ title }} </p>
-            </div>
-          </div>
-          <div class="content">
-            <div class="content-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-            </div>
-            <b-button @click="clickMe" type="is-primary">Ver Más</b-button>
-          </div>
-        </div>
-      </div>
-  </div>
-</div>
 </template>
 
 <script>

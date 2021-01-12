@@ -14,17 +14,28 @@
         </div>
       </div>
     </div>
-    <Colaboradores :type="type"></Colaboradores>
-    <News/>
-    <ProjectsHome/>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <ProjectsHome/>
+        </div>
+        <div class="column">
+          <ProjectsHome/>
+        </div>
+        <div class="column">
+          <ProjectsHome/>
+        </div>
+        <div class="column">
+          <ProjectsHome/>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import Carrousel from "../components/Carrousel.vue";
 import ImageButton from "../components/ImageButton.vue";
-import Colaboradores from "../components/colaboradores.vue";
-import News from "../components/News.vue";
 import ProjectsHome from "../components/ProjectsHome.vue";
 
 export default {
@@ -32,9 +43,7 @@ export default {
   components: {
     Carrousel,
     ImageButton,
-    Colaboradores,
-    News,
-    ProjectsHome
+    ProjectsHome,
   },
   props: {
     type: String
