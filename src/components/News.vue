@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="content">
-      <b-button type="is-primary">Ver Más</b-button>
+      <b-button @click="clickMe" type="is-primary">Ver Más</b-button>
     </div>
   </div>
 </div>
