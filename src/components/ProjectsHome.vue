@@ -1,28 +1,20 @@
 <template>
-  <div class="card">
-        <div class="card-image">
-          <figure>
-            <img src="https://picsum.photos/250" alt="Placeholder image">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-            <div class="media-content">
-              <p class="title"> {{title}} </p>
-            </div>
-          </div>
-          <div class="content">
-            <div class="content-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-            </div>
-            <div class="np-footer">
-              <router-link :to="path" :class="`button ${type} is-rounded is-medium`">
-                Ver Más
-              </router-link>
-            </div>
-          </div>
-        </div>
+  <div class="container">
+    <div class="card-image">
+      <figure>
+        <img src="https://picsum.photos/350" alt="Placeholder image">
+      </figure>
+    </div>
+    <div class="content">
+      <p class="title"> {{title}} </p>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="morebutton">
+        <router-link :to="path" :class="`button ${type} is-rounded is-small`">
+          Ver Más
+        </router-link>
       </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -47,24 +39,27 @@ export default {
 </script>
 
 <style scoped>
-.media-content, .card-image, .card-content {
+.card-image {
   text-align: center;
 }
 .title {
-  text-align: center;
-  font-size: large;
+  text-align: left;
+  font-size: 12px;
+  margin-left: 10px;
 }
-.columns {
-  text-align: center;
+.description {
+  text-align: left;
+  font-size: 14px;
+  margin-left: 10px;
 }
-.content-description {
-  margin-top: 0px;
-  margin-bottom: 10px;
+.columns, .content{
+  text-align: center;
+  padding-left: 10px;
 }
 figure {
   display: block;
   padding-top: 20px;
-  padding-bottom: 0px;
+  padding-bottom: 10px;
   margin-left: 20px;
 }
 </style>
