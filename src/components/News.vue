@@ -1,23 +1,18 @@
 <template>
-  <div class="card">
+  <div class="container">
   <div class="card-image">
     <figure>
-      <img src="https://picsum.photos/210" alt="Placeholder image">
+      <img src="https://picsum.photos/350/210" alt="Placeholder image">
     </figure>
   </div>
-  <div class="card-content">
-    <div class="media">
-      <div class="media-content">
-        <p class="title"> {{ title }} </p>
-      </div>
-    </div>
-    <div class="content">
-      <router-link :to="path" :class="`button ${type} is-rounded is-medium`">
+  <div class="content">
+      <p class="title"> {{ title }} </p>
+      <p class="description">Breve descripción de la noticia.</p>
+      <router-link :to="path" :class="`button ${type} is-rounded is-small`">
         {{text}}
       </router-link>
     </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -43,16 +38,27 @@ export default {
 </script>
 
 <style scoped>
-.media-content, .card-image, .card-content {
+.card-image {
   text-align: center;
 }
 .title {
-  font-size: larger;
+  text-align: left;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.description {
+  text-align: left;
+  font-size: 14px;
+  margin-left: 10px;
+}
+.columns, .content{
+  text-align: center;
+  padding-left: 10px;
 }
 figure {
   display: block;
   padding-top: 20px;
-  padding-bottom: 0px;
+  padding-bottom: 10px;
   margin-left: 20px;
 }
 </style>
