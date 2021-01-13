@@ -12,7 +12,9 @@
       </div>
     </div>
     <div class="content">
-      <b-button @click="clickMe" type="is-primary">Ver Más</b-button>
+      <router-link :to="path" :class="`button ${type} is-rounded is-medium`">
+        {{text}}
+      </router-link>
     </div>
   </div>
 </div>
@@ -22,11 +24,14 @@
 export default {
   props: {
     "type": String,
+    "text": String,
+    "path": String,
+    "title": String,
   },
   data() {
     return {
-      title: "Noticia",
-      moreinfo: "url del sitio"
+      title1: "Noticia",
+      url: "url del sitio"
     }
   },
   methods: {
@@ -40,10 +45,8 @@ export default {
 <style scoped>
 .media-content, .card-image, .card-content {
   text-align: center;
-  background-color:lightgrey;
 }
 .title {
-  text-align: center;
   font-size: larger;
 }
 figure {

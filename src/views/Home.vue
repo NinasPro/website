@@ -17,13 +17,21 @@
     <div class="container">
       <div class="columns">
         <div class="column">
-          <News title="Titulo 1" url="http://ksjkfjs"/>
+          <h1 class=title>Noticias</h1>
         </div>
         <div class="column">
-          <News title="Titulo 2" url="http://ksjkfjs"/>
+          <b-button class="moreinfobutton" @click="clickMe">Ver todas</b-button>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <News title="Titulo 1" type="is-info" text="Ver noticia completa" path="/somos/"/>
         </div>
         <div class="column">
-          <News title="Titulo 3" url="http://ksjkfjs"/>
+          <News title="Titulo 2" type="is-info" text="Ver noticia completa" path="/somos/"/>
+        </div>
+        <div class="column">
+          <News title="Titulo 3" type="is-info" text="Ver noticia completa" path="/somos/"/>
         </div>
       </div>
     </div>
@@ -44,6 +52,23 @@ export default {
   },
   props: {
     type: String
+  },
+  methods: {
+    clickMe() {
+      this.$buefy.notification.open('Clicked!!')
+    }
   }
 };
 </script>
+
+<style scoped>
+  .column, .columns {
+    border: 0px;
+  }
+  .title {
+  font-size: larger;
+  }
+  .moreinfobutton {
+    left: 83%;
+  }
+</style>
