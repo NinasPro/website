@@ -1,31 +1,28 @@
 <template>
 <div class="fondo">
 
-    <div >
-       <h2 class="title" >
-           Próximos eventos
-       </h2> 
-    </div>
-    <div class= "level-right" >
+    
+    <div>
         
-        <b-table class="eventos" 
+        <b-table  class="column is-full "
             :data="isEmpty ? [] : data"
             default-sort="date"
+            
             >
-            <template slot-scope="props">
+            <template slot-scope="props" class="column is-half">
 
-                <b-table-column field="date" label="Fecha" sortable>
+                <b-table-column  class="eventos" field="date" label="Fecha" sortable centered header-class="eventos" width="100px" >
                     {{new Date( props.row.date).toLocaleDateString() }}
                 </b-table-column>
 
-                <b-table-column field="event" label="Evento" sortable>
+                <b-table-column class="eventos" field="event" label="Evento"  header-class="eventos" width="350px" >
                     <template v-if="showDetailIcon">
                         {{ props.row.event }}
                     </template>
                     <template v-else>
                     <a @click=información>
-                        <details>
-                            <summary>{{props.row.event}}</summary>
+                        <details >
+                            <summary class="titulo">{{props.row.event}}</summary>
                             <article class="media">
                                 
                                 <div class="media-content">
@@ -45,25 +42,26 @@
                         </details>
                     </a>
                     </template>
-                </b-table-column>   
+                </b-table-column>  
             </template>
         </b-table>
     </div>
     <div class = "level-right">
     <button class="button" name="Mas información" title="Mas información">
-        Mas información
+        Ver todos
     </button>
     </div>
 </div>
 </template>
 
+
 <script>
     export default {
         data() {
             const data = [
-                    { 'date': '2019-10-15 13:43:27', 'event': 'Jesse', 'information': "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Proin ornare magna eros, eu pellentesque tortor vestibulum ut."},
-                    { 'date': '2016-12-15 06:00:53', 'event': 'John', 'information':'Esta es una prueba para ver si se ve la informacion correspondiente'},
-                    { 'date': '2016-04-26 06:26:28', 'event': 'Tina','information': 'Esto es una prueba'},
+                    { 'date': '2019-10-15 13:43:27', 'event': 'Taller de Python con Fintual', 'information': "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Proin ornare magna eros, eu pellentesque tortor vestibulum ut."},
+                    { 'date': '2016-12-15 06:00:53', 'event': 'Primer dia del Curso Anual de Programación', 'information':'Esta es una prueba para ver si se ve la informacion correspondiente'},
+                    { 'date': '2016-04-26 06:26:28', 'event': 'Charla: Brecha de Género y Role Models','information': 'Esto es una prueba'},
                     { 'date': '2016-04-10 10:28:46', 'event': 'Clarence', 'information': 'Esto es una prueba'},
                     { 'date': '2016-12-06 14:38:38', 'event': 'Anne','information': 'Esto es una prueba'}
                 ]
@@ -81,20 +79,35 @@
     }
 </script>
 
-<style>
+<style >
     .button {
       padding: 0px 50px;
       margin: 2rem 6rem 2rem 0.25rem;
       font-weight: bold;
-      background-color: rgb(228, 126, 228);
-      color: white;
+      background-color:white;
+      color: rgb(5, 161, 117);
+      border-radius: 25px 25px 25px 25px;
+      
     }
     .eventos {
         margin: 3rem 6rem 0rem 0.25rem;
+        background-color: rgb(5, 161, 117);
+        color: white;
+        columns: "*,2*";
+        max-width: 350px;
+        border: 0px solid rgb(5, 161, 117);
+
     }
     .fondo {
-        background-color: rgb(52, 243, 227);
+        background-color: rgb(5, 161, 117);
+        margin: 2rem 0rem 2rem 25rem;
+        border-radius: 10px 0px 0px 10px;
     }
+    .titulo{
+        color: white;
+    }
+    
+ 
     
 
 </style>

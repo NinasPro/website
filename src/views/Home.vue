@@ -21,7 +21,11 @@
     </div>
 
   <div>
-    
+    <div class="container">
+       <h2 class="title" >
+           Próximos eventos
+       </h2> 
+    </div>
     <Events > </Events>
   </div>
   </div>
