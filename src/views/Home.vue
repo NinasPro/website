@@ -67,9 +67,9 @@ export default {
   }
   .title {
   font-size: larger;
-  margin-left: 16px;
+  margin-left: 18px;
   }
   .moreinfobutton {
-    left: 85%;
+    left: 86%;
   }
 </style>

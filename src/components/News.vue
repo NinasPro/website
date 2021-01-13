@@ -52,7 +52,7 @@ export default {
 }
 figure {
   display: block;
-  padding-top: 20px;
+  padding-top: 0px;
   padding-bottom: 10px;
   margin-left: 20px;
 }
