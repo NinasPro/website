@@ -13,7 +13,7 @@
           <ImageButton type="is-success" image="sororidad.jpg" text="¿Cómo participar?" path="/voluntariado/"/>
         </div>
       </div>
-      <h1 class="title"> Nos apoyan </h1>
+      <h1 class="title"> Nuestros Partners </h1>
       <div >
         <Collaborators type="is-collaborators" ></Collaborators>
         

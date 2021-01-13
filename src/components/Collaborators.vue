@@ -8,39 +8,41 @@
           </a>
       </div>
       <div class="column is-3">
-          <a href="https://www.uandes.cl/">
+          <a href="http://ingenieria.uchile.cl/">
           <img  src="@/assets/logos/logo-fcfm.png" width="350px">
           </a>
       </div>
       <div class="column is-3">
-          <a href="https://www.uchile.cl/">
+          <a href="https://www.udec.cl/pexterno/">
           <img  src="@/assets/logos/logo-udec.png" width="350px" >
           </a>
       </div>
       <div class="column is-3">
-          <a href="https://www.uandes.cl/">
+          <a href="https://imfd.cl/">
           <img  src="@/assets/logos/logo-imfd.png" width="350px" >
           </a>
       </div>
       <div class="column is-3">
-          <a href="https://www.uandes.cl/">
+          <a href="https://technovation.cl/">
           <img  src="@/assets/logos/logo-technovation.jpg" width="350px">
           </a>
       </div>
       <div class="column is-3">
-          <a href="https://www.uchile.cl/">
+          <a href="https://www.olimpiada-informatica.cl/">
           <img  src="@/assets/logos/logo-oci.png" width="350px" >
           </a>
       </div>
       <div class="column is-3">
-          <a href="https://www.uandes.cl/">
+          <a href="https://fintual.cl/">
           <img  src="@/assets/logos/logo-fintual.png" width="350px">
           </a>
       </div>
       <div class="column is-3">
-          <a href="https://www.uchile.cl/">
-          <img  src="@/assets/logos/logo-cornershop.png" width="350px" >
+   
+          <a href="https://cornershopapp.com/es-cl/">
+          <img  src="@/assets/logos/logo_cornershop.png" width="250px" >
           </a>
+    
       </div>
       
     </div>
@@ -67,6 +69,7 @@ export default {
 </script>
 
 <style scoped>
+
 
 
 </style>
