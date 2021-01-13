@@ -29,11 +29,6 @@ export default {
       url: "url del sitio"
     }
   },
-  methods: {
-    clickMe() {
-      this.$buefy.notification.open('Clicked!!')
-    }
-  }
 }
 </script>
 

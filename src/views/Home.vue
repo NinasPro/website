@@ -20,7 +20,7 @@
           <h1 class=title>Noticias</h1>
         </div>
         <div class="column">
-          <b-button class="moreinfobutton" @click="clickMe">Ver todas</b-button>
+          <b-button rounded class="moreinfobutton" type="is-small" @click="clickMe">Ver todas</b-button>
         </div>
       </div>
       <div class="columns">
@@ -67,8 +67,9 @@ export default {
   }
   .title {
   font-size: larger;
+  margin-left: 16px;
   }
   .moreinfobutton {
-    left: 83%;
+    left: 85%;
   }
 </style>
