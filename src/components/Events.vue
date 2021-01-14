@@ -4,17 +4,21 @@
     
     <div>
         
-        <b-table  class="column is-full "
+        <b-table  class="column is-11
+is-offset-1" 
             :data="isEmpty ? [] : data"
             default-sort="date"
+            :per-page="perPage"
+            :bordered=false
+            paginated
             
             >
-            <template slot-scope="props" class="column is-half">
+            <template slot-scope="props" >
                 <b-table-column  class="eventos" field="date" label="Fecha" sortable centered header-class="eventos" width="100px" >
                     {{new Date( props.row.date).toLocaleDateString() }}
                 </b-table-column>
 
-                <b-table-column class="eventos" field="event" label="Evento"  header-class="eventos" width="350px" >
+                <b-table-column class="eventos" field="event" label="Evento"  header-class="eventos" width="300px" >
                     <template v-if="showDetailIcon">
                         {{ props.row.event }}
                     </template>
@@ -63,6 +67,9 @@
 
             return {
                 data,
+                perPage:2,
+                
+                
             }
         }
     }
@@ -83,7 +90,7 @@
         background-color: rgb(5, 161, 117);
         color: white;
         columns: "*,2*";
-        max-width: 350px;
+        max-width: 250px;
         border: 0px solid rgb(5, 161, 117);
 
     }
