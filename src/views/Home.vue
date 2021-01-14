@@ -14,18 +14,21 @@
         </div>
       </div>
     </div>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Carrousel from "../components/Carrousel.vue";
 import ImageButton from "../components/ImageButton.vue";
+import Footer from "../components/Footer.vue";
 
 export default {
   name: "Home",
   components: {
     Carrousel,
     ImageButton,
+    Footer,
   },
   props: {
     type: String
