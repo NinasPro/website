@@ -10,7 +10,6 @@
             
             >
             <template slot-scope="props" class="column is-half">
-
                 <b-table-column  class="eventos" field="date" label="Fecha" sortable centered header-class="eventos" width="100px" >
                     {{new Date( props.row.date).toLocaleDateString() }}
                 </b-table-column>
@@ -26,7 +25,7 @@
                             <article class="media">
                                 
                                 <div class="media-content">
-                                    <div class="content">
+                                    <div class="eventos">
                                         <p>
                                             <br>
                                             {{props.row.information}}
@@ -56,24 +55,14 @@
 
 
 <script>
+    import * as myModule from '../data/events.js';
+    
     export default {
         data() {
-            const data = [
-                    { 'date': '2019-10-15 13:43:27', 'event': 'Taller de Python con Fintual', 'information': "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Proin ornare magna eros, eu pellentesque tortor vestibulum ut."},
-                    { 'date': '2016-12-15 06:00:53', 'event': 'Primer dia del Curso Anual de Programación', 'information':'Esta es una prueba para ver si se ve la informacion correspondiente'},
-                    { 'date': '2016-04-26 06:26:28', 'event': 'Charla: Brecha de Género y Role Models','information': 'Esto es una prueba'},
-                    { 'date': '2016-04-10 10:28:46', 'event': 'Clarence', 'information': 'Esto es una prueba'},
-                    { 'date': '2016-12-06 14:38:38', 'event': 'Anne','information': 'Esto es una prueba'}
-                ]
-            
+            const data = myModule.default.data
+
             return {
                 data,
-            }
-        },
-        methods:
-        {
-            ordenarfechas(data) {
-                return data.sort((a,b) => new Date(a.date).getTime() > new Date(b.date).getTime());
             }
         }
     }

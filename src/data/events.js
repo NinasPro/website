@@ -1,12 +1,12 @@
-var app = new Vue({
-    el: '#app',
-    data: {
-        lista: [
-            { events: 'Jesse', date: '2016-10-15 13:43:27' },
-            { events: 'John',  date: '2016-12-15 06:00:53'},
-            { events: 'Tina',  date: '2016-04-26 06:26:28' },
-            { events: 'Clarence', date: '2016-04-10 10:28:46'},
-            { events: 'Anne',  date: '2016-12-06 14:38:38'}
+
+
+export default ({
+    data:  [
+            { 'date': '2019-10-15 13:43:27', 'event': 'Taller de Python con Fintual', 'information': "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Proin ornare magna eros, eu pellentesque tortor vestibulum ut."},
+            { 'date': '2016-12-15 06:00:53', 'event': 'Primer dia del Curso Anual de Programación', 'information':'Esta es una prueba para ver si se ve la informacion correspondiente'},
+            { 'date': '2016-04-26 06:26:28', 'event': 'Charla: Brecha de Género y Role Models','information': 'Esto es una prueba'},
+            { 'date': '2016-04-10 10:28:46', 'event': 'Clarence', 'information': 'Esto es una prueba'},
+            { 'date': '2016-12-06 14:38:38', 'event': 'Anne','information': 'Esto es una prueba'}
         ]
-    }
+    
 })
