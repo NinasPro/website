@@ -14,36 +14,18 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="columns">
-        <div class="column">
-          <ProjectsHome/>
-        </div>
-        <div class="column">
-          <ProjectsHome/>
-        </div>
-        <div class="column">
-          <ProjectsHome/>
-        </div>
-        <div class="column">
-          <ProjectsHome/>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
 <script>
 import Carrousel from "../components/Carrousel.vue";
 import ImageButton from "../components/ImageButton.vue";
-import ProjectsHome from "../components/ProjectsHome.vue";
 
 export default {
   name: "Home",
   components: {
     Carrousel,
     ImageButton,
-    ProjectsHome,
   },
   props: {
     type: String
