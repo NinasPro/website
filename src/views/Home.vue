@@ -28,6 +28,12 @@
     </div>
     <Events > </Events>
   </div>
+  <div>
+    <Information type='left' image='inspired.jpg' text = "Esto es una prueba a ver si tengo la informacion a la derecha <br> tambien salta de linea" a ="Mas informacion"></Information>
+  </div>
+  <div>
+    <Information type='right' image='django-girls.jpg' text = "esto es un texto gigante para ver si puedo <br> realizar mi recado y que esto sea grande porque eso necesito" a ="Mas informacion"></Information>
+  </div>
   </div>
  
 
@@ -38,6 +44,7 @@ import Carrousel from "../components/Carrousel.vue";
 import ImageButton from "../components/ImageButton.vue";
 import Collaborators from '../components/Collaborators.vue';
 import Events from '../components/Events.vue';
+import Information from '../components/Information.vue';
 
 export default {
   name: "Home",
@@ -46,6 +53,7 @@ export default {
     ImageButton,
     Collaborators,
     Events,
+    Information,
   },
   props: {
     type: String
