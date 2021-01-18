@@ -4,7 +4,7 @@
     <div class="container">
       <div class="columns is-variable is-1">
         <div class="column">
-          <ProjectsHome title="Empodera" type="is-danger" image="laschicaspueden.jpg" path="/somos/"
+          <ProjectsHome title="Empodera" type="is-danger" image="laschicaspueden.jpg" path="/enconstruccion/"
           description="Curso Anual de Programación"/>
         </div>
         <div class="column">
@@ -46,13 +46,13 @@
       </div>
       <div class="columns">
         <div class="column">
-          <News title="Titulo 1" type="is-info" text="Ver noticia completa" path="/somos/"/>
+          <News title="Titulo 1" type="is-info" text="Ver noticia completa" path="/enconstruccion/"/>
         </div>
         <div class="column">
-          <News title="Titulo 2" type="is-info" text="Ver noticia completa" path="/somos/"/>
+          <News title="Titulo 2" type="is-info" text="Ver noticia completa" path="/enconstruccion/"/>
         </div>
         <div class="column">
-          <News title="Titulo 3" type="is-info" text="Ver noticia completa" path="/somos/"/>
+          <News title="Titulo 3" type="is-info" text="Ver noticia completa" path="/enconstruccion/"/>
         </div>
       </div>
     </div>
