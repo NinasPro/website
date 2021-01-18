@@ -1,32 +1,37 @@
 <template >
-    
-        
-        
             <div v-if="type === 'left'">
                 <div class="columns">
                 <div class="column">
                 <img :class="type" :src="getImgUrl(image)" :align="type"></div>
                 <div class="column is-one-quarte"> 
-                    <h1 class ="title style-title"  align="center"  > 
+                    <h1 class="title style-title-right" align="left" style="font-size: 2.5em; padding: 120px 2px 0px; line-height: 1.5; margin-left: 192px; "> {{titulo}}
+                    </h1>
+                    <h1 class =" style-title-right"  align="left"  style="font-size: 1.65em; padding: 20px 2px ; line-height: 1.5; margin-inline-end: 385.226px; margin-inline-start: 192px;"> 
                         <div v-for="code in text.split('<br>')" :key=code>{{code}} </div>
                     </h1>
-                    <button class="button is-info " style="float:right;"> {{a}} </button>
+                    <router-link :to="Path">
+                    <button class="button-information button is-info " style=" margin-inline-start: 192px;"> {{boton}} </button>
+                    </router-link>
                 </div>
                 </div>
             </div>
             <div v-else>
                 <div class="columns">
                 <div class="column is-one-quarte"> 
-                <h1 class ="title style-title"  align="center"  > 
-                    <div v-for="code in text.split('<br>')" :key=code>{{code}} </div>
-                </h1>
-                <button class="button is-success " style="float:right;"> {{a}} </button>
+                    <h1 class="title style-title-left" align="left" style="font-size: 2.5em; margin-inline-start: 385.226px; margin-top:120px; line-height: 1.5;"> {{titulo}}
+                    </h1>
+                    <h1 class =" style-title-left"  align="left"  style="font-size: 1.65em; padding: 20px 2px ; margin-inline-start: 385.226px; margin-inline-end: 120px; line-height: 1.5;"> 
+                        <div v-for="code in text.split('<br>')" :key=code>{{code}} </div>
+                    </h1>
+                     <router-link :to="Path">
+                        <button class="button-information button is-success " style="margin-inline-start: 385.226px; " > {{boton}} </button>
+                     </router-link> 
                 </div>
                 <div class="column">
                 <img :class="type" :src="getImgUrl(image)" :align="type"></div>
             
             </div>
-        </div>
+        </div> 
         
   
     
@@ -40,18 +45,14 @@ export default {
       "type": String,
       "image" : String,
       "text" : String,
-      "a" : String,
+      "boton" : String,
       "format" :String,
-      /*"Path" : String,*/
+      "titulo":String,
+      "Path" : String,
   },
   
   data () {
-    const data = [
-        {'image':'@/assets/ninastic.jpg'}
-    ]
-    return {
-      data,
-    }
+
   }
   ,
   methods: {
@@ -69,18 +70,16 @@ export default {
         border-radius: 1000px 0px 0px 1000px;
         width: 1300px;
         height: 450px;
-        margin: 2rem 0rem 2rem 0rem;
+        object-fit: cover;
+        margin: 2rem 0rem 2rem 20rem;
     }
     .left{
         border-radius: 0px 1000px 1000px 0px;
         width: 1300px;
         height: 450px;
+        object-fit: cover;
         margin: 2rem 0rem 2rem 0rem;
-    }
-    .style-title
-    {
-        padding: 120px 2px ;
-    }
+    } 
     .color
     {
         color: indigo;
