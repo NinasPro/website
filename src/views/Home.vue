@@ -13,7 +13,21 @@
           <ImageButton type="is-success" image="sororidad.jpg" text="¿Cómo participar?" path="/voluntariado/"/>
         </div>
       </div>
+      <h1 class="title"> Nuestros Partners </h1>
+      <div >
+        <Collaborators type="is-collaborators" ></Collaborators>
+        
+      </div>
     </div>
+
+  <div>
+    <div class="container">
+       <h2 class="title" >
+           Próximos eventos
+       </h2> 
+    </div>
+    <Events > </Events>
+  </div>
     <div class="container">
       <div class="columns">
         <div class="column">
@@ -36,11 +50,15 @@
       </div>
     </div>
   </div>
+ 
+
 </template>
 
 <script>
 import Carrousel from "../components/Carrousel.vue";
 import ImageButton from "../components/ImageButton.vue";
+import Collaborators from '../components/Collaborators.vue';
+import Events from '../components/Events.vue';
 import News from "../components/News.vue";
 
 export default {
@@ -48,6 +66,8 @@ export default {
   components: {
     Carrousel,
     ImageButton,
+    Collaborators,
+    Events,
     News,
   },
   props: {
