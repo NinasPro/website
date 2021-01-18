@@ -8,9 +8,8 @@
 is-offset-1" 
             :data="isEmpty ? [] : data"
             default-sort="date"
-            :per-page="perPage"
             :bordered=false
-            paginated
+            
             
             >
             <template slot-scope="props" >
