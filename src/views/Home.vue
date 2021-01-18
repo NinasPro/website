@@ -29,10 +29,10 @@
     <Events > </Events>
   </div>
   <div>
-    <Information type='left' image='inspired.jpg' text = "Esto es una prueba a ver si tengo la informacion a la derecha <br> tambien salta de linea" a ="Mas informacion"></Information>
+    <Information type='left' image='inspired.jpg' text = "Si tienes menos de 18 años <br> ¡Participa! <br> Diviértete, aprende y conecta<br> con otras Niñas Pro como tú." a ="Mas informacion"></Information>
   </div>
   <div>
-    <Information type='right' image='django-girls.jpg' text = "esto es un texto gigante para ver si puedo <br> realizar mi recado y que esto sea grande porque eso necesito" a ="Mas informacion"></Information>
+    <Information type='right' image='django-girls.jpg' text = "Si quieres ayudarnos <br> ¡Involúcrate! <br> Participa del voluntariado o ayúdanos a llegar<br> a mas niñas a traves de donaciones." a ="Mas informacion"></Information>
   </div>
   </div>
  

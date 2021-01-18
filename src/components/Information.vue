@@ -1,12 +1,31 @@
 <template >
     
         
-        <div >
-            <img :class="type" :src="getImgUrl(image)" :align="type"> 
-            <h1 class ="title titul"  align="center" > 
-                <div v-for="code in text.split('<br>')" :key=code>{{code}} </div>
-            </h1>
-            <button class="button is-info " style="float:right;"> {{a}} </button>
+        
+            <div v-if="type === 'left'">
+                <div class="columns">
+                <div class="column">
+                <img :class="type" :src="getImgUrl(image)" :align="type"></div>
+                <div class="column is-one-quarte"> 
+                    <h1 class ="title style-title"  align="center"  > 
+                        <div v-for="code in text.split('<br>')" :key=code>{{code}} </div>
+                    </h1>
+                    <button class="button is-info " style="float:right;"> {{a}} </button>
+                </div>
+                </div>
+            </div>
+            <div v-else>
+                <div class="columns">
+                <div class="column is-one-quarte"> 
+                <h1 class ="title style-title"  align="center"  > 
+                    <div v-for="code in text.split('<br>')" :key=code>{{code}} </div>
+                </h1>
+                <button class="button is-success " style="float:right;"> {{a}} </button>
+                </div>
+                <div class="column">
+                <img :class="type" :src="getImgUrl(image)" :align="type"></div>
+            
+            </div>
         </div>
         
   
@@ -58,15 +77,13 @@ export default {
         height: 450px;
         margin: 2rem 0rem 2rem 0rem;
     }
-    .titul
+    .style-title
     {
-        padding: 200px 150px 80px ;
+        padding: 120px 2px ;
     }
     .color
     {
         color: indigo;
     }
-    .center{
-        text-align: center;
-    }
+    
 </style>
