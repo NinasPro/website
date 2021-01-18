@@ -1,100 +1,59 @@
 <template>
-  <div class="columns">
-    <div class="column">
-      <div class="card">
-        <div class="card-image">
-          <figure>
-            <img src="https://picsum.photos/210" alt="Placeholder image">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-            <div class="media-content">
-              <p class="title"> {{ title }} </p>
-            </div>
-          </div>
-          <div class="content">
-            <b-button @click="clickMe" type="is-primary">Ver Más</b-button>
-          </div>
-        </div>
-      </div>
+  <div class="container">
+  <div class="card-image">
+    <figure>
+      <img src="https://picsum.photos/350/210" alt="Placeholder image">
+    </figure>
   </div>
-  <div class="column">
-    <div class="card">
-        <div class="card-image">
-          <figure>
-            <img src="https://picsum.photos/210" alt="Placeholder image">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-            <div class="media-content">
-              <p class="title"> {{ title }} </p>
-            </div>
-          </div>
-          <div class="content">
-            <b-button @click="clickMe" type="is-primary">Ver Más</b-button>
-          </div>
-        </div>
-      </div>
+  <div class="content">
+      <p class="title"> {{ title }} </p>
+      <p class="description">Breve descripción de la noticia.</p>
+      <router-link :to="path" :class="`button ${type} is-rounded is-small`">
+        {{text}}
+      </router-link>
+    </div>
   </div>
-  <div class="column">
-    <div class="card">
-        <div class="card-image">
-          <figure>
-            <img src="https://picsum.photos/210" alt="Placeholder image">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-            <div class="media-content">
-              <p class="title"> {{ title }} </p>
-            </div>
-          </div>
-          <div class="content">
-            <b-button @click="clickMe" type="is-primary">Ver Más</b-button>
-          </div>
-        </div>
-      </div>
-  </div>
-</div>
 </template>
 
 <script>
 export default {
   props: {
     "type": String,
+    "text": String,
+    "path": String,
+    "title": String,
   },
   data() {
     return {
-      title: "Noticia",
-      moreinfo: "url del sitio"
+      title1: "Noticia",
+      url: "url del sitio"
     }
   },
-  methods: {
-    clickMe() {
-      this.$buefy.notification.open('Clicked!!')
-    }
-  }
 }
 </script>
 
 <style scoped>
-.media-content, .card-image, .card-content {
+.card-image {
   text-align: center;
-  background-color:lightgrey;
 }
 .title {
-  text-align: center;
-  font-size: larger;
+  text-align: left;
+  font-size: 16px;
+  margin-left: 10px;
 }
-.columns {
+.description {
+  text-align: left;
+  font-size: 14px;
+  margin-left: 10px;
+}
+.columns, .content{
   text-align: center;
+  padding-left: 10px;
 }
 figure {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 10px;
   margin-left: 20px;
 }
 </style>
