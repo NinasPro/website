@@ -56,9 +56,14 @@
         </div>
       </div>
     </div>
+    <div class="container">
+      <b-icon
+        pack="fas"
+        icon="home"
+        size="is-small">
+      </b-icon>
+    </div>
   </div>
- 
-
 </template>
 
 <script>
