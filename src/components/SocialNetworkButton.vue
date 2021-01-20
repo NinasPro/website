@@ -13,6 +13,11 @@
           </a>
         </div>
         <div class="column">
+          <a :href="pathLi">
+            <vue-fontawesome :icon="['fab', 'linkedin']"/>
+          </a>
+        </div>
+        <div class="column">
           <a :href="pathIg">
             <vue-fontawesome :icon="['fab', 'instagram']"/>
           </a>
@@ -30,6 +35,7 @@ export default {
     "pathTw": String,
     "pathFb": String,
     "pathIg": String,
+    "pathLi": String,
   },
 }
 </script>

@@ -8,7 +8,6 @@
         <div class="column is-2">
           <strong >Somos</strong> 
           <ul>
-            <li><router-link class="footer-link" to="/somos/">Somos</router-link></li>
             <li><router-link class="footer-link" to="/somos/">Misión</router-link></li>
             <li><router-link class="footer-link" to="/somos/">Visión</router-link></li>
             <li><router-link class="footer-link" to="/somos/">Comunidad</router-link></li>
@@ -45,7 +44,8 @@
             <SocialNetworkButton
             pathTw="https://twitter.com/ninasPro"
             pathFb="https://www.facebook.com/NinasPro"
-            pathIg="https://www.instagram.com/ninas_pro/"/>
+            pathIg="https://www.instagram.com/ninas_pro/"
+            pathLi="https://www.linkedin.com/company/ninas-pro/"/>
           </div>
         </div>
       </div>
