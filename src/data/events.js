@@ -1,5 +1,3 @@
-
-
 export default ({
     data: [
             { 'date': '2019-10-15 13:43:27', 'event': 'Taller de Python con Fintual', 'information': "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Proin ornare magna eros, eu pellentesque tortor vestibulum ut."},
