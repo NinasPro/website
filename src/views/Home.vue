@@ -56,13 +56,11 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <b-icon
-        pack="fas"
-        icon="home"
-        size="is-small">
-      </b-icon>
-    </div>
+    <strong>Solo para mostrar que ya están los botones de</strong>
+    <SocialNetworkButton title="Visita nuestras redes sociales:" 
+    pathTw="https://twitter.com/ninasPro"
+    pathFb="https://www.facebook.com/NinasPro"
+    pathIg="https://www.instagram.com/ninas_pro/"/>
   </div>
 </template>
 
@@ -72,6 +70,7 @@ import ProjectsHome from "../components/ProjectsHome.vue";
 import Collaborators from '../components/Collaborators.vue';
 import Events from '../components/Events.vue';
 import News from "../components/News.vue";
+import SocialNetworkButton from "../components/SocialNetworkButton.vue";
 
 export default {
   name: "Home",
@@ -81,6 +80,7 @@ export default {
     Collaborators,
     Events,
     News,
+    SocialNetworkButton,
   },
   props: {
     type: String
