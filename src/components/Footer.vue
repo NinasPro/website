@@ -31,7 +31,11 @@
         </div>
         <div class="column is-2"></div>
         <div class="column">
-          <strong >{{title}}</strong>
+          <strong>Visita nuestras redes sociales:</strong>
+          <SocialNetworkButton
+          pathTw="https://twitter.com/ninasPro"
+          pathFb="https://www.facebook.com/NinasPro"
+          pathIg="https://www.instagram.com/ninas_pro/"/>
         </div>
       </div>
     </div>
@@ -39,7 +43,13 @@
 </template>
 
 <script>
+import SocialNetworkButton from "../components/SocialNetworkButton.vue";
+
 export default {
+  name: "Footer",
+  components: {
+    SocialNetworkButton,
+  },
   props: {
     "type": String,
   },

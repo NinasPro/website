@@ -56,11 +56,7 @@
         </div>
       </div>
     </div>
-    <strong>Solo para mostrar que ya están los botones de</strong>
-    <SocialNetworkButton title="Visita nuestras redes sociales:" 
-    pathTw="https://twitter.com/ninasPro"
-    pathFb="https://www.facebook.com/NinasPro"
-    pathIg="https://www.instagram.com/ninas_pro/"/>
+    <Footer> </Footer>
   </div>
 </template>
 
@@ -70,7 +66,7 @@ import ProjectsHome from "../components/ProjectsHome.vue";
 import Collaborators from '../components/Collaborators.vue';
 import Events from '../components/Events.vue';
 import News from "../components/News.vue";
-import SocialNetworkButton from "../components/SocialNetworkButton.vue";
+import Footer from "../components/Footer.vue";
 
 export default {
   name: "Home",
@@ -80,7 +76,7 @@ export default {
     Collaborators,
     Events,
     News,
-    SocialNetworkButton,
+    Footer,
   },
   props: {
     type: String

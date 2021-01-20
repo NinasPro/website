@@ -1,7 +1,6 @@
 <template>
   <div>
     <div class="container">
-      <div class="title">{{title}}</div>
       <div class="columns is-variable is-1">
         <div class="column">
           <a :href="pathTw">
@@ -18,6 +17,7 @@
             <vue-fontawesome :icon="['fab', 'instagram']"/>
           </a>
         </div>
+        <div class="column"></div>
       </div>
     </div>
   </div>
@@ -30,7 +30,6 @@ export default {
     "pathTw": String,
     "pathFb": String,
     "pathIg": String,
-    "title": String,
   },
 }
 </script>
