@@ -7,7 +7,10 @@
       <b-carousel-list
       v-model="values"
       :data="items"
-      :icon-size="is-medium"
+      :icon-pack="fa"
+      :icon-prev="arrow-left"
+      :icon-next="arrow-right"
+      :icon-size="is-small"
       :items-to-show="perList"
       :items-to-list="increment"
       >
