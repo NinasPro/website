@@ -3,27 +3,29 @@
     <div class="title">
       {{title}}
     </div>
-    <b-carousel-list
-    v-model="values"
-    :data="items"
-    :icon-size="is-medium"
-    :items-to-show="perList"
-    :items-to-list="increment"
-    >
-    <template slot="item" slot-scope="props">
-        <div >
-            <div class="card-image">
-                <figure class="image is-5by4">
-                     <img :src="props.list.image">
-                </figure>
-            </div>
-            <div class="card-content">
-                <h1 class="title" >{{ props.list.text }}</h1>
-            </div>
-      </div>
-                        
-    </template>
-    </b-carousel-list>
+    <div class="carousel">
+      <b-carousel-list
+      v-model="values"
+      :data="items"
+      :icon-size="is-medium"
+      :items-to-show="perList"
+      :items-to-list="increment"
+      >
+      <template slot="item" slot-scope="props">
+          <div >
+              <div class="card-image">
+                  <figure class="image is-5by4">
+                      <img :src="props.list.image">
+                  </figure>
+              </div>
+              <div class="card-content">
+                  <strong class="name">{{ props.list.text }}</strong>
+              </div>
+        </div>
+                          
+      </template>
+      </b-carousel-list>
+    </div>
   </div>
 </template>
 
@@ -71,6 +73,7 @@ export default {
 
 <style scoped>
 .card-image {
+  padding-top: 15px;
   text-align: center;
 }
 .title {
@@ -84,18 +87,18 @@ export default {
   font-size: 14px;
   margin-left: 10px;
 }
-.columns, .content{
-  text-align: center;
-  padding-left: 10px;
-}
 figure {
   display: block;
   padding-top: 0px;
   padding-bottom: 10px;
-  margin-left: 20px;
+  margin-left: 15px; 
+  margin-right: 15px;
 }
-.card-content
-{
+.card-content {
+  text-align: center;
   margin-bottom: 10px;
+}
+.carousel {
+  padding-left: 15px;
 }
 </style>
