@@ -6,14 +6,24 @@
     <b-carousel-list
     v-model="values"
     :data="items"
-    :arrow="arrow"
-    :arrow-hover="arrowHover"
-    :icon-pack="fa"
     :icon-size="is-medium"
     :items-to-show="perList"
     :items-to-list="increment"
-    :repeat="repeat"
-    :has-drag="drag"/>
+    >
+    <template slot="item" slot-scope="props">
+        <div >
+            <div class="card-image">
+                <figure class="image is-5by4">
+                     <img :src="props.list.image">
+                </figure>
+            </div>
+            <div class="card-content">
+                <h1 class="title" >{{ props.list.text }}</h1>
+            </div>
+      </div>
+                        
+    </template>
+    </b-carousel-list>
   </div>
 </template>
 
@@ -35,17 +45,24 @@ export default {
       repeat: true,
       items: [
         {title: 'Slide 1',
-        image: 'https://picsum.photos/400'},
+        image: 'https://picsum.photos/410',
+        text:'Jazmine Maldonado',
+        index:'https://wikicss.com/carruselslider-con-funcion-tactil-con-javascript-puro-purejscarousel/'},
         {title: 'Slide 2',
-        image: 'https://picsum.photos/400'},
+        image: 'https://picsum.photos/400',
+        text:'Jazmine Maldonado'},
         {title: 'Slide 3',
-        image: 'https://picsum.photos/400'},
+        image: 'https://picsum.photos/400',
+        text:'Jazmine Maldonado'},
         {title: 'Slide 4',
-        image: 'https://picsum.photos/400'},
+        image: 'https://picsum.photos/400',
+        text:'Jazmine Maldonado'},
         {title: 'Slide 5',
-        image: 'https://picsum.photos/400'},
+        image: 'https://picsum.photos/400',
+        text:'Jazmine Maldonado'},
         {title: 'Slide 6',
-        image: 'https://picsum.photos/400'},
+        image: 'https://picsum.photos/400',
+        text:'Jazmine Maldonado'},
       ]
     }
   }
@@ -76,5 +93,9 @@ figure {
   padding-top: 0px;
   padding-bottom: 10px;
   margin-left: 20px;
+}
+.card-content
+{
+  margin-bottom: 10px;
 }
 </style>
