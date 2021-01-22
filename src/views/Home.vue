@@ -56,9 +56,8 @@
         </div>
       </div>
     </div>
+    <Footer> </Footer>
   </div>
- 
-
 </template>
 
 <script>
@@ -67,6 +66,7 @@ import ProjectsHome from "../components/ProjectsHome.vue";
 import Collaborators from '../components/Collaborators.vue';
 import Events from '../components/Events.vue';
 import News from "../components/News.vue";
+import Footer from "../components/Footer.vue";
 
 export default {
   name: "Home",
@@ -76,6 +76,7 @@ export default {
     Collaborators,
     Events,
     News,
+    Footer,
   },
   props: {
     type: String
