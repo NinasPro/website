@@ -64,7 +64,7 @@
 import Carrousel from "../components/Carrousel.vue";
 import ProjectsHome from "../components/ProjectsHome.vue";
 import Collaborators from '../components/Collaborators.vue';
-import Events from '../components/Events.vue';
+import Events from '../components/Event.vue';
 import News from "../components/News.vue";
 import Footer from "../components/Footer.vue";
 
