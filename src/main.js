@@ -3,18 +3,17 @@ import VueRouter from "vue-router";
 import Buefy from "buefy";
 import "buefy/dist/buefy.css";
 
-
 import App from "./App.vue";
 import router from "./router";
-
 
 import "./main.scss";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import { faArrowLeft,faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faTwitter, faFacebook, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faArrowLeft,faArrowRight);
+library.add(faTwitter, faFacebook, faInstagram, faLinkedin, faArrowLeft, faArrowRight);
 
 Vue.config.productionTip = false;
 
