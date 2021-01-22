@@ -24,7 +24,7 @@
         </button>
       </b-navbar-item>
       <b-navbar-item   tag="router-link" style="padding: 0px 20px;" :to="{ path: '/voluntariado/' }">
-        <button class="button is-warning" style="margin-top:40px; width: 50px; margin:0px 0px; background: transparent;border-color: #fdca36;border-width: 5px;" >
+        <button class="button" style="margin-top:40px; width: 50px; margin:0px 0px; background: transparent;border-color: #fdca36;border-width: 5px; color:#fdca36;" >
           Dona
         </button>
       </b-navbar-item>
