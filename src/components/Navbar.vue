@@ -1,5 +1,5 @@
 <template>
-  <b-navbar :transparent="true" :type="type" wrapper-class="container">
+  <b-navbar :transparent="true" :type="type" wrapper-class="container" >
     <template slot="brand">
       <b-navbar-item tag="router-link" :to="{ path: '/' }">
         <img
@@ -9,13 +9,24 @@
       </b-navbar-item>
     </template>
     <template slot="end">
-      <b-navbar-item tag="router-link" :to="{ path: '/' }">
-        Iniciativas
-      </b-navbar-item>
+      <b-navbar-dropdown label="Iniciativas" >
+        <b-navbar-item tag="router-link" :to="{ path: '/proyectos/' }"  >
+          Proyecto Inspira
+        </b-navbar-item>
+        <b-navbar-item tag="router-link" :to="{ path: '/proyectos/' }"  > 
+          Proyecto Empodera
+        </b-navbar-item>
+        <b-navbar-item tag="router-link" :to="{ path: '/proyectos/' }" >
+          Proyecto Potencia
+        </b-navbar-item>
+        <b-navbar-item tag="router-link" :to="{ path: '/proyectos/' }" >
+          Proyecto Incentiva
+        </b-navbar-item>
+      </b-navbar-dropdown>
       <b-navbar-item tag="router-link" :to="{ path: '/somos/' }">
         Eventos
       </b-navbar-item>
-      <b-navbar-item tag="router-link" :to="{ path: '/proyectos/' }">
+      <b-navbar-item tag="router-link" :to="{ path: '/somos/' }">
         Somos
       </b-navbar-item>
       <b-navbar-item   tag="router-link" style="padding: 0px 20px;" :to="{ path: '/voluntariado/' }">
@@ -56,6 +67,10 @@ export default {
     
   }
 
+}
+.navbar-dropdown{
+  background-color: turquoise;
+  
 }
 
 </style>
