@@ -7,7 +7,7 @@
       <b-carousel-list
       v-model="values"
       :data="items"
-      :icon-pack="fa"
+      :icon-pack="fas"
       :icon-prev="arrow-left"
       :icon-next="arrow-right"
       :icon-size="is-small"
@@ -24,8 +24,7 @@
               <div class="card-content">
                   <strong class="name">{{ props.list.text }}</strong>
               </div>
-        </div>
-                          
+        </div>            
       </template>
       </b-carousel-list>
     </div>
@@ -103,5 +102,8 @@ figure {
 }
 .carousel {
   padding-left: 15px;
+}
+vue-fontawesome {
+  color: black;
 }
 </style>
