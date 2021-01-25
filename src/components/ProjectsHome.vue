@@ -66,7 +66,6 @@ figure {
   font-weight: bold;
 }
 .container {
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding-top: 200px;
 }
 </style>

@@ -2,26 +2,28 @@
   <div id="home">
     <Carrousel :type="type"/>
     <div class="container">
-      <div class="columns is-variable is-1">
-        <div class="column">
-          <ProjectsHome title="Empodera" type="is-danger" image="laschicaspueden.jpg" path="/enconstruccion/"
-          description="Curso Anual de Programación"/>
-        </div>
-        <div class="column">
-          <ProjectsHome title="Inspira" type="is-info" image="lamarr.jpg" path="/somos/"
-          description="Charla de Mujeres Pro"/>
-        </div>
-        <div class="column">
-          <ProjectsHome title="Incentiva" type="is-warning" image="ninastic.jpg" path="/proyectos/"
-          description="Talleres Introductorios de Programación"/>
-        </div>
-        <div class="column">
-          <ProjectsHome title="Potencia" type="is-success" image="sororidad.jpg" path="/voluntariado/"
-          description="Cursos Avanzados de Programación"/>
+      <div class="container-home">
+        <div class="columns is-variable is-1">
+          <div class="column">
+            <ProjectsHome title="Empodera" type="is-danger" image="laschicaspueden.jpg" path="/enconstruccion/"
+            description="Curso Anual de Programación"/>
+          </div>
+          <div class="column">
+            <ProjectsHome title="Inspira" type="is-info" image="lamarr.jpg" path="/somos/"
+            description="Charla de Mujeres Pro ~texto de relleno~"/>
+          </div>
+          <div class="column">
+            <ProjectsHome title="Incentiva" type="is-warning" image="ninastic.jpg" path="/proyectos/"
+            description="Talleres Introductorios de Programación"/>
+          </div>
+          <div class="column">
+            <ProjectsHome title="Potencia" type="is-success" image="sororidad.jpg" path="/voluntariado/"
+            description="Cursos Avanzados de Programación"/>
+          </div>
         </div>
       </div>
       <div class="container">
-        <div class="container-colab">
+        <div class="container-home">
           <h1 class="title"> Nuestros Partners </h1>
           <Collaborators type="is-collaborators" ></Collaborators>
         </div>
@@ -34,10 +36,12 @@
            Próximos eventos
        </h2> 
     </div>
-    <Events > </Events>
+    <div class="container-home">
+      <Events > </Events>
+    </div>
   </div>
     <div class="container">
-      <div class="container-news">
+      <div class="container-home">
       <div class="columns">
         <div class="column">
           <h1 class=title>Noticias</h1>
@@ -103,12 +107,7 @@ export default {
   .moreinfobutton {
     left: 76%;
   }
-  .container-colab {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .container-news {
-    padding-top: 30px;
-    padding-bottom: 50px;
+  .container-home {
+    padding-bottom: 20%;
   }
 </style>
