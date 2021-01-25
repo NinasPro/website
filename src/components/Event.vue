@@ -1,9 +1,9 @@
 <template>
     <div class="fondo">
         <div class="columns" v-for="inf in eventos" :key="inf.date" >
-            <h1 class="column is-one-third" style="color: white; max-width:500px; margin-top:20px;font-size:20px;font-weight:bold;"  align="center" > {{new Date( inf.date).toLocaleDateString()}} </h1>
+            <h1 class="column is-one-third style-text" style="max-width:500px;"  align="center" > {{new Date( inf.date).toLocaleDateString()}} </h1>
             <details class="column" >
-                <summary style="color: white;margin-top:20px; font-weight:bold; font-size:20px">{{inf.event}}</summary>
+                <summary class="style-text">{{inf.event}}</summary>
                 <article class="media">            
                 <div class="media-content">
                     <div class="eventos">
@@ -13,12 +13,12 @@
                     </div>
                 </div>
                 </article>
-                <button class="button" name="Incripción" title="Inscripción" style="margin-inline-start: 1000px;">
+                <button class="button inscribete" name="Incripción" title="Inscripción" >
                     Inscríbete
                 </button>
             </details>
         </div>
-        <button class="button" name="Mas información" title="Mas información" align="right" style="margin-inline-start: 170px;margin-bottom: 20px;margin-top:20px">
+        <button class="button ver-mas" name="Mas información" title="Mas información" align="right" >
                 Ver todos
         </button>
     </div>
@@ -79,16 +79,22 @@
     
 </script>
 
-<style >
+<style lang="scss" >
     .button {
       padding: 0px 50px;
       font-weight: bold;
       background-color:white;
       color: rgb(5, 161, 117);
-      border-radius: 25px 25px 25px 25px;
-      
-      
+      border-radius: 25px 25px 25px 25px; 
     }
+
+    .inscribete{
+          margin-inline-start: 1000px;
+      }
+
+    .ver-mas{
+            margin-inline-start: 170px;margin-bottom: 20px;margin-top:20px
+        }
     .eventos {
         margin-top: 35px;
         margin-inline-start: 4px;
@@ -102,6 +108,13 @@
         background-color: rgb(5, 161, 117);
         margin: 2rem 0rem 2rem 25rem;
         border-radius: 10px 0px 0px 10px;
+    }
+
+    .style-text{
+        color: white;
+        margin-top:20px; 
+        font-weight:bold; 
+        font-size:20px
     }
     
  
