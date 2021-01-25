@@ -95,7 +95,9 @@ export default {
   }
   .title {
   font-size: larger;
+  margin-top: 20px;
   margin-left: 18px;
+  font-size: 26px;
   }
   .moreinfobutton {
     left: 86%;
