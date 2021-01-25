@@ -45,27 +45,27 @@ export default {
 .title {
   text-align: left;
   font-size: 16px;
-  margin-left: 10px;
+  margin-left: 5%;
 }
 .description {
   text-align: left;
   font-size: 18px;
-  margin-left: 10px;
+  margin-left: 5%;
 }
 .columns, .content{
   text-align: center;
-  padding-left: 10px;
+  padding-left: 5%;
 }
 figure {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  margin-left: 20px;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  padding-left: 8%;
 }
 .morebutton{
   font-weight: bold;
 }
 .container {
-  padding-top: 200px;
+  padding-top: 70%;
 }
 </style>

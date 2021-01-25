@@ -39,21 +39,22 @@ export default {
 .title {
   text-align: left;
   font-size: 16px;
-  margin-left: 10px;
+  margin-left: 5%;
 }
 .description {
   text-align: left;
   font-size: 16px;
-  margin-left: 10px;
+  margin-left: 5%;
+  padding-bottom: 3%;
 }
 .columns, .content{
   text-align: center;
-  padding-left: 10px;
+  padding-left: 5%;
 }
 figure {
   display: block;
   padding-top: 0px;
-  padding-bottom: 10px;
-  margin-left: 20px;
+  padding-bottom: 5%;
+  margin-left: 8%;
 }
 </style>

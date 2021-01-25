@@ -47,7 +47,7 @@
           <h1 class=title>Noticias</h1>
         </div>
         <div class="column">
-          <b-button rounded class="moreinfobutton" type="is-medium" @click="clickMe">Ver todas</b-button>
+          <b-button rounded class="moreinfobutton" type="is-medium is-info" @click="clickMe">Ver todas</b-button>
         </div>
       </div>
       <div class="columns">
