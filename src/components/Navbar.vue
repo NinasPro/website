@@ -30,12 +30,12 @@
         Somos
       </b-navbar-item>
       <b-navbar-item   tag="router-link" style="padding: 0px 20px;" :to="{ path: '/voluntariado/' }">
-        <button class="button is-info" style="margin-top:40px; margin:0px 0px;">
+        <button class="button is-info navbar-involucrate" >
           Involucrate
         </button>
       </b-navbar-item>
       <b-navbar-item   tag="router-link" style="padding: 0px 20px;" :to="{ path: '/voluntariado/' }">
-        <button class="button" style="margin-top:40px; width: 50px; margin:0px 0px; background: transparent;border-color: #fdca36;border-width: 5px; color:#fdca36;" >
+        <button class="button navbar-donation">
           Dona
         </button>
       </b-navbar-item>
@@ -68,9 +68,20 @@ export default {
   }
 
 }
-.navbar-dropdown{
-  background-color: turquoise;
-  
+.navbar-donation{
+  margin-top:40px; 
+  width: 50px; 
+  margin:0px 0px; 
+  background: transparent;
+  border-color: #fdca36;
+  border-width: 5px; 
+  color:#fdca36;
 }
+
+.navbar-involucrate{
+  margin-top:40px; 
+  margin:0px 0px;
+}
+
 
 </style>
