@@ -103,6 +103,7 @@ export default {
   .title {
   font-size: 30px;
   margin-left: 18px;
+  font-size: 26px;
   }
   .moreinfobutton {
     left: 76%;
