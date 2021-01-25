@@ -8,7 +8,7 @@
   <div class="content">
       <p class="title"> {{ title }} </p>
       <p class="description">Breve descripción de la noticia.</p>
-      <router-link :to="path" :class="`button ${type} is-rounded is-small`">
+      <router-link :to="path" :class="`button ${type} is-rounded is-medium`">
         {{text}}
       </router-link>
     </div>
@@ -43,7 +43,7 @@ export default {
 }
 .description {
   text-align: left;
-  font-size: 14px;
+  font-size: 16px;
   margin-left: 10px;
 }
 .columns, .content{

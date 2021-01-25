@@ -20,10 +20,11 @@
           description="Cursos Avanzados de Programación"/>
         </div>
       </div>
-      <h1 class="title"> Nuestros Partners </h1>
-      <div >
-        <Collaborators type="is-collaborators" ></Collaborators>
-        
+      <div class="container">
+        <div class="container-colab">
+          <h1 class="title"> Nuestros Partners </h1>
+          <Collaborators type="is-collaborators" ></Collaborators>
+        </div>
       </div>
     </div>
 
@@ -36,12 +37,13 @@
     <Events > </Events>
   </div>
     <div class="container">
+      <div class="container-news">
       <div class="columns">
         <div class="column">
           <h1 class=title>Noticias</h1>
         </div>
         <div class="column">
-          <b-button rounded class="moreinfobutton" type="is-small" @click="clickMe">Ver todas</b-button>
+          <b-button rounded class="moreinfobutton" type="is-medium" @click="clickMe">Ver todas</b-button>
         </div>
       </div>
       <div class="columns">
@@ -54,6 +56,7 @@
         <div class="column">
           <News title="Titulo 3" type="is-info" text="Ver noticia completa" path="/enconstruccion/"/>
         </div>
+      </div>
       </div>
     </div>
     <Footer> </Footer>
@@ -94,10 +97,18 @@ export default {
     border: 0px;
   }
   .title {
-  font-size: larger;
+  font-size: 30px;
   margin-left: 18px;
   }
   .moreinfobutton {
-    left: 86%;
+    left: 76%;
+  }
+  .container-colab {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .container-news {
+    padding-top: 30px;
+    padding-bottom: 50px;
   }
 </style>

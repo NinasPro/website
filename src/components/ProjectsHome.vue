@@ -44,12 +44,12 @@ export default {
 }
 .title {
   text-align: left;
-  font-size: 12px;
+  font-size: 16px;
   margin-left: 10px;
 }
 .description {
   text-align: left;
-  font-size: 14px;
+  font-size: 18px;
   margin-left: 10px;
 }
 .columns, .content{
@@ -64,5 +64,9 @@ figure {
 }
 .morebutton{
   font-weight: bold;
+}
+.container {
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 </style>

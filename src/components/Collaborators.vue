@@ -1,6 +1,6 @@
 <template>
   
-  <div>
+  <div class="container">
     <div class="columns is-multiline is-mobile" >
       <div class="column is-3" v-for="item in data" :key="item.name">
           <a :href="item.url">
@@ -36,3 +36,9 @@ export default {
 }
 </script>
 
+<style scoped>
+.container {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+</style>
