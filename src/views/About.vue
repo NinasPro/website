@@ -53,17 +53,35 @@
           </div>
         </div>
       </div>
+      <div class="columns">
+        <div class="column">
+          <Sedes title="Titulo 1" type="is-info"  text="Descripcion de la sede" path="/enconstruccion/" image="programming.jpg"/>
+        </div>
+        <div class="column">
+          <Sedes title="Titulo 2" type="is-info" text="Descripcion de la sede" path="/enconstruccion/" image="programming.jpg"/>
+        </div>
+        <div class="column">
+          <Sedes title="Titulo 3" type="is-info" text="Descripcion de la sede" path="/enconstruccion/" image="programming.jpg"/>
+        </div>
+        <div class="column">
+          <Sedes title="Titulo 4" type="is-info" text="Descripcion de la sede" path="/enconstruccion/" image="programming.jpg"/>
+        </div>
+      </div>
     </div>
+    
   </div>
 </template>
 
 <script>
+
 import Banner from "../components/Banner.vue";
+import Sedes from "../components/Sedes.vue";
 
 export default {
   name: "About",
   components: {
-    Banner
+    Banner,
+    Sedes,
   },
   props: {
     type: String

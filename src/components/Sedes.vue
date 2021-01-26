@@ -1,0 +1,64 @@
+<template>
+  <div class="container">
+  <div class="card-image">
+    <figure>
+      <img :src="getImgUrl(image)" alt="Placeholder image">
+    </figure>
+  </div>
+  <div class="content">
+      <p class="title"> {{ title }} </p>
+      <p class="description">{{text}}</p>
+
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    "type": String,
+    "text": String,
+    "path": String,
+    "title": String,
+    "image":String
+  },
+  data() {
+    return {
+      title1: "Noticia",
+      url: "url del sitio"
+    }
+  },
+  methods:{
+    getImgUrl(value) {
+            return require(`@/assets/${value}`)
+        }
+  }
+}
+</script>
+
+<style scoped>
+.card-image {
+  text-align: center;
+}
+.title {
+  text-align: left;
+  font-size: 16px;
+  margin-left: 5%;
+}
+.description {
+  text-align: left;
+  font-size: 16px;
+  margin-left: 5%;
+  padding-bottom: 3%;
+}
+.columns, .content{
+  text-align: center;
+  padding-left: 5%;
+}
+figure {
+  display: block;
+  padding-top: 0px;
+  padding-bottom: 5%;
+  margin-left: 8%;
+}
+</style>
