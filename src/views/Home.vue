@@ -63,6 +63,11 @@
       </div>
       </div>
     </div>
+    <div class="container" style="padding-bottom:10%">
+      <router-link to="http://eepurl.com/gn7I3r" class="button newsletter ">
+          Suscribete al newsletter
+      </router-link> 
+    </div>
     <Footer> </Footer>
   </div>
 </template>
@@ -110,5 +115,11 @@ export default {
   }
   .container-home {
     padding-bottom: 20%;
+  }
+  .newsletter{
+    background-color: #2b88f7;
+    color: white;
+    font-size: 2em; 
+    margin-inline-start: 64%;
   }
 </style>
