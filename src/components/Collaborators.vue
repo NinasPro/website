@@ -4,7 +4,7 @@
     <div class="columns is-multiline is-mobile" >
       <div class="column is-3" v-for="item in data" :key="item.name">
           <a :href="item.url">
-          <img  :src="getImgUrl(item.image)" width="350px" >
+          <img  :src="getImgUrl(item.image)" width="270px" >
           </a>
       </div>
       

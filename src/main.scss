@@ -21,6 +21,8 @@ $light: #6fd0d8;
 $light-invert: #2b88f7;
 
 
+
+
 //Setup colors to use as bulma classes (e.g. 'is-twitter')
 $colors: (
   "white": (
@@ -58,7 +60,8 @@ $colors: (
   "danger": (
     $danger,
     $danger-invert
-  )
+  ),
+
 );
 
 // Links

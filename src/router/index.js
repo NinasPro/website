@@ -28,6 +28,12 @@ export default new Router({
       path: "/voluntariado/",
       component: () => import("@/views/Volunteer"),
       props: { type: "is-success" }
+    },
+    {
+      name: "underconstruction",
+      path: "/enconstruccion/",
+      component: () => import("@/views/UndCons"),
+      props: { type: "is-danger" }
     }
   ]
 });
