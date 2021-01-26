@@ -64,9 +64,9 @@
       </div>
     </div>
     <div class="container" style="padding-bottom:10%">
-      <router-link to="http://eepurl.com/gn7I3r" class="button newsletter ">
+      <a href="http://eepurl.com/gn7I3r" class="button newsletter ">
           Suscribete al newsletter
-      </router-link> 
+      </a> 
     </div>
     <Footer> </Footer>
   </div>
