@@ -10,49 +10,61 @@
             </div>
             <div class="tile is-parent is-vertical">
               <article class="tile is-child notification is-success">
-                <p class="title">
-                  Empoderaramos a niñas y adolescentes a través de la enseñanza de
-                  programación e inspiraramos vocaciones científicas y tecnológicas.
+                <p class="title">Misión</p>
+                <p>
+                Empoderamos niñas y adolescentes a través de la enseñanza de 
+                programación e inspiramos vocaciones científicas y tecnológicas.
                 </p>
               </article>
               <article class="tile is-child notification is-primary">
-                <p class="title">Este 2020</p>
-                <p class="subtitle">
-                ¡Nuevas sedes en Concepción, Coquimbo y Santiago!
-                </p>
+                <p class="title">Visión</p>
                 <p>
-                  El crecimiento de nuestra red de voluntarias y voluntarios a otras regiones
-                  nos ha permitido crear estas nuevas sedes, albergadas en la Universidad
-                  Católica del Norte, la Universidad de Concepción, la Universidad de los Andes
-                  y la Universidad de Chile.
+                Que todas las niñas de Chile vivan la ciencia y la 
+                tecnología libres de estereotipos de género.
                 </p>
               </article>
-              <div class="tile is-ancestor">
-                <div class="tile is-parent">
-                  <article class="tile is-child notification is-info">
-                    <p class="title">
-                      +600
-                    </p>
-                    <p class="subtitle">
-                       Niñas y Adolescentes
-                    </p>
-                  </article>
-                </div>
-                <div class="tile is-parent">
-                  <article class="tile is-child notification is-info">
-                    <p class="title">
-                      +40
-                    </p>
-                    <p class="subtitle">
-                      Personas Voluntarias
-                    </p>
-                  </article>
-                </div>
-              </div>
+              <article class="tile is-child notification is-warning">
+                <p class="title">Info</p>
+                <p>
+                ~Texto de relleno~
+                </p>
+              </article>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="container">
+      <div class="title">Historia</div>
+      <p>Niñas Pro nace en el año 2016 como una agrupación de mujeres estudiantes 
+        de ingeniería en computación que al ser testigos de la poca participación 
+        femenina en sus salas de clases, buscaban promover vocaciones tecnológicas 
+        en niñas y adolescentes a través de la enseñanza de programación competitiva.
+      </p>
+      <br>
+      <p>
+        En el año 2019 se formalizan como organización sin fines de lucro con un 
+        equipo multidisciplinario de 12 personas, quienes buscan a través de la 
+        enseñanza de programación y actividades de difusión, empoderar a niñas y 
+        adolescentes, inspirar vocaciones y fomentar la participación en programas 
+        STEAM (Acrónimo en inglés para Ciencias, Tecnología, Ingeniería, Artes y Matemáticas).
+      </p>
+      <br>
+      <p>
+        Con nuestras actividades hemos logrado aumentar todos los años la participación 
+        de mujeres en las Olimpiadas Chilenas de Informática y hemos impulsado que otros 
+        grupos de programación consideren la equidad de género como un tema importante 
+        dentro de sus actividades. En los cursos y talleres que impartimos han participado 
+        más de 500 niñas quienes han  adquirido conocimientos de programación y se han 
+        unido a la comunidad de Niñas Pro(gramadoras).
+      </p>
+      <br>
+      <p>
+        En Niñas Pro creemos que es importante derribar los estereotipos  y que las 
+        niñas vivan la experiencia de convertirse en creadoras de tecnología, para 
+        que de esa forma, decidan informadas si desean seguir una carrera STEAM 
+        en el futuro.
+      </p>
     </div>
   </div>
 </template>
@@ -73,7 +85,7 @@ export default {
 
 <style lang="scss" scoped>
   .np-content {
-    margin-top: 30px;
+    margin-top: 5%;
 
     .tile {
       border-radius: 25px;
@@ -90,5 +102,13 @@ export default {
         border-radius: 25px;
       }
     }
+  }
+  p {
+    text-align: justify;
+    font-size: 1.2rem;
+  }
+  .container {
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 </style>
