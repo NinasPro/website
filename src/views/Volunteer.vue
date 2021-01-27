@@ -50,7 +50,21 @@
           </div>          
         </div>        
       </div>    
-    </div>    
+    </div> 
+    <div class="container">
+      <div class="title">Proyectos en los que puedes involucrarte</div>
+      <div class="columns">
+        <div class="column">
+          <ProjectsVolunteer title="Proyecto 1" description="Descripción del proyecto"/>  
+        </div>
+        <div class="column">
+          <ProjectsVolunteer title="Proyecto 2" description="Descripción del proyecto"/>  
+        </div>
+        <div class="column">
+          <ProjectsVolunteer title="Proyecto 3" description="Descripción del proyecto"/>  
+        </div>
+      </div>
+    </div>   
   </div>
 </template>
 
@@ -58,11 +72,13 @@
 
 // This is necessary to access the Banner component
 import Banner from "../components/Banner.vue";
+import ProjectsVolunteer from "../components/ProjectsVolunteer.vue";
 
 export default {
   name: "Volunteer",
   components: {
-    Banner   
+    Banner,
+    ProjectsVolunteer,   
   },
   props: {
     type: String
@@ -73,6 +89,7 @@ export default {
 <style lang="scss" scoped>
 .container {
   margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 ol.star {
   list-style-type: circle;
