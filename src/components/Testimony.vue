@@ -1,15 +1,6 @@
 <template>
   <div class="container">
-  <div class="card">
-  <div class="card-content">
-    <p class="title">
-      "{{ title }}"
-    </p>
-    <p class="subtitle">
-      ~{{ name }}
-    </p>
-  </div>
-</div>
+    <p :class="`notification ${type}`">"{{ title }}", {{ name }}</p>
   </div>
 </template>
 

@@ -54,20 +54,33 @@
     <div class="container">
       <div class="title">Testimonios</div>
       <div class="columns is-multiline">
-        <div class="column">
-          <Testimony name="Jane Doe" title="Lorem ipsum"/>
+        <div class="column is-one-fifth">
+          <Testimony 
+          name="Jane Doe" 
+          title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris" 
+          type="is-success"/>
         </div>
-        <div class="column">
-          <Testimony name="Jane Doe" title="Lorem ipsum"/>
+        <div class="column is-one-fifth">
+          <Testimony 
+          name="Jane Doe" 
+          title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris" 
+          type="is-info"/>
         </div>
-        <div class="column">
-          <Testimony name="Jane Doe" title="Lorem ipsum"/>
+        <div class="column is-one-fifth">
+          <Testimony name="Jane Doe" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Phasellus nec iaculis mauris" type="is-danger"/>
         </div>
-        <div class="column">
-          <Testimony name="Jane Doe" title="Lorem ipsum"/>
+        <div class="column is-one-fifth">
+          <Testimony 
+          name="Jane Doe" 
+          title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris" 
+          type="is-primary"/>
         </div>
-        <div class="column">
-          <Testimony name="Jane Doe" title="Lorem ipsum"/>
+        <div class="column is-one-fifth">
+          <Testimony 
+          name="Jane Doe" 
+          title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris" 
+          type="is-warning"/>
         </div>
       </div>
     </div>   
