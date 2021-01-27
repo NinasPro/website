@@ -50,7 +50,27 @@
           </div>          
         </div>        
       </div>    
-    </div>    
+    </div> 
+    <div class="container">
+      <div class="title">Testimonios</div>
+      <div class="columns is-multiline">
+        <div class="column">
+          <Testimony name="Jane Doe" title="Lorem ipsum"/>
+        </div>
+        <div class="column">
+          <Testimony name="Jane Doe" title="Lorem ipsum"/>
+        </div>
+        <div class="column">
+          <Testimony name="Jane Doe" title="Lorem ipsum"/>
+        </div>
+        <div class="column">
+          <Testimony name="Jane Doe" title="Lorem ipsum"/>
+        </div>
+        <div class="column">
+          <Testimony name="Jane Doe" title="Lorem ipsum"/>
+        </div>
+      </div>
+    </div>   
   </div>
 </template>
 
@@ -58,11 +78,13 @@
 
 // This is necessary to access the Banner component
 import Banner from "../components/Banner.vue";
+import Testimony from "../components/Testimony.vue";
 
 export default {
   name: "Volunteer",
   components: {
-    Banner   
+    Banner,
+    Testimony,   
   },
   props: {
     type: String
