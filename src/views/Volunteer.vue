@@ -1,7 +1,8 @@
 <template>
   <div id="volunteer">
     <Banner :type="type" title="¿Cómo participar?" />
-    
+    <h1 class="title container">¿Que hace un Voluntario?</h1>
+    <Do/>
     <div class="container">
       <div class="tile is-ancestor">
         <div class="tile is-6 is-vertical is-parent">
@@ -58,11 +59,14 @@
 
 // This is necessary to access the Banner component
 import Banner from "../components/Banner.vue";
+import Do from "../components/VolunteerDo.vue";
+
 
 export default {
   name: "Volunteer",
   components: {
-    Banner   
+    Banner,
+    Do,   
   },
   props: {
     type: String
