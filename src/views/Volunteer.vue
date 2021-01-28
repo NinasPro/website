@@ -1,7 +1,7 @@
 <template>
   <div id="volunteer">
     <Banner :type="type" title="¿Cómo participar?" />
-    
+    <Project/>
     <div class="container">
       <div class="tile is-ancestor">
         <div class="tile is-6 is-vertical is-parent">
@@ -58,11 +58,13 @@
 
 // This is necessary to access the Banner component
 import Banner from "../components/Banner.vue";
+import Project from "../components/VolunteerProject.vue";
 
 export default {
   name: "Volunteer",
   components: {
-    Banner   
+    Banner,
+    Project,   
   },
   props: {
     type: String
