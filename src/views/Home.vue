@@ -40,6 +40,12 @@
       <Events > </Events>
     </div>
   </div>
+  <div>
+    <Information type='left' image='inspired.jpg' text = "Si tienes menos de 18 años. Diviértete, aprende y conecta con otras Niñas Pro como tú." titulo="¡Participa!" boton ="Ver proximas actividades" Path="/voluntariado/"></Information>
+  </div>
+  <div>
+    <Information type='right' image='django-girls.jpg' text = "Si quieres ayudarnos. Participa del voluntariado o ayúdanos a llegar a mas niñas a traves de donaciones." titulo="¡Involúcrate!" boton ="Mas información" Path="/proyectos/"></Information>
+  </div>
     <div class="container">
       <div class="container-home">
       <div class="columns">
@@ -71,6 +77,7 @@
 import Carrousel from "../components/Carrousel.vue";
 import ProjectsHome from "../components/ProjectsHome.vue";
 import Collaborators from '../components/Collaborators.vue';
+import Information from '../components/Information.vue';
 import Events from '../components/Event.vue';
 import News from "../components/News.vue";
 import Footer from "../components/Footer.vue";
@@ -82,6 +89,7 @@ export default {
     ProjectsHome,
     Collaborators,
     Events,
+    Information,
     News,
     Footer,
   },
