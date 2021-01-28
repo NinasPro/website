@@ -1,28 +1,27 @@
 <template>
   <div>
     <div class="container">
-      <div class="columns is-variable is-1">
-        <div class="column">
+      <div class="columns">
+        <div class="column is-one-quarter">
           <a :href="pathTw">
             <vue-fontawesome :icon="['fab', 'twitter']"/>
           </a>
         </div>
-        <div class="column">
+        <div class="column is-one-quarter">
           <a :href="pathFb">
             <vue-fontawesome :icon="['fab', 'facebook']"/>
           </a>
         </div>
-        <div class="column">
+        <div class="column is-one-quarter">
           <a :href="pathLi">
             <vue-fontawesome :icon="['fab', 'linkedin']"/>
           </a>
         </div>
-        <div class="column">
+        <div class="column is-one-quarter">
           <a :href="pathIg">
             <vue-fontawesome :icon="['fab', 'instagram']"/>
           </a>
         </div>
-        <div class="column"></div>
       </div>
     </div>
   </div>
