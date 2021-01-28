@@ -23,7 +23,7 @@
           Proyecto Incentiva
         </b-navbar-item>
       </b-navbar-dropdown>
-      <b-navbar-item tag="router-link" :to="{ path: '/somos/' }">
+      <b-navbar-item tag="router-link" :to="{ path: '/enconstruccion/' }">
         Eventos
       </b-navbar-item>
       <b-navbar-item tag="router-link" :to="{ path: '/somos/' }">
