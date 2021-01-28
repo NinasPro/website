@@ -69,7 +69,6 @@
       </div>
       </div>
     </div>
-    <Footer> </Footer>
   </div>
 </template>
 
@@ -80,7 +79,6 @@ import Collaborators from '../components/Collaborators.vue';
 import Information from '../components/Information.vue';
 import Events from '../components/Event.vue';
 import News from "../components/News.vue";
-import Footer from "../components/Footer.vue";
 
 export default {
   name: "Home",
@@ -91,7 +89,6 @@ export default {
     Events,
     Information,
     News,
-    Footer,
   },
   props: {
     type: String
