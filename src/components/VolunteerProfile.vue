@@ -30,7 +30,7 @@ export default {
     background-color: #ffa4e5;
     color:white;
     font-size: 1.3em;
-    border-radius: 80px 80px 80px 80px;
+    border-radius: 25px;
 }
 .margin{
     margin-inline-start: 60px;
