@@ -1,6 +1,6 @@
 <template>
   <div id="volunteer">
-    <Banner :type="type" title="¿Cómo participar?" link="/voluntariado/" button="Pronto"/>
+    <Banner :type="type" title="¿Cómo participar?" />
     
     <div class="container">
       <div class="tile is-ancestor">

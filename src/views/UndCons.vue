@@ -1,6 +1,6 @@
 <template>
   <div id="underconstruction">
-      <Banner :type="type" title="En Construcción" link="/voluntariado/" button="Pronto"/>
+      <Banner :type="type" title="En Construcción" />
   </div>
 </template>
 
