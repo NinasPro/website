@@ -44,9 +44,6 @@ export default {
         "titulo":String,
         "Path" : String,
     },
-    data () {
-
-    },
     methods: {
         getImgUrl(value) {
             return require(`@/assets/${value}`)
