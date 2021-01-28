@@ -14,18 +14,21 @@
         </p>
       </div>
     </div>
+    <PeopleCarousel title="Equipo" :type="type"/>
   </div>
 </template>
 
 <script>
 import Banner from "../components/Banner.vue";
 import PhotoBanner from "../components/PhotoBanner.vue";
+import PeopleCarousel from "../components/PeopleCarousel.vue";
 
 export default {
   name: "Projects",
   components: {
     Banner,
-    PhotoBanner
+    PhotoBanner,
+    PeopleCarousel,
   },
   props: {
     type: String

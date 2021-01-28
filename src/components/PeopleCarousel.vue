@@ -15,7 +15,7 @@
       :items-to-list="increment"
       >
       <template slot="item" slot-scope="props">
-          <div >
+          <div>
               <div class="card-image">
                   <figure class="image is-5by4">
                       <img :src="props.list.image">
