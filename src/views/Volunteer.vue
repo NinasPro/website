@@ -66,6 +66,7 @@
         <div class="column">
           <ProjectsVolunteer title="Proyecto 4" description="Descripción del proyecto"/>  
         </div>
+      </div>
     </div>
     <div class="container">
       <div class="title">Testimonios</div>
