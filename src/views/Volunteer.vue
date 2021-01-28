@@ -1,7 +1,7 @@
 <template>
   <div id="volunteer">
     <Banner :type="type" title="¿Cómo participar?" />
-    <h1 class="title container">¿Que hace un Voluntario?</h1>
+    <h1 class="title container">¿Que hace una persona voluntaria en Niñas Pro?</h1>
     <Do/>
     <div class="container">
       <div class="tile is-ancestor">
@@ -91,4 +91,3 @@ ol.star {
   }
 }
 </style>
-
