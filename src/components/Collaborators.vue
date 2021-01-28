@@ -1,10 +1,10 @@
 <template>
   
-  <div>
+  <div class="container">
     <div class="columns is-multiline is-mobile" >
       <div class="column is-3" v-for="item in data" :key="item.name">
           <a :href="item.url">
-          <img  :src="getImgUrl(item.image)" width="350px" >
+          <img  :src="getImgUrl(item.image)" width="270px" >
           </a>
       </div>
       
@@ -36,3 +36,9 @@ export default {
 }
 </script>
 
+<style scoped>
+.container {
+  padding-top: 0px;
+  padding-left: 20px;
+}
+</style>

@@ -54,16 +54,19 @@
         </div>
       </div>
     </div>
+    <PeopleCarousel title="Directiva" :type="type"/>
   </div>
 </template>
 
 <script>
 import Banner from "../components/Banner.vue";
+import PeopleCarousel from "../components/PeopleCarousel.vue";
 
 export default {
   name: "About",
   components: {
-    Banner
+    Banner,
+    PeopleCarousel,
   },
   props: {
     type: String
