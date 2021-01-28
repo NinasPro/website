@@ -52,6 +52,23 @@
       </div>    
     </div> 
     <div class="container">
+      <div class="title">Proyectos en los que puedes involucrarte</div>
+      <div class="columns">
+        <div class="column">
+          <ProjectsVolunteer title="Proyecto 1" description="Descripción del proyecto"/>  
+        </div>
+        <div class="column">
+          <ProjectsVolunteer title="Proyecto 2" description="Descripción del proyecto"/>  
+        </div>
+        <div class="column">
+          <ProjectsVolunteer title="Proyecto 3" description="Descripción del proyecto"/>  
+        </div>
+        <div class="column">
+          <ProjectsVolunteer title="Proyecto 4" description="Descripción del proyecto"/>  
+        </div>
+      </div>
+    </div>
+    <div class="container">
       <div class="title">Testimonios</div>
       <div class="columns is-multiline">
         <div class="column is-one-fifth">
@@ -91,13 +108,15 @@
 
 // This is necessary to access the Banner component
 import Banner from "../components/Banner.vue";
+import ProjectsVolunteer from "../components/ProjectsVolunteer.vue";
 import Testimony from "../components/Testimony.vue";
 
 export default {
   name: "Volunteer",
   components: {
     Banner,
-    Testimony,   
+    ProjectsVolunteer,   
+    Testimony,
   },
   props: {
     type: String
@@ -108,6 +127,7 @@ export default {
 <style lang="scss" scoped>
 .container {
   margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 ol.star {
   list-style-type: circle;
