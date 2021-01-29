@@ -63,8 +63,8 @@
       </div>
       </div>
     </div>
-    <div class="container container-newsletter">
-      <a href="http://eepurl.com/gn7I3r" class="button newsletter ">
+    <div class="container container-newsletter" >
+      <a href="http://eepurl.com/gn7I3r" class="button newsletter " >
           Suscribete al newsletter
       </a> 
     </div>
@@ -120,7 +120,7 @@ export default {
     background-color: #2b88f7;
     color: white;
     font-size: 1.7em; 
-    margin-inline-start: 64%;
+    margin-inline-start: 36%;
     
   }
   .container-newsletter{
