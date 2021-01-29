@@ -41,7 +41,7 @@
         <button class="button navbar-donation" v-if="type !== 'is-warning' && type !== 'is-info'">
           Dona
         </button>
-        <button class="button navbar-donation-info" v-if="type !== 'is-warning' || type !== 'is-info'">
+        <button class="button navbar-donation-info" v-if="type === 'is-warning' || type === 'is-info'">
           Dona
         </button>
       </b-navbar-item>
