@@ -37,11 +37,11 @@
           Involucrate
         </button>
       </b-navbar-item>
-      <b-navbar-item   tag="router-link" style="padding: 0px 20px;" :to="{ path: '/voluntariado/' }">
-        <button class="button navbar-donation" v-if="type !== 'is-warning' && type !== 'is-info'">
+      <b-navbar-item   tag="router-link" style="padding: 0px 20px;" > <!-- Para habilitarlo se debe colocar un path-->
+        <button class="button navbar-donation" v-if="type !== 'is-warning' && type !== 'is-info'" >
           Dona
         </button>
-        <button class="button navbar-donation-info" v-if="type === 'is-warning' || type === 'is-info'">
+        <button class="button navbar-donation-info" v-if="type === 'is-warning' || type === 'is-info'" >
           Dona
         </button>
       </b-navbar-item>
