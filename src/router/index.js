@@ -34,6 +34,30 @@ export default new Router({
       path: "/enconstruccion/",
       component: () => import("@/views/UndCons"),
       props: { type: "is-danger" }
-    }
+    },
+    {
+      name: "inspira",
+      path: "/inspira/",
+      component: () => import("@/views/Inspira"),
+      props: { type: "is-info" }
+    },
+    {
+      name: "incentiva",
+      path: "/incentiva/",
+      component: () => import("@/views/Incentiva"),
+      props: { type: "is-info" }
+    },
+    {
+      name: "empodera",
+      path: "/empodera/",
+      component: () => import("@/views/Empodera"),
+      props: { type: "is-info" }
+    },
+    {
+      name: "potencia",
+      path: "/potencia/",
+      component: () => import("@/views/Potencia"),
+      props: { type: "is-info" }
+    },
   ]
 });
