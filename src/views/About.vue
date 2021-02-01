@@ -79,13 +79,11 @@
 
 <script>
 import Banner from "../components/Banner.vue";
-import PeopleCarousel from "../components/PeopleCarousel.vue";
 
 export default {
   name: "About",
   components: {
     Banner,
-    PeopleCarousel,
   },
   props: {
     type: String

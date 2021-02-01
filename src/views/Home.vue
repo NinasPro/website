@@ -69,6 +69,12 @@
       </div>
       </div>
     </div>
+    <div class="container container-newsletter" >
+      <a href="http://eepurl.com/gn7I3r" class="button newsletter " >
+          Suscribete al newsletter
+      </a> 
+    </div>
+    <Footer> </Footer>
   </div>
 </template>
 
@@ -115,5 +121,14 @@ export default {
   }
   .container-home {
     padding-bottom: 20%;
+  }
+  .newsletter{
+    background-color: #2b88f7;
+    color: white;
+    font-size: 1.7em; 
+  }
+  .container-newsletter{
+    padding-bottom:10%;
+    text-align:center;
   }
 </style>
