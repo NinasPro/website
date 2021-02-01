@@ -120,10 +120,9 @@ export default {
     background-color: #2b88f7;
     color: white;
     font-size: 1.7em; 
-    margin-inline-start: 36%;
-    
   }
   .container-newsletter{
-    padding-bottom:10%
+    padding-bottom:10%;
+    text-align:center;
   }
 </style>
