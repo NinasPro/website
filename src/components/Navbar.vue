@@ -10,16 +10,16 @@
     </template>
     <template slot="end">
       <b-navbar-dropdown label="Iniciativas" >
-        <b-navbar-item tag="router-link" :to="{ path: '/proyectos/' }"  >
+        <b-navbar-item tag="router-link" :to="{ path: '/inspira/' }"  >
           Proyecto Inspira
         </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/proyectos/' }"  > 
+        <b-navbar-item tag="router-link" :to="{ path: '/empodera/' }"  > 
           Proyecto Empodera
         </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/proyectos/' }" >
+        <b-navbar-item tag="router-link" :to="{ path: '/potencia/' }" >
           Proyecto Potencia
         </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/proyectos/' }" >
+        <b-navbar-item tag="router-link" :to="{ path: '/incentiva/' }" >
           Proyecto Incentiva
         </b-navbar-item>
       </b-navbar-dropdown>
