@@ -12,8 +12,8 @@
               <article class="tile is-child notification is-success">
                 <p class="title">Misión</p>
                 <p>
-                Empoderamos niñas y adolescentes a través de la enseñanza de 
-                programación e inspiramos vocaciones científicas y tecnológicas.
+                Empoderar niñas y adolescentes a través de la enseñanza de 
+                programación e inspirar vocaciones científicas y tecnológicas.
                 </p>
               </article>
               <article class="tile is-child notification is-primary">
@@ -24,9 +24,10 @@
                 </p>
               </article>
               <article class="tile is-child notification is-warning">
-                <p class="title">Info</p>
+                <p class="title">Comunidad</p>
                 <p>
-                ~Texto de relleno~
+                Confiamos en que colaborando y trabajando en equipo podemos
+                lograr nuestro objetivo.
                 </p>
               </article>
             </div>
@@ -36,34 +37,41 @@
     </div>
     <div class="container">
       <div class="title">Historia</div>
-      <p>Niñas Pro nace en el año 2016 como una agrupación de mujeres estudiantes 
-        de ingeniería en computación que al ser testigos de la poca participación 
-        femenina en sus salas de clases, buscaban promover vocaciones tecnológicas 
-        en niñas y adolescentes a través de la enseñanza de programación competitiva.
+      <p>Niñas Pro nace en el año 2016 como una agrupación de mujeres 
+      estudiantes de ingeniería que,al ser testigos de la poca 
+      participación femenina en sus salas de clases, comenzaron a 
+      realizar un curso gratuito de programación competitiva para 
+      niñas y con ello promover vocaciones tecnológicas en niñas y 
+      adolescentes.
       </p>
       <br>
       <p>
-        En el año 2019 se formalizan como organización sin fines de lucro con un 
-        equipo multidisciplinario de 12 personas, quienes buscan a través de la 
-        enseñanza de programación y actividades de difusión, empoderar a niñas y 
-        adolescentes, inspirar vocaciones y fomentar la participación en programas 
-        STEAM (Acrónimo en inglés para Ciencias, Tecnología, Ingeniería, Artes y Matemáticas).
+        En el año 2019 Niñas Pro se formaliza como organización sin 
+        fines de lucro con un gran equipo de voluntariado en Santiago 
+        y en el año 2020, se crean nuevas sedes (equipos auto-gestionados 
+        de voluntariado) en Coquimbo y Concepción. Gracias al voluntariado
+        y colaboraciones con universidades, empresas e instituciones públicas 
+        realizamos cada año el curso anual de programación competitiva, 
+        talleres introductorios de programación o electrónica y diferentes 
+        proyectos para difundir las ciencias y la tecnología con niñas y 
+        adolescentes.
       </p>
       <br>
       <p>
-        Con nuestras actividades hemos logrado aumentar todos los años la participación 
-        de mujeres en las Olimpiadas Chilenas de Informática y hemos impulsado que otros 
-        grupos de programación consideren la equidad de género como un tema importante 
-        dentro de sus actividades. En los cursos y talleres que impartimos han participado 
-        más de 500 niñas quienes han  adquirido conocimientos de programación y se han 
+        Con nuestras actividades hemos logrado aumentar todos los años la 
+        participación de mujeres en la Olimpiada Chilenas de Informática 
+        y hemos impulsado que otros grupos de programación consideren la 
+        equidad de género como un tema importante dentro de sus actividades. 
+        En los cursos y talleres que impartimos han participado más de 2000 
+        niñas quienes han adquirido conocimientos de programación y se han 
         unido a la comunidad de Niñas Pro(gramadoras).
       </p>
       <br>
       <p>
-        En Niñas Pro creemos que es importante derribar los estereotipos  y que las 
-        niñas vivan la experiencia de convertirse en creadoras de tecnología, para 
-        que de esa forma, decidan informadas si desean seguir una carrera STEAM 
-        en el futuro.
+        En Niñas Pro creemos que es importante derribar los estereotipos
+        y que las niñas vivan la experiencia de convertirse en creadoras
+        de tecnología, para que de esa forma, decidan informadas si desean
+        seguir una carrera STEAM en el futuro.
       </p>
     </div>
   </div>
