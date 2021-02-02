@@ -3,6 +3,7 @@
     <Banner :type="type" title="¿Cómo participar?" />
     <h1 class="title container">¿Que hace una persona voluntaria en Niñas Pro?</h1>
     <Do/>
+    <Profile/>
     <div class="container">
       <div class="tile is-ancestor">
         <div class="tile is-6 is-vertical is-parent">
@@ -51,7 +52,57 @@
           </div>          
         </div>        
       </div>    
-    </div>    
+    </div> 
+    <div class="container">
+      <div class="title">Proyectos en los que puedes involucrarte</div>
+      <div class="columns">
+        <div class="column">
+          <ProjectsVolunteer title="Proyecto 1" description="Descripción del proyecto"/>  
+        </div>
+        <div class="column">
+          <ProjectsVolunteer title="Proyecto 2" description="Descripción del proyecto"/>  
+        </div>
+        <div class="column">
+          <ProjectsVolunteer title="Proyecto 3" description="Descripción del proyecto"/>  
+        </div>
+        <div class="column">
+          <ProjectsVolunteer title="Proyecto 4" description="Descripción del proyecto"/>  
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="title">Testimonios</div>
+      <div class="columns is-multiline">
+        <div class="column is-one-fifth">
+          <Testimony 
+          name="Jane Doe" 
+          title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris" 
+          type="is-success"/>
+        </div>
+        <div class="column is-one-fifth">
+          <Testimony 
+          name="Jane Doe" 
+          title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris" 
+          type="is-info"/>
+        </div>
+        <div class="column is-one-fifth">
+          <Testimony name="Jane Doe" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Phasellus nec iaculis mauris" type="is-danger"/>
+        </div>
+        <div class="column is-one-fifth">
+          <Testimony 
+          name="Jane Doe" 
+          title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris" 
+          type="is-primary"/>
+        </div>
+        <div class="column is-one-fifth">
+          <Testimony 
+          name="Jane Doe" 
+          title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris" 
+          type="is-warning"/>
+        </div>
+      </div>
+    </div>   
   </div>
 </template>
 
@@ -60,13 +111,18 @@
 // This is necessary to access the Banner component
 import Banner from "../components/Banner.vue";
 import Do from "../components/VolunteerDo.vue";
-
+import Profile from "../components/VolunteerProfile.vue";
+import ProjectsVolunteer from "../components/ProjectsVolunteer.vue";
+import Testimony from "../components/Testimony.vue";
 
 export default {
   name: "Volunteer",
   components: {
     Banner,
     Do,   
+    Profile,   
+    ProjectsVolunteer,   
+    Testimony,
   },
   props: {
     type: String
@@ -77,6 +133,7 @@ export default {
 <style lang="scss" scoped>
 .container {
   margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 ol.star {
   list-style-type: circle;

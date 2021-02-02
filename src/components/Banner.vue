@@ -7,7 +7,7 @@
             <h1 class="title">
               {{title}}
             </h1>
-            <router-link :to="link"
+            <router-link :to="link" v-if="link = undefined"
               :class="`button ${type} is-inverted is-rounded is-large is-outlined`">
               {{button}}
             </router-link>

@@ -1,31 +1,18 @@
 <template>
-  <div>
-    <div class="container">
-      <div class="columns is-variable is-1">
-        <div class="column">
-          <a :href="pathTw">
-            <vue-fontawesome :icon="['fab', 'twitter']"/>
-          </a>
-        </div>
-        <div class="column">
-          <a :href="pathFb">
-            <vue-fontawesome :icon="['fab', 'facebook']"/>
-          </a>
-        </div>
-        <div class="column">
-          <a :href="pathLi">
-            <vue-fontawesome :icon="['fab', 'linkedin']"/>
-          </a>
-        </div>
-        <div class="column">
-          <a :href="pathIg">
-            <vue-fontawesome :icon="['fab', 'instagram']"/>
-          </a>
-        </div>
-        <div class="column"></div>
-      </div>
-    </div>
-  </div>
+<div class="block">
+    <a class="rrss-icon" target="_blank" :href="pathTw">
+      <vue-fontawesome :icon="['fab', 'twitter']"/>
+    </a>
+    <a class="rrss-icon" target="_blank" :href="pathFb">
+      <vue-fontawesome :icon="['fab', 'facebook']"/>
+      </a>
+    <a class="rrss-icon" target="_blank" :href="pathLi">
+      <vue-fontawesome :icon="['fab', 'linkedin']"/>
+    </a>
+    <a class="rrss-icon" target="_blank" :href="pathIg">
+      <vue-fontawesome :icon="['fab', 'instagram']"/>
+    </a>
+</div>
 </template>
 
 <script>
@@ -49,5 +36,9 @@ export default {
   }
   a {
     color: white;
+  }
+  .rrss-icon {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 </style>
