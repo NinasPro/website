@@ -1,6 +1,8 @@
 <template>
   <div id="volunteer">
     <Banner :type="type" title="¿Cómo participar?" />
+    <h1 class="title container">¿Que hace una persona voluntaria en Niñas Pro?</h1>
+    <Do/>
     <Profile/>
     <div class="container">
       <div class="tile is-ancestor">
@@ -108,6 +110,7 @@
 
 // This is necessary to access the Banner component
 import Banner from "../components/Banner.vue";
+import Do from "../components/VolunteerDo.vue";
 import Profile from "../components/VolunteerProfile.vue";
 import ProjectsVolunteer from "../components/ProjectsVolunteer.vue";
 import Testimony from "../components/Testimony.vue";
@@ -116,6 +119,7 @@ export default {
   name: "Volunteer",
   components: {
     Banner,
+    Do,   
     Profile,   
     ProjectsVolunteer,   
     Testimony,
@@ -144,4 +148,3 @@ ol.star {
   }
 }
 </style>
-
