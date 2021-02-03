@@ -30,20 +30,20 @@
         Somos
       </b-navbar-item>
       <b-navbar-item   tag="router-link" style="padding: 0px 20px;" :to="{ path: '/voluntariado/' }">
-        <button class="button is-info navbar-involucrate" v-if="type !== 'is-info'">
+        <a class="button is-info is-rounded is-medium" v-if="type !== 'is-info'">
           Involucrate
-        </button>
-        <button class="button is-warning navbar-involucrate" v-if="type === 'is-info'">
+        </a>
+        <a class="button is-warning is-rounded is-medium" v-if="type === 'is-info'">
           Involucrate
-        </button>
+        </a>
       </b-navbar-item>
-      <b-navbar-item   tag="router-link" style="padding: 0px 20px;" > <!-- Para habilitarlo se debe colocar un path-->
-        <button class="button navbar-donation" v-if="type !== 'is-warning' && type !== 'is-info'" >
+      <b-navbar-item   tag="router-link" style="padding: 0px 20px;" :to="{ path: '/voluntariado/' }"> <!-- Para habilitarlo se debe colocar un path-->
+        <a class="button navbar-donation is-rounded is-medium" v-if="type !== 'is-warning' && type !== 'is-info'" >
           Dona
-        </button>
-        <button class="button navbar-donation-info" v-if="type === 'is-warning' || type === 'is-info'" >
+        </a>
+        <a class="button navbar-donation-info is-rounded is-medium" v-if="type === 'is-warning' || type === 'is-info'" >
           Dona
-        </button>
+        </a>
       </b-navbar-item>
     </template>
   </b-navbar>
@@ -75,28 +75,18 @@ export default {
 
 }
 .navbar-donation{
-  margin-top:40px; 
-  width: 50px; 
-  margin:0px 0px; 
   background: transparent;
   border-color: #fdca36;
   border-width: 5px; 
   color:#fdca36;
 }
-.navbar-donation-info{
-  margin-top:40px; 
-  width: 50px; 
-  margin:0px 0px; 
+.navbar-donation-info{  
   background: transparent;
   border-color: #2b88f7;
   border-width: 5px; 
   color:#2b88f7;
 }
 
-.navbar-involucrate{
-  margin-top:40px; 
-  margin:0px 0px;
-}
 
 
 </style>

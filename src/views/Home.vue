@@ -70,7 +70,7 @@
       </div>
     </div>
     <div class="container container-newsletter" >
-      <a href="http://eepurl.com/gn7I3r" class="button newsletter " >
+      <a href="http://eepurl.com/gn7I3r" class="button newsletter is-rounded is-medium " >
           Suscribete al newsletter
       </a> 
     </div>
