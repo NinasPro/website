@@ -1,7 +1,7 @@
 <template>
   <div id="home">
     <Carrousel :type="type"/>
-    <div class="container">
+    <div class="container">  <!--Iniciativas-->
       <div class="container-home">
         <div class="columns is-variable is-1">
           <div class="column">
@@ -22,30 +22,33 @@
           </div>
         </div>
       </div>
+    </div>
+    <!--Information-->
+    <div>
+      <Information type='left' image='inspired.jpg' text = "Si tienes menos de 18 años. Diviértete, aprende y conecta con otras Niñas Pro como tú." titulo="¡Participa!" boton ="Ver proximas actividades" Path="/voluntariado/"></Information>
+    </div>
+    <div>
+      <Information type='right' image='django-girls.jpg' text = "Si quieres ayudarnos. Participa del voluntariado o ayúdanos a llegar a mas niñas a traves de donaciones." titulo="¡Involúcrate!" boton ="Mas información" Path="/proyectos/"></Information>
+    </div>
+    <!--Eventos -->
+    <div>
       <div class="container">
-        <div class="container-home">
-          <h1 class="title"> Nuestros Partners </h1>
-          <Collaborators type="is-collaborators" ></Collaborators>
-        </div>
+        <h2 class="title" >
+            Próximos eventos
+        </h2> 
+      </div>
+      <div class="container-home">
+        <Events > </Events>
       </div>
     </div>
-
-  <div>
+    <!--Collaborators and partners -->
     <div class="container">
-       <h2 class="title" >
-           Próximos eventos
-       </h2> 
+      <div class="container-home">
+        <h1 class="title"> Nuestros Partners </h1>
+          <Collaborators type="is-collaborators" ></Collaborators>
+      </div>
     </div>
-    <div class="container-home">
-      <Events > </Events>
-    </div>
-  </div>
-  <div>
-    <Information type='left' image='inspired.jpg' text = "Si tienes menos de 18 años. Diviértete, aprende y conecta con otras Niñas Pro como tú." titulo="¡Participa!" boton ="Ver proximas actividades" Path="/voluntariado/"></Information>
-  </div>
-  <div>
-    <Information type='right' image='django-girls.jpg' text = "Si quieres ayudarnos. Participa del voluntariado o ayúdanos a llegar a mas niñas a traves de donaciones." titulo="¡Involúcrate!" boton ="Mas información" Path="/proyectos/"></Information>
-  </div>
+    <!-- News -->
     <div class="container">
       <div class="container-home">
       <div class="columns">
@@ -69,12 +72,12 @@
       </div>
       </div>
     </div>
+    <!-- Newsletter Button -->
     <div class="container container-newsletter" >
       <a href="http://eepurl.com/gn7I3r" class="button newsletter is-rounded is-medium " >
           Suscribete al newsletter
       </a> 
     </div>
-    <Footer> </Footer>
   </div>
 </template>
 
