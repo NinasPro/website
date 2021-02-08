@@ -74,16 +74,19 @@
         seguir una carrera STEAM en el futuro.
       </p>
     </div>
+    <Memorie/>
   </div>
 </template>
 
 <script>
 import Banner from "../components/Banner.vue";
+import Memorie from "../components/Memories.vue";
 
 export default {
   name: "About",
   components: {
     Banner,
+    Memorie,
   },
   props: {
     type: String
