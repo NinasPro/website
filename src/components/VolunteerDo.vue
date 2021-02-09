@@ -1,7 +1,7 @@
 <template>
     <div class="container">
     <div class="columns is-multiline is-mobile" >
-      <div class="column is-3" v-for="item in data" :key="item.name" >
+      <div class="column is-3" v-for="item in data" :key="item.title" >
           <img  class="image-bordes" :src="getImgUrl(item.image)" width="60%" >
           <h1 class="title title-style" > {{item.title}}</h1>
           <ol class="star">
@@ -16,14 +16,10 @@
 </template>
 
 <script>
+import * as Data from '../data/volunteer.js';
 export default {
     data(){
-        const data = [
-        {'title':'Titulo 1','image':'ninastic.jpg','lista':['Linea 1','Linea 2','Linea 3']},
-        {'title':'Titulo 2','image':'ninastic.jpg','lista':['Linea 1','Linea 2','Linea 3']},
-        {'title':'Titulo 3','image':'ninastic.jpg','lista':['Linea 1','Linea 2','Linea 3']},
-        {'title':'Titulo 4','image':'ninastic.jpg','lista':['Linea 1','Linea 2','Linea 3']},
-           ]
+        const data = Data.default.doData
         return {
         data,
         }
