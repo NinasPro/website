@@ -6,12 +6,7 @@
             </div>
             <div class="column is-half" >
                 <ol class="star">
-                    <li class="text"> Esto es un texto de prueba, para luego ser reemplazado </li>
-                    <li class="text"> Estamos viendo el tamaño de las letras y el espacio que puede tomar cada una de estas </li>
-                    <li class="text"> Esperando texto </li>
-                    <li class="text"> Esperando texto </li>
-                    <li class="text"> Esperando texto </li>
-                    <li class="text"> Esperando texto </li>
+                    <li class="text" v-for="text in data" :key="text.id"> {{text.text}} </li>
                 </ol>
             </div>
         </div>
@@ -20,8 +15,14 @@
 </template>
 
 <script>
+import * as Data from '../data/volunteer.js';
 export default {
-    
+    data () {
+    const data = Data.default.profileData
+    return {
+      data,
+    }
+  },
 }
 </script>
 
