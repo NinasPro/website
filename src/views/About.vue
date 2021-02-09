@@ -31,11 +31,13 @@
         </p>
         
     </div>
+    <Memorie/>
   </div>
 </template>
 
 <script>
 import Banner from "../components/Banner.vue";
+import Memorie from "../components/Memories.vue";
 import * as Informacion from '../data/about.js';
 
 export default {
@@ -50,6 +52,7 @@ export default {
   },
   components: {
     Banner,
+    Memorie,
   },
   props: {
     type: String
