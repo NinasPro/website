@@ -8,7 +8,7 @@
             <div class="column "> 
                 <h1 class="title style-title-right" align="left" > {{titulo}}</h1>
                 <div class =" style-text-right"  align="left">{{text}} </div>
-                <router-link :to="Path" class="button-information button is-info " style=" margin-inline-start: 15%;">
+                <router-link :to="Path" class="button-information button is-info is-rounded is-medium" style=" margin-inline-start: 15%;">
                      {{boton}} 
                 </router-link>
             </div>
@@ -19,7 +19,7 @@
             <div class="column"> 
                 <h1 class="title style-title-left" align="left"> {{titulo}}</h1>
                 <div class =" style-text-left"  align="left" >{{text}} </div>
-                <router-link :to="Path" class="button-information button is-success " style="margin-inline-start: 25%;">
+                <router-link :to="Path" class="button-information button is-success is-rounded is-medium " style="margin-inline-start: 25%;">
                     {{boton}}
                 </router-link> 
             </div>

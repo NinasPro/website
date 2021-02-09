@@ -2,7 +2,7 @@
   
   <div class="container block">
     <div class="columns is-multiline is-mobile block" >
-      <div class="column is-3 block" v-for="item in data" :key="item.name" align="center">
+      <div class="column is-3-desktop is-6-mobile block" v-for="item in data" :key="item.name" align="center">
           <a :href="item.url">
           <img  class ="block" :src="getImgUrl(item.image)" >
           </a>

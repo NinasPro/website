@@ -8,20 +8,20 @@
         <div class="column is-2">
           <strong >Somos</strong> 
           <ul>
-            <li><router-link class="footer-link" to="/somos/">Misión</router-link></li>
-            <li><router-link class="footer-link" to="/somos/">Visión</router-link></li>
-            <li><router-link class="footer-link" to="/somos/">Comunidad</router-link></li>
-            <li><router-link class="footer-link" to="/somos/">Historia</router-link></li>
-            <li><router-link class="footer-link" to="/somos/">Memorias</router-link></li>
+            <li><router-link class="footer-link" to="/somos#mision">Misión</router-link></li>
+            <li><router-link class="footer-link" to="/somos#vision">Visión</router-link></li>
+            <li><router-link class="footer-link" to="/somos#comunidad">Comunidad</router-link></li>
+            <li><router-link class="footer-link" to="/somos#historia">Historia</router-link></li>
+            <li><router-link class="footer-link" to="/somos#memoria">Memorias</router-link></li>
           </ul> 
         </div>
         <div class="column is-2">
           <strong >Proyectos</strong> 
           <ul>
-            <li><router-link class="footer-link" to="/proyectos/">Empodera</router-link></li>
-            <li><router-link class="footer-link" to="/proyectos/">Incentiva</router-link></li>
-            <li><router-link class="footer-link" to="/proyectos/">Inspira</router-link></li>
-            <li><router-link class="footer-link" to="/proyectos/">Potencia</router-link></li>
+            <li><router-link class="footer-link" to="/empodera/">Empodera</router-link></li>
+            <li><router-link class="footer-link" to="/incentiva/">Incentiva</router-link></li>
+            <li><router-link class="footer-link" to="/inspira/">Inspira</router-link></li>
+            <li><router-link class="footer-link" to="/potencia/">Potencia</router-link></li>
           </ul>
         </div>
         <div class="column is-2">
