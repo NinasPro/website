@@ -4,14 +4,14 @@
     <div class="container">  <!--Iniciativas-->
       <div class="container-home">
         <div class="columns is-variable is-1">
-          <div class="column" v-for="project in projectsHome" :key="project">
+          <div class="column" v-for="project in dataProjectsHome" :key="project">
             <ProjectsHome :title=project.title :type=project.type :image=project.image :path=project.path :description=project.description />
           </div>
         </div>
       </div>
     </div>
     <!--Information-->
-    <div v-for="item in information" :key="item">
+    <div v-for="item in dataInformation" :key="item">
       <Information :type=item.type :image=item.image :text=item.text :titulo=item.titulo :boton=item.boton :Path=item.path />
     </div>
     <!--Eventos -->
@@ -35,25 +35,19 @@
     <!-- News -->
     <div class="container">
       <div class="container-home">
-      <div class="columns">
-        <div class="column">
-          <h1 class=title>Noticias</h1>
+        <div class="columns">
+          <div class="column">
+            <h1 class=title>Noticias</h1>
+          </div>
+          <div class="column">
+            <b-button rounded class="moreinfobutton" type="is-medium is-info" @click="clickMe">Ver todas</b-button>
+          </div>
         </div>
-        <div class="column">
-          <b-button rounded class="moreinfobutton" type="is-medium is-info" @click="clickMe">Ver todas</b-button>
+        <div class="columns">
+          <div class="column" v-for="report in dataNews" :key="report">
+            <News :title=report.title :type=report.type :text=report.text :path=report.path />
+          </div>
         </div>
-      </div>
-      <div class="columns">
-        <div class="column">
-          <News title="Titulo 1" type="is-info" text="Ver noticia completa" path="/enconstruccion/"/>
-        </div>
-        <div class="column">
-          <News title="Titulo 2" type="is-info" text="Ver noticia completa" path="/enconstruccion/"/>
-        </div>
-        <div class="column">
-          <News title="Titulo 3" type="is-info" text="Ver noticia completa" path="/enconstruccion/"/>
-        </div>
-      </div>
       </div>
     </div>
     <!-- Newsletter Button -->
@@ -77,11 +71,13 @@ import * as Data from '../data/home.js';
 export default {
   name: "Home",
   data(){
-    const projectsHome = Data.default.projectsHome
-    const information = Data.default.information
+    const dataProjectsHome = Data.default.projectsHome
+    const dataInformation = Data.default.information
+    const dataNews= Data.default.news
     return{
-      projectsHome,
-      information,
+      dataProjectsHome,
+      dataInformation,
+      dataNews,
     }
   },
   components: {

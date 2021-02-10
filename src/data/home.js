@@ -9,5 +9,10 @@ export default ({
     information:[
         {'type':'left', 'image':'inspired.jpg', 'text':'Si tienes menos de 18 años. Diviértete, aprende y conecta con otras Niñas Pro como tú.', 'titulo':'¡Participa!', 'boton':'Ver proximas actividades', 'Path':'/voluntariado/'},
         {'type':'right', 'image':'django-girls.jpg', 'text':'Si quieres ayudarnos. Participa del voluntariado o ayúdanos a llegar a mas niñas a traves de donaciones.', 'titulo':'¡Involúcrate!', 'boton':'Mas información' ,'Path':'/proyectos/'},
+    ],
+    news:[
+        {'title':'Titulo 1', 'type':'is-info', 'text':'Ver noticia completa', 'path':'/enconstruccion/'},
+        {'title':'Titulo 2', 'type':'is-info', 'text':'Ver noticia completa', 'path':'/enconstruccion/'},
+        {'title':'Titulo 3', 'type':'is-info', 'text':'Ver noticia completa', 'path':'/enconstruccion/'},
     ]
 })
