@@ -12,7 +12,7 @@
                 </h6>
                 <h1 class="title margin-information">  {{event.event}} </h1>
                 <p class="margin-information"> {{event.information}} </p>
-                <a class="button is-danger margin-information is-rounded is-medium" :href="event.link" > Inscribirme </a>
+                <a class="button is-danger margin-information is-rounded is-medium" :href="event.link" > Inscríbete </a>
             </div>
         </div>
     </div>

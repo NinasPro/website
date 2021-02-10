@@ -13,14 +13,14 @@
                     </div>
                 </div>
                 </article>
-                <!--<button class="button inscribete" name="Incripción" title="Inscripción" >
+                <a class="button inscribete is-rounded is-medium" name="Incripción" title="Inscripción" :href=inf.link>
                     Inscríbete
-                </button>-->
+                </a>
             </details>
         </div>
-        <!--<button class="button ver-mas block" name="Mas información" title="Mas información" align="right" >
+        <router-link class="button ver-mas block is-rounded is-medium" name="Mas información" title="Mas información" align="right" to='/eventos/'>
                 Ver todos
-        </button>-->
+        </router-link>
     </div>
 </template>
 
