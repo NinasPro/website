@@ -56,17 +56,8 @@
     <div class="container">
       <div class="title">Proyectos en los que puedes involucrarte</div>
       <div class="columns">
-        <div class="column">
-          <ProjectsVolunteer title="Proyecto 1" description="Descripción del proyecto"/>  
-        </div>
-        <div class="column">
-          <ProjectsVolunteer title="Proyecto 2" description="Descripción del proyecto"/>  
-        </div>
-        <div class="column">
-          <ProjectsVolunteer title="Proyecto 3" description="Descripción del proyecto"/>  
-        </div>
-        <div class="column">
-          <ProjectsVolunteer title="Proyecto 4" description="Descripción del proyecto"/>  
+        <div class="column" v-for="item in dataProjects" :key="item">
+          <News :title=item.title :type=item.type :text=item.text :path=item.path />  
         </div>
       </div>
     </div>
@@ -112,17 +103,24 @@
 import Banner from "../components/Banner.vue";
 import Do from "../components/VolunteerDo.vue";
 import Profile from "../components/VolunteerProfile.vue";
-import ProjectsVolunteer from "../components/ProjectsVolunteer.vue";
 import Testimony from "../components/Testimony.vue";
+import News from "../components/News.vue";
+import * as Data from '../data/volunteer.js';
 
 export default {
   name: "Volunteer",
+  data () {
+    const dataProjects = Data.default.projects
+    return {
+      dataProjects,
+    }
+  },
   components: {
     Banner,
     Do,   
-    Profile,   
-    ProjectsVolunteer,   
+    Profile,     
     Testimony,
+    News,
   },
   props: {
     type: String
