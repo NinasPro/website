@@ -1,3 +1,5 @@
+/* This section corresponding to the data of About view  */
+
 export default ({
     data : [
         {'id':'mision','title':'Misión', 'texto':"Empoderar niñas y adolescentes a través de la enseñanza de programación e inspirar vocaciones científicas y tecnológicas.",'type':'is-success'},
