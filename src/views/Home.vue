@@ -4,21 +4,8 @@
     <div class="container">  <!--Iniciativas-->
       <div class="container-home">
         <div class="columns is-variable is-1">
-          <div class="column">
-            <ProjectsHome title="Empodera" type="is-danger" image="laschicaspueden.jpg" path="/empodera/"
-            description="Curso Anual de Programación"/>
-          </div>
-          <div class="column">
-            <ProjectsHome title="Inspira" type="is-info" image="lamarr.jpg" path="/inspira/"
-            description="Charla de Mujeres Pro ~texto de relleno~"/>
-          </div>
-          <div class="column">
-            <ProjectsHome title="Incentiva" type="is-warning" image="ninastic.jpg" path="/incentiva/"
-            description="Talleres Introductorios de Programación"/>
-          </div>
-          <div class="column">
-            <ProjectsHome title="Potencia" type="is-success" image="sororidad.jpg" path="/potencia/"
-            description="Cursos Avanzados de Programación"/>
+          <div class="column" v-for="project in projectsHome" :key="project">
+            <ProjectsHome :title=project.title :type=project.type :image=project.image :path=project.path :description=project.description />
           </div>
         </div>
       </div>
@@ -88,9 +75,16 @@ import Collaborators from '../components/Collaborators.vue';
 import Information from '../components/Information.vue';
 import Events from '../components/Event.vue';
 import News from "../components/News.vue";
+import * as Data from '../data/home.js';
 
 export default {
   name: "Home",
+  data(){
+    const projectsHome = Data.default.projectsHome
+    return{
+      projectsHome,
+    }
+  },
   components: {
     Carrousel,
     ProjectsHome,
