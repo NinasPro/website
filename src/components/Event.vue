@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div class="columns column-style contenedor" v-for="event in data" :key="event">
+        <div class="columns column-style contenedor" v-for="event in eventos" :key="event">
             <div class="column is-2">
                 <img class="img-style" src="@/assets/ninastic.jpg">
             </div>
@@ -20,10 +20,12 @@
 </template>
 <script>
 import * as Events from '../data/events.js';
+var moment = require('moment')
 export default {
     data() {
         const data = Events.default.data;
         return {
+            moment:moment,
             data,
         }
     },
@@ -44,6 +46,30 @@ export default {
             
             },   
         },
+    computed:
+        {
+            eventos: function () {
+                var datos=[];
+                var array=this.sortJSON(this.data,'date','asc');
+                for(let i=0;i<array.length;i++){
+                    if(new Date(array[i].date)>new Date)
+                    {
+                        datos.push(array[i]);
+                    }
+                    else {
+                        for(let day=2;day<=7;day++)
+                        {
+                            if((moment(array[i].date).fromNow()).includes(`${day} days ago`) ||  ((moment(array[i].date).fromNow()).includes('a day ago'))){
+                                datos.push(array[i]);
+                                break;
+                            }
+                        }
+                        
+                    } 
+                }
+                return datos;
+            }
+        }
 }
 </script>
 <style scoped>
