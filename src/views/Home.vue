@@ -11,11 +11,8 @@
       </div>
     </div>
     <!--Information-->
-    <div>
-      <Information type='left' image='inspired.jpg' text = "Si tienes menos de 18 años. Diviértete, aprende y conecta con otras Niñas Pro como tú." titulo="¡Participa!" boton ="Ver proximas actividades" Path="/voluntariado/"></Information>
-    </div>
-    <div>
-      <Information type='right' image='django-girls.jpg' text = "Si quieres ayudarnos. Participa del voluntariado o ayúdanos a llegar a mas niñas a traves de donaciones." titulo="¡Involúcrate!" boton ="Mas información" Path="/proyectos/"></Information>
+    <div v-for="item in information" :key="item">
+      <Information :type=item.type :image=item.image :text=item.text :titulo=item.titulo :boton=item.boton :Path=item.path />
     </div>
     <!--Eventos -->
     <div>
@@ -81,8 +78,10 @@ export default {
   name: "Home",
   data(){
     const projectsHome = Data.default.projectsHome
+    const information = Data.default.information
     return{
       projectsHome,
+      information,
     }
   },
   components: {
