@@ -15,6 +15,7 @@
     "@fortawesome/vue-fontawesome": "^2.0.2",
     "buefy": "^0.8.17",
     "core-js": "^3.4.4",
+    "moment": "^2.29.1",
     "swiper": "^6.4.5",
     "toggle-details": "^0.3.2",
     "vue": "^2.6.10",

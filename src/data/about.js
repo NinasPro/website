@@ -1,3 +1,5 @@
+/* This section corresponding to the data of About view  */
+
 export default ({
     "en":{
         data : [

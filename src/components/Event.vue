@@ -1,43 +1,35 @@
 <template>
-    <div class="fondo block">
-        <div class="columns" v-for="inf in eventos" :key="inf.date" >
-            <h1 class="column block style-text"  align="center" > {{new Date( inf.date).toLocaleDateString()}} </h1>
-            <details class="column block" >
-                <summary class="style-text">{{inf.event}}</summary>
-                <article class="media">            
-                <div class="media-content">
-                    <div class="eventos">
-                        <p>
-                            {{inf.information}}
-                        </p>
-                    </div>
-                </div>
-                </article>
-                <!--<button class="button inscribete" name="Incripción" title="Inscripción" >
-                    Inscríbete
-                </button>-->
-            </details>
+    <div class="container">
+        <div class="columns column-style contenedor" v-for="event in eventos" :key="event">
+            <div class="column is-2">
+                <img class="img-style" src="@/assets/ninastic.jpg">
+            </div>
+            <div class="column margin-information">
+                <h6>
+                    <span class="detail-item"><vue-fontawesome :icon="['fas', 'map-marker-alt']"/> {{event.locale}}</span>
+                    <span class="detail-item"><vue-fontawesome :icon="['fas', 'clock']"/> {{new Date(event.date).toLocaleTimeString()}}</span>
+                    <span class="detail-item"><vue-fontawesome :icon="['fas', 'calendar-alt']"/> {{new Date( event.date).toLocaleDateString()}}</span>
+                </h6>
+                <h1 class="title margin-information">  {{event.event}} </h1>
+                <p class="margin-information"> {{event.information}} </p>
+                <a class="button is-primary margin-information is-rounded is-medium" :href="event.link" > Inscríbete </a>
+            </div>
         </div>
-        <!--<button class="button ver-mas block" name="Mas información" title="Mas información" align="right" >
-                Ver todos
-        </button>-->
     </div>
-</template>
-
-
-<script>
-    import * as myModule from '../data/events.js';
     
-    export default {
-        data() {
-            const data = myModule.default.data;
-            var fechaActual= new Date;
-            return {
-                data,
-                fechaActual, 
-            }
-        },
-        methods: {
+</template>
+<script>
+import * as Events from '../data/events.js';
+var moment = require('moment')
+export default {
+    data() {
+        const data = Events.default.data;
+        return {
+            moment:moment,
+            data,
+        }
+    },
+    methods: {
             sortJSON(data, key, orden) {
             return data.sort(function (a, b) {
                 var x = a[key],
@@ -54,71 +46,55 @@
             
             },   
         },
-        computed:
+    computed:
         {
             eventos: function () {
                 var datos=[];
-                var count=0;
                 var array=this.sortJSON(this.data,'date','asc');
                 for(let i=0;i<array.length;i++){
-                    
-                    if(new Date(array[i].date)>new Date && count<3)
+                    if(new Date(array[i].date)>new Date)
                     {
                         datos.push(array[i]);
-                        count++;
                     }
-                    else if(count>=3)
-                    { 
-                        return datos;
-                    }   
+                    else {
+                        for(let day=2;day<=7;day++)
+                        {
+                            if((moment(array[i].date).fromNow()).includes(`${day} days ago`) ||  ((moment(array[i].date).fromNow()).includes('a day ago'))){
+                                datos.push(array[i]);
+                                break;
+                            }
+                        }
+                        
+                    } 
                 }
                 return datos;
             }
         }
-    }
-    
+}
 </script>
+<style scoped>
+.img-style{
+    border-radius: 50%;
+    margin-inline-end: 5%;
+}
+.column-style{
+    margin-top: 2%;
+}
+.margin-information{
+    margin-top: 1.2%;
+}
 
-<style lang="scss" >
-    .button {
-      padding: 0% 5%;
-      font-weight: bold;
-      background-color:white;
-      color: rgb(5, 161, 117);
-      border-radius: 25px 25px 25px 25px; 
-    }
+.contenedor{
+    border-color: #dbdbdb;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    margin-bottom: 2%;
+    padding-bottom: 1.5%;
+}
 
-    .inscribete{
-          margin-inline-start: 70%;
-      }
+.detail-item{
+    padding-right: 20px;
+}
 
-    .ver-mas{
-            margin-inline-start: 16%;
-            margin-bottom: 3%;
-            
-        }
-    .eventos {
-        margin-top: 3%;
-        margin-inline-start: 1%;
-        margin-inline-end: 3%;
-        color: white;
-        font-size: 1em;
-
-    }
-    .fondo {
-        background-color: rgb(5, 161, 117);
-        margin: 5% 0% 5% 25%;
-        border-radius: 10px 0px 0px 10px;
-    }
-
-    .style-text{
-        color: white;
-        margin-top:1%; 
-        font-weight:bold; 
-        font-size:150%;
-    }
-    
- 
-    
 
 </style>

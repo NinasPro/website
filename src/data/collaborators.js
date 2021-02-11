@@ -1,3 +1,4 @@
+/* This data corresponds to all the logos of collaborators and sponsors  */
 export default ({
     data : [
         {'name':'uandes','image':'logos/uandes.png', 'url':"https://www.uandes.cl/"},

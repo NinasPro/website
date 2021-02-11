@@ -2,8 +2,10 @@
   <footer class="footer">
     <div class="container">
       <div class="columns is-variable is-1">
-        <div class="column is-2">
-          <img class="logo" src="/img/logo.446afc59.png" alt="Corporación Niñas Pro" width="100" height="100">
+        <div class="column is-2" >
+          <a href="/">
+            <img class="logo" src="/img/logo.446afc59.png" alt="Corporación Niñas Pro" width="100" height="100" >
+          </a>
         </div>
         <div class="column is-2">
           <strong >{{$t('footer.about')}}</strong> 
