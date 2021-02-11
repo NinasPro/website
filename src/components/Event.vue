@@ -6,9 +6,9 @@
             </div>
             <div class="column margin-information">
                 <h6>
-                    <vue-fontawesome :icon="['fas', 'map-marker-alt']"/> {{event.locale}}
-                    <vue-fontawesome :icon="['fas', 'clock']"/> {{new Date(event.date).toLocaleTimeString()}}
-                    <vue-fontawesome :icon="['fas', 'calendar-alt']"/> {{new Date( event.date).toLocaleDateString()}}
+                    <span class="detail-item"><vue-fontawesome :icon="['fas', 'map-marker-alt']"/> {{event.locale}}</span>
+                    <span class="detail-item"><vue-fontawesome :icon="['fas', 'clock']"/> {{new Date(event.date).toLocaleTimeString()}}</span>
+                    <span class="detail-item"><vue-fontawesome :icon="['fas', 'calendar-alt']"/> {{new Date( event.date).toLocaleDateString()}}</span>
                 </h6>
                 <h1 class="title margin-information">  {{event.event}} </h1>
                 <p class="margin-information"> {{event.information}} </p>
@@ -89,6 +89,10 @@ export default {
     border-width: 0px 0px 1px 0px;
     border-style: solid;
     margin-bottom: 2%;
+}
+
+.detail-item{
+    padding-right: 20px;
 }
 
 
