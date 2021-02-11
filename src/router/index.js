@@ -63,7 +63,7 @@ export default new Router({
       name: "eventos",
       path: "/eventos/",
       component: () => import("@/views/Event"),
-      props: { type: "is-danger" }
+      props: { type: "is-primary" }
     },
   ],
   scrollBehavior (to, from, savedPosition) {
