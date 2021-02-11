@@ -59,6 +59,12 @@ export default new Router({
       component: () => import("@/views/Potencia"),
       props: { type: "is-info" }
     },
+    {
+      name: "eventos",
+      path: "/eventos/",
+      component: () => import("@/views/Event"),
+      props: { type: "is-primary" }
+    },
   ],
   scrollBehavior (to, from, savedPosition) {
     if (savedPosition) {
