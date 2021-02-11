@@ -1,3 +1,5 @@
+/* Here you will find all the events that were carried out or will be carried out to be used in the Events.vue component. No need to order*/
+
 export default ({
     data: [
             { 'date': '2019-10-15 13:43:27', 'event': 'Taller de Python con Fintual', 'information': "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Proin ornare magna eros, eu pellentesque tortor vestibulum ut."},

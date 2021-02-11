@@ -64,33 +64,11 @@
     <div class="container">
       <div class="title">Testimonios</div>
       <div class="columns is-multiline">
-        <div class="column is-one-fifth">
+        <div class="column is-one-fifth" v-for="testimony in dataTestimony" :key="testimony">
           <Testimony 
-          name="Jane Doe" 
-          title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris" 
-          type="is-success"/>
-        </div>
-        <div class="column is-one-fifth">
-          <Testimony 
-          name="Jane Doe" 
-          title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris" 
-          type="is-info"/>
-        </div>
-        <div class="column is-one-fifth">
-          <Testimony name="Jane Doe" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Phasellus nec iaculis mauris" type="is-danger"/>
-        </div>
-        <div class="column is-one-fifth">
-          <Testimony 
-          name="Jane Doe" 
-          title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris" 
-          type="is-primary"/>
-        </div>
-        <div class="column is-one-fifth">
-          <Testimony 
-          name="Jane Doe" 
-          title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris" 
-          type="is-warning"/>
+          :name=testimony.name
+          :title=testimony.title
+          :type=testimony.type />
         </div>
       </div>
     </div>   
@@ -107,12 +85,15 @@ import Testimony from "../components/Testimony.vue";
 import News from "../components/News.vue";
 import * as Data from '../data/volunteer.js';
 
+
 export default {
   name: "Volunteer",
   data () {
     const dataProjects = Data.default.projects
+    const dataTestimony = Data.default.testimony
     return {
       dataProjects,
+      dataTestimony,
     }
   },
   components: {

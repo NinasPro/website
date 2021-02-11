@@ -4,31 +4,15 @@
     <div class="container">  <!--Iniciativas-->
       <div class="container-home">
         <div class="columns is-variable is-1">
-          <div class="column">
-            <ProjectsHome title="Empodera" type="is-danger" image="laschicaspueden.jpg" path="/empodera/"
-            description="Curso Anual de Programación"/>
-          </div>
-          <div class="column">
-            <ProjectsHome title="Inspira" type="is-info" image="lamarr.jpg" path="/inspira/"
-            description="Charla de Mujeres Pro ~texto de relleno~"/>
-          </div>
-          <div class="column">
-            <ProjectsHome title="Incentiva" type="is-warning" image="ninastic.jpg" path="/incentiva/"
-            description="Talleres Introductorios de Programación"/>
-          </div>
-          <div class="column">
-            <ProjectsHome title="Potencia" type="is-success" image="sororidad.jpg" path="/potencia/"
-            description="Cursos Avanzados de Programación"/>
+          <div class="column" v-for="project in dataProjectsHome" :key="project">
+            <ProjectsHome :title=project.title :type=project.type :image=project.image :path=project.path :description=project.description />
           </div>
         </div>
       </div>
     </div>
     <!--Information-->
-    <div>
-      <Information type='left' image='inspired.jpg' text = "Si tienes menos de 18 años. Diviértete, aprende y conecta con otras Niñas Pro como tú." titulo="¡Participa!" boton ="Ver proximas actividades" Path="/voluntariado/"></Information>
-    </div>
-    <div>
-      <Information type='right' image='django-girls.jpg' text = "Si quieres ayudarnos. Participa del voluntariado o ayúdanos a llegar a mas niñas a traves de donaciones." titulo="¡Involúcrate!" boton ="Mas información" Path="/proyectos/"></Information>
+    <div v-for="item in dataInformation" :key="item">
+      <Information :type=item.type :image=item.image :text=item.text :titulo=item.titulo :boton=item.boton :Path=item.path />
     </div>
     <!--Eventos -->
     <div>
@@ -51,25 +35,19 @@
     <!-- News -->
     <div class="container">
       <div class="container-home">
-      <div class="columns">
-        <div class="column">
-          <h1 class=title>Noticias</h1>
+        <div class="columns">
+          <div class="column">
+            <h1 class=title>Noticias</h1>
+          </div>
+          <div class="column">
+            <b-button rounded class="moreinfobutton" type="is-medium is-info" @click="clickMe">Ver todas</b-button>
+          </div>
         </div>
-        <div class="column">
-          <b-button rounded class="moreinfobutton" type="is-medium is-info" @click="clickMe">Ver todas</b-button>
+        <div class="columns">
+          <div class="column" v-for="report in dataNews" :key="report">
+            <News :title=report.title :type=report.type :text=report.text :path=report.path />
+          </div>
         </div>
-      </div>
-      <div class="columns">
-        <div class="column">
-          <News title="Titulo 1" type="is-info" text="Ver noticia completa" path="/enconstruccion/"/>
-        </div>
-        <div class="column">
-          <News title="Titulo 2" type="is-info" text="Ver noticia completa" path="/enconstruccion/"/>
-        </div>
-        <div class="column">
-          <News title="Titulo 3" type="is-info" text="Ver noticia completa" path="/enconstruccion/"/>
-        </div>
-      </div>
       </div>
     </div>
     <!-- Newsletter Button -->
@@ -88,9 +66,20 @@ import Collaborators from '../components/Collaborators.vue';
 import Information from '../components/Information.vue';
 import Events from '../components/Event.vue';
 import News from "../components/News.vue";
+import * as Data from '../data/home.js';
 
 export default {
   name: "Home",
+  data(){
+    const dataProjectsHome = Data.default.projectsHome
+    const dataInformation = Data.default.information
+    const dataNews= Data.default.news
+    return{
+      dataProjectsHome,
+      dataInformation,
+      dataNews,
+    }
+  },
   components: {
     Carrousel,
     ProjectsHome,
