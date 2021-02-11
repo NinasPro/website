@@ -4,7 +4,9 @@
         <p class="title" align="center"> Memorias</p>
         <div class="columns memoria-style" v-for="memorie in data" :key="memorie.title">
             <p class="title column" align="left">{{memorie.title}}</p>
-            <a class="button column is-one-fifth is-rounded is-medium" :href="memorie.url" target="_blank"> <vue-fontawesome :icon="['fas', 'file-pdf']"/> {{memorie.title}} </a>
+            <div class="column is-one-fifth">
+                <a class="button  is-rounded is-medium" :href="memorie.url" target="_blank"> <vue-fontawesome :icon="['fas', 'file-pdf']"/> {{memorie.title}} </a>
+            </div>
         </div>
         
     </div>
