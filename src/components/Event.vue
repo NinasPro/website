@@ -12,7 +12,7 @@
                 </h6>
                 <h1 class="title margin-information">  {{event.event}} </h1>
                 <p class="margin-information"> {{event.information}} </p>
-                <a class="button is-danger margin-information is-rounded is-medium" :href="event.link" > Inscríbete </a>
+                <a class="button is-primary margin-information is-rounded is-medium" :href="event.link" > Inscríbete </a>
             </div>
         </div>
     </div>
@@ -88,7 +88,8 @@ export default {
     border-color: black;
     border-width: 0px 0px 1px 0px;
     border-style: solid;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
+    padding-bottom: 1.5%;
 }
 
 
