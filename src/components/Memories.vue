@@ -14,7 +14,7 @@
 
 <script>
 
-import * as Memories from '../data/memories.js';
+import * as Memories from '../data/about.js';
 import i18n from '../i18n'
 
 export default {
@@ -28,14 +28,15 @@ export default {
     },
     computed:
     {
+        //data according to language
         datos: function(){
             if(this.lang == "en")
             {
-            return this.data.en.data
+            return this.data.en.memory
             }
             else 
             {
-            return this.data.es.data
+            return this.data.es.memory
             }
             
         }

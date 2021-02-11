@@ -29,10 +29,10 @@
         <div class="column is-2">
           <strong >{{$t('footer.help')}}</strong> 
           <ul>
-            <li><router-link class="footer-link" to="/somos/">{{$t('footer.workWithUs')}}</router-link></li>
-            <li><router-link class="footer-link" to="/somos/">{{$t('footer.member')}}</router-link></li>
-            <li><router-link class="footer-link" to="/somos/">{{$t('footer.volunteer')}}</router-link></li>
-            <li><router-link class="footer-link" to="/somos/">{{$t('footer.dona')}}</router-link></li>
+            <li><router-link class="footer-link" to="/voluntariado/">{{$t('footer.workWithUs')}}</router-link></li>
+            <li><router-link class="footer-link" to="/voluntariado/">{{$t('footer.member')}}</router-link></li>
+            <li><router-link class="footer-link" to="/voluntariado/">{{$t('footer.volunteer')}}</router-link></li>
+            <li><router-link class="footer-link" to="/voluntariado/">{{$t('footer.dona')}}</router-link></li>
           </ul>
         </div>
         <div class="column is-1"></div>

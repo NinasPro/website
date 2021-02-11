@@ -27,9 +27,8 @@
     <div  id="historia" class="container">
       <div class="title">{{$t('footer.history')}}</div>
         <p v-for="texto in datos.history" :key="texto">
-          {{texto.text}} 
-        </p>
-        
+          <span v-html="texto.text"/>
+        </p>   
     </div>
     <Memorie/>
   </div>
@@ -61,6 +60,7 @@ export default {
   },
   computed:
   {
+    //data according to language
     datos: function(){
         if(this.lang == "en")
         {
