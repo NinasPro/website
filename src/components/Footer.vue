@@ -27,10 +27,10 @@
         <div class="column is-2">
           <strong >Cómo ayudar</strong> 
           <ul>
-            <li><router-link class="footer-link" to="/somos/">Trabaja con nosotras</router-link></li>
-            <li><router-link class="footer-link" to="/somos/">Hazte socia</router-link></li>
-            <li><router-link class="footer-link" to="/somos/">Hazte voluntaria</router-link></li>
-            <li><router-link class="footer-link" to="/somos/">Dona</router-link></li>
+            <li><router-link class="footer-link" to="/voluntariado/">Trabaja con nosotras</router-link></li>
+            <li><router-link class="footer-link" to="/voluntariado/">Hazte socia</router-link></li>
+            <li><router-link class="footer-link" to="/voluntariado/">Hazte voluntaria</router-link></li>
+            <li><router-link class="footer-link" to="/voluntariado/">Dona</router-link></li>
           </ul>
         </div>
         <div class="column is-1"></div>
