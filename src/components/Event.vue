@@ -85,10 +85,10 @@ export default {
 }
 
 .contenedor{
-    border-color: black;
+    border-color: #dbdbdb;
     border-width: 0px 0px 1px 0px;
     border-style: solid;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     padding-bottom: 1.5%;
 }
 
