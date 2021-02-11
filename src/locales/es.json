@@ -1,0 +1,33 @@
+{
+    "navbar":{
+        "incentivas":"Incentivas",
+        "inspira":"Proyecto Inspira",
+        "empodera": "Proyecto Empodera",
+        "potencia": "Proyecto Potencia",
+        "incentiva": "Proyecto Incentiva",
+        "eventos":"Eventos",
+        "somos": "Somos",
+        "involucrate": "Involucrate",
+        "dona":"Dona"
+    },
+    "footer":{
+        "about": "Somos",
+        "mission":"Misión",
+        "vision":"Visión",
+        "community":"Comunidad",
+        "history":"Historia",
+        "memory":"Memorias",
+        "project":"Proyectos",
+        "empodera":"Empodera",
+        "incentiva":"Incentiva",
+        "inspira":"Inspira",
+        "potencia":"Potencia",
+        "help":"¿Cómo ayudar?",
+        "workWithUs":"Trabaja con nosotros",
+        "member":"Hazte soci@",
+        "volunteer":"Hazte voluntari@",
+        "dona":"Dona",
+        "contact":"Contáctanos",
+        "redes":"Sigue nuestras redes sociales"
+      }
+}

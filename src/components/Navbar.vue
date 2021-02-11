@@ -9,40 +9,40 @@
       </b-navbar-item>
     </template>
     <template slot="end">
-      <b-navbar-dropdown label="Iniciativas" >
+      <b-navbar-dropdown :label="`${$t('navbar.incentivas')}`" >
         <b-navbar-item tag="router-link" :to="{ path: '/inspira/' }"  >
-          Proyecto Inspira
+          <p>{{$t('navbar.inspira')}}</p>
         </b-navbar-item>
         <b-navbar-item tag="router-link" :to="{ path: '/empodera/' }"  > 
-          Proyecto Empodera
+          <p>{{$t('navbar.empodera')}}</p>
         </b-navbar-item>
         <b-navbar-item tag="router-link" :to="{ path: '/potencia/' }" >
-          Proyecto Potencia
+          <p>{{$t('navbar.potencia')}}</p>
         </b-navbar-item>
         <b-navbar-item tag="router-link" :to="{ path: '/incentiva/' }" >
-          Proyecto Incentiva
+          <p>{{$t('navbar.incentiva')}}</p>
         </b-navbar-item>
       </b-navbar-dropdown>
       <b-navbar-item tag="router-link" :to="{ path: '/enconstruccion/' }">
-        Eventos
+        <p>{{$t('navbar.eventos')}}</p>
       </b-navbar-item>
       <b-navbar-item tag="router-link" :to="{ path: '/somos/' }">
-        Somos
+        <p>{{$t('navbar.somos')}}</p>
       </b-navbar-item>
       <b-navbar-item   tag="router-link" style="padding: 0px 20px;" :to="{ path: '/voluntariado/' }">
         <a class="button is-info is-rounded is-medium" v-if="type !== 'is-info'">
-          Involucrate
+          <p>{{$t('navbar.involucrate')}}</p>
         </a>
         <a class="button is-warning is-rounded is-medium" v-if="type === 'is-info'">
-          Involucrate
+          <p>{{$t('navbar.involucrate')}}</p>
         </a>
       </b-navbar-item>
       <b-navbar-item   tag="router-link" style="padding: 0px 20px;" :to="{ path: '/voluntariado/' }"> <!-- Para habilitarlo se debe colocar un path-->
         <a class="button navbar-donation is-rounded is-medium" v-if="type !== 'is-warning' && type !== 'is-info'" >
-          Dona
+          <p>{{$t('navbar.dona')}}</p>
         </a>
         <a class="button navbar-donation-info is-rounded is-medium" v-if="type === 'is-warning' || type === 'is-info'" >
-          Dona
+          <p>{{$t('navbar.dona')}}</p>
         </a>
       </b-navbar-item>
     </template>

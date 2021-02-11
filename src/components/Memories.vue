@@ -1,8 +1,8 @@
 <template>
 
    <div id="memories" class="memorie-container">
-        <p class="title" align="center"> Memorias</p>
-        <div class="columns memoria-style" v-for="memorie in data" :key="memorie.title">
+        <p class="title" align="center"> {{$t('footer.memory')}}</p>
+        <div class="columns memoria-style" v-for="memorie in datos" :key="memorie.title">
             <p class="title column" align="left">{{memorie.title}}</p>
             <a class="button column is-one-fifth is-rounded is-medium" :href="memorie.url" target="_blank"> <vue-fontawesome :icon="['fas', 'file-pdf']"/> {{memorie.title}} </a>
         </div>
@@ -13,14 +13,31 @@
 <script>
 
 import * as Memories from '../data/memories.js';
+import i18n from '../i18n'
 
 export default {
     data(){
-    const data = Memories.default.data
+    const lang=`${i18n.locale}`
+    const data = Memories.default
         return{
             data,
+            lang,
         }
     },
+    computed:
+    {
+        datos: function(){
+            if(this.lang == "en")
+            {
+            return this.data.en.data
+            }
+            else 
+            {
+            return this.data.es.data
+            }
+            
+        }
+    }
 }
 </script>
     

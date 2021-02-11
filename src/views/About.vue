@@ -1,6 +1,6 @@
 <template>
   <div id="about">
-    <Banner :type="type" title="Somos" button="Únete hoy" link="/voluntariado/"/>
+    <Banner :type="type" :title="`${$t('navbar.somos')}`"/>
     <div class="container np-content">
       <div class="tile is-ancestor">
         <div class="tile is-vertical">
@@ -9,7 +9,7 @@
               <img src="@/assets/empower.jpg" alt="Sororidad y Colaboración">
             </div>
             <div class="tile is-parent is-vertical" >
-              <div v-for="inf in data" :key="inf">
+              <div v-for="inf in datos.data" :key="inf">
                 <section :id="inf.id" class="margin">
                   <article :class="`tile is-child notification ${inf.type}`">
                     <p  class="title">{{inf.title}}</p>
@@ -25,8 +25,8 @@
       </div>
     </div>
     <div  id="historia" class="container">
-      <div class="title">Historia</div>
-        <p v-for="texto in historia" :key="texto">
+      <div class="title">{{$t('footer.history')}}</div>
+        <p v-for="texto in datos.history" :key="texto">
           {{texto.text}} 
         </p>
         
@@ -39,15 +39,17 @@
 import Banner from "../components/Banner.vue";
 import Memorie from "../components/Memories.vue";
 import * as Informacion from '../data/about.js';
+import i18n from '../i18n'
 
 export default {
   name: "About",
   data(){
-    const data = Informacion.default.data
-    const historia = Informacion.default.history
+    const lang=`${i18n.locale}`
+    const data = Informacion.default
+    
     return{
       data,
-      historia,
+      lang,
     }
   },
   components: {
@@ -56,6 +58,20 @@ export default {
   },
   props: {
     type: String
+  },
+  computed:
+  {
+    datos: function(){
+        if(this.lang == "en")
+        {
+          return this.data.en
+        }
+        else
+        {
+          return this.data.es
+        }
+        
+    }
   }
 };
 </script>
