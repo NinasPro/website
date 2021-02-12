@@ -1,18 +1,35 @@
 <template>
     <div class="container">
-        <div class="columns column-style contenedor" v-for="event in eventos" :key="event">
+        <div class="columns event-item" v-for="(event, i) in eventos" :key="i">
             <div class="column is-2">
-                <img class="img-style" src="@/assets/ninastic.jpg">
+                <b-image ratio="1by1" :src="require('@/assets/ninastic.jpg')" :rounded="true"></b-image>
             </div>
-            <div class="column margin-information">
-                <h6>
-                    <span class="detail-item"><vue-fontawesome :icon="['fas', 'map-marker-alt']"/> {{event.locale}}</span>
-                    <span class="detail-item"><vue-fontawesome :icon="['fas', 'clock']"/> {{new Date(event.date).toLocaleTimeString()}}</span>
-                    <span class="detail-item"><vue-fontawesome :icon="['fas', 'calendar-alt']"/> {{new Date( event.date).toLocaleDateString()}}</span>
-                </h6>
-                <h1 class="title margin-information">  {{event.event}} </h1>
-                <p class="margin-information"> {{event.information}} </p>
-                <a class="button is-primary margin-information is-rounded is-medium" :href="event.link" > Inscríbete </a>
+            <div class="column">
+                <div>
+                    <span class="event-detail-item">
+                        <vue-fontawesome :icon="['fas', 'map-marker-alt']"/> 
+                        {{event.locale}}
+                    </span>
+                    <span class="event-detail-item">
+                        <vue-fontawesome :icon="['fas', 'clock']"/>
+                        {{new Date(event.date).toLocaleTimeString(
+                            [], 
+                            { hour: '2-digit', minute: '2-digit' }
+                        )}}
+                    </span>
+                    <span class="event-detail-item">
+                        <vue-fontawesome :icon="['fas', 'calendar-alt']"/>
+                        {{new Date( event.date).toLocaleDateString(
+                            undefined, 
+                            {year: 'numeric', month: 'long', day: 'numeric' 
+                        })}}
+                    </span>
+                </div>
+                <h1 class="title"> {{event.event}} </h1>
+                <p> {{event.information}} </p>
+                <a class="button is-primary is-rounded" :href="event.link" target="_blank">
+                    Inscríbete
+                </a>
             </div>
         </div>
     </div>
@@ -72,29 +89,23 @@ export default {
         }
 }
 </script>
-<style scoped>
-.img-style{
-    border-radius: 50%;
-    margin-inline-end: 5%;
-}
-.column-style{
-    margin-top: 2%;
-}
-.margin-information{
-    margin-top: 1.2%;
-}
 
-.contenedor{
-    border-color: #dbdbdb;
-    border-width: 0px 0px 1px 0px;
-    border-style: solid;
-    margin-bottom: 2%;
-    padding-bottom: 1.5%;
+<style lang="scss" scoped>
+.event-item{
+    border-bottom: 1px #dbdbdb solid;
+    margin: 20px 30px;
+    padding: 20px 0px;
+
+    .event-detail-item {
+        padding-right: 20px;
+    }
+
+    .title {
+        margin: 10px 0px;
+    }
+
+    p {
+        margin: 10px 0px 20px 0px;
+    }
 }
-
-.detail-item{
-    padding-right: 20px;
-}
-
-
 </style>
