@@ -29,5 +29,17 @@
         "dona":"Dona",
         "contact":"Contáctanos",
         "redes":"Sigue nuestras redes sociales"
-      }
+      },
+    "home":{
+        "titleEvents":"Próximos eventos",
+        "titlePartners": "Nuestros Partners",
+        "titleNews":"Noticias",
+        "seeAll":"Ver todas",
+        "newsletter":"Subscribete al newsletter"
+    },
+    "event":
+    {
+        "signUp":"Inscríbete",
+        "seeAll":"Ver todos"
+    }
 }

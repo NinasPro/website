@@ -30,5 +30,17 @@
     "dona":"Donate",
     "contact":"Contact Us",
     "redes":"Follow our social networks"
+  },
+  "home":{
+    "titleEvents":"Upcoming events",
+    "titlePartners": "Our Partners",
+    "titleNews":"News",
+    "seeAll":"See All",
+    "newsletter":"Subscribe to the newsletter"
+  },
+  "event":
+  {
+    "signUp":"Sign Up",
+    "seeAll":"See All"
   }
 }

@@ -13,24 +13,24 @@
                     </div>
                 </div>
                 </article>
-                <a class="button inscribete is-rounded is-medium" name="Incripción" title="Inscripción" :href=inf.link>
-                    Inscríbete
+                <a class="button inscribete is-rounded is-medium" name="Incripción" title="Inscripción" :href="inf.link">
+                    {{$t('event.signUp')}}
                 </a>
             </details>
         </div>
         <router-link class="button ver-mas block is-rounded is-medium" name="Mas información" title="Mas información" align="right" to='/eventos/'>
-                Ver todos
+                {{$t('event.seeAll')}}
         </router-link>
     </div>
 </template>
 
 
 <script>
-    import * as myModule from '../data/events.js';
+    import * as Event from '../data/events.js';
     
     export default {
         data() {
-            const data = myModule.default.data;
+            const data = Event.default;
             var fechaActual= new Date;
             return {
                 data,
@@ -52,14 +52,26 @@
                 }
                 });
             
-            },   
+            },
+            //data according to language
+            datos()
+            {
+                if(this.lang == "en")
+                {
+                return this.data.en.data
+                }
+                else 
+                {
+                return this.data.es.data
+                }
+            }   
         },
         computed:
         {
             eventos: function () {
                 var datos=[];
                 var count=0;
-                var array=this.sortJSON(this.data,'date','asc');
+                var array=this.sortJSON(this.datos(),'date','asc');
                 for(let i=0;i<array.length;i++){
                     
                     if(new Date(array[i].date)>new Date && count<3)
@@ -73,7 +85,7 @@
                     }   
                 }
                 return datos;
-            }
+            },
         }
     }
     

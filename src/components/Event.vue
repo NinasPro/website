@@ -23,7 +23,7 @@ import * as Events from '../data/events.js';
 var moment = require('moment')
 export default {
     data() {
-        const data = Events.default.data;
+        const data = Events.default;
         return {
             moment:moment,
             data,
