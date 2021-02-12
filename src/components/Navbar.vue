@@ -76,7 +76,7 @@ export default {
     img {
       height: 5rem;
       margin-top: 1rem;
-      max-height: 10rem;
+      max-height: 5rem;
     }
   }
 
@@ -92,6 +92,22 @@ export default {
     #dona-btn {
       border-width: 4px;
     }
+  }
+}
+
+@media only screen and (max-device-width: 1220px) {
+  
+  .ninaspro-navbar {
+    
+    .navbar-brand {
+     
+      img {
+        height: 1.5rem;
+        margin-top: 0rem;
+        max-height: 1.5rem;
+      }
+    }
+    
   }
 }
 

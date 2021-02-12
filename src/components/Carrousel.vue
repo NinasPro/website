@@ -77,10 +77,10 @@ export default {
     padding-top:0.75rem;
 
     h1 {
-      font-size: 50px;
+      font-size: 45px;
     }
     h2 {
-      font-size: 24px;
+      font-size: 20px;
     }
   }
 
