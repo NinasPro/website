@@ -1,5 +1,5 @@
 <template>
-  <section :class="`hero is-medium ${type}`">
+  <div :class="`hero is-medium ${type}`">
     <div class="hero-body">
       <div class="container">
         <div class="columns">
@@ -21,7 +21,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
