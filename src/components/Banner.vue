@@ -7,8 +7,8 @@
             <h1 class="title">
               {{title}}
             </h1>
-            <router-link :to="link" v-if="link = undefined"
-              :class="`button ${type} is-inverted is-rounded is-large is-outlined`">
+            <router-link :to="link" v-if="showButton"
+              :class="`button ${type} is-inverted is-rounded is-outlined`">
               {{button}}
             </router-link>
           </div>
@@ -41,6 +41,14 @@ export default {
       else
           return require(`@/assets/estrella-amarilla.png`);
     }
+  },
+  computed: {
+    showButton: function() {
+      if (this.link === undefined)
+        return false;
+      else
+        return true;
+    }
   }
 };
 </script>
@@ -49,7 +57,7 @@ export default {
 
 .hero.is-medium .hero-body {
   padding: 2rem 5rem;
-  height: 14rem;
+  height: 18rem;
 
   .np-banner-header {
     .title {
