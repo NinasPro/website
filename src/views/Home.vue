@@ -25,9 +25,18 @@
 
     <!--Eventos -->
     <section id="events">
-      <h1 class="title"> Próximos eventos </h1>
-      <p class="subtitle"> Todos nuestros eventos son gratuitos, ¡revisa los requisitos e inscríbete! </p>
-      <Events> </Events>
+      <div class="columns is-vcentered">
+        <div class="column is-4">
+          <h1 class="title"> Próximos eventos </h1>
+          <p class="subtitle"> Todos nuestros eventos son gratuitos, ¡revisa los requisitos e inscríbete! </p>
+          <router-link class="button is-rounded is-success" name="Mas información" title="Mas información" to='/eventos/'>
+            Ver todos
+          </router-link>
+        </div>
+        <div class="column">
+          <Events> </Events>
+        </div>
+      </div>
     </section>
 
     <!--Collaborators and partners -->
@@ -41,7 +50,7 @@
 
     <!-- Newsletter Button -->
     <section id="newsletter">
-      <a href="http://eepurl.com/gn7I3r" class="button is-primary is-rounded is-large">
+      <a class="button is-primary is-rounded is-large" href="http://eepurl.com/gn7I3r" target="_blank">
           Suscríbete al newsletter
       </a>
     </section>
@@ -100,6 +109,18 @@ export default {
       text-align: center;
       margin-bottom: 40px;
     }
+  }
+
+  #events {
+    .title, .subtitle {
+      text-align: left;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+    .button {
+      margin-left: 20%;
+    }
+    
   }
 
   #newsletter {

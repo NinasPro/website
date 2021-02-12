@@ -31,5 +31,9 @@ export default {
     max-width: 1080px;
   }
 
+  .button {
+    font-weight: bold;
+  }
+
 }
 </style>
