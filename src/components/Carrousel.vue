@@ -5,15 +5,11 @@
         <div class="hero-body">
           <div class="container">
             <div class="columns is-8">
-              <div class="column np-banner-header is-three-fifths">
-                <h1 class="title">
-                 {{carousel.title}}
-                </h1>
-                <h2 class="subtitle">
-                 {{carousel.subtitle}}
-                </h2>
+              <div class="column is-three-fifths banner-text">
+                <h1 class="title"> {{carousel.title}} </h1>
+                <h2 class="subtitle"> {{carousel.subtitle}} </h2>
               </div>
-              <div class="column np-banner-img">
+              <div class="column banner-image">
                 <img
                    :src="getImgUrl(carousel.image)"
                    alt="Corporación Niñas Pro"
@@ -65,71 +61,34 @@ export default {
 
 <style lang="scss" scoped>
 
-.hero.is-medium .hero-body {
-  padding: 0rem 5rem;
-  height: 30rem;
+.banner-text {
+  padding-top: 6rem;
 
-  .np-banner-header {
-    margin: 6rem 0rem;
-
-    .title {
-      font-size: 5.5rem;
-    }
-    .subtitle {
-      width: 80%;
-    }
+  h1 {
+    font-size: 70px;
   }
-
-  .np-banner-img {
-    margin: 0rem 0.75rem 3rem 0.75rem;
-    text-align: right;
-
-    img {
-      max-height: 28rem;
-      border-radius: 25px;
-    }
+  h2 {
+    font-size: 24px;
   }
 }
 
 @media only screen and (max-device-width: 1220px) {
-  .hero.is-medium .hero-body {
-    padding: 0rem 3rem;
-    height: 20rem;
+  .banner-text {
+    padding-top:0.75rem;
 
-    .np-banner-header {
-      margin: 6rem 0rem;
-
-      .title {
-        font-size: 2rem;
-      }
-      .subtitle {
-        width: 100%;
-      }
+    h1 {
+      font-size: 45px;
     }
-
-    .np-banner-img {
-      img {
-        max-height: 18rem;
-      }
+    h2 {
+      font-size: 20px;
     }
   }
-}
 
-@media only screen and (max-device-width: 768px) {
-  .hero.is-medium .hero-body {
-    padding: 0rem 2rem;
-    height: inherit;
+  .banner-image {
+    text-align: center;
 
-    .np-banner-header {
-      margin: 2rem 0rem;
-    }
-
-    .np-banner-img {
-      text-align: center;
-
-      img {
-        max-height: 18rem;
-      }
+    img {
+      max-width: 300px;
     }
   }
 }

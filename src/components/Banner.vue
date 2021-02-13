@@ -1,14 +1,14 @@
 <template>
-  <section :class="`hero is-medium ${type}`">
+  <div :class="`hero is-medium ${type}`">
     <div class="hero-body">
       <div class="container">
-        <div class="columns is-8">
+        <div class="columns">
           <div class="column is-three-quarters np-banner-header">
             <h1 class="title">
               {{title}}
             </h1>
-            <router-link :to="link" v-if="link = undefined"
-              :class="`button ${type} is-inverted is-rounded is-large is-outlined`">
+            <router-link :to="link" v-if="showButton"
+              :class="`button ${type} is-inverted is-rounded is-outlined`">
               {{button}}
             </router-link>
           </div>
@@ -18,12 +18,10 @@
                alt="Coloured Star"
             />
           </div>
-          <div class="column">
-          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -43,6 +41,14 @@ export default {
       else
           return require(`@/assets/estrella-amarilla.png`);
     }
+  },
+  computed: {
+    showButton: function() {
+      if (this.link === undefined)
+        return false;
+      else
+        return true;
+    }
   }
 };
 </script>
@@ -50,12 +56,12 @@ export default {
 <style lang="scss" scoped>
 
 .hero.is-medium .hero-body {
-  padding: 3rem 5rem;
-  height: 20rem;
+  padding: 2rem 5rem;
+  height: 18rem;
 
   .np-banner-header {
     .title {
-      font-size: 7rem;
+      font-size: 5rem;
     }
     .button {
       padding: 0px 50px;
@@ -74,17 +80,7 @@ export default {
 
 @media only screen and (max-device-width: 1220px) {
   .hero.is-medium .hero-body {
-    .np-banner-header {
-      .title {
-        font-size: 5rem;
-      }
-    }
-  }
-}
-
-@media only screen and (max-device-width: 768px) {
-  .hero.is-medium .hero-body {
-    padding: 3rem 3rem;
+    padding: 2rem 3rem;
     height: inherit;
 
     .np-banner-header {

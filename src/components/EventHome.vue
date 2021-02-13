@@ -1,26 +1,23 @@
 <template>
-    <div class="fondo block">
-        <div class="columns" v-for="inf in eventos" :key="inf.date" >
-            <h1 class="column block style-text"  align="center" > {{new Date( inf.date).toLocaleDateString()}} </h1>
-            <details class="column block" >
-                <summary class="style-text">{{inf.event}}</summary>
+    <div class="event-list">
+        <div class="columns event-item" v-for="(inf, i) in eventos" :key="i" >
+            <div class="column is-2-desktop"> 
+                <p class="styled-text">{{new Date(inf.date).toLocaleDateString()}}</p>
+            </div>
+            <details class="column is-6-desktop">
+                <summary class="styled-text">{{inf.event}}</summary>
                 <article class="media">            
-                <div class="media-content">
-                    <div class="eventos">
-                        <p>
-                            {{inf.information}}
-                        </p>
+                    <div class="media-content">
+                        <p> {{inf.information}} </p>
                     </div>
-                </div>
                 </article>
-                <a class="button inscribete is-rounded is-medium" name="Incripción" title="Inscripción" :href=inf.link>
+            </details>
+            <div class="column is-4-desktop">
+                <a class="button is-rounded is-success is-inverted" name="Incripción" title="Inscripción" :href="inf.link" target="_blank">
                     Inscríbete
                 </a>
-            </details>
+            </div>
         </div>
-        <router-link class="button ver-mas block is-rounded is-medium" name="Mas información" title="Mas información" align="right" to='/eventos/'>
-                Ver todos
-        </router-link>
     </div>
 </template>
 
@@ -79,46 +76,29 @@
     
 </script>
 
-<style lang="scss" >
-    .button {
-      padding: 0% 5%;
-      font-weight: bold;
-      background-color:white;
-      color: rgb(5, 161, 117);
-      border-radius: 25px 25px 25px 25px; 
+<style lang="scss" scoped>
+.event-list {
+    background-color: rgb(5, 161, 117);
+    color: white;
+    padding: 100px 50px;
+
+    .styled-text{
+        font-weight: bold; 
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-device-width: 1220px) {
+.event-list {
+    .event-item {
+        border-bottom: 1px white solid;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
 
-    .inscribete{
-          margin-inline-start: 70%;
-      }
-
-    .ver-mas{
-            margin-inline-start: 16%;
-            margin-bottom: 3%;
-            
-        }
-    .eventos {
-        margin-top: 3%;
-        margin-inline-start: 1%;
-        margin-inline-end: 3%;
-        color: white;
-        font-size: 1em;
-
+    .styled-text {
+        font-size: 16px;
     }
-    .fondo {
-        background-color: rgb(5, 161, 117);
-        margin: 5% 0% 5% 25%;
-        border-radius: 10px 0px 0px 10px;
-    }
-
-    .style-text{
-        color: white;
-        margin-top:1%; 
-        font-weight:bold; 
-        font-size:150%;
-    }
-    
- 
-    
-
+}
+}
 </style>
