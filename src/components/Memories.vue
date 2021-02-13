@@ -1,14 +1,22 @@
 <template>
-
-   <div id="memories" class="memorie-container">
-        <p class="title" align="center"> Memorias</p>
-        <div class="columns memoria-style" v-for="memorie in data" :key="memorie.title">
-            <p class="title column" align="left">{{memorie.title}}</p>
-            <div class="column is-one-fifth">
-                <a class="button  is-rounded is-medium" :href="memorie.url" target="_blank"> <vue-fontawesome :icon="['fas', 'file-pdf']"/> {{memorie.title}} </a>
-            </div>
-        </div>
-        
+    <div class="memories-container">
+        <div class="container">
+            <p class="title" align="center"> Memorias </p>
+            <div class="columns memories-item is-vcentered" v-for="(memorie, i) in data" :key="i">
+                <div class="column" align="left">
+                    <p class="memories-item-name"> {{memorie.title}} </p>
+                </div>
+                <div class="column is-one-fifth">
+                    <b-button tag="a" 
+                        :href="memorie.url" 
+                        target="_blank"
+                        rounded> 
+                        <vue-fontawesome :icon="['fas', 'file-pdf']"/> 
+                        Ver PDF
+                    </b-button>
+                </div>
+            </div>   
+        </div>  
     </div>
 </template>
 
@@ -26,23 +34,22 @@ export default {
 }
 </script>
     
-<style scoped>
-.memorie-container{
+<style lang="scss" scoped>
+.memories-container {
+    color: #363636;
     background-color:#fdca36 ;
-    padding-top: 4%;
-    padding-bottom: 4%;
-    margin-bottom: 5%;
-}
+    padding: 50px 0;
+    margin: 30px 0 0 0;
 
-.memoria-style{
-    margin-left: 15%;
-    margin-right: 16%;
-    margin-top: 4%;
-    margin-bottom: 2%;
-    border-color: black;
-    border-width: 0px 0px 1px 0px;
-    border-style: solid;
-    
+    .memories-item {
+        margin: 20px 20%;
+        border-bottom: 1px #363636 solid; 
+        
+        .memories-item-name {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
 }
 
 </style>
