@@ -36,7 +36,6 @@ export default {
     
 <style lang="scss" scoped>
 .memories-container {
-    color: #363636;
     background-color:#fdca36 ;
     padding: 50px 0;
     margin: 30px 0 0 0;

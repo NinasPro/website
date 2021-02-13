@@ -23,7 +23,7 @@ export default {
 #app {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  color: black;
+  color: #363636;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
