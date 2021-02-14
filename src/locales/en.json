@@ -42,5 +42,12 @@
   {
     "signUp":"Sign Up",
     "seeAll":"See All"
+  },
+  "volunteer":{
+      "help":"How to take part?",
+      "titleDo":"What does a volunteer do in Niñas Pro?",
+      "titleProfile":"Profile of our volunteers",
+      "titleProject":"Projects you can get involved in",
+      "titleTestimony":"Testimony" 
   }
 }

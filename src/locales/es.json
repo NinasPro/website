@@ -41,5 +41,12 @@
     {
         "signUp":"Inscríbete",
         "seeAll":"Ver todos"
+    },
+    "volunteer":{
+        "help":"¿Cómo participar?",
+        "titleDo":"¿Qué hace una persona voluntaria en Niñas Pro?",
+        "titleProfile":"Perfil de nuestros voluntarios",
+        "titleProject":"Proyectos en los que puedes involucrarte",
+        "titleTestimony":"Testimonios"  
     }
 }

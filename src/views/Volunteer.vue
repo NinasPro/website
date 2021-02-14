@@ -1,9 +1,10 @@
 <template>
   <div id="volunteer">
-    <Banner :type="type" title="¿Cómo participar?" />
-    <h1 class="title container">¿Que hace una persona voluntaria en Niñas Pro?</h1>
+    <Banner :type="type" :title="`${$t('volunteer.help')}`" />
+    <h1 class="title container">{{$t('volunteer.titleDo')}}</h1>
     <Do/>
     <Profile/>
+    <!--
     <div class="container">
       <div class="tile is-ancestor">
         <div class="tile is-6 is-vertical is-parent">
@@ -52,23 +53,23 @@
           </div>          
         </div>        
       </div>    
-    </div> 
+    </div> -->
     <div class="container">
-      <div class="title">Proyectos en los que puedes involucrarte</div>
+      <div class="title">{{$t('volunteer.titleProject')}}</div>
       <div class="columns">
-        <div class="column" v-for="item in dataProjects" :key="item">
-          <News :title=item.title :type=item.type :text=item.text :path=item.path />  
+        <div class="column" v-for="item in datos('projects')" :key="item">
+          <News :title="item.title" :type="item.type" :text="item.text" :path="item.path" />  
         </div>
       </div>
     </div>
     <div class="container">
-      <div class="title">Testimonios</div>
+      <div class="title">{{$t('volunteer.titleTestimony')}}</div>
       <div class="columns is-multiline">
-        <div class="column is-one-fifth" v-for="testimony in dataTestimony" :key="testimony">
+        <div class="column is-one-fifth" v-for="testimony in datos('testimony')" :key="testimony">
           <Testimony 
-          :name=testimony.name
-          :title=testimony.title
-          :type=testimony.type />
+          :name="testimony.name"
+          :title="testimony.title"
+          :type="testimony.type" />
         </div>
       </div>
     </div>   
@@ -84,16 +85,16 @@ import Profile from "../components/VolunteerProfile.vue";
 import Testimony from "../components/Testimony.vue";
 import News from "../components/News.vue";
 import * as Data from '../data/volunteer.js';
-
+import i18n from '../i18n';
 
 export default {
   name: "Volunteer",
   data () {
-    const dataProjects = Data.default.projects
-    const dataTestimony = Data.default.testimony
+    const data = Data.default
+    const lang=`${i18n.locale}`
     return {
-      dataProjects,
-      dataTestimony,
+      data,
+      lang,
     }
   },
   components: {
@@ -105,6 +106,41 @@ export default {
   },
   props: {
     type: String
+  },
+  methods:
+  {
+    //data according to language
+    datos(section)
+    {
+      if(this.lang == "en")
+        {
+            if(section=="projects")
+            {
+              return this.data.en.projects
+            }
+            else if(section=="testimony")
+            {
+              return this.data.en.testimony
+            }
+            else{
+              return null
+            }
+        }
+        else
+        {
+            if(section=="projects")
+            {
+              return this.data.es.projects
+            }
+            else if(section=="testimony")
+            {
+              return this.data.es.testimony
+            }
+            else{
+              return null
+            }
+        }
+    }
   }
 };
 </script>
