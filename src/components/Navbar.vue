@@ -24,7 +24,7 @@
         </b-navbar-item>
       </b-navbar-dropdown>
       <b-navbar-item tag="router-link" :to="{ path: '/eventos/' }">
-        <p>{{$t('navbar.eventos')}}</p>
+        <p>{{$t('navbar.events')}}</p>
       </b-navbar-item>
       <b-navbar-item tag="router-link" :to="{ path: '/somos/' }">
         <p>{{$t('navbar.somos')}}</p>

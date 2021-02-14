@@ -12,7 +12,7 @@
                 </h6>
                 <h1 class="title margin-information">  {{event.event}} </h1>
                 <p class="margin-information"> {{event.information}} </p>
-                <a class="button is-primary margin-information is-rounded is-medium" :href="event.link" > Inscríbete </a>
+                <a class="button is-primary margin-information is-rounded is-medium" :href="event.link" > {{$t('event.signUp')}} </a>
             </div>
         </div>
     </div>
@@ -21,12 +21,15 @@
 <script>
 import * as Events from '../data/events.js';
 var moment = require('moment')
+import i18n from '../i18n'
 export default {
     data() {
-        const data = Events.default;
+        const event = Events.default;
+        const lang=`${i18n.locale}`
         return {
             moment:moment,
-            data,
+            event,
+            lang
         }
     },
     methods: {
@@ -44,13 +47,25 @@ export default {
                 }
                 });
             
-            },   
+            },
+            //data according to language
+            datos()
+            {
+                if(this.lang == "en")
+                {
+                    return this.event.en.events
+                }
+                else 
+                {
+                    return this.event.es.events
+                }
+            }      
         },
     computed:
         {
             eventos: function () {
                 var datos=[];
-                var array=this.sortJSON(this.data,'date','asc');
+                var array=this.sortJSON(this.datos(),'date','asc');
                 for(let i=0;i<array.length;i++){
                     if(new Date(array[i].date)>new Date)
                     {

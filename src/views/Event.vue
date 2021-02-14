@@ -1,6 +1,6 @@
 <template>
     <div id="event">
-        <Banner :type="type" title="Eventos" />
+        <Banner :type="type" :title="`${$t('navbar.events')}`" />
         <Event/>
     </div>    
 </template>
