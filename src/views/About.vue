@@ -62,12 +62,9 @@ export default {
   {
     //data according to language
     datos: function(){
-        if(this.lang == "en")
-        {
+        if(this.lang == "en"){
           return this.data.en
-        }
-        else
-        {
+        } else {
           return this.data.es
         }
         

@@ -38,12 +38,9 @@ export default {
     //data according to language
             datos:function()
             {
-                if(this.lang == "en")
-                {
+                if(this.lang == "en") {
                     return this.data.en.doData
-                }
-                else 
-                {
+                } else {
                     return this.event.es.doData
                 }
             }

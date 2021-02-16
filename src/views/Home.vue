@@ -99,37 +99,25 @@ export default {
     {
       if(this.lang == "en")
         {
-            if(section=="projects")
-            {
+            if(section=="projects"){
               return this.data.en.projectsHome
-            }
-            else if(section=="information")
-            {
+            } else if(section=="information") {
               return this.data.en.information
-            }
-            else if(section=="new")
-            {
+            } else if(section=="new") {
               return this.data.en.news
-            }
-            else{
+            } else {
               return null
             }
         }
         else
         {
-            if(section=="projects")
-            {
+            if(section=="projects") {
               return this.data.es.projectsHome
-            }
-            else if(section=="information")
-            {
+            } else if(section=="information") {
               return this.data.es.information
-            }
-            else if(section=="new")
-            {
+            } else if(section=="new") {
               return this.data.es.news
-            }
-            else{
+            } else {
               return null
             }
         }
