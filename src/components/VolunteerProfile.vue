@@ -2,11 +2,11 @@
     <div class="background-container container">
         <div class="columns margin">
             <div class="column profile">
-                <h1 aling="center">Perfil de nuestros voluntarios</h1>
+                <h1 aling="center">{{$t('volunteer.titleProfile')}}</h1>
             </div>
             <div class="column is-half" >
                 <ol class="star">
-                    <li class="text" v-for="text in data" :key="text.id"> {{text.text}} </li>
+                    <li class="text" v-for="text in datos" :key="text.id"> {{text.text}} </li>
                 </ol>
             </div>
         </div>
@@ -16,13 +16,27 @@
 
 <script>
 import * as Data from '../data/volunteer.js';
+import i18n from '../i18n';
 export default {
     data () {
-    const data = Data.default.profileData
+    const data = Data.default
+    const lang=`${i18n.locale}`
     return {
-      data,
+        data,
+        lang,
     }
-  },
+    },
+    computed:
+    {
+        //data according to language
+                datos:function() {
+                    if(this.lang == "en") {
+                        return this.data.en.profileData
+                    } else {
+                        return this.event.es.profileData
+                    }
+                }
+    },
 }
 </script>
 

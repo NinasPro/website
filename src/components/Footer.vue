@@ -8,41 +8,41 @@
           </a>
         </div>
         <div class="column is-2">
-          <strong >Somos</strong> 
+          <strong >{{$t('footer.about')}}</strong> 
           <ul>
-            <li><router-link class="footer-link" to="/somos#mision">Misión</router-link></li>
-            <li><router-link class="footer-link" to="/somos#vision">Visión</router-link></li>
-            <li><router-link class="footer-link" to="/somos#comunidad">Comunidad</router-link></li>
-            <li><router-link class="footer-link" to="/somos#historia">Historia</router-link></li>
-            <li><router-link class="footer-link" to="/somos#memoria">Memorias</router-link></li>
+            <li><router-link class="footer-link" to="/somos#mision">{{$t('footer.mission')}}</router-link></li>
+            <li><router-link class="footer-link" to="/somos#vision">{{$t('footer.vision')}}</router-link></li>
+            <li><router-link class="footer-link" to="/somos#comunidad">{{$t('footer.community')}}</router-link></li>
+            <li><router-link class="footer-link" to="/somos#historia">{{$t('footer.history')}}</router-link></li>
+            <li><router-link class="footer-link" to="/somos#memoria">{{$t('footer.memory')}}</router-link></li>
           </ul> 
         </div>
         <div class="column is-2">
-          <strong >Proyectos</strong> 
+          <strong >{{$t('footer.project')}}</strong> 
           <ul>
-            <li><router-link class="footer-link" to="/empodera/">Empodera</router-link></li>
-            <li><router-link class="footer-link" to="/incentiva/">Incentiva</router-link></li>
-            <li><router-link class="footer-link" to="/inspira/">Inspira</router-link></li>
-            <li><router-link class="footer-link" to="/potencia/">Potencia</router-link></li>
+            <li><router-link class="footer-link" to="/empodera/">{{$t('footer.empower')}}</router-link></li>
+            <li><router-link class="footer-link" to="/incentiva/">{{$t('footer.incentive')}}</router-link></li>
+            <li><router-link class="footer-link" to="/inspira/">{{$t('footer.inspire')}}</router-link></li>
+            <li><router-link class="footer-link" to="/potencia/">{{$t('footer.power')}}</router-link></li>
           </ul>
         </div>
         <div class="column is-2">
-          <strong >Cómo ayudar</strong> 
+          <strong >{{$t('footer.help')}}</strong> 
           <ul>
-            <li><router-link class="footer-link" to="/voluntariado/">Trabaja con nosotras</router-link></li>
-            <li><router-link class="footer-link" to="/voluntariado/">Hazte socia</router-link></li>
-            <li><router-link class="footer-link" to="/voluntariado/">Hazte voluntaria</router-link></li>
-            <li><router-link class="footer-link" to="/voluntariado/">Dona</router-link></li>
+            <li><router-link class="footer-link" to="/voluntariado/">{{$t('footer.workWithUs')}}</router-link></li>
+            <li><router-link class="footer-link" to="/voluntariado/">{{$t('footer.member')}}</router-link></li>
+            <li><router-link class="footer-link" to="/voluntariado/">{{$t('footer.volunteer')}}</router-link></li>
+            <li><router-link class="footer-link" to="/voluntariado/">{{$t('footer.dona')}}</router-link></li>
           </ul>
         </div>
         <div class="column is-1"></div>
         <div class="column">
           <div class="contactus">
-            <strong>Contáctanos</strong> <br>
+            <strong>{{$t('footer.contact')}}</strong> <br>
             <a href="mailto:contacto@ninaspro.cl">contacto@ninaspro.cl</a>
           </div>
           <div class="rrss">
-            <strong>Sigue nuestras redes sociales</strong>
+            <strong>{{$t('footer.redes')}}</strong>
             <SocialNetworkButton
             pathTw="https://twitter.com/ninasPro"
             pathFb="https://www.facebook.com/NinasPro"

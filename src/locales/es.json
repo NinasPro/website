@@ -1,0 +1,52 @@
+{
+    "navbar":{
+        "incentivas":"Incentivas",
+        "inspira":"Proyecto Inspira",
+        "empodera": "Proyecto Empodera",
+        "potencia": "Proyecto Potencia",
+        "incentiva": "Proyecto Incentiva",
+        "events":"Eventos",
+        "somos": "Somos",
+        "involucrate": "Involucrate",
+        "dona":"Dona"
+    },
+    "footer":{
+        "about": "Somos",
+        "mission":"Misión",
+        "vision":"Visión",
+        "community":"Comunidad",
+        "history":"Historia",
+        "memory":"Memorias",
+        "project":"Proyectos",
+        "empodera":"Empodera",
+        "incentiva":"Incentiva",
+        "inspira":"Inspira",
+        "potencia":"Potencia",
+        "help":"¿Cómo ayudar?",
+        "workWithUs":"Trabaja con nosotros",
+        "member":"Hazte soci@",
+        "volunteer":"Hazte voluntari@",
+        "dona":"Dona",
+        "contact":"Contáctanos",
+        "redes":"Sigue nuestras redes sociales"
+      },
+    "home":{
+        "titleEvents":"Próximos eventos",
+        "titlePartners": "Nuestros Partners",
+        "titleNews":"Noticias",
+        "seeAll":"Ver todas",
+        "newsletter":"Subscribete al newsletter"
+    },
+    "event":
+    {
+        "signUp":"Inscríbete",
+        "seeAll":"Ver todos"
+    },
+    "volunteer":{
+        "help":"¿Cómo participar?",
+        "titleDo":"¿Qué hace una persona voluntaria en Niñas Pro?",
+        "titleProfile":"Perfil de nuestros voluntarios",
+        "titleProject":"Proyectos en los que puedes involucrarte",
+        "titleTestimony":"Testimonios"  
+    }
+}

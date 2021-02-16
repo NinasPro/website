@@ -1,6 +1,6 @@
 <template>
   <b-carousel :pause-hover="false" :pause-info="false">
-    <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
+    <b-carousel-item v-for="(carousel,i) in datos" :key="i">
       <section :class="`hero is-medium ${type}`">
         <div class="hero-body">
           <div class="container">
@@ -24,36 +24,39 @@
 </template>
 
 <script>
+import * as Carrousel from '../data/home.js';
+import i18n from '../i18n'
+
+
 export default {
   name: "Carrousel",
   props: {
     "type": String,
   },
   data(){
+    const lang=`${i18n.locale}`
+    const carousels=Carrousel.default
     return {
       carousel: 0,
-      carousels: [
-        {
-          title: 'Bienvenidas',
-          subtitle: 'Empoderamos a niñas y adolescentes a través de la enseñanza de programación e Inspiramos vocaciones científicas y tecnológicas',
-          image: 'banner-img-1.png'
-        },
-        {
-          title: 'Django Girls',
-          subtitle: 'En Enero más de 45 mujeres participaron en Django Girls Santiago, una jornada de introducción al desarrollo de aplicaciones web.',
-          image: 'banner-img-2.png'
-        },
-        {
-          title: 'Curso Virtual',
-          subtitle: 'En Abril comenzó el curso anual de programación competitiva para niñas en modalidad online. ¡Este año también en Coquimbo y Concepción!',
-          image: 'banner-img-3.png'
-        }
-      ]
+      carousels,
+      lang,
     }
   },
   methods: {
     getImgUrl(value) {
         return require(`@/assets/${value}`)
+    }
+  },
+  computed:
+  {
+    //data according to language
+    datos: function(){
+        if(this.lang == "en") {
+          return this.carousels.en.carousels
+        } else {
+          return this.carousels.es.carousels
+        }
+        
     }
   }
 };

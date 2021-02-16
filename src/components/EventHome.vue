@@ -14,7 +14,7 @@
             </details>
             <div class="column is-4-desktop">
                 <a class="button is-rounded is-success is-inverted" name="Incripción" title="Inscripción" :href="inf.link" target="_blank">
-                    Inscríbete
+                    {{$t('event.signUp')}}
                 </a>
             </div>
         </div>
@@ -23,11 +23,11 @@
 
 
 <script>
-    import * as myModule from '../data/events.js';
+    import * as Event from '../data/events.js';
     
     export default {
         data() {
-            const data = myModule.default.data;
+            const data = Event.default;
             var fechaActual= new Date;
             return {
                 data,
@@ -36,41 +36,45 @@
         },
         methods: {
             sortJSON(data, key, orden) {
-            return data.sort(function (a, b) {
-                var x = a[key],
-                y = b[key];
+                return data.sort(function (a, b) {
+                    var x = a[key],
+                    y = b[key];
 
-                if (orden === 'asc') {
-                    return ((x < y) ? -1 : ((x > y) ? 1 : 0));
-                }
+                    if (orden === 'asc') {
+                        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+                    }
 
-                if (orden === 'desc') {
-                    return ((x > y) ? -1 : ((x < y) ? 1 : 0));
-                }
+                    if (orden === 'desc') {
+                        return ((x > y) ? -1 : ((x < y) ? 1 : 0));
+                    }
                 });
             
-            },   
+            },
+            //data according to language
+            datos() {
+                if(this.lang == "en") {
+                    return this.data.en.events
+                } else {
+                    return this.data.es.events
+                }
+            }   
         },
         computed:
         {
             eventos: function () {
                 var datos=[];
                 var count=0;
-                var array=this.sortJSON(this.data,'date','asc');
-                for(let i=0;i<array.length;i++){
-                    
-                    if(new Date(array[i].date)>new Date && count<3)
-                    {
+                var array=this.sortJSON(this.datos(),'date','asc');
+                for(let i=0;i<array.length;i++) {
+                    if(new Date(array[i].date)>new Date && count<3){
                         datos.push(array[i]);
                         count++;
-                    }
-                    else if(count>=3)
-                    { 
+                    } else if(count>=3) { 
                         return datos;
                     }   
                 }
                 return datos;
-            }
+            },
         }
     }
     
