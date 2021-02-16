@@ -30,13 +30,10 @@ export default {
     {
         //data according to language
         datos: function(){
-            if(this.lang == "en")
-            {
-            return this.data.en.memory
-            }
-            else 
-            {
-            return this.data.es.memory
+            if(this.lang == "en") {
+                return this.data.en.memory
+            } else {
+                return this.data.es.memory
             }
             
         }
