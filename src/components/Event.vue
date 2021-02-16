@@ -34,19 +34,18 @@ export default {
     },
     methods: {
             sortJSON(data, key, orden) {
-            return data.sort(function (a, b) {
-                var x = a[key],
-                y = b[key];
+                return data.sort(function (a, b) {
+                    var x = a[key],
+                    y = b[key];
 
-                if (orden === 'asc') {
-                    return ((x < y) ? -1 : ((x > y) ? 1 : 0));
-                }
+                    if (orden === 'asc') {
+                        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+                    }
 
-                if (orden === 'desc') {
-                    return ((x > y) ? -1 : ((x < y) ? 1 : 0));
-                }
+                    if (orden === 'desc') {
+                        return ((x > y) ? -1 : ((x < y) ? 1 : 0));
+                    }
                 });
-            
             },
             //data according to language
             datos() {
@@ -63,13 +62,10 @@ export default {
                 var datos=[];
                 var array=this.sortJSON(this.datos(),'date','asc');
                 for(let i=0;i<array.length;i++){
-                    if(new Date(array[i].date)>new Date)
-                    {
+                    if(new Date(array[i].date)>new Date){
                         datos.push(array[i]);
-                    }
-                    else {
-                        for(let day=2;day<=7;day++)
-                        {
+                    } else {
+                        for(let day=2;day<=7;day++) {
                             if((moment(array[i].date).fromNow()).includes(`${day} days ago`) ||  ((moment(array[i].date).fromNow()).includes('a day ago'))){
                                 datos.push(array[i]);
                                 break;

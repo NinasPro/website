@@ -39,26 +39,26 @@
         },
         methods: {
             sortJSON(data, key, orden) {
-            return data.sort(function (a, b) {
-                var x = a[key],
-                y = b[key];
+                return data.sort(function (a, b) {
+                    var x = a[key],
+                    y = b[key];
 
-                if (orden === 'asc') {
-                    return ((x < y) ? -1 : ((x > y) ? 1 : 0));
-                }
+                    if (orden === 'asc') {
+                        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+                    }
 
-                if (orden === 'desc') {
-                    return ((x > y) ? -1 : ((x < y) ? 1 : 0));
-                }
+                    if (orden === 'desc') {
+                        return ((x > y) ? -1 : ((x < y) ? 1 : 0));
+                    }
                 });
             
             },
             //data according to language
             datos() {
                 if(this.lang == "en") {
-                    return this.data.en.data
+                    return this.data.en.events
                 } else {
-                    return this.data.es.data
+                    return this.data.es.events
                 }
             }   
         },
@@ -68,15 +68,11 @@
                 var datos=[];
                 var count=0;
                 var array=this.sortJSON(this.datos(),'date','asc');
-                for(let i=0;i<array.length;i++){
-                    
-                    if(new Date(array[i].date)>new Date && count<3)
-                    {
+                for(let i=0;i<array.length;i++) {
+                    if(new Date(array[i].date)>new Date && count<3){
                         datos.push(array[i]);
                         count++;
-                    }
-                    else if(count>=3)
-                    { 
+                    } else if(count>=3) { 
                         return datos;
                     }   
                 }
