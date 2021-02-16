@@ -54,15 +54,11 @@
             
             },
             //data according to language
-            datos()
-            {
-                if(this.lang == "en")
-                {
-                return this.data.en.data
-                }
-                else 
-                {
-                return this.data.es.data
+            datos() {
+                if(this.lang == "en") {
+                    return this.data.en.data
+                } else {
+                    return this.data.es.data
                 }
             }   
         },
