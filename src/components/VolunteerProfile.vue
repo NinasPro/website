@@ -21,10 +21,10 @@ export default {
     data () {
     const data = Data.default
     const lang=`${i18n.locale}`
-        return {
+    return {
         data,
         lang,
-        }
+    }
     },
     computed:
     {
