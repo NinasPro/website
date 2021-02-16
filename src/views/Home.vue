@@ -1,61 +1,59 @@
 <template>
   <div id="home">
     <Carrousel :type="type"/>
-    <div class="container">  <!--Iniciativas-->
-      <div class="container-home">
+
+    <!--Iniciativas-->
+    <section id="iniciativas">
+      <div class="container">
+        <h1 class="title"> ¿Cómo lo hacemos? </h1>
+        <p class="subtitle"> Categorizamos nuestras actividades en las siguientes iniciativas </p>
         <div class="columns is-variable is-1">
-          <div class="column" v-for="project in datos('projects')" :key="project">
+          <div class="column" v-for="(project, i) in datos('projects')" :key="i">
             <ProjectsHome :title="project.title" :type="project.type" :image="project.image" :path="project.path" :description="project.description" />
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
     <!--Information-->
-    <div v-for="item in datos('information')" :key="item">
-      <Information :type="item.type" :image="item.image" :text="item.text" :titulo="item.titulo" :boton="item.boton" :Path="item.Path" />
+    <section id="information">
+    <div v-for="(item, i) in datos('information')" :key="i">
+      <Information :type="item.type" :image="item.image" :text="item.text" :titulo="item.titulo" :boton="item.boton" :path="item.Path" />
     </div>
+    </section>
+
     <!--Eventos -->
-    <div>
-      <div class="container">
-        <h2 class="title" >
-            {{$t('home.titleEvents')}}
-        </h2> 
+    <section id="events">
+      <div class="columns is-vcentered">
+        <div class="column is-4">
+          <h1 class="title"> {{$t('home.titleEvents')}} </h1>
+          <p class="subtitle"> Todos nuestros eventos son gratuitos, ¡revisa los requisitos e inscríbete! </p>
+          <router-link class="button is-rounded is-success" name="Mas información" title="Mas información" to='/eventos/'>
+            {{$t('event.seeAll')}}
+          </router-link>
+        </div>
+        <div class="column">
+          <Events> </Events>
+        </div>
       </div>
-      <div class="container-home">
-        <Events > </Events>
-      </div>
-    </div>
+    </section>
+
     <!--Collaborators and partners -->
-    <div class="container">
-      <div class="container-home">
+    <section id="collaborators">
+      <div class="container">
         <h1 class="title"> {{$t('home.titlePartners')}} </h1>
-          <Collaborators type="is-collaborators" ></Collaborators>
+        <p class="subtitle"> Agradecemos a las empresas, instituciones y organizaciones que confían en nosotras y nos ayudan a llegar a más niñas cada año. </p>
+        <Collaborators type="is-collaborators"></Collaborators>
       </div>
-    </div>
-    <!-- News -->
-    <div class="container">
-      <div class="container-home">
-        <div class="columns">
-          <div class="column">
-            <h1 class=title>{{$t('home.titleNews')}}</h1>
-          </div>
-          <div class="column">
-            <b-button rounded class="moreinfobutton" type="is-medium is-info" @click="clickMe">{{$t('home.seeAll')}}</b-button>
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column" v-for="report in datos('new')" :key="report">
-            <News :title="report.title" :type="report.type" :text="report.text" :path="report.path" />
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
+
     <!-- Newsletter Button -->
-    <div class="container container-newsletter" >
-      <a href="http://eepurl.com/gn7I3r" class="button newsletter is-rounded is-medium " >
+    <section id="newsletter">
+      <a class="button is-primary is-rounded is-large" href="http://eepurl.com/gn7I3r" target="_blank">
           {{$t('home.newsletter')}}
-      </a> 
-    </div>
+      </a>
+    </section>
+    
   </div>
 </template>
 
@@ -65,7 +63,6 @@ import ProjectsHome from "../components/ProjectsHome.vue";
 import Collaborators from '../components/Collaborators.vue';
 import Information from '../components/Information.vue';
 import Events from '../components/EventHome.vue';
-import News from "../components/News.vue";
 import * as Data from '../data/home.js';
 import i18n from '../i18n'
 
@@ -85,20 +82,14 @@ export default {
     Collaborators,
     Events,
     Information,
-    News,
   },
   props: {
     type: String
   },
   methods: {
-    clickMe() {
-      this.$buefy.notification.open('Clicked!!')
-    },
     //data according to language
-    datos(section)
-    {
-      if(this.lang == "en")
-        {
+    datos(section) {
+      if(this.lang == "en") {
             if(section=="projects"){
               return this.data.en.projectsHome
             } else if(section=="information") {
@@ -108,9 +99,7 @@ export default {
             } else {
               return null
             }
-        }
-        else
-        {
+        } else {
             if(section=="projects") {
               return this.data.es.projectsHome
             } else if(section=="information") {
@@ -127,28 +116,41 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>  
   .column, .columns {
     border: 0px;
   }
-  .title {
-  font-size: 30px;
-  margin-left: 18px;
-  font-size: 26px;
+
+  section {
+    margin: 160px 0;
+
+    .title {
+      font-size: 30px;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
   }
-  .moreinfobutton {
-    left: 76%;
+
+  #events {
+    .title, .subtitle {
+      text-align: left;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+    .button {
+      margin-left: 20%;
+    }
+    
   }
-  .container-home {
-    padding-bottom: 20%;
-  }
-  .newsletter{
-    background-color: #2b88f7;
-    color: white;
-    font-size: 1.7em; 
-  }
-  .container-newsletter{
-    padding-bottom:10%;
-    text-align:center;
+
+  #newsletter {
+    text-align: center; 
   }
 </style>

@@ -19,13 +19,21 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #363636;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+
+  .container {
+    max-width: 1080px;
+  }
+
+  .button {
+    font-weight: bold;
+  }
+
 }
-
-
 </style>

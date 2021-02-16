@@ -1,36 +1,37 @@
 <template>
   <div id="about">
     <Banner :type="type" :title="`${$t('navbar.somos')}`"/>
-    <div class="container np-content">
+    
+    <section id="mision" class="container">
       <div class="tile is-ancestor">
-        <div class="tile is-vertical">
-          <div class="tile">
-            <div class="tile is-parent">
+        <div class="tile is-parent">
+          <div class="tile is-child">
+            <figure class="image is-1by1">
               <img src="@/assets/empower.jpg" alt="Sororidad y Colaboración">
-            </div>
-            <div class="tile is-parent is-vertical" >
-              <div v-for="inf in datos.data" :key="inf">
-                <section :id="inf.id" class="margin">
-                  <article :class="`tile is-child notification ${inf.type}`">
-                    <p  class="title">{{inf.title}}</p>
-                    <p>
-                    {{inf.texto}}
-                    </p>
-                  </article>
-                </section>
-              </div>
-            </div>
+            </figure>
+          </div>
+        </div>
+        <div class="tile is-parent is-vertical" >
+          <div :class="`tile is-child notification ${inf.type}`" v-for="(inf, i) in datos.data" :key="i">
+              <p class="title"> {{inf.title}} </p>
+              <p> {{inf.texto}} </p>
           </div>
         </div>
       </div>
-    </div>
-    <div  id="historia" class="container">
+    </section>
+
+    <!-- History -->
+    <section id="historia" class="container">
       <div class="title">{{$t('footer.history')}}</div>
-        <p v-for="texto in datos.history" :key="texto">
+        <p v-for="(texto, i) in datos.history" :key="i">
           <span v-html="texto.text"/>
-        </p>   
-    </div>
-    <Memorie/>
+        </p>
+    </section>
+
+    <!-- Memorias -->
+    <section id="memories">
+      <Memorie/>
+    </section>
   </div>
 </template>
 
@@ -61,47 +62,33 @@ export default {
   computed:
   {
     //data according to language
-    datos: function(){
+    datos: function() {
         if(this.lang == "en"){
           return this.data.en
         } else {
           return this.data.es
         }
-        
     }
   }
 };
 </script>
 
 <style lang="scss" scoped>
-  .np-content {
-    margin-top: 5%;
+  .tile {
+    border-radius: 25px;
 
-    .tile {
+    .title {
+      font-size: 2rem;
+    }
+
+    img {
       border-radius: 25px;
-
-      .title {
-        font-size: 2rem;
-      }
-      .subtitle {
-        font-size: 1.5rem;
-        font-weight: bold;
-      }
-
-      img {
-        border-radius: 25px;
-      }
     }
   }
-  p {
-    text-align: justify;
-    font-size: 1.2rem;
+
+  #mision, #historia {
+    margin-top: 130px;
+    margin-bottom: 130px;
   }
-  .container {
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
-  .margin{
-    margin-bottom: 5%;
-  }
+
 </style>

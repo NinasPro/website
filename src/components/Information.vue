@@ -1,48 +1,41 @@
-<template >
-
-    <div v-if="type === 'left'">
-        <div class="columns">
-            <div class="column">
-                <img :class="type" :src="getImgUrl(image)" :align="type">
+<template>
+    <div class="columns">
+        <slot v-if="type === 'left'">
+            <div class="column info-img">
+                <img :class="type" :src="getImgUrl(image)">
             </div>
-            <div class="column "> 
-                <h1 class="title style-title-right" align="left" > {{titulo}}</h1>
-                <div class =" style-text-right"  align="left">{{text}} </div>
-                <router-link :to="Path" class="button-information button is-info is-rounded is-medium" style=" margin-inline-start: 15%;">
-                     {{boton}} 
+        </slot>
+        
+        <div class="column is-6-desktop"> 
+            <div class="info-text">
+                <h1 class="title"> {{titulo}} </h1>
+                <h2 class="subtitle"> {{text}} </h2>
+                <router-link :to="path" 
+                    v-bind:class="{'button is-rounded': true, 'is-info': (type === 'left'), 'is-success': (type === 'right')}">
+                    {{boton}} 
                 </router-link>
             </div>
         </div>
+        
+        <slot v-if="type === 'right'">
+            <div :class="`column info-img ${type}`">
+                <img :class="type" :src="getImgUrl(image)">
+            </div>
+        </slot>
     </div>
-    <div v-else>
-        <div class="columns">
-            <div class="column"> 
-                <h1 class="title style-title-left" align="left"> {{titulo}}</h1>
-                <div class =" style-text-left"  align="left" >{{text}} </div>
-                <router-link :to="Path" class="button-information button is-success is-rounded is-medium " style="margin-inline-start: 25%;">
-                    {{boton}}
-                </router-link> 
-            </div>
-            <div class="column">
-                <img :class="type" :src="getImgUrl(image)" :align="type">
-            </div>
-            
-        </div>
-    </div> 
 </template>
 
 <script>
 
 export default {
-    props:
-    {
+    props: {
         "type": String,
         "image" : String,
         "text" : String,
         "boton" : String,
         "format" :String,
         "titulo":String,
-        "Path" : String,
+        "path" : String,
     },
     methods: {
         getImgUrl(value) {
@@ -53,50 +46,52 @@ export default {
 
 </script>
 
-<style>
-    .right{
-        border-radius: 1000px 0px 0px 1000px;
-        width: 100%;
-        height: 75%;
-        object-fit: cover;
-        margin: 2rem 0rem 2rem 20rem;
+<style lang="scss" scoped>
+    .info-text { 
+        text-align: left;
+        padding: 25% 25%;
+
+        .title {
+            font-size: 30px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+        }
     }
-    .style-title-left{
-        font-size: 2.5em; 
-        margin-inline-start: 25%; 
-        margin-top:14.5%; 
-        line-height: 1.5;
+
+    .info-img {
+        max-height: 700px;
+
+        &.right {
+            text-align: right; 
+        }
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            max-height: inherit;
+            padding: 30px 0px;
+
+            &.right {
+                border-radius: 1000px 0px 0px 1000px;
+            }
+
+            &.left{
+                border-radius: 0px 1000px 1000px 0px;
+            } 
+        }
     }
-    .style-text-left{
-        font-size: 1.65em; 
-        padding: 1% 0.5% ; 
-        margin-inline-start: 25%; 
-        margin-inline-end: 14.5%; 
-        line-height: 1.5;
-        margin-bottom: 2%;
+
+@media only screen and (max-device-width: 1220px) {
+    .info-text {
+        padding: 30px 30px;
     }
-    .left{
-        border-radius: 0px 1000px 1000px 0px;
-        width: 100%;
-        height: 75%;
-        object-fit: cover;
-        margin: 2rem 0rem 2rem 0rem;
-    } 
-    .style-title-right{
-        font-size: 2.5em; 
-        padding: 15% 0.2% 0%; 
-        line-height: 1.5; 
-        margin-inline-end: 25%; 
-        margin-inline-start: 15%;
+
+    .info-img {
+        img {
+            width: 90%;
+        }
     }
-    .style-text-right{
-        font-size: 1.65em; 
-        padding: 1% 0.5% ; 
-        line-height: 1.5; 
-        margin-inline-end: 25%; 
-        margin-inline-start: 15%;
-        margin-bottom: 2%;
-    }
-    
-    
+}
 </style>
