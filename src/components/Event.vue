@@ -49,14 +49,10 @@ export default {
             
             },
             //data according to language
-            datos()
-            {
-                if(this.lang == "en")
-                {
+            datos() {
+                if(this.lang == "en") {
                     return this.event.en.events
-                }
-                else 
-                {
+                } else {
                     return this.event.es.events
                 }
             }      

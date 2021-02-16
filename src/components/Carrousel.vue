@@ -55,12 +55,9 @@ export default {
   {
     //data according to language
     datos: function(){
-        if(this.lang == "en")
-        {
+        if(this.lang == "en") {
           return this.carousels.en.carousels
-        }
-        else
-        {
+        } else {
           return this.carousels.es.carousels
         }
         

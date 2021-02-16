@@ -35,13 +35,10 @@ export default {
     {
         //data according to language
         datos: function(){
-            if(this.lang == "en")
-            {
-            return this.data.en.collaborators
-            }
-            else 
-            {
-            return this.data.es.collaborators
+            if(this.lang == "en") {
+                return this.data.en.collaborators
+            } else {
+                return this.data.es.collaborators
             }
             
         }
