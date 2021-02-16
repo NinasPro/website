@@ -29,14 +29,10 @@ export default {
     computed:
     {
         //data according to language
-                datos:function()
-                {
-                    if(this.lang == "en")
-                    {
+                datos:function() {
+                    if(this.lang == "en") {
                         return this.data.en.profileData
-                    }
-                    else 
-                    {
+                    } else {
                         return this.event.es.profileData
                     }
                 }
