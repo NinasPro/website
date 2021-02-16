@@ -5,11 +5,11 @@
 
     <!--Iniciativas-->
     <section id="iniciativas">
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <h1 class="title"> ¿Cómo lo hacemos? </h1>
         <p class="subtitle"> Categorizamos nuestras actividades en las siguientes iniciativas </p>
         <div class="columns is-variable is-1">
-          <div class="column" v-for="(project, i) in dataProjectsHome" :key="i">
+          <div class="column" v-for="(project, i) in dataProjectsHome" :key="i" data-aos="fade-up" :data-aos-delay="300 + 100*i">
             <ProjectsHome :title=project.title :type=project.type :image=project.image :path=project.path :description=project.description />
           </div>
         </div>
@@ -19,21 +19,21 @@
     <!--Information-->
     <section id="information">
     <div v-for="(item, i) in dataInformation" :key="i">
-      <Information :type=item.type :image=item.image :text=item.text :titulo=item.titulo :boton=item.boton :path=item.path />
+        <Information :type=item.type :image=item.image :text=item.text :titulo=item.titulo :boton=item.boton :path=item.path />
     </div>
     </section>
 
     <!--Eventos -->
     <section id="events">
       <div class="columns is-vcentered">
-        <div class="column is-4">
+        <div class="column is-4" data-aos="fade-right" data-aos-anchor-placement="center-center">
           <h1 class="title"> Próximos eventos </h1>
           <p class="subtitle"> Todos nuestros eventos son gratuitos, ¡revisa los requisitos e inscríbete! </p>
           <router-link class="button is-rounded is-success" name="Mas información" title="Mas información" to='/eventos/'>
             Ver todos
           </router-link>
         </div>
-        <div class="column">
+        <div class="column" data-aos="fade-left" data-aos-delay="1000" data-aos-anchor-placement="center-center">
           <Events> </Events>
         </div>
       </div>
@@ -41,7 +41,7 @@
 
     <!--Collaborators and partners -->
     <section id="collaborators">
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="600">
         <h1 class="title"> Nuestros Partners </h1>
         <p class="subtitle"> Agradecemos a las empresas, instituciones y organizaciones que confían en nosotras y nos ayudan a llegar a más niñas cada año. </p>
         <Collaborators type="is-collaborators"></Collaborators>
@@ -112,6 +112,8 @@ export default {
   }
 
   #events {
+    padding-bottom: 100px;
+
     .title, .subtitle {
       text-align: left;
       margin-left: 20%;
@@ -120,7 +122,6 @@ export default {
     .button {
       margin-left: 20%;
     }
-    
   }
 
   #newsletter {
