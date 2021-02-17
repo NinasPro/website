@@ -2,7 +2,7 @@
   <div id="about">
     <Banner :type="type" :title="`${$t('navbar.somos')}`"/>
     
-    <section id="mision" class="container">
+    <section class="container">
       <div class="tile is-ancestor">
         <div class="tile is-parent">
           <div class="tile is-child">
@@ -12,7 +12,7 @@
           </div>
         </div>
         <div class="tile is-parent is-vertical" >
-          <div :class="`tile is-child notification ${inf.type}`" v-for="(inf, i) in datos.data" :key="i">
+          <div :id="inf.id" :class="`tile is-child notification ${inf.type}`" v-for="(inf, i) in datos.data" :key="i">
               <p class="title"> {{inf.title}} </p>
               <p> {{inf.texto}} </p>
           </div>
