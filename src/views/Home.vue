@@ -5,8 +5,8 @@
     <!--Iniciativas-->
     <section id="iniciativas">
       <div class="container">
-        <h1 class="title"> ¿Cómo lo hacemos? </h1>
-        <p class="subtitle"> Categorizamos nuestras actividades en las siguientes iniciativas </p>
+        <h1 class="title"> {{$t('home.titleProjects')}} </h1>
+        <p class="subtitle"> {{$t('home.subtitleProjects')}} </p>
         <div class="columns is-variable is-1">
           <div class="column" v-for="(project, i) in datos('projects')" :key="i">
             <ProjectsHome :title="project.title" :type="project.type" :image="project.image" :path="project.path" :description="project.description" />
@@ -27,7 +27,7 @@
       <div class="columns is-vcentered">
         <div class="column is-4">
           <h1 class="title"> {{$t('home.titleEvents')}} </h1>
-          <p class="subtitle"> Todos nuestros eventos son gratuitos, ¡revisa los requisitos e inscríbete! </p>
+          <p class="subtitle"> {{$t('home.subtitleEvents')}} </p>
           <router-link class="button is-rounded is-success" name="Mas información" title="Mas información" to='/eventos/'>
             {{$t('event.seeAll')}}
           </router-link>
@@ -42,7 +42,7 @@
     <section id="collaborators">
       <div class="container">
         <h1 class="title"> {{$t('home.titlePartners')}} </h1>
-        <p class="subtitle"> Agradecemos a las empresas, instituciones y organizaciones que confían en nosotras y nos ayudan a llegar a más niñas cada año. </p>
+        <p class="subtitle">{{$t('home.subtitlePartners')}} </p>
         <Collaborators type="is-collaborators"></Collaborators>
       </div>
     </section>

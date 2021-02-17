@@ -33,8 +33,12 @@
     "redes":"Follow our social networks"
   },
   "home":{
+    "titleProjects":"How do we do it?",
+    "subtitleProjects":"We categorize our activities in the following initiatives",
     "titleEvents":"Upcoming events",
+    "subtitleEvents":"All of our events are free, check the requirements and sign up!",
     "titlePartners": "Our Partners",
+    "subtitlePartners":"We thank the companies, institutions and organizations that trust us and help us reach more girls every year.",
     "titleNews":"News",
     "seeAll":"See All",
     "newsletter":"Subscribe to the newsletter"

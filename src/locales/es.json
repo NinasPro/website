@@ -32,8 +32,12 @@
         "redes":"Sigue nuestras redes sociales"
       },
     "home":{
+        "titleProjects":"¿Cómo lo hacemos?",
+        "subtitleProjects":"Categorizamos nuestras actividades en las siguientes iniciativas",
         "titleEvents":"Próximos eventos",
+        "subtitleEvents":"Todos nuestros eventos son gratuitos, ¡revisa los requisitos e inscríbete!",
         "titlePartners": "Nuestros Partners",
+        "subtitlePartners":"Agradecemos a las empresas, instituciones y organizaciones que confían en nosotras y nos ayudan a llegar a más niñas cada año.",
         "titleNews":"Noticias",
         "seeAll":"Ver todas",
         "newsletter":"Subscribete al newsletter"
