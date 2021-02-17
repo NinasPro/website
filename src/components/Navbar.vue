@@ -54,6 +54,14 @@
           </router-link>
         </div>
       </b-navbar-item>
+      <b-navbar-dropdown :label="`${$t('navbar.lang')}`" v-model="lang">
+        <b-navbar-item value="es" @click="handleChange('es')">
+          ES
+        </b-navbar-item>
+        <b-navbar-item value="en" @click="handleChange('en')">
+          EN
+        </b-navbar-item>
+      </b-navbar-dropdown>
     </template>
   </b-navbar>
 </template>
@@ -64,6 +72,18 @@ export default {
   props: {
     "type": String,
   },
+  data: function(){
+    const lang= localStorage.getItem('lang') || 'es';
+    return{
+      lang:lang
+    }
+  },
+  methods:{
+    handleChange(eve){
+      localStorage.setItem('lang',eve);
+      window.location.reload();
+    }
+  }
 };
 </script>
 
