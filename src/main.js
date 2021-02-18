@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Buefy from "buefy";
 import "buefy/dist/buefy.css";
 import i18n from './i18n'
+import VueSmoothScroll from 'vue2-smooth-scroll'
 
 import App from "./App.vue";
 import router from "./router";
@@ -20,6 +21,7 @@ Vue.config.productionTip = false;
 
 Vue.use(Buefy);
 Vue.use(VueRouter);
+Vue.use(VueSmoothScroll);
 
 Vue.component("vue-fontawesome", FontAwesomeIcon);
 
