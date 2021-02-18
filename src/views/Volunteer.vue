@@ -1,107 +1,198 @@
 <template>
   <div id="volunteer">
     <Banner :type="type" :title="`${$t('volunteer.help')}`" />
-    <h1 class="title container">{{$t('volunteer.titleDo')}}</h1>
-    <Do/>
-    <Profile/>
-    <div class="container">
-      <div class="title">{{$t('volunteer.titleProject')}}</div>
-      <div class="columns">
-        <div class="column" v-for="item in datos('projects')" :key="item">
-          <News :title="item.title" :type="item.type" :text="item.text" :path="item.path" />  
+
+    <section id="volunteer-intro">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column">
+            <div class="title">
+              {{ $t('volunteer.titleIntro') }}
+            </div>
+            <div class="subtitle">
+              {{ $t('volunteer.subtitleIntro') }}
+            </div>
+            <div class="subtitle">
+               {{ $t('volunteer.invitationIntro') }}
+            </div>
+          </div>
+          <div class="column is-4 is-offset-1">
+            <div class="tile is-parent is-vertical">
+              <div class="tile vspaced-tile">
+                <a class="button is-primary is-rounded is-fullwidth is-outlined" 
+                href="#volunteer-do" v-smooth-scroll>
+                  {{ $t('volunteer.titleDo') }}
+                </a>
+              </div>
+              <div class="tile vspaced-tile">
+                <a class="button is-info is-rounded is-fullwidth is-outlined" 
+                href="#volunteer-profile" v-smooth-scroll>
+                  {{ $t('volunteer.titleProfile') }}
+                </a>
+              </div>
+              <div class="tile vspaced-tile">
+                <a class="button is-success is-rounded is-fullwidth is-outlined" 
+                href="#volunteer-internship" v-smooth-scroll>
+                  {{ $t('volunteer.titleInternships') }}
+                </a>
+              </div>
+              <div class="tile vspaced-tile">
+                <a class="button is-primary is-rounded is-fullwidth is-outlined" 
+                href="#volunteer-alliance" v-smooth-scroll>
+                  {{ $t('volunteer.titleAlliances') }}
+                </a>
+              </div>
+              <div class="tile vspaced-tile">
+                <a class="button is-info is-rounded is-fullwidth is-outlined" 
+                href="#volunteer-testimony" v-smooth-scroll>
+                 {{ $t('volunteer.titleTestimony') }}
+                </a>
+              </div>
+              <div class="tile vspaced-tile">
+                <a class="button is-success is-rounded is-fullwidth is-outlined" 
+                href="#volunteer-singup" v-smooth-scroll>
+                  {{ $t('volunteer.titleSignup') }}
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="title">{{$t('volunteer.titleTestimony')}}</div>
-      <div class="columns is-multiline">
-        <div class="column is-one-fifth" v-for="testimony in datos('testimony')" :key="testimony">
-          <Testimony 
-          :name="testimony.name"
-          :title="testimony.title"
-          :type="testimony.type" />
+    </section>
+
+    <section id="volunteer-do">
+      <div class="title">{{ $t('volunteer.titleDo') }}</div>
+      <div class="subtitle">{{ $t('volunteer.subtitleDo') }}</div>
+      <Do />
+    </section>
+
+    <section id="volunteer-profile">
+      <Profile />
+    </section>
+
+    <section id="volunteer-internship">
+      <div class="container">
+        <div class="title">{{ $t('volunteer.titleInternships') }}</div>
+        <div class="subtitle">{{ $t('volunteer.subtitleInternships') }}</div>
+        <div class="columns">
+          <div class="column" v-for="(item, i) in datos('projects')" :key="i">
+            <News :title="item.title" :type="item.type" :text="item.text" :path="item.path" />
+          </div>
         </div>
       </div>
-    </div>   
+    </section>
+
+    <section id="volunteer-alliance">
+      <div class="container">
+        <div class="title">{{ $t('volunteer.titleAlliances') }}</div>
+        <div class="subtitle">{{ $t('volunteer.subtitleAlliances') }}</div>
+      </div>
+    </section>
+
+    <section id="volunteer-testimony">
+      <div class="container">
+        <div class="title">{{ $t('volunteer.titleTestimony') }}</div>
+        <div class="subtitle">{{ $t('volunteer.subtitleTestimony') }}</div>
+        <div class="columns is-multiline">
+          <div class="column is-one-fifth" v-for="(testimony, i) in datos('testimony')" :key="i">
+            <Testimony :name="testimony.name" :title="testimony.title" :type="testimony.type" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="volunteer-singup">
+      <div class="container">
+        <div class="title">{{ $t('volunteer.titleSignup') }}</div>
+        <div class="subtitle">{{ $t('volunteer.subtitleSignup') }}</div>
+      </div>
+    </section>
+
   </div>
 </template>
 
 <script>
-
 // This is necessary to access the Banner component
-import Banner from "../components/Banner.vue";
-import Do from "../components/VolunteerDo.vue";
-import Profile from "../components/VolunteerProfile.vue";
-import Testimony from "../components/Testimony.vue";
-import News from "../components/News.vue";
-import * as Data from '../data/volunteer.js';
-import i18n from '../i18n';
+import Banner from '../components/Banner.vue'
+import Profile from '../components/VolunteerProfile.vue'
+import Do from '../components/VolunteerDo.vue'
+import Testimony from '../components/Testimony.vue'
+import News from '../components/News.vue'
+import * as Data from '../data/volunteer.js'
+import i18n from '../i18n'
 
 export default {
-  name: "Volunteer",
-  data () {
+  name: 'Volunteer',
+  data() {
     const data = Data.default
-    const lang=`${i18n.locale}`
+    const lang = `${i18n.locale}`
     return {
       data,
-      lang,
+      lang
     }
   },
   components: {
     Banner,
-    Do,   
-    Profile,     
+    Profile,
+    Do,
     Testimony,
-    News,
+    News
   },
   props: {
     type: String
   },
-  methods:
-  {
+  methods: {
     //data according to language
-    datos(section)
-    {
-      if(this.lang == "en")
-        {
-            if(section=="projects") {
-              return this.data.en.projects
-            } else if(section=="testimony") {
-              return this.data.en.testimony
-            } else {
-              return null
-            }
+    datos(section) {
+      if (this.lang == 'en') {
+        if (section == 'projects') {
+          return this.data.en.projects
+        } else if (section == 'testimony') {
+          return this.data.en.testimony
+        } else {
+          return null
         }
-        else
-        {
-            if(section=="projects") {
-              return this.data.es.projects
-            } else if(section=="testimony") {
-              return this.data.es.testimony
-            } else {
-              return null
-            }
+      } else {
+        if (section == 'projects') {
+          return this.data.es.projects
+        } else if (section == 'testimony') {
+          return this.data.es.testimony
+        } else {
+          return null
         }
+      }
     }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>
-.container {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-ol.star {
-  list-style-type: circle;
-  padding-left: 3rem;
-}
-.np-buttons {
-  text-align: center;
+section {
+  margin: 200px 0;
 
-  .button {
-    padding: 0px 50px;
-    font-weight: bold;
+  .title {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
   }
 }
+
+#volunteer-intro {
+  .title, .subtitle {
+    text-align: left;
+  }
+  .button {
+    margin: 5px 0;
+    border-width: 4px;
+  } 
+}
+
+
 </style>

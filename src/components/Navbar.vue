@@ -9,7 +9,7 @@
       </b-navbar-item>
     </template>
     <template #end>
-      <b-navbar-dropdown :label="`${$t('navbar.incentivas')}`" >
+      <b-navbar-dropdown :label="`${$t('navbar.initiatives')}`" >
         <b-navbar-item tag="router-link" :to="{ path: '/inspira/' }"  >
           <p>{{$t('navbar.inspira')}}</p>
         </b-navbar-item>
@@ -28,7 +28,7 @@
         <p>{{$t('navbar.events')}}</p>
       </b-navbar-item>
       <b-navbar-item tag="router-link" :to="{ path: '/somos/' }">
-        <p>{{$t('navbar.somos')}}</p>
+        <p>{{$t('navbar.about')}}</p>
       </b-navbar-item>
       <b-navbar-item tag="div">
         <div class="buttons">
@@ -39,7 +39,7 @@
                 'is-info':(type !== 'is-info'), 
                 'is-warning':(type == 'is-info')
               }" rounded>
-              {{$t('navbar.involucrate')}}
+              {{$t('navbar.involved')}}
             </b-button>
           </router-link>
           <router-link :to="{ path: '/somos'}">
@@ -49,7 +49,7 @@
                 'is-warning':(type !== 'is-warning' && type !== 'is-info'),
                 'is-primary':(type === 'is-warning' || type === 'is-info')
               }" rounded outlined>
-              {{$t('navbar.dona')}}
+              {{$t('navbar.donate')}}
             </b-button>
           </router-link>
         </div>

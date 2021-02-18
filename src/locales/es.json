@@ -1,14 +1,14 @@
 {
     "navbar":{
-        "incentivas":"Incentivas",
+        "initiatives":"Iniciativas",
         "inspira":"Proyecto Inspira",
         "empodera": "Proyecto Empodera",
         "potencia": "Proyecto Potencia",
         "incentiva": "Proyecto Incentiva",
         "events":"Eventos",
-        "somos": "Somos",
-        "involucrate": "Involucrate",
-        "dona":"Dona"
+        "about": "Somos",
+        "involved": "Involúcrate",
+        "donate":"Dona"
     },
     "footer":{
         "about": "Somos",
@@ -43,10 +43,21 @@
         "seeAll":"Ver todos"
     },
     "volunteer":{
-        "help":"¿Cómo participar?",
-        "titleDo":"¿Qué hace una persona voluntaria en Niñas Pro?",
-        "titleProfile":"Perfil de nuestros voluntarios",
-        "titleProject":"Proyectos en los que puedes involucrarte",
-        "titleTestimony":"Testimonios"  
+        "help":"Involúcrate",
+        "titleIntro":"Voluntariado y Alianzas",
+        "subtitleIntro":"Todas nuestras actividades son posibles gracias al voluntariado y las alianzas estratégicas. Tú también puedes ser parte del cambio donando un porcentaje de tu tiempo para empoderar a niñas y adolescentes e inspirar vocaciones científicas y tecnológicas.",
+        "invitationIntro":"Te invitamos a conocer cómo puedes sumarte al equipo.",
+        "titleDo":"¿Qué hace el voluntariado?",
+        "subtitleDo":"Las personas voluntarias son el motor de Niñas Pro",
+        "titleProfile":"Perfil del voluntariado",
+        "subtitleProfile":"Las caracteristicas que nos unen y nos caracterizan son",
+        "titleInternships":"Prácticas Profesionales",
+        "subtitleInternships":"Conoce cómo puedes hacer tu práctica en Niñas Pro",
+        "titleAlliances":"Alianzas y Voluntariado Corporativo",
+        "subtitleAlliances":"Si representas a una empresa, mira cómo podemos comenzar a trabajar juntos",
+        "titleTestimony":"Testimonios",
+        "subtitleTestimony":"Esto piensan quienes han participado del voluntariado",
+        "titleSignup":"¡Quiero Unirme!",
+        "subtitleSignup":"Completa el formulario para iniciar el proceso"  
     }
 }
