@@ -29,8 +29,10 @@
     <section>
       <div class="container">
         <h1 class="title"> ¿Quién o quienes participan? </h1>
-        <div class="columns">
-          <img class="column is-4"  src="@/assets/inspired.jpg"/>
+        <div class="row columns">
+          <div class="column is-4">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe>
+          </div>
           <div class="column">
             <p class="subtitle"> Pueden participar niñas entre 15-18 años. </p>
           </div>
@@ -41,9 +43,7 @@
       <div class="container">
         <h1 class="title"> Charlas,videos,eventos... </h1>
         <div class="columns is-multiline">
-          <div class="column" v-for="i in 6" :key="i">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe>
-          </div>
+          
         </div>
       </div>
     </section>
@@ -82,7 +82,7 @@ section {
 
     .subtitle {
       font-size: 18px;
-      text-align: center;
+      text-align: left;
       margin-bottom: 40px;
     }
   }
