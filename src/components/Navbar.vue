@@ -9,6 +9,14 @@
       </b-navbar-item>
     </template>
     <template #end>
+      <b-navbar-dropdown :label="`${$t('navbar.lang')}`" v-model="lang">
+        <b-navbar-item value="es" @click="handleChange('es')">
+          ES
+        </b-navbar-item>
+        <b-navbar-item value="en" @click="handleChange('en')">
+          EN
+        </b-navbar-item>
+      </b-navbar-dropdown>
       <b-navbar-dropdown :label="`${$t('navbar.incentivas')}`" >
         <b-navbar-item tag="router-link" :to="{ path: '/inspira/' }"  >
           <p>{{$t('navbar.inspira')}}</p>
@@ -54,14 +62,7 @@
           </router-link>
         </div>
       </b-navbar-item>
-      <b-navbar-dropdown :label="`${$t('navbar.lang')}`" v-model="lang">
-        <b-navbar-item value="es" @click="handleChange('es')">
-          ES
-        </b-navbar-item>
-        <b-navbar-item value="en" @click="handleChange('en')">
-          EN
-        </b-navbar-item>
-      </b-navbar-dropdown>
+      
     </template>
   </b-navbar>
 </template>
