@@ -1,28 +1,27 @@
 <template>
   <div class="container">
-    <div class="title">
-      {{title}}
-    </div>
-    <div class="carousel">
+    <div>
       <b-carousel-list
       v-model="values"
       :data="items"
-      :icon-pack="fas"
-      :icon-prev="arrow-left"
-      :icon-next="arrow-right"
-      :icon-size="is-small"
+      :arrow="arrow"
+      :arrow-hover="arrowHover"
+      icon-size="is-medium"
       :items-to-show="perList"
       :items-to-list="increment"
+      :has-drag="drag"
       >
       <template slot="item" slot-scope="props">
           <div>
               <div class="card-image">
-                  <figure class="image is-5by4">
+                  <figure>
                       <img :src="props.list.image">
                   </figure>
               </div>
               <div class="card-content">
-                  <strong class="name">{{ props.list.text }}</strong>
+                  <h1 class="title">{{ props.list.text }}</h1>
+                  <p class="subtitle">Cargo</p>
+                  <p class="description">Historia para saber que el lo que se necesita a ver si esto se agranda y se pone mejor </p>
               </div>
         </div>            
       </template>
@@ -33,11 +32,6 @@
 
 <script>
 export default {
-  props: {
-    "type": String,
-    "text": String,
-    "title": String,
-  },
   data() {
     return {
       arrow: true,
@@ -72,36 +66,49 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
 .card-image {
   padding-top: 15px;
   text-align: center;
-}
-.title {
-  text-align: left;
-  font-size: 25px;
-  margin-left: 10px;
-  margin-top: 20px;
-}
-.description {
-  text-align: left;
-  font-size: 14px;
-  margin-left: 10px;
-}
-figure {
+
+  figure {
   display: block;
   padding-top: 0px;
   padding-bottom: 10px;
   margin-left: 15px; 
   margin-right: 15px;
+
+    img{
+    border-radius: 150px 150px;
+    height: 150px;
+    }
+  }
 }
+
+
 .card-content {
   text-align: center;
   margin-bottom: 10px;
+
+  .title {
+  text-align: center;
+  font-size: 20px;
+  margin-left: 10px;
+  }
+  .subtitle{
+    text-align: center;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .description {
+  text-align: center;
+  font-size: 14px;
+  margin-left: 10px;
+  }
 }
-.carousel {
-  padding-left: 15px;
-}
+
 vue-fontawesome {
   color: black;
 }

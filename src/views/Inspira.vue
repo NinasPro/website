@@ -1,47 +1,63 @@
 <template>
   <div id="projects">
-    <Banner :type="type" title="Inspira" button="Únete hoy" link="/voluntariado/"/>
     <PhotoBanner :type="type" title="Iniciativa Inspira" image="inspired.jpg"/>
-    <div class="container">
-      <div class="description">
-        <p class="title is-primary">
-          Charlas de Mujeres en
-          <b-tooltip
-            label="Acrónimo en Inglés para Science, Technology, Engineering, Arts
-            and Mathematics"
-            dashed multilined>
-            STEAM
-          </b-tooltip>
-        </p>
-        <p>
+
+    <section id="inspira">
+      <div class="container">
+        <h1 class="title">¿En qué consiste la iniciativa inspira?</h1>
+        <p class="subtitle"> El objetivo de esta iniciativa es inspirar vocaciones científicas y 
+        tecnológicas realizando actividades para visibilizar el quehacer de 
+        mujeres y niñas en STEAM. En esta línea de trabajo se enmarcan las 
+        charlas de mujeres invitadas a contar su experiencia, pero también 
+        cualquier otra actividad que tenga relación directa con la creación de role models. </p>
+        <p class="subtitle">
         Llevamos a mujeres que se desempeñan áreas STEAM y que utilizan la 
         programación de alguna forma en su día a día. El objetivo
         es inspirar a las niñas al presentarles profesiones que no son tan
         visibles o que están comunmente masculinizadas.
         </p>
         <br>
-        <p>
-        El objetivo de esta iniciativa es inspirar vocaciones científicas y 
-        tecnológicas realizando actividades para visibilizar el quehacer de 
-        mujeres y niñas en STEAM. En esta línea de trabajo se enmarcan las 
-        charlas de mujeres invitadas a contar su experiencia, pero también 
-        cualquier otra actividad que tenga relación directa con la creación de role models.
-        </p>
       </div>
-    </div>
-    <PeopleCarousel title="Equipo" :type="type"/>
+    </section>
+    <section id="equipo-inspira">
+      <div class="container">
+        <h1 class="title"> Equipo inspira </h1>
+          <PeopleCarousel title="Equipo" :type="type"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h1 class="title"> ¿Quién o quienes participan? </h1>
+        <div class="columns">
+          <img class="column is-4"  src="@/assets/inspired.jpg"/>
+          <div class="column">
+            <p class="subtitle"> Pueden participar niñas entre 15-18 años. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="videos">
+      <div class="container">
+        <h1 class="title"> Charlas,videos,eventos... </h1>
+        <div class="columns is-multiline">
+          <div class="column" v-for="i in 6" :key="i">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    
   </div>
 </template>
 
 <script>
-import Banner from "../components/Banner.vue";
 import PhotoBanner from "../components/PhotoBanner.vue";
 import PeopleCarousel from "../components/PeopleCarousel.vue";
 
 export default {
   name: "Projects",
   components: {
-    Banner,
     PhotoBanner,
     PeopleCarousel,
   },
@@ -53,6 +69,23 @@ export default {
 
 <style lang="scss" scoped>
 @import '../main.scss';
+
+section {
+    margin: 160px 0;
+
+    .title {
+      font-size: 30px;
+      font-weight: 600;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  }
 
 .description {
   min-height: 500px;

@@ -28,6 +28,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+section{
+  margin-top: 0px;
+}
 .hero.is-medium .hero-body {
     padding-bottom: 2rem;
     padding-top: 30rem;
