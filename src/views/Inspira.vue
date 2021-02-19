@@ -28,7 +28,7 @@
 
     <section>
       <div class="container">
-        <h1 class="title"> ¿Quién o quienes participan? </h1>
+        <h1 class="title"> Novedades </h1>
         <div class="row columns">
           <div class="column is-4">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe>
@@ -36,14 +36,6 @@
           <div class="column">
             <p class="subtitle"> Pueden participar niñas entre 15-18 años. </p>
           </div>
-        </div>
-      </div>
-    </section>
-    <section id="videos">
-      <div class="container">
-        <h1 class="title"> Charlas,videos,eventos... </h1>
-        <div class="columns is-multiline">
-          
         </div>
       </div>
     </section>
@@ -86,6 +78,11 @@ section {
       margin-bottom: 40px;
     }
   }
+
+#equipo-inspira{
+  background-color: #fdca36;
+  margin: 50px 0px;
+}
 
 .description {
   min-height: 500px;

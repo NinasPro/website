@@ -1,6 +1,6 @@
 <template>
   <section class="hero is-medium is-white has-background">
-    <img class="hero-background is-transparent" :src="getImgUrl(image)">
+    <img class="hero-background is-transparent " :src="getImgUrl(image)">
     <div class="hero-body">
       <div class="container banner-container">
         <span class="banner-title">{{title}}</span>
@@ -28,9 +28,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-section{
-  margin-top: 0px;
-}
+
+
 .hero.is-medium .hero-body {
     padding-bottom: 2rem;
     padding-top: 30rem;
@@ -62,6 +61,7 @@ section{
   &.has-background {
     position: relative;
     overflow: hidden;
+    margin-top: 0px;
   }
   &-background {
     position: absolute;
@@ -74,4 +74,5 @@ section{
     opacity: 0.3;
   }
 }
+
 </style>
