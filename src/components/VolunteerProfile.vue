@@ -1,71 +1,72 @@
 <template>
-    <div class="background-container container">
-        <div class="columns margin">
-            <div class="column profile">
-                <h1 aling="center">{{$t('volunteer.titleProfile')}}</h1>
-            </div>
-            <div class="column is-half" >
-                <ol class="star">
-                    <li class="text" v-for="text in datos" :key="text.id"> {{text.text}} </li>
-                </ol>
-            </div>
-        </div>
-        
+  <div class="container background-container">
+    <div class="columns">
+      <div class="column is-4">
+        <div class="title">{{ $t('volunteer.titleProfile') }}</div>
+      </div>
+      <div class="column">
+        <ul class="">
+          <li v-for="text in datos" :key="text.id">{{ text.text }}</li>
+        </ul>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
-import * as Data from '../data/volunteer.js';
-import i18n from '../i18n';
+import * as Data from '../data/volunteer.js'
+import i18n from '../i18n'
 export default {
-    data () {
+  data() {
     const data = Data.default
-    const lang=`${i18n.locale}`
+    const lang = `${i18n.locale}`
     return {
-        data,
-        lang,
+      data,
+      lang
     }
-    },
-    computed:
-    {
-        //data according to language
-                datos:function() {
-                    if(this.lang == "en") {
-                        return this.data.en.profileData
-                    } else {
-                        return this.event.es.profileData
-                    }
-                }
-    },
+  },
+  computed: {
+    //data according to language
+    datos: function() {
+      if (this.lang == 'en') {
+        return this.data.en.profileData
+      } else {
+        return this.data.es.profileData
+      }
+    }
+  }
 }
 </script>
 
-<style>
-.background-container{
-    background-color: #ffa4e5;
-    color:white;
-    font-size: 1.3em;
-    border-radius: 25px;
-}
-.margin{
-    margin-inline-start: 60px;
-    margin-inline-end: 50px;
-}
-.profile{
-    margin-inline-end: 20%;
-    margin-top: 8%;
-    margin-inline-start: 5%;
-    font-size: 1.5em;
-    font-weight: bold;
+<style lang="scss" scoped>
+@import '../main.scss';
 
-}
-.text
-{
-    margin:6% 15% 6% 0%;
-}
-ol.star {
-  list-style-type: circle;
-  padding-left: 3rem;
+.background-container {
+  background-color: $success;
+  color: white;
+  border-radius: 25px;
+  padding: 3rem;
 }
 
+.title {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+  margin: 10px 10px;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 18px;
+
+  li {
+    padding: 10px 0px;
+  }
+
+  li:before {
+      content: '\2605';
+      margin: 0px 10px 0px -26px;
+  }
+}
 </style>

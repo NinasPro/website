@@ -4,18 +4,42 @@ export default ({
     "en":{
         /* Here is the information corresponding to the volunteerProfile.vue component. */ 
         profileData : [
-            {'id':'1','text':'Esto es un texto de prueba, para luego ser reemplazado'},
-            {'id':'2','text':'Estamos viendo el tamaño de las letras y el espacio que puede tomar cada una de estas '},
-            {'id':'3','text':'Esperando texto'},
-            {'id':'4','text':'Esperando texto'},
-            {'id':'5','text':'Esperando texto'},
+            {'id':'1','text':'Creen que es justo y necesario promover las ciencias y la tecnología en niñas y mujeres jóvenes para disminuir la brecha de género en STEAM.'},
+            {'id':'2','text':'Quieren ser parte del cambio e impactar en las nuevas generaciones.'},
+            {'id':'3','text':'Tienen un gran sentido de responsabilidad para cumplir los compromisos adquiridos.'},
+            {'id':'4','text':'Buscan integrarse a una comunidad sorora e integrada por personas que creen en la equidad de género.'},
+            {'id':'5','text':'Quieren aprender cosas nuevas y desarrollar sus habilidades trabajando en proyectos con impacto social.'},
         ],
         /* Here is the information corresponding to the volunteerDo.vue component. */ 
         doData: [
-            {'title':'Titulo 1','image':'ninastic.jpg','lista':['Linea 1','Linea 2','Linea 3']},
-            {'title':'Titulo 2','image':'ninastic.jpg','lista':['Linea 1','Linea 2','Linea 3']},
-            {'title':'Titulo 3','image':'ninastic.jpg','lista':['Linea 1','Linea 2','Linea 3']},
-            {'title':'Titulo 4','image':'ninastic.jpg','lista':['Linea 1','Linea 2','Linea 3']},
+            {
+                'title':'Voluntariado Permanente',
+                'image':'ninastic.jpg',
+                'lista':[
+                    'Forman parte de un equipo de trabajo dentro de la organización.',
+                    'Planifican y gestionan proyectos.',
+                    'Representan a la organización.',
+                    'Ejecutan proyectos internos, proyectos educativos o de difusión de las STEAM.'
+                ]
+            },
+            {
+                'title':'Tutorías y Mentorías',
+                'image':'ninastic.jpg',
+                'lista':[
+                    'Guían actividades educativas en base al material que entrega la organización.',
+                    'Resuelven dudas de las niñas y mujeres que participan en los talleres.',
+                    'Entregan feedback al equipo de Niñas Pro para mejorar las actividades.'
+                ]
+            },
+            {
+                'title':'Mujeres Pro',
+                'image':'ninastic.jpg',
+                'lista':[
+                    'Realizan charlas sobre su trabajo, sus estudios y su experiencia como mujeres en STEM.',
+                    'Participan en conversatorios o paneles junto a otras mujeres Pro.',
+                    'Responden preguntas de las asistentes.'
+                ]
+            }
         ],
         projects: [
             {'title':'Proyecto 1', 'type':'is-danger', 'text':'Postula', 'path':'/enconstruccion/'},
@@ -35,18 +59,42 @@ export default ({
     "es":{
         /* Here is the information corresponding to the volunteerProfile.vue component. */ 
         profileData : [
-            {'id':'1','text':'Esto es un texto de prueba, para luego ser reemplazado'},
-            {'id':'2','text':'Estamos viendo el tamaño de las letras y el espacio que puede tomar cada una de estas '},
-            {'id':'3','text':'Esperando texto'},
-            {'id':'4','text':'Esperando texto'},
-            {'id':'5','text':'Esperando texto'},
+            {'id':'1','text':'Creen que es justo y necesario promover las ciencias y la tecnología en niñas y mujeres jóvenes para disminuir la brecha de género en STEAM.'},
+            {'id':'2','text':'Quieren ser parte del cambio e impactar en las nuevas generaciones.'},
+            {'id':'3','text':'Tienen un gran sentido de responsabilidad para cumplir los compromisos adquiridos.'},
+            {'id':'4','text':'Buscan integrarse a una comunidad sorora e integrada por personas que creen en la equidad de género.'},
+            {'id':'5','text':'Quieren aprender cosas nuevas y desarrollar sus habilidades trabajando en proyectos con impacto social.'},
         ],
         /* Here is the information corresponding to the volunteerDo.vue component. */ 
         doData: [
-            {'title':'Titulo 1','image':'ninastic.jpg','lista':['Linea 1','Linea 2','Linea 3']},
-            {'title':'Titulo 2','image':'ninastic.jpg','lista':['Linea 1','Linea 2','Linea 3']},
-            {'title':'Titulo 3','image':'ninastic.jpg','lista':['Linea 1','Linea 2','Linea 3']},
-            {'title':'Titulo 4','image':'ninastic.jpg','lista':['Linea 1','Linea 2','Linea 3']},
+            {
+                'title':'Voluntariado Permanente',
+                'image':'ninastic.jpg',
+                'lista':[
+                    'Forman parte de un equipo de trabajo dentro de la organización.',
+                    'Planifican y gestionan proyectos.',
+                    'Representan a la organización.',
+                    'Ejecutan proyectos internos, proyectos educativos o de difusión de las STEAM.'
+                ]
+            },
+            {
+                'title':'Tutorías y Mentorías',
+                'image':'ninastic.jpg',
+                'lista':[
+                    'Guían actividades educativas en base al material que entrega la organización.',
+                    'Resuelven dudas de las niñas y mujeres que participan en los talleres.',
+                    'Entregan feedback al equipo de Niñas Pro para mejorar las actividades.'
+                ]
+            },
+            {
+                'title':'Mujeres Pro',
+                'image':'ninastic.jpg',
+                'lista':[
+                    'Realizan charlas sobre su trabajo, sus estudios y su experiencia como mujeres en STEM.',
+                    'Participan en conversatorios o paneles junto a otras mujeres Pro.',
+                    'Responden preguntas de las asistentes.'
+                ]
+            }
         ],
         projects: [
             {'title':'Proyecto 1', 'type':'is-danger', 'text':'Postula', 'path':'/enconstruccion/'},

@@ -21,7 +21,10 @@ Vue.config.productionTip = false;
 
 Vue.use(Buefy);
 Vue.use(VueRouter);
-Vue.use(VueSmoothScroll);
+Vue.use(VueSmoothScroll, {
+  duration: 600,
+  updateHistory: false,
+});
 
 Vue.component("vue-fontawesome", FontAwesomeIcon);
 
