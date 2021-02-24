@@ -105,10 +105,10 @@ export default ({
         /* Here is the information corresponding to the Testimony.vue component. But if you want to add a new section, Volunteer.vue must also be modified in the testimonials part */ 
         testimony: [
             {'name':'Jane Doe','title':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris','type':'is-info'},
-            {'name':'Jane Doe','title':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris','type':'is-warning'},
+            {'name':'Jane Doe','title':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris','type':'is-primary'},
             {'name':'Jane Doe','title':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris','type':'is-success'},
             {'name':'Jane Doe','title':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris','type':'is-info'},
-            {'name':'Jane Doe','title':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris','type':'is-warning'},
+            {'name':'Jane Doe','title':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris','type':'is-primary'},
         ]
     }
 })
