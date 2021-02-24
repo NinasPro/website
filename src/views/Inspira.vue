@@ -1,40 +1,33 @@
 <template>
   <div id="projects">
-    <PhotoBanner :type="type" title="Iniciativa Inspira" image="inspired.jpg"/>
+    <PhotoBanner :type="type" :title="`${$t('inspire.banner')}`" image="inspired.jpg"/>
 
     <section id="inspira">
       <div class="container">
-        <h1 class="title">¿En qué consiste la iniciativa inspira?</h1>
-        <p class="subtitle"> El objetivo de esta iniciativa es inspirar vocaciones científicas y 
-        tecnológicas realizando actividades para visibilizar el quehacer de 
-        mujeres y niñas en STEAM. En esta línea de trabajo se enmarcan las 
-        charlas de mujeres invitadas a contar su experiencia, pero también 
-        cualquier otra actividad que tenga relación directa con la creación de role models. </p>
-        <p class="subtitle">
-        Llevamos a mujeres que se desempeñan áreas STEAM y que utilizan la 
-        programación de alguna forma en su día a día. El objetivo
-        es inspirar a las niñas al presentarles profesiones que no son tan
-        visibles o que están comunmente masculinizadas.
+        <h1 class="title">{{$t('inspire.title')}}</h1>
+        <p class="subtitle" v-for="(texto, i) in datos('about')" :key="i">
+          <span v-html="texto.text"/>
         </p>
         <br>
       </div>
     </section>
     <section id="equipo-inspira">
       <div class="container">
-        <h1 class="title"> Equipo inspira </h1>
-          <PeopleCarousel title="Equipo" :type="type"/>
+        <h1 class="title"> {{$t('inspire.titleTeam')}} </h1>
+          <PeopleCarousel title="Equipo" :type="type" iniciativa='inspire'/>
       </div>
     </section>
 
     <section>
       <div class="container">
-        <h1 class="title"> Novedades </h1>
-        <div class="row columns">
+        <h1 class="title"> {{$t('inspire.titlenovelties')}} </h1>
+        <div class="row columns" v-for="item in datos('news')" :key="item.id">
           <div class="column is-4">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe>
+            <img class="embed-responsive-item" :src="getImgUrl(item.image)" >
           </div>
           <div class="column">
-            <p class="subtitle"> Pueden participar niñas entre 15-18 años. </p>
+            <p class="subtitle"> {{item.description}} </p>
+            <a class="button is-rounded is-info" v-if="item.button!=='no'" :href="item.link" target="_blank"> {{$t('inspire.SeeMore')}} </a>
           </div>
         </div>
       </div>
@@ -46,6 +39,8 @@
 <script>
 import PhotoBanner from "../components/PhotoBanner.vue";
 import PeopleCarousel from "../components/PeopleCarousel.vue";
+import * as Inspire from '../data/inspire.js';
+import i18n from '../i18n'
 
 export default {
   name: "Projects",
@@ -53,9 +48,43 @@ export default {
     PhotoBanner,
     PeopleCarousel,
   },
+  data(){
+    const lang=`${i18n.locale}`
+    const data = Inspire.default
+    
+    return{
+      data,
+      lang,
+    }
+  },
   props: {
     type: String
-  }
+  },
+  methods: {
+    //data according to language
+    datos(section) {
+      if(this.lang == "en") {
+            if(section=="about"){
+              return this.data.en.about
+            }else if(section=="news"){
+              return this.data.en.news
+            } else {
+              return null
+            }
+        } else {
+            if(section=="about") {
+              return this.data.es.about
+            } else if(section=="news"){
+              return this.data.en.news
+            }else {
+              return null
+            }
+        }
+    },
+    getImgUrl(value) {
+        return require(`@/assets/${value}`)
+    }
+  },
 };
 </script>
 

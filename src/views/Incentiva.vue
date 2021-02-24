@@ -1,43 +1,117 @@
 <template>
   <div id="projects">
-    <Banner :type="type" title="Incentiva" button="Únete hoy" link="/voluntariado/"/>
-    <PhotoBanner :type="type" title="Iniciativa Incentiva" image="django-girls.jpg"/>
-    <div class="container">
-      <div class="description">
-        <p class="title is-primary">
-         Talleres Introductorios de Programación o Electrónica
+    <PhotoBanner :type="type" :title="`${$t('incentive.banner')}`" image="inspired.jpg"/>
+
+    <section id="inspira">
+      <div class="container">
+        <h1 class="title">{{$t('incentive.title')}}</h1>
+        <p class="subtitle" v-for="(texto, i) in datos('about')" :key="i">
+          <span v-html="texto.text"/>
         </p>
-        <p>
-        Talleres de 2 a 6 horas de duración en los que se realizan actividades
-        prácticas de programación, con el objetivo de acercar a las niñas a la tecnología
-        e incentivarlas a continuar aprendiendo sobre estas materias.
-        </p>
+        <br>
       </div>
-    </div>
-    <PeopleCarousel title="Equipo" :type="type"/>
+    </section>
+    <section id="equipo-inspira">
+      <div class="container">
+        <h1 class="title"> {{$t('incentive.titleTeam')}} </h1>
+          <PeopleCarousel title="Equipo" :type="type" iniciativa='incentive'/>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h1 class="title"> {{$t('incentive.titlenovelties')}} </h1>
+        <div class="row columns" v-for="item in datos('news')" :key="item.id">
+          <div class="column is-4">
+            <img class="embed-responsive-item" :src="getImgUrl(item.image)" >
+          </div>
+          <div class="column">
+            <p class="subtitle"> {{item.description}} </p>
+            <a class="button is-rounded is-info" v-if="item.button!=='no'" :href="item.link" target="_blank"> {{$t('incentive.SeeMore')}} </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
   </div>
 </template>
 
 <script>
-import Banner from "../components/Banner.vue";
 import PhotoBanner from "../components/PhotoBanner.vue";
 import PeopleCarousel from "../components/PeopleCarousel.vue";
+import * as Incentive from '../data/incentive.js';
+import i18n from '../i18n'
 
 export default {
   name: "Projects",
   components: {
-    Banner,
     PhotoBanner,
     PeopleCarousel,
   },
+  data(){
+    const lang=`${i18n.locale}`
+    const data = Incentive.default
+    
+    return{
+      data,
+      lang,
+    }
+  },
   props: {
     type: String
-  }
+  },
+  methods: {
+    //data according to language
+    datos(section) {
+      if(this.lang == "en") {
+            if(section=="about"){
+              return this.data.en.about
+            }else if(section=="news"){
+              return this.data.en.news
+            } else {
+              return null
+            }
+        } else {
+            if(section=="about") {
+              return this.data.es.about
+            } else if(section=="news"){
+              return this.data.en.news
+            }else {
+              return null
+            }
+        }
+    },
+    getImgUrl(value) {
+        return require(`@/assets/${value}`)
+    }
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 @import '../main.scss';
+
+section {
+    margin: 160px 0;
+
+    .title {
+      font-size: 30px;
+      font-weight: 600;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+  }
+
+#equipo-inspira{
+  background-color: #fdca36;
+  margin: 50px 0px;
+}
 
 .description {
   min-height: 500px;

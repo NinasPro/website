@@ -1,69 +1,100 @@
 <template>
-  <div class="container">
-    <div>
-      <b-carousel-list
-      v-model="values"
-      :data="items"
-      :arrow="arrow"
-      :arrow-hover="arrowHover"
-      icon-size="is-medium"
-      :items-to-show="perList"
-      :items-to-list="increment"
-      :has-drag="drag"
-      >
-      <template slot="item" slot-scope="props">
-          <div>
-              <div class="card-image">
-                  <figure>
-                      <img :src="props.list.image">
-                  </figure>
-              </div>
-              <div class="card-content">
-                  <h1 class="title">{{ props.list.text }}</h1>
-                  <p class="subtitle">Cargo</p>
-                  <p class="description">Historia para saber que el lo que se necesita a ver si esto se agranda y se pone mejor </p>
-              </div>
-        </div>            
-      </template>
-      </b-carousel-list>
-    </div>
-  </div>
+  <div class="carrusel">
+    <b-carousel-list
+    v-model="values"
+    :data="datos(iniciativa)"
+    :arrow="arrow"
+    :arrow-hover="arrowHover"
+    icon-size="is-medium"
+    :items-to-show="perList"
+    :items-to-list="increment"
+    :has-drag="drag"
+    >
+    
+    <template slot="item" slot-scope="props">
+      <div>
+        <div class="card-image">
+          <figure>
+            <img :src="props.list.image ">
+          </figure>
+        </div>
+        <div class="card-content">
+          <h1 class="title">{{ props.list.text }}</h1>
+          <p class="subtitle">{{ props.list.workstation }}</p>
+          <p class="description">{{ props.list.description }} </p>
+        </div>
+      </div>            
+    </template>
+    </b-carousel-list>
+</div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      arrow: true,
-      arrowHover: true,
-      values: 1,
-      perList: 4,
-      increment: 1,
-      drag: true,
-      repeat: false,
-      items: [
-        {title: 'Slide 1',
-        image: 'https://picsum.photos/400',
-        text:'Jazmine Maldonado'},
-        {title: 'Slide 2',
-        image: 'https://picsum.photos/400',
-        text:'Jazmine Maldonado'},
-        {title: 'Slide 3',
-        image: 'https://picsum.photos/400',
-        text:'Jazmine Maldonado'},
-        {title: 'Slide 4',
-        image: 'https://picsum.photos/400',
-        text:'Jazmine Maldonado'},
-        {title: 'Slide 5',
-        image: 'https://picsum.photos/400',
-        text:'Jazmine Maldonado'},
-        {title: 'Slide 6',
-        image: 'https://picsum.photos/400',
-        text:'Jazmine Maldonado'},
-      ]
+  import * as Inspire from '../data/inspire.js';
+  import * as Empower from '../data/empower.js';
+  import * as Power from '../data/power.js';
+  import * as Incentive from '../data/incentive.js';
+  import i18n from '../i18n';
+  
+  export default {
+    props: {
+    "iniciativa": String,
+    },
+    data() {
+      const inspire = Inspire.default;
+      const empower = Empower.default;
+      const power = Power.default;
+      const incentive = Incentive.default;
+      const lang=`${i18n.locale}`;
+      return {
+        arrow: true,
+        arrowHover: true,
+        values: 1,
+        perList: 4,
+        increment: 1,
+        drag: true,
+        repeat: false,
+        lang,
+        inspire,
+        empower,
+        power,
+        incentive
+      }
+    },
+    methods: {
+    //data according to language
+    datos(section) {
+      if(this.lang == "en") {
+            if(section=="inspire"){
+              return this.inspire.en.team
+            } else if(section=="empower") {
+              return this.empower.en.team
+            } else if(section=="power") {
+              return this.power.en.team
+            } else if(section=="incentive") {
+              return this.incentive.en.team
+            } else {
+              return null
+            }
+        } else {
+            if(section=="inspire"){
+              return this.inspire.es.team
+            } else if(section=="empower") {
+              return this.empower.es.team
+            } else if(section=="power") {
+              return this.power.es.team
+            } else if(section=="incentive") {
+              return this.incentive.es.team
+            } else {
+              return null
+            }
+        }
+    },
+    getImgUrl(value) {
+        return require(`@/assets/${value}`)
     }
+  },
   }
-}
 </script>
 
 <style lang="scss" scoped>
@@ -107,6 +138,10 @@ export default {
   font-size: 14px;
   margin-left: 10px;
   }
+}
+
+.carrusel{
+  padding-bottom: 10px;
 }
 
 vue-fontawesome {
