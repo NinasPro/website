@@ -13,8 +13,8 @@ export default({
             }
         ],
         news:[
-            { id:'1',image:'arduino-quest.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',button:'si',link:'https://youtu.be/RJ_juHE4qcE'},
-            { id:'2',image:'campamento-niñas.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',button:'si',link:'https://youtu.be/CcE4y5NtLgk'},
+            { id:'1',image:'activities-initiatives/arduino-quest.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',button:'si',link:'https://youtu.be/RJ_juHE4qcE'},
+            { id:'2',image:'activities-initiatives/campamento-niñas.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',button:'si',link:'https://youtu.be/CcE4y5NtLgk'},
         ]
     },
     "es":{
@@ -31,8 +31,8 @@ export default({
             }
         ],
         news:[
-            { id:'1',image:'arduino-quest.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',button:'si',link:'https://youtu.be/RJ_juHE4qcE'},
-            { id:'2',image:'campamento-niñas.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',button:'si',link:'https://youtu.be/CcE4y5NtLgk'},
+            { id:'1',image:'activities-initiatives/arduino-quest.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',button:'si',link:'https://youtu.be/RJ_juHE4qcE'},
+            { id:'2',image:'activities-initiatives/campamento-niñas.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',button:'si',link:'https://youtu.be/CcE4y5NtLgk'},
         ]
     }
 })

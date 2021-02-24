@@ -14,7 +14,7 @@
     <section id="equipo-empower">
       <div class="container">
         <h1 class="title"> {{$t('empower.titleTeam')}} </h1>
-          <PeopleCarousel title="Equipo" :type="type" iniciativa='empower'/>
+          <PeopleCarousel title="Equipo" :type="type" iniciativa='empower' perList="2"/>
       </div>
     </section>
 

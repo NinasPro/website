@@ -15,7 +15,7 @@
       <div>
         <div class="card-image">
           <figure>
-            <img :src="props.list.image ">
+            <img :src="getImgUrl(props.list.image) ">
           </figure>
         </div>
         <div class="card-content">
@@ -39,6 +39,7 @@
   export default {
     props: {
     "iniciativa": String,
+    "perList":Int32Array,
     },
     data() {
       const inspire = Inspire.default;
@@ -50,7 +51,6 @@
         arrow: true,
         arrowHover: true,
         values: 1,
-        perList: 4,
         increment: 1,
         drag: true,
         repeat: false,

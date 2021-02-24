@@ -14,7 +14,7 @@
     <section id="equipo-inspira">
       <div class="container">
         <h1 class="title"> {{$t('inspire.titleTeam')}} </h1>
-          <PeopleCarousel title="Equipo" :type="type" iniciativa='inspire'/>
+          <PeopleCarousel title="Equipo" :type="type" iniciativa='inspire' perList="4"/>
       </div>
     </section>
 
