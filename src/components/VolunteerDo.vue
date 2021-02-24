@@ -1,7 +1,7 @@
 <template>
     <div class="container">
     <div class="columns is-multiline is-mobile" >
-      <div class="column is-3" v-for="item in data" :key="item.title" >
+      <div class="column is-3" v-for="item in datos" :key="item.title" >
           <img  class="image-bordes" :src="getImgUrl(item.image)" width="60%" >
           <h1 class="title title-style" > {{item.title}}</h1>
           <ol class="star">
@@ -17,11 +17,14 @@
 
 <script>
 import * as Data from '../data/volunteer.js';
+import i18n from '../i18n';
 export default {
     data(){
-        const data = Data.default.doData
+        const data = Data.default
+        const lang=`${i18n.locale}`
         return {
-        data,
+          data,
+          lang
         }
         
     },
@@ -29,6 +32,18 @@ export default {
     getImgUrl(value) {
         return require(`@/assets/${value}`)
     }
+  },
+  computed:
+  {
+    //data according to language
+            datos:function()
+            {
+                if(this.lang == "en") {
+                    return this.data.en.doData
+                } else {
+                    return this.event.es.doData
+                }
+            }
   }
 }
 </script>

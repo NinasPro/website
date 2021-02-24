@@ -10,7 +10,8 @@
             <div class="info-text">
                 <h1 class="title"> {{titulo}} </h1>
                 <h2 class="subtitle"> {{text}} </h2>
-                <router-link :to="path" class="button is-info is-rounded">
+                <router-link :to="path" 
+                    v-bind:class="{'button is-rounded': true, 'is-info': (type === 'left'), 'is-success': (type === 'right')}">
                     {{boton}} 
                 </router-link>
             </div>

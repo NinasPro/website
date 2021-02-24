@@ -1,0 +1,53 @@
+{
+  
+  "navbar":{
+      "incentivas":"Incentives",
+      "inspira":"Inspires project ",
+      "empodera": "Empower project",
+      "potencia": "Power projects",
+      "incentiva": "Incentive project",
+      "events":"Events",
+      "somos": "About",
+      "involucrate": "Get involved",
+      "dona":"Donate"
+  },
+  "footer":{
+    "about": "About",
+    "mission":"Mission",
+    "vision":"Vision",
+    "community":"Community",
+    "history":"History",
+    "memory":"Memories",
+    "project":"Projects",
+    "empower":"Empower",
+    "incentive":"Incentive",
+    "inspire":"Inspires",
+    "power":"Power",
+    "help":"How to help?",
+    "workWithUs":"Work with us",
+    "member":"Become a member",
+    "volunteer":"Become a volunteer",
+    "dona":"Donate",
+    "contact":"Contact Us",
+    "redes":"Follow our social networks"
+  },
+  "home":{
+    "titleEvents":"Upcoming events",
+    "titlePartners": "Our Partners",
+    "titleNews":"News",
+    "seeAll":"See All",
+    "newsletter":"Subscribe to the newsletter"
+  },
+  "event":
+  {
+    "signUp":"Sign Up",
+    "seeAll":"See All"
+  },
+  "volunteer":{
+      "help":"How to take part?",
+      "titleDo":"What does a volunteer do in Niñas Pro?",
+      "titleProfile":"Profile of our volunteers",
+      "titleProject":"Projects you can get involved in",
+      "titleTestimony":"Testimony" 
+  }
+}

@@ -9,25 +9,26 @@
       </b-navbar-item>
     </template>
     <template #end>
-      <b-navbar-dropdown label="Iniciativas" >
-        <b-navbar-item tag="router-link" :to="{ path: '/inspira/' }">
-          Proyecto Inspira
+      <b-navbar-dropdown :label="`${$t('navbar.incentivas')}`" >
+        <b-navbar-item tag="router-link" :to="{ path: '/inspira/' }"  >
+          <p>{{$t('navbar.inspira')}}</p>
         </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/empodera/' }"> 
-          Proyecto Empodera
+        <b-navbar-item tag="router-link" :to="{ path: '/empodera/' }"  > 
+          <p>{{$t('navbar.empodera')}}</p>
         </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/potencia/' }">
-          Proyecto Potencia
+        <b-navbar-item tag="router-link" :to="{ path: '/potencia/' }" >
+          <p>{{$t('navbar.potencia')}}</p>
         </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/incentiva/' }">
-          Proyecto Incentiva
+        <b-navbar-item tag="router-link" :to="{ path: '/incentiva/' }" >
+          <p>{{$t('navbar.incentiva')}}</p>
         </b-navbar-item>
       </b-navbar-dropdown>
+
       <b-navbar-item tag="router-link" :to="{ path: '/eventos/' }">
-        Eventos
+        <p>{{$t('navbar.events')}}</p>
       </b-navbar-item>
       <b-navbar-item tag="router-link" :to="{ path: '/somos/' }">
-        Somos
+        <p>{{$t('navbar.somos')}}</p>
       </b-navbar-item>
       <b-navbar-item tag="div">
         <div class="buttons">
@@ -38,7 +39,7 @@
                 'is-info':(type !== 'is-info'), 
                 'is-warning':(type == 'is-info')
               }" rounded>
-              Involúcrate
+              {{$t('navbar.involucrate')}}
             </b-button>
           </router-link>
           <router-link :to="{ path: '/somos'}">
@@ -48,7 +49,7 @@
                 'is-warning':(type !== 'is-warning' && type !== 'is-info'),
                 'is-primary':(type === 'is-warning' || type === 'is-info')
               }" rounded outlined>
-              Dona
+              {{$t('navbar.dona')}}
             </b-button>
           </router-link>
         </div>
@@ -106,8 +107,7 @@ export default {
         margin-top: 0rem;
         max-height: 1.5rem;
       }
-    }
-    
+    }  
   }
 }
 

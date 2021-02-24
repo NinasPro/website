@@ -1,8 +1,8 @@
 <template>
     <div class="memories-container">
         <div class="container">
-            <p class="title" align="center"> Memorias </p>
-            <div class="columns memories-item is-vcentered" v-for="(memorie, i) in data" :key="i">
+            <p class="title" align="center"> {{$t('footer.memory')}} </p>
+            <div class="columns memories-item is-vcentered" v-for="(memorie, i) in datos" :key="i">
                 <div class="column" align="left">
                     <p class="memories-item-name"> {{memorie.title}} </p>
                 </div>
@@ -22,15 +22,30 @@
 
 <script>
 
-import * as Memories from '../data/memories.js';
+import * as Memories from '../data/about.js';
+import i18n from '../i18n'
 
 export default {
     data(){
-    const data = Memories.default.data
+    const lang=`${i18n.locale}`
+    const data = Memories.default
         return{
             data,
+            lang,
         }
     },
+    computed:
+    {
+        //data according to language
+        datos: function(){
+            if(this.lang == "en") {
+                return this.data.en.memory
+            } else {
+                return this.data.es.memory
+            }
+            
+        }
+    }
 }
 </script>
     

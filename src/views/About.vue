@@ -1,8 +1,7 @@
 <template>
   <div id="about">
-    <Banner :type="type" title="Somos" button="Únete hoy" link="/voluntariado/"/>
+    <Banner :type="type" :title="`${$t('navbar.somos')}`"/>
     
-    <!-- Mision Vision Values -->
     <section id="mision" class="container">
       <div class="tile is-ancestor">
         <div class="tile is-parent">
@@ -13,7 +12,7 @@
           </div>
         </div>
         <div class="tile is-parent is-vertical" >
-          <div :class="`tile is-child notification ${inf.type}`" v-for="(inf, i) in data" :key="i">
+          <div :class="`tile is-child notification ${inf.type}`" v-for="(inf, i) in datos.data" :key="i">
               <p class="title"> {{inf.title}} </p>
               <p> {{inf.texto}} </p>
           </div>
@@ -23,9 +22,9 @@
 
     <!-- History -->
     <section id="historia" class="container">
-      <div class="title">Historia</div>
-        <p v-for="(texto, i) in historia" :key="i">
-          {{texto.text}} 
+      <div class="title">{{$t('footer.history')}}</div>
+        <p v-for="(texto, i) in datos.history" :key="i">
+          <span v-html="texto.text"/>
         </p>
     </section>
 
@@ -40,15 +39,17 @@
 import Banner from "../components/Banner.vue";
 import Memorie from "../components/Memories.vue";
 import * as Informacion from '../data/about.js';
+import i18n from '../i18n'
 
 export default {
   name: "About",
   data(){
-    const data = Informacion.default.data
-    const historia = Informacion.default.history
+    const lang=`${i18n.locale}`
+    const data = Informacion.default
+    
     return{
       data,
-      historia,
+      lang,
     }
   },
   components: {
@@ -58,6 +59,17 @@ export default {
   props: {
     type: String
   },
+  computed:
+  {
+    //data according to language
+    datos: function() {
+        if(this.lang == "en"){
+          return this.data.en
+        } else {
+          return this.data.es
+        }
+    }
+  }
 };
 </script>
 

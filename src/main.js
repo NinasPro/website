@@ -4,6 +4,7 @@ import Buefy from "buefy";
 import "buefy/dist/buefy.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import i18n from './i18n'
 
 import App from "./App.vue";
 import router from "./router";
@@ -50,5 +51,6 @@ new Vue({
     });
   },
   router,
+  i18n,
   render: h => h(App)
 }).$mount("#app");
