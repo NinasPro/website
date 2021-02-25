@@ -42,7 +42,7 @@
               {{$t('navbar.involucrate')}}
             </b-button>
           </router-link>
-          <router-link :to="{ path: '/somos'}">
+          <router-link :to="{ path: '/donate'}">
             <b-button 
               id="dona-btn" 
               v-bind:class="{ 
