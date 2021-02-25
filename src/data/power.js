@@ -13,8 +13,8 @@ export default({
             }
         ],
         news:[
-            { id:'1',image:'activities-initiatives/arduino-quest.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',button:'si',link:'https://youtu.be/RJ_juHE4qcE'},
-            { id:'2',image:'activities-initiatives/campamento-niñas.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',button:'si',link:'https://youtu.be/CcE4y5NtLgk'},
+            { id:'1',image:'activities-initiatives/arduino-quest.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',link:[{url:'https://youtu.be/RJ_juHE4qcE',title:'See More'},{url:'https://youtu.be/RJ_juHE4qcE',title:'See More'}]},
+            { id:'2',image:'activities-initiatives/campamento-niñas.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',link:[{url:'https://youtu.be/CcE4y5NtLgk',title:'See More'}]},
         ]
     },
     "es":{
@@ -31,8 +31,8 @@ export default({
             }
         ],
         news:[
-            { id:'1',image:'activities-initiatives/arduino-quest.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',button:'si',link:'https://youtu.be/RJ_juHE4qcE'},
-            { id:'2',image:'activities-initiatives/campamento-niñas.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',button:'si',link:'https://youtu.be/CcE4y5NtLgk'},
+            { id:'1',image:'activities-initiatives/arduino-quest.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',link:[{url:'https://youtu.be/RJ_juHE4qcE',title:'Ver más'},{url:'https://youtu.be/RJ_juHE4qcE',title:'Ver más'}]},
+            { id:'2',image:'activities-initiatives/campamento-niñas.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',link:[{url:'https://youtu.be/CcE4y5NtLgk',title:'Ver más'}]},
         ]
     }
 })

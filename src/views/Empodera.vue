@@ -27,7 +27,7 @@
           </div>
           <div class="column">
             <p class="subtitle"> {{item.description}} </p>
-            <a class="button is-rounded is-info" v-if="item.button!=='no'" :href="item.link" target="_blank"> {{$t('empower.SeeMore')}} </a>
+            <a class="button is-rounded is-info" v-for="(url,i) in item.link" :key="i" :href="url.url" target="_blank"> {{url.title}} </a>
           </div>
         </div>
       </div>

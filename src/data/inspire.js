@@ -19,10 +19,10 @@ export default({
             }
         ],
         news:[
-            { id:'1',image:'activities-initiatives/Actividad-niñas-STEM.jpg', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',button:'no'},
-            { id:'2',image:'activities-initiatives/Charla-O-Higgins.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',button:'no'},
-            { id:'3',image:'activities-initiatives/Desafio-Ing-Comu.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',button:'no'},
-            { id:'4',image:'activities-initiatives/Ada-Lovelace.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',button:'si',link:'https://www.youtube.com/watch?v=JfHtl8O3-Tk&list=PLy7SgTVK30ORJ9-SveDWzvhMerXdbZrkv'},
+            { id:'1',image:'activities-initiatives/Actividad-niñas-STEM.jpg', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien'},
+            { id:'2',image:'activities-initiatives/Charla-O-Higgins.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien'},
+            { id:'3',image:'activities-initiatives/Desafio-Ing-Comu.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien'},
+            { id:'4',image:'activities-initiatives/Ada-Lovelace.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',link:[{url:'https://www.youtube.com/watch?v=JfHtl8O3-Tk&list=PLy7SgTVK30ORJ9-SveDWzvhMerXdbZrkv',title:'Ver más'}]},
         ]
     },
     "es":{
@@ -45,10 +45,10 @@ export default({
             }
         ],
         news:[
-            { id:'1',image:'activities-initiatives/Actividad-niñas-STEM.jpg', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',button:'no'},
-            { id:'2',image:'activities-initiatives/Charla-O-Higgins.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',button:'no'},
-            { id:'3',image:'activities-initiatives/Desafio-Ing-Comu.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',button:'no'},
-            { id:'4',image:'activities-initiatives/Ada-Lovelace.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',button:'si',link:'https://www.youtube.com/watch?v=JfHtl8O3-Tk&list=PLy7SgTVK30ORJ9-SveDWzvhMerXdbZrkv'},
+            { id:'1',image:'activities-initiatives/Actividad-niñas-STEM.jpg', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien'},
+            { id:'2',image:'activities-initiatives/Charla-O-Higgins.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien'},
+            { id:'3',image:'activities-initiatives/Desafio-Ing-Comu.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien'},
+            { id:'4',image:'activities-initiatives/Ada-Lovelace.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',link:[{url:'https://www.youtube.com/watch?v=JfHtl8O3-Tk&list=PLy7SgTVK30ORJ9-SveDWzvhMerXdbZrkv',title:'Ver más'}]},
         ]
     }
 })
