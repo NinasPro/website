@@ -30,18 +30,18 @@
                   {{ $t('volunteer.titleProfile') }}
                 </a>
               </div>
-              <div class="tile vspaced-tile">
+              <!-- <div class="tile vspaced-tile">
                 <a class="button is-success is-rounded is-fullwidth is-outlined" 
                 href="#volunteer-internship" v-smooth-scroll>
                   {{ $t('volunteer.titleInternships') }}
                 </a>
-              </div>
-              <div class="tile vspaced-tile">
+              </div> -->
+              <!-- <div class="tile vspaced-tile">
                 <a class="button is-primary is-rounded is-fullwidth is-outlined" 
                 href="#volunteer-alliance" v-smooth-scroll>
                   {{ $t('volunteer.titleAlliances') }}
                 </a>
-              </div>
+              </div> -->
               <div class="tile vspaced-tile">
                 <a class="button is-info is-rounded is-fullwidth is-outlined" 
                 href="#volunteer-testimony" v-smooth-scroll>
@@ -50,7 +50,7 @@
               </div>
               <div class="tile vspaced-tile">
                 <a class="button is-success is-rounded is-fullwidth is-outlined" 
-                href="#volunteer-singup" v-smooth-scroll>
+                href="#volunteer-signup" v-smooth-scroll>
                   {{ $t('volunteer.titleSignup') }}
                 </a>
               </div>
@@ -70,7 +70,7 @@
       <Profile />
     </section>
 
-    <section id="volunteer-internship">
+    <!-- <section id="volunteer-internship">
       <div class="container">
         <div class="title">{{ $t('volunteer.titleInternships') }}</div>
         <div class="subtitle">{{ $t('volunteer.subtitleInternships') }}</div>
@@ -80,14 +80,14 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section id="volunteer-alliance">
+    <!-- <section id="volunteer-alliance">
       <div class="container">
         <div class="title">{{ $t('volunteer.titleAlliances') }}</div>
         <div class="subtitle">{{ $t('volunteer.subtitleAlliances') }}</div>
       </div>
-    </section>
+    </section> -->
 
     <section id="volunteer-testimony">
       <div class="container">
@@ -101,10 +101,13 @@
       </div>
     </section>
 
-    <section id="volunteer-singup">
+    <section id="volunteer-signup">
       <div class="container">
         <div class="title">{{ $t('volunteer.titleSignup') }}</div>
         <div class="subtitle">{{ $t('volunteer.subtitleSignup') }}</div>
+        <div class="form">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdOJAK9wNTVLLSQSAw3xUV-6sdNVW8hwonWIZlufkeyIg59ug/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
       </div>
     </section>
 
@@ -117,7 +120,7 @@ import Banner from '../components/Banner.vue'
 import Profile from '../components/VolunteerProfile.vue'
 import Do from '../components/VolunteerDo.vue'
 import Testimony from '../components/Testimony.vue'
-import News from '../components/News.vue'
+// import News from '../components/News.vue'
 import * as Data from '../data/volunteer.js'
 import i18n from '../i18n'
 
@@ -136,7 +139,7 @@ export default {
     Profile,
     Do,
     Testimony,
-    News
+    // News
   },
   props: {
     type: String
@@ -181,6 +184,15 @@ section {
     font-size: 18px;
     text-align: center;
     margin-bottom: 40px;
+  }
+
+  .form {
+    text-align: center;
+    
+    iframe {
+      width: 100%;
+      max-width: 600px;
+    }
   }
 }
 
