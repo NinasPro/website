@@ -1,7 +1,7 @@
 <template>
     <div class="columns">
         <slot v-if="type === 'left'">
-            <div class="column info-img">
+            <div class="column info-img" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1500" data-aos-anchor-placement="center-center">
                 <img :class="type" :src="getImgUrl(image)">
             </div>
         </slot>
@@ -18,7 +18,7 @@
         </div>
         
         <slot v-if="type === 'right'">
-            <div :class="`column info-img ${type}`">
+            <div :class="`column info-img ${type}`" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1500" data-aos-anchor-placement="center-center">
                 <img :class="type" :src="getImgUrl(image)">
             </div>
         </slot>

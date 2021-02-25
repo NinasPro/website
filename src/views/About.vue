@@ -2,7 +2,7 @@
   <div id="about">
     <Banner :type="type" :title="`${$t('navbar.somos')}`"/>
     
-    <section class="container">
+    <section id="mision" class="container">
       <div class="tile is-ancestor">
         <div class="tile is-parent">
           <div class="tile is-child">
