@@ -14,7 +14,7 @@
     <section id="equipo-inspira">
       <div class="container">
         <h1 class="title"> {{$t('incentive.titleTeam')}} </h1>
-          <PeopleCarousel title="Equipo" :type="type" iniciativa='incentive' perList="1"/>
+          <Team :team="datos('team')"/>
       </div>
     </section>
 
@@ -38,7 +38,7 @@
 
 <script>
 import PhotoBanner from "../components/PhotoBanner.vue";
-import PeopleCarousel from "../components/PeopleCarousel.vue";
+import Team from "../components/Team.vue";
 import * as Incentive from '../data/incentive.js';
 import i18n from '../i18n'
 
@@ -46,7 +46,7 @@ export default {
   name: "Projects",
   components: {
     PhotoBanner,
-    PeopleCarousel,
+    Team,
   },
   data(){
     const lang=`${i18n.locale}`
@@ -66,8 +66,10 @@ export default {
       if(this.lang == "en") {
             if(section=="about"){
               return this.data.en.about
-            }else if(section=="news"){
+            } else if(section=="news"){
               return this.data.en.news
+            } else if(section=="team"){
+              return this.data.en.team
             } else {
               return null
             }
@@ -75,8 +77,10 @@ export default {
             if(section=="about") {
               return this.data.es.about
             } else if(section=="news"){
-              return this.data.en.news
-            }else {
+              return this.data.es.news
+            } else if(section=="team"){
+              return this.data.es.team
+            } else {
               return null
             }
         }
