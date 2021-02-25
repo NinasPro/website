@@ -1,10 +1,10 @@
 {
     "navbar":{
-        "incentivas":"Incentivas",
-        "inspira":"Proyecto Inspira",
-        "empodera": "Proyecto Empodera",
-        "potencia": "Proyecto Potencia",
-        "incentiva": "Proyecto Incentiva",
+        "iniciativas":"Iniciativas",
+        "inspira":"Inspira",
+        "empodera": "Empodera",
+        "potencia": "Potencia",
+        "incentiva": "Incentiva",
         "events":"Eventos",
         "somos": "Somos",
         "involucrate": "Involucrate",
@@ -57,25 +57,25 @@
     "inspire":{
         "banner":"Iniciativa Inspira",
         "title":"¿En qué consiste la iniciativa inspira?",
-        "titleTeam":"Equipo Inspira",
-        "titlenovelties":"Novedades"
+        "titleTeam":"Equipo",
+        "titlenovelties":"Proyectos"
     },
     "incentive":{
         "banner":"Iniciativa Incentiva",
         "title":"¿En qué consiste la iniciativa incentiva?",
-        "titleTeam":"Incentive Team",
-        "titlenovelties":"Novelties"
+        "titleTeam":"Equipo",
+        "titlenovelties":"Proyectos"
         },
     "power":{
-        "banner":"Incentives Power",
+        "banner":"Iniciativa Potencia",
         "title":"¿En qué consiste la iniciativa potencia?",
-        "titleTeam":"Power Team",
-        "titlenovelties":"Novelties"
+        "titleTeam":"Equipo",
+        "titlenovelties":"Proyectos"
     },
     "empower":{
-        "banner":"Incentives Empower",
+        "banner":"Iniciativa Empodera",
         "title":"¿En qué consiste la iniciativa empodera?",
-        "titleTeam":"Empower Team",
-        "titlenovelties":"Novelties"
+        "titleTeam":"Equipo",
+        "titlenovelties":"Proyectos"
     }
 }

@@ -17,7 +17,7 @@
           English
         </b-navbar-item>
       </b-navbar-dropdown>
-      <b-navbar-dropdown :label="`${$t('navbar.incentivas')}`" >
+      <b-navbar-dropdown :label="`${$t('navbar.iniciativas')}`" >
         <b-navbar-item tag="router-link" :to="{ path: '/inspira/' }"  >
           <p>{{$t('navbar.inspira')}}</p>
         </b-navbar-item>
