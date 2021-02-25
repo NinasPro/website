@@ -3,9 +3,9 @@
 export default ({
     "en":{
         data : [
-            {'id':'mission','title':'Mission', 'texto':"Empoderar niñas y adolescentes a través de la enseñanza de programación e inspirar vocaciones científicas y tecnológicas.",'type':'is-success'},
+            {'id':'mision','title':'Mission', 'texto':"Empoderar niñas y adolescentes a través de la enseñanza de programación e inspirar vocaciones científicas y tecnológicas.",'type':'is-success'},
             {'id':'vision','title':'Vision', 'texto':"Que todas las niñas de Chile vivan la ciencia y la tecnología libres de estereotipos de género.",'type':'is-primary'},
-            {'id':'community','title':'Community', 'texto':"Confiamos en que colaborando y trabajando en equipo podemos lograr nuestro objetivo.",'type':'is-warning'},
+            {'id':'comunidad','title':'Community', 'texto':"Confiamos en que colaborando y trabajando en equipo podemos lograr nuestro objetivo.",'type':'is-warning'},
         ],
         history:[
             {'title':'History','text': "EnNiñas Pro nace en el año 2016 como una agrupación de mujeres estudiantes de ingeniería que,al ser testigos de la poca participación \
