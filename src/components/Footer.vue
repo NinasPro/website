@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">
+  <footer :class="`hero is-medium ${type}`">
     <div class="container">
       <div class="columns is-variable is-1">
         <div class="column is-2" >
@@ -80,8 +80,6 @@ export default {
     padding-left: 3px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #2596be;
-    color: white;
   } 
   strong {
     color: white;

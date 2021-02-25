@@ -12,7 +12,7 @@
           </div>
         </div>
         <div class="tile is-parent is-vertical" >
-          <div :class="`tile is-child notification ${inf.type}`" v-for="(inf, i) in datos.data" :key="i">
+          <div :id="inf.id" :class="`tile is-child notification ${inf.type}`" v-for="(inf, i) in datos('data')" :key="i">
               <p class="title"> {{inf.title}} </p>
               <p> {{inf.texto}} </p>
           </div>
@@ -23,7 +23,7 @@
     <!-- History -->
     <section id="historia" class="container">
       <div class="title">{{$t('footer.history')}}</div>
-        <p v-for="(texto, i) in datos.history" :key="i">
+        <p v-for="(texto, i) in datos('history')" :key="i">
           <span v-html="texto.text"/>
         </p>
     </section>
@@ -59,17 +59,28 @@ export default {
   props: {
     type: String
   },
-  computed:
-  {
+  methods: {
     //data according to language
-    datos: function() {
-        if(this.lang == "en"){
-          return this.data.en
+    datos(section) {
+      if(this.lang == "en") {
+            if(section=="data"){
+              return this.data.en.data
+            } else if(section=="history") {
+              return this.data.en.history
+            } else {
+              return null
+            }
         } else {
-          return this.data.es
+            if(section=="data") {
+              return this.data.es.data
+            } else if(section=="history") {
+              return this.data.es.history
+            } else {
+              return null
+            }
         }
     }
-  }
+  },
 };
 </script>
 

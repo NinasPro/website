@@ -2,7 +2,7 @@
   <div id="app">
     <Navbar v-bind:type="$route.matched[0] ? $route.matched[0].props.default.type : 'is-primary'"/>
     <router-view></router-view>
-    <Footer> </Footer>
+    <Footer v-bind:type="$route.matched[0] ? $route.matched[0].props.default.type : 'is-primary'"/>
   </div>
 </template>
 
