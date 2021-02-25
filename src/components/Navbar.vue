@@ -9,6 +9,14 @@
       </b-navbar-item>
     </template>
     <template #end>
+      <b-navbar-dropdown :label="`${$t('navbar.lang')}`" v-model="lang">
+        <b-navbar-item value="es" @click="handleChange('es')">
+          Español
+        </b-navbar-item>
+        <b-navbar-item value="en" @click="handleChange('en')">
+          English
+        </b-navbar-item>
+      </b-navbar-dropdown>
       <b-navbar-dropdown :label="`${$t('navbar.incentivas')}`" >
         <b-navbar-item tag="router-link" :to="{ path: '/inspira/' }"  >
           <p>{{$t('navbar.inspira')}}</p>
@@ -54,6 +62,7 @@
           </router-link>
         </div>
       </b-navbar-item>
+      
     </template>
   </b-navbar>
 </template>
@@ -64,6 +73,18 @@ export default {
   props: {
     "type": String,
   },
+  data: function(){
+    const lang= localStorage.getItem('lang') || 'es';
+    return{
+      lang:lang
+    }
+  },
+  methods:{
+    handleChange(eve){
+      localStorage.setItem('lang',eve);
+      window.location.reload();
+    }
+  }
 };
 </script>
 

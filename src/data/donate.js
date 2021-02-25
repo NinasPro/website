@@ -1,8 +1,8 @@
 export default({
     "en":{
-        donate:'Si quiere donar, comuniquese con contacto@ninaspro.cl'
+        donate:'Request the instructions to make your donation to recaudacion@ninaspro.cl'
     },
     "es":{
-        donate:'Si quiere donar, comuniquese con contacto@ninaspro.cl'
+        donate:'Solicita las indicaciones para hacer tu donación a recaudacion@ninaspro.cl'
     }
 })

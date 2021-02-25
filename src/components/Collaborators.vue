@@ -1,10 +1,13 @@
 <template>
   
-  <div class="container block">
-    <div class="columns is-multiline is-mobile block" >
-      <div class="column is-3-desktop is-6-mobile block" v-for="item in datos" :key="item.name" align="center">
+  <div class="container">
+    <div class="columns is-multiline is-mobile" >
+      <div class="column is-3-desktop is-6-mobile" 
+        v-for="(item, i) in datos" :key="i"
+        data-aos="fade-up" :data-aos-delay="700 + 100*i" data-aos-duration="1000" data-aos-anchor-placement="bottom-center"
+        align="center">
           <a :href="item.url">
-          <img  class ="block" :src="getImgUrl(item.image)" >
+            <img :src="getImgUrl(item.image)">
           </a>
       </div>
       
