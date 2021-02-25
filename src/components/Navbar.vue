@@ -11,10 +11,10 @@
     <template #end>
       <b-navbar-dropdown :label="`${$t('navbar.lang')}`" v-model="lang">
         <b-navbar-item value="es" @click="handleChange('es')">
-          ES
+          Español
         </b-navbar-item>
         <b-navbar-item value="en" @click="handleChange('en')">
-          EN
+          English
         </b-navbar-item>
       </b-navbar-dropdown>
       <b-navbar-dropdown :label="`${$t('navbar.incentivas')}`" >
