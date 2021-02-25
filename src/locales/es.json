@@ -53,28 +53,24 @@
         "banner":"Iniciativa Inspira",
         "title":"¿En qué consiste la iniciativa inspira?",
         "titleTeam":"Equipo Inspira",
-        "titlenovelties":"Novedades",
-        "SeeMore":"Ver más"
+        "titlenovelties":"Novedades"
     },
     "incentive":{
         "banner":"Iniciativa Incentiva",
         "title":"¿En qué consiste la iniciativa incentiva?",
         "titleTeam":"Incentive Team",
-        "titlenovelties":"Novelties",
-        "SeeMore":"See More"
+        "titlenovelties":"Novelties"
         },
     "power":{
         "banner":"Incentives Power",
         "title":"¿En qué consiste la iniciativa potencia?",
         "titleTeam":"Power Team",
-        "titlenovelties":"Novelties",
-        "SeeMore":"See More"
+        "titlenovelties":"Novelties"
     },
     "empower":{
         "banner":"Incentives Empower",
         "title":"¿En qué consiste la iniciativa empodera?",
         "titleTeam":"Empower Team",
-        "titlenovelties":"Novelties",
-        "SeeMore":"See More"
+        "titlenovelties":"Novelties"
     }
 }
