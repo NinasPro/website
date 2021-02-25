@@ -65,6 +65,12 @@ export default new Router({
       component: () => import("@/views/Event"),
       props: { type: "is-primary" }
     },
+    {
+      name: "donate",
+      path: "/donate/",
+      component: () => import("@/views/Donate"),
+      props: { type: "is-success" }
+    },
   ],
   scrollBehavior (to, from, savedPosition) {
     if (savedPosition) {

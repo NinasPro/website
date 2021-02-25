@@ -2,7 +2,7 @@
     <div class="container">
         <div class="columns event-item" v-for="(event, i) in eventos" :key="i">
             <div class="column is-2">
-                <b-image ratio="1by1" :src="require('@/assets/ninastic.jpg')" :rounded="true"></b-image>
+                <b-image ratio="1by1" :src="getImgUrl(event.image)" :rounded="true"></b-image>
             </div>
             <div class="column">
                 <div>
@@ -71,8 +71,11 @@ export default {
                 } else {
                     return this.event.es.events
                 }
-            }      
-        },
+            },
+            getImgUrl(value) {
+                return require(`@/assets/${value}`)
+            }     
+    },
     computed:
         {
             eventos: function () {
