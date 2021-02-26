@@ -26,7 +26,7 @@
             <img class="embed-responsive-item" :src="getImgUrl(item.image)" >
           </div>
           <div class="column">
-            <p class="subtitle"> {{item.description}} </p>
+            <p class="subtitle" v-html="item.description"> {{item.description}} </p>
             <a class="button is-rounded is-info" v-for="(url,i) in item.link" :key="i" :href="url.url" target="_blank"> {{url.title}}</a>
           </div>
         </div>
@@ -109,6 +109,9 @@ section {
       font-size: 18px;
       text-align: left;
       margin-bottom: 40px;
+    }
+    a{
+      margin-right: 1%;
     }
   }
 

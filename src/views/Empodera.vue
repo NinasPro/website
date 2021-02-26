@@ -17,7 +17,7 @@
           <Team :team="datos('team')"/>
       </div>
     </section>
-
+<!--
     <section>
       <div class="container">
         <h1 class="title"> {{$t('empower.titlenovelties')}} </h1>
@@ -32,7 +32,7 @@
         </div>
       </div>
     </section>
-    
+  -->
   </div>
 </template>
 
@@ -109,6 +109,9 @@ section {
       font-size: 18px;
       text-align: left;
       margin-bottom: 40px;
+    }
+    a{
+      margin-right: 1%;
     }
   }
 

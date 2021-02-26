@@ -1,10 +1,10 @@
 export default({
     "en":{
         team: [
-            {id: '1', image: 'team/constanza-villegas.png', text:'Constanza Villegas',workstation:'Leader',description:'Este texto es totalmente generico, se debe colocar texto nuevo.'},
-            {id: '2', image: 'team/carla-peñafiel.png', text:'Carla Peñafiel',workstation:'Executive Coordinator',description:'Este texto es totalmente generico, se debe colocar texto nuevo.'},
-            {id: '3', image: 'logo.png', text:'Nadia Decar',workstation:'Management',description:'Este texto es totalmente generico, se debe colocar texto nuevo.'},
-            {id: '4', image: 'logo.png', text:'Isidora Letelier',workstation:'Management',description:'Este texto es totalmente generico, se debe colocar texto nuevo.'},
+            {id: '1', image: 'team/constanza-villegas.png', text:'Constanza Villegas',workstation:'Leader',description:''},
+            {id: '2', image: 'team/carla-peñafiel.png', text:'Carla Peñafiel',workstation:'Executive Coordinator',description:''},
+            {id: '3', image: 'team/constanza-villegas.png', text:'Nadia Decar',workstation:'Management',description:''},
+            {id: '4', image: 'team/constanza-villegas.png', text:'Isidora Letelier',workstation:'Management',description:''},
         ],
         about:[
             {text: 'El objetivo de esta iniciativa es inspirar vocaciones científicas y \
@@ -19,18 +19,19 @@ export default({
             }
         ],
         news:[
-            { id:'1',image:'activities-initiatives/Actividad-niñas-STEM.jpg', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien'},
-            { id:'2',image:'activities-initiatives/Charla-O-Higgins.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien'},
-            { id:'3',image:'activities-initiatives/Desafio-Ing-Comu.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien'},
-            { id:'4',image:'activities-initiatives/Ada-Lovelace.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',link:[{url:'https://www.youtube.com/watch?v=JfHtl8O3-Tk&list=PLy7SgTVK30ORJ9-SveDWzvhMerXdbZrkv',title:'Ver más'}]},
+            {   id:'4',
+                image:'activities-initiatives/Ada-Lovelace.png', 
+                description:'El día de Ada Lovelace es una celebración internacional de los logros de las mujeres en ciencia, tecnología, ingeniería y matemáticas (STEM). Se celebra el segundo martes del mes de Octubre, ¡y nosotras quisimos celebrar toda la semana!<br/><br/>\
+                En honor a Ada Lovelace, conocida como la madre de la programación, este evento buscó visibilizar a mujeres en STEM para crear Role Models que motiven a otras mujeres y niñas a seguir carreras en STEM. Además, junto con organizaciones amigas realizamos talleres gratuitos para niñas, niños y jóvenes, que les permitierón introducirse como creadores al mundo de la tecnología.',
+                link:[{url:'https://www.youtube.com/watch?v=JfHtl8O3-Tk&list=PLy7SgTVK30ORJ9-SveDWzvhMerXdbZrkv',title:'Watch Videos'},{url:'https://ada.ninaspro.cl/',title:'See Page'}]},
         ]
     },
     "es":{
         team: [
-            {id: '1', image: 'team/constanza-villegas.png', text:'Constanza Villegas',workstation:'Lider',description:'Este texto es totalmente generico, se debe colocar texto nuevo.'},
-            {id: '2', image: 'team/carla-peñafiel.png', text:'Carla Peñafiel',workstation:'Coordinadora Ejecutiva',description:'Este texto es totalmente generico, se debe colocar texto nuevo.'},
-            {id: '3', image: 'logo.png', text:'Nadia Decar',workstation:'Gestión',description:'Este texto es totalmente generico, se debe colocar texto nuevo.'},
-            {id: '4', image: 'logo.png', text:'Isidora Letelier',workstation:'Gestión',description:'Este texto es totalmente generico, se debe colocar texto nuevo.'},
+            {id: '1', image: 'team/constanza-villegas.png', text:'Constanza Villegas',workstation:'Lider',description:''},
+            {id: '2', image: 'team/carla-peñafiel.png', text:'Carla Peñafiel',workstation:'Coordinadora Ejecutiva',description:''},
+            {id: '3', image: 'team/constanza-villegas.png', text:'Nadia Decar',workstation:'Gestión',description:''},
+            {id: '4', image: 'team/constanza-villegas.png', text:'Isidora Letelier',workstation:'Gestión',description:''},
         ],
         about:[
             {text: 'El objetivo de esta iniciativa es inspirar vocaciones científicas y \
@@ -45,10 +46,11 @@ export default({
             }
         ],
         news:[
-            { id:'1',image:'activities-initiatives/Actividad-niñas-STEM.jpg', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien'},
-            { id:'2',image:'activities-initiatives/Charla-O-Higgins.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien'},
-            { id:'3',image:'activities-initiatives/Desafio-Ing-Comu.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien'},
-            { id:'4',image:'activities-initiatives/Ada-Lovelace.png', description:'Esto es un texto generico, se debe cambiar en cuanto se tenga el texto correspondiente para que se vea bien',link:[{url:'https://www.youtube.com/watch?v=JfHtl8O3-Tk&list=PLy7SgTVK30ORJ9-SveDWzvhMerXdbZrkv',title:'Ver más'}]},
+            { id:'4',
+            image:'activities-initiatives/Ada-Lovelace.png', 
+            description:'El día de Ada Lovelace es una celebración internacional de los logros de las mujeres en ciencia, tecnología, ingeniería y matemáticas (STEM). Se celebra el segundo martes del mes de Octubre, ¡y nosotras quisimos celebrar toda la semana!<br/><br/>\
+            En honor a Ada Lovelace, conocida como la madre de la programación, este evento buscó visibilizar a mujeres en STEM para crear Role Models que motiven a otras mujeres y niñas a seguir carreras en STEM. Además, junto con organizaciones amigas realizamos talleres gratuitos para niñas, niños y jóvenes, que les permitierón introducirse como creadores al mundo de la tecnología.',
+            link:[{url:'https://www.youtube.com/watch?v=JfHtl8O3-Tk&list=PLy7SgTVK30ORJ9-SveDWzvhMerXdbZrkv',title:'Watch Videos'},{url:'https://ada.ninaspro.cl/',title:'See Page'}]},
         ]
     }
 })
