@@ -1,5 +1,5 @@
 <template>
-    <div class="columns is-multiline is-centered" >
+    <div class="columns is-multiline is-centered team" >
         <div  class="column is-one-quarter" v-for="item in team" :key="item.id">
                 <div class="card-image">
                     <figure>
@@ -68,8 +68,8 @@ export default {
   }
 }
 
-.carrusel{
-  padding-bottom: 10px;
+.team{
+  padding-top: 10px;
 }
 
 vue-fontawesome {

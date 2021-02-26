@@ -102,7 +102,8 @@ section {
       font-size: 30px;
       font-weight: 600;
       text-align: center;
-      padding-bottom: 20px;
+      padding-bottom: 40px;
+      padding-top: 40px;
     }
 
     .subtitle {

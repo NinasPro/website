@@ -1,5 +1,5 @@
 <template>
-  <b-carousel :pause-hover="false" :pause-info="false" :interval="4000">
+  <b-carousel :pause-hover="false" :pause-info="false" :interval="10000">
     <b-carousel-item v-for="(carousel,i) in datos" :key="i">
       <section :class="`hero is-medium ${type}`">
         <div class="hero-body">

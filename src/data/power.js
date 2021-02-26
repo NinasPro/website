@@ -1,6 +1,9 @@
 export default({
     "en":{
-        team: [],
+        team: [
+            {id: '1', image: 'team/daniela-campos.jpg', text:'Daniela Campos',workstation:'Leader',description:''},
+            {id: '2', image: 'team/ignacio-machuca.png', text:'Ignacio Machuca',workstation:'Tutor',description:''}
+        ],
         about:[
             {text: 'Proyecto de identificación de talentos y fortalecimiento académico en\
             programación competitiva. Este consiste en 10 sesiones teórico-prácticas\
@@ -23,7 +26,10 @@ export default({
         ]
     },
     "es":{
-        team: [],
+        team: [
+            {id: '1', image: 'team/daniela-campos.jpg', text:'Daniela Campos',workstation:'Leader',description:''},
+            {id: '2', image: 'team/ignacio-machuca.png', text:'Ignacio Machuca',workstation:'Tutor',description:''}
+        ],
         about:[
             {text: 'Proyecto de identificación de talentos y fortalecimiento académico en\
             programación competitiva. Este consiste en 10 sesiones teórico-prácticas\

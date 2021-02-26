@@ -12,12 +12,12 @@
       </div>
     </section>
 
- <!--   <section id="equipo-power">
+    <section id="equipo-power">
       <div class="container">
         <h1 class="title"> {{$t('power.titleTeam')}} </h1>
           <Team :team="datos('team')"/>
       </div>
-    </section>-->
+    </section>
 
     <section>
       <div class="container">
@@ -39,7 +39,7 @@
 
 <script>
 import PhotoBanner from "../components/PhotoBanner.vue";
-//import Team from "../components/Team.vue";
+import Team from "../components/Team.vue";
 import * as Inspire from '../data/power.js';
 import i18n from '../i18n'
 
@@ -47,7 +47,7 @@ export default {
   name: "Projects",
   components: {
     PhotoBanner,
-    //Team,
+    Team,
   },
   data(){
     const lang=`${i18n.locale}`
@@ -103,7 +103,8 @@ section {
       font-size: 30px;
       font-weight: 600;
       text-align: center;
-      padding-bottom: 20px;
+      padding-bottom: 40px;
+      padding-top: 40px;
     }
 
     .subtitle {
