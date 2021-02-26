@@ -26,13 +26,12 @@
             <li><router-link class="footer-link" to="/potencia/">{{$t('footer.power')}}</router-link></li>
           </ul>
         </div>
-        <div class="column is-2">
+        <div class="column is-3">
           <strong >{{$t('footer.help')}}</strong> 
           <ul>
-            <li><router-link class="footer-link" to="/voluntariado/">{{$t('footer.workWithUs')}}</router-link></li>
             <li><router-link class="footer-link" to="/voluntariado/">{{$t('footer.member')}}</router-link></li>
             <li><router-link class="footer-link" to="/voluntariado/">{{$t('footer.volunteer')}}</router-link></li>
-            <li><router-link class="footer-link" to="/voluntariado/">{{$t('footer.donate')}}</router-link></li>
+            <li><router-link class="footer-link" to="/donate/">{{$t('footer.donate')}}</router-link></li>
           </ul>
         </div>
         <div class="column is-1"></div>
