@@ -3,8 +3,7 @@ export default ({
     "en":{
         carousels: [
             {'title': 'Welcome','subtitle': 'Empoderamos a niñas y adolescentes a través de la enseñanza de programación e Inspiramos vocaciones científicas y tecnológicas','image': 'banner-img-1.png'},
-            {'title': 'Django Girls','subtitle': 'En Enero más de 45 mujeres participaron en Django Girls Santiago, una jornada de introducción al desarrollo de aplicaciones web.','image': 'banner-img-2.png'},
-            {'title': 'Curso Virtual','subtitle': 'En Abril comenzó el curso anual de programación competitiva para niñas en modalidad online. ¡Este año también en Coquimbo y Concepción!','image': 'banner-img-3.png'}
+            {'title': 'Curso Virtual 2021','subtitle': 'El 10 de Abril comenzará el curso anual de programación competitiva para niñas en modalidad online. ¡Postula para participar, escoge tu sede más cercana!','image': 'banner-img-3.png'}
         ],
         projectsHome:[
             {'title':'Empodera','type':'is-danger','image':'laschicaspueden.jpg', 'path':'/empodera/','description':'Curso Anual de Programación'},
@@ -35,8 +34,7 @@ export default ({
     "es":{
         carousels: [
             {'title': 'Bienvenidas','subtitle': 'Empoderamos a niñas y adolescentes a través de la enseñanza de programación e Inspiramos vocaciones científicas y tecnológicas','image': 'banner-img-1.png'},
-            {'title': 'Django Girls','subtitle': 'En Enero más de 45 mujeres participaron en Django Girls Santiago, una jornada de introducción al desarrollo de aplicaciones web.','image': 'banner-img-2.png'},
-            {'title': 'Curso Virtual','subtitle': 'En Abril comenzó el curso anual de programación competitiva para niñas en modalidad online. ¡Este año también en Coquimbo y Concepción!','image': 'banner-img-3.png'}
+            {'title': 'Curso Virtual 2021','subtitle': 'El 10 de Abril comenzará el curso anual de programación competitiva para niñas en modalidad online. ¡Postula para participar, escoge tu sede más cercana!','image': 'banner-img-3.png'}
         ],
         projectsHome:[
             {'title':'Empodera','type':'is-danger','image':'laschicaspueden.jpg', 'path':'/empodera/','description':'Curso Anual de Programación'},
