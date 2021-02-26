@@ -1,14 +1,14 @@
 {
     "navbar":{
-        "incentivas":"Incentivas",
-        "inspira":"Proyecto Inspira",
-        "empodera": "Proyecto Empodera",
-        "potencia": "Proyecto Potencia",
-        "incentiva": "Proyecto Incentiva",
+        "initiatives":"Iniciativas",
+        "inspire":"Inspira",
+        "empower": "Empodera",
+        "power": "Potencia",
+        "incentive": "Incentiva",
         "events":"Eventos",
-        "somos": "Somos",
-        "involucrate": "Involucrate",
-        "dona":"Dona",
+        "about": "Somos",
+        "involved": "Involúcrate",
+        "donate":"Dona",
         "lang":"ES"
     },
     "footer":{
@@ -19,17 +19,16 @@
         "history":"Historia",
         "memory":"Memorias",
         "project":"Proyectos",
-        "empodera":"Empodera",
-        "incentiva":"Incentiva",
-        "inspira":"Inspira",
-        "potencia":"Potencia",
+        "empower":"Empodera",
+        "incentive":"Incentiva",
+        "inspire":"Inspira",
+        "power":"Potencia",
         "help":"¿Cómo ayudar?",
-        "workWithUs":"Trabaja con nosotros",
-        "member":"Hazte soci@",
-        "volunteer":"Hazte voluntari@",
-        "dona":"Dona",
+        "member":"Alianzas",
+        "volunteer":"Voluntariado",
+        "donate":"Donación",
         "contact":"Contáctanos",
-        "redes":"Sigue nuestras redes sociales"
+        "rrss":"Sigue nuestras redes sociales"
       },
     "home":{
         "titleProjects":"¿Cómo lo hacemos?",
@@ -44,14 +43,49 @@
     },
     "event":
     {
-        "signUp":"Inscríbete",
+        "signUp":"Postular",
         "seeAll":"Ver todos"
     },
     "volunteer":{
-        "help":"¿Cómo participar?",
-        "titleDo":"¿Qué hace una persona voluntaria en Niñas Pro?",
-        "titleProfile":"Perfil de nuestros voluntarios",
-        "titleProject":"Proyectos en los que puedes involucrarte",
-        "titleTestimony":"Testimonios"  
+        "help":"Involúcrate",
+        "titleIntro":"Voluntariado y Alianzas",
+        "subtitleIntro":"Todas nuestras actividades son posibles gracias al voluntariado y las alianzas estratégicas. Tú también puedes ser parte del cambio donando un porcentaje de tu tiempo para empoderar a niñas y adolescentes e inspirar vocaciones científicas y tecnológicas.",
+        "invitationIntro":"Te invitamos a conocer cómo puedes sumarte al equipo.",
+        "titleDo":"¿Qué hace el voluntariado?",
+        "subtitleDo":"Las personas voluntarias son el motor de Niñas Pro",
+        "titleProfile":"Perfil del voluntariado",
+        "subtitleProfile":"Las caracteristicas que nos unen y nos caracterizan son",
+        "titleInternships":"Prácticas Profesionales",
+        "subtitleInternships":"Conoce cómo puedes hacer tu práctica en Niñas Pro",
+        "titleAlliances":"Alianzas y Voluntariado Corporativo",
+        "subtitleAlliances":"Si representas a una empresa, mira cómo podemos comenzar a trabajar juntos",
+        "titleTestimony":"Testimonios",
+        "subtitleTestimony":"Esto piensan quienes han participado del voluntariado",
+        "titleSignup":"¡Quiero Unirme!",
+        "subtitleSignup":"Completa el formulario para iniciar el proceso"  
+    },
+    "inspire":{
+        "banner":"Iniciativa Inspira",
+        "title":"¿En qué consiste la iniciativa inspira?",
+        "titleTeam":"Equipo",
+        "titlenovelties":"Proyectos"
+    },
+    "incentive":{
+        "banner":"Iniciativa Incentiva",
+        "title":"¿En qué consiste la iniciativa incentiva?",
+        "titleTeam":"Equipo",
+        "titlenovelties":"Proyectos"
+        },
+    "power":{
+        "banner":"Iniciativa Potencia",
+        "title":"¿En qué consiste la iniciativa potencia?",
+        "titleTeam":"Equipo",
+        "titlenovelties":"Proyectos"
+    },
+    "empower":{
+        "banner":"Iniciativa Empodera",
+        "title":"¿En qué consiste la iniciativa empodera?",
+        "titleTeam":"Equipo",
+        "titlenovelties":"Proyectos"
     }
 }

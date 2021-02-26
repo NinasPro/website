@@ -1,72 +1,67 @@
 <template>
-    <div class="container">
-    <div class="columns is-multiline is-mobile" >
-      <div class="column is-3" v-for="item in datos" :key="item.title" >
-          <img  class="image-bordes" :src="getImgUrl(item.image)" width="60%" >
-          <h1 class="title title-style" > {{item.title}}</h1>
-          <ol class="star">
+  <div class="container">
+    <div class="columns">
+      <div class="column" v-for="item in datos" :key="item.title">
+        <b-image ratio="1by1" :src="getImgUrl(item.image)" :rounded="true"></b-image>
+        <div class="title">{{ item.title }}</div>
+        <ul>
           <li v-for="linea in item.lista" :key="linea">
-              {{linea}}
+            {{ linea }}
           </li>
-          </ol>
+        </ul>
       </div>
-      
     </div>
   </div>
 </template>
 
 <script>
-import * as Data from '../data/volunteer.js';
-import i18n from '../i18n';
+import * as Data from '../data/volunteer.js'
+import i18n from '../i18n'
 export default {
-    data(){
-        const data = Data.default
-        const lang=`${i18n.locale}`
-        return {
-          data,
-          lang
-        }
-        
-    },
-    methods: {
-    getImgUrl(value) {
-        return require(`@/assets/${value}`)
+  data() {
+    const data = Data.default
+    const lang = `${i18n.locale}`
+    return {
+      data,
+      lang
     }
   },
-  computed:
-  {
+  methods: {
+    getImgUrl(value) {
+      return require(`@/assets/${value}`)
+    }
+  },
+  computed: {
     //data according to language
-            datos:function()
-            {
-                if(this.lang == "en") {
-                    return this.data.en.doData
-                } else {
-                    return this.event.es.doData
-                }
-            }
+    datos: function() {
+      if (this.lang == 'en') {
+        return this.data.en.doData
+      } else {
+        return this.data.es.doData
+      }
+    }
   }
 }
 </script>
 
-<style scoped>
-.container {
-  padding-top: 0px;
-  padding-left: 20px;
+<style lang="scss" scoped>
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    margin: 30px 0px;
 }
 
-.image-bordes{
-    border-radius: 50% 50% 50% 50%;
-    margin-inline-start: 20px;
-    margin-block-end: 20px;
+.column {
+  padding: 3rem;
 }
-ol.star {
-  list-style-type: circle;
-  padding-left: 3rem;
-  margin-inline-start: 20px;
-  margin-block-end: 20px;
-}
-.title-style{
-    margin-inline-start: 50px;
-    
+
+ul {
+  list-style-type: none;
+
+  li:before {
+    content: '\2605';
+  }
 }
 </style>

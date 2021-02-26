@@ -1,5 +1,5 @@
 <template>
-  <b-carousel :pause-hover="false" :pause-info="false">
+  <b-carousel :pause-hover="false" :pause-info="false" :interval="10000">
     <b-carousel-item v-for="(carousel,i) in datos" :key="i">
       <section :class="`hero is-medium ${type}`">
         <div class="hero-body">
@@ -68,10 +68,11 @@ export default {
   padding-top: 6rem;
 
   h1 {
-    font-size: 70px;
+    font-size: 65px;
   }
   h2 {
     font-size: 24px;
+    padding-top: 2%;
   }
 }
 

@@ -1,6 +1,6 @@
 <template>
   <div id="about">
-    <Banner :type="type" :title="`${$t('navbar.dona')}`"/>
+    <Banner :type="type" :title="`${$t('navbar.donate')}`"/>
     
     <section id="mision" class="container">
       <div class="tile is-ancestor">
