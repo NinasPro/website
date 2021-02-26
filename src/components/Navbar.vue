@@ -19,16 +19,16 @@
       </b-navbar-dropdown>
       <b-navbar-dropdown :label="`${$t('navbar.initiatives')}`" >
         <b-navbar-item tag="router-link" :to="{ path: '/inspira/' }"  >
-          <p>{{$t('navbar.inspira')}}</p>
+          <p>{{$t('navbar.inspire')}}</p>
         </b-navbar-item>
         <b-navbar-item tag="router-link" :to="{ path: '/empodera/' }"  > 
-          <p>{{$t('navbar.empodera')}}</p>
+          <p>{{$t('navbar.empower')}}</p>
         </b-navbar-item>
         <b-navbar-item tag="router-link" :to="{ path: '/potencia/' }" >
-          <p>{{$t('navbar.potencia')}}</p>
+          <p>{{$t('navbar.power')}}</p>
         </b-navbar-item>
         <b-navbar-item tag="router-link" :to="{ path: '/incentiva/' }" >
-          <p>{{$t('navbar.incentiva')}}</p>
+          <p>{{$t('navbar.incentive')}}</p>
         </b-navbar-item>
       </b-navbar-dropdown>
 
