@@ -131,8 +131,8 @@ export default ({
             {
                 'name':'Mariana Torres',
                 'title':'En el 2020 me uni como voluntaria en la sede Las Condes, con un poco de miedo porque no sabia si podria enseñarle a las niñas. Sin embargo tome el riesgo y me une a una maravillosa comunidad en donde hay mujeres\
-                 inspiradoras y motivadoras, cada dia se aprende algo nuevo. Luego realice mi pre-practica profesional en donde aprendi un monton de herramientas nuevas y trabajo en equipo.\
-                  Me uni, porque me gusta enseñar que programar no es difícil ni de otro mundo y tampoco depende del género, solo se necesita voluntad y deseo de aprender.',
+                 inspiradoras y motivadoras, cada dia se aprende algo nuevo. Luego realice mi pre-practica profesional en donde aprendí un montón de herramientas nuevas y trabajo en equipo.\
+                  Me uní, porque me gusta enseñar que programar no es difícil ni de otro mundo y tampoco depende del género, solo se necesita voluntad y deseo de aprender.',
                 'type':'is-success'},
         ]
     }

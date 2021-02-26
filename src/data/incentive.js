@@ -38,7 +38,7 @@ export default({
             image:'activities-initiatives/Ada-Lovelace.png', 
             description:'El día de Ada Lovelace es una celebración internacional de los logros de las mujeres en ciencia, tecnología, ingeniería y matemáticas (STEM). Se celebra el segundo martes del mes de Octubre, ¡y nosotras quisimos celebrar toda la semana!<br/><br/>\
             En honor a Ada Lovelace, conocida como la madre de la programación, este evento buscó visibilizar a mujeres en STEM para crear Role Models que motiven a otras mujeres y niñas a seguir carreras en STEM. Además, junto con organizaciones amigas realizamos talleres gratuitos para niñas, niños y jóvenes, que les permitierón introducirse como creadores al mundo de la tecnología.',
-            link:[{url:'https://www.youtube.com/watch?v=JfHtl8O3-Tk&list=PLy7SgTVK30ORJ9-SveDWzvhMerXdbZrkv',title:'Watch Videos'},{url:'https://ada.ninaspro.cl/',title:'See Page'}]},
+            link:[{url:'https://www.youtube.com/watch?v=JfHtl8O3-Tk&list=PLy7SgTVK30ORJ9-SveDWzvhMerXdbZrkv',title:'Ver videos'},{url:'https://ada.ninaspro.cl/',title:'Ver página'}]},
         ]
     }
 })
