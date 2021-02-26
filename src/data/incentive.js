@@ -1,7 +1,7 @@
 export default({
     "en":{
         team: [
-            {id: '1', image: 'team/Barbara-Castro.png', text:'Bárbara Castro',workstation:'Leader',description:'Este texto es totalmente generico, se debe colocar texto nuevo.'},
+            {id: '1', image: 'team/Barbara-Castro.png', text:'Bárbara Castro',workstation:'Leader',description:''},
         ],
         about:[
             {text: 'Talleres Introductorios de Programación o Electrónica<br/><br/>\
@@ -22,7 +22,7 @@ export default({
     },
     "es":{
         team: [
-            {id: '1', image: 'team/Barbara-Castro.png', text:'Bárbara Castro',workstation:'Lider',description:'Este texto es totalmente generico, se debe colocar texto nuevo.'},
+            {id: '1', image: 'team/Barbara-Castro.png', text:'Bárbara Castro',workstation:'Lider',description:''},
         ],
         about:[
             {text: 'Talleres Introductorios de Programación o Electrónica<br/><br/>\

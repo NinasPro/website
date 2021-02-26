@@ -1,8 +1,8 @@
 export default({
     "en":{
         team: [
-            {id: '1', image: 'team/matias-Saez.jpg', text:'Matías Sáez',workstation:'Leader',description:'Este texto es totalmente generico, se debe colocar texto nuevo.'},
-            {id: '2', image: 'team/magdalena-Alvarez.png', text:'Magdalena Alvarez',workstation:'Material Developer',description:'Este texto es totalmente generico, se debe colocar texto nuevo.'},
+            {id: '1', image: 'team/matias-Saez.jpg', text:'Matías Sáez',workstation:'Leader',description:''},
+            {id: '2', image: 'team/magdalena-Alvarez.png', text:'Magdalena Alvarez',workstation:'Material Developer',description:''},
         ],
         about:[
             {text: 'Curso teorico-práctico de programación en donde las niñas desarrollan\
@@ -16,8 +16,8 @@ export default({
     },
     "es":{
         team: [
-            {id: '1', image: 'team/matias-Saez.jpg', text:'Matías Sáez',workstation:'Lider',description:'Este texto es totalmente generico, se debe colocar texto nuevo.'},
-            {id: '2', image: 'team/magdalena-Alvarez.png', text:'Magdalena Alvarez',workstation:'Desarrolladora de Material',description:'Este texto es totalmente generico, se debe colocar texto nuevo.'},
+            {id: '1', image: 'team/matias-Saez.jpg', text:'Matías Sáez',workstation:'Lider',description:''},
+            {id: '2', image: 'team/magdalena-Alvarez.png', text:'Magdalena Alvarez',workstation:'Desarrolladora de Material',description:''},
          ],
         about:[
             {text: 'Curso teorico-práctico de programación en donde las niñas desarrollan\
