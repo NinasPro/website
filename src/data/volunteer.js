@@ -49,11 +49,24 @@ export default ({
         ],
         /* Here is the information corresponding to the Testimony.vue component. But if you want to add a new section, Volunteer.vue must also be modified in the testimonials part */ 
         testimony: [
-            {'name':'Jane Doe','title':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris','type':'is-info'},
-            {'name':'Jane Doe','title':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris','type':'is-warning'},
-            {'name':'Jane Doe','title':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris','type':'is-success'},
-            {'name':'Jane Doe','title':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris','type':'is-info'},
-            {'name':'Jane Doe','title':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris','type':'is-warning'},
+            {
+                'name':'María Pía Sánchez',
+                'title':'Empecé el 2019 en la organización, cuando se creó la sede de las Condes. Luego, el 2020 participé el primer semestre como tutora. Ahora estoy dentro del área de comunicaciones.\
+                 Para mi ha sido muy gratificante ver que las niñas aprenden el lenguaje de programación C++, y logran realizar sus ejercicios. Me llena mucho cuando se alegran por eso. También, ha sido para mí una instancia de aprendizaje.\
+                 Dicen que la persona que enseña aprende dos veces, y la verdad es que he descubierto muchas cosas que antes no tenía idea.',
+                'type':'is-info'
+            },
+            {
+                'name':'Angeles Aldunate',
+                'title':'Me encanta ver a las nuevas generaciones sintiéndose parte de los avances del mundo. Ver qué se les iluminan los ojos cuando les mostramos lo que están haciendo mujeres en STEM y que puedan entender que pueden ser parte de la creación de herramientas que utilizan en su día a día (FB, WhatsApp, Instagram, etc) No solo siendo mujeres si no que mujeres latinas que pueden cambiar el mundoooo. Me motivan más ellas a mi que yo a ellas jaja ! Y en la corporación todas unas bellas mujeres dispuestas a apañar y motivar al resto. Puros ejemplos a seguir. Me encanta ser parte de esta comunidad',
+                'type':'is-warning'},
+            {
+                'name':'Mariana Torres',
+                'title':'En el 2020 me uni como voluntaria en la sede Las Condes, con un poco de miedo porque no sabia si podria enseñarle a las niñas. Sin embargo tome el riesgo y me une a una maravillosa comunidad en donde hay mujeres\
+                 inspiradoras y motivadoras, cada dia se aprende algo nuevo. Luego realice mi pre-practica profesional en donde aprendi un monton de herramientas nuevas y trabajo en equipo.\
+                  Me uni, porque me gusta enseñar que programar no es difícil ni de otro mundo y tampoco depende del género, solo se necesita voluntad y deseo de aprender.',
+                'type':'is-success'},
+            
         ]
     },
     "es":{
@@ -104,11 +117,23 @@ export default ({
         ],
         /* Here is the information corresponding to the Testimony.vue component. But if you want to add a new section, Volunteer.vue must also be modified in the testimonials part */ 
         testimony: [
-            {'name':'Jane Doe','title':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris','type':'is-info'},
-            {'name':'Jane Doe','title':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris','type':'is-primary'},
-            {'name':'Jane Doe','title':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris','type':'is-success'},
-            {'name':'Jane Doe','title':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris','type':'is-info'},
-            {'name':'Jane Doe','title':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris','type':'is-primary'},
+            {
+                'name':'María Pía Sánchez',
+                'title':'Empecé el 2019 en la organización, cuando se creó la sede de las Condes. Luego, el 2020 participé el primer semestre como tutora. Ahora estoy dentro del área de comunicaciones.\
+                 Para mi ha sido muy gratificante ver que las niñas aprenden el lenguaje de programación C++, y logran realizar sus ejercicios. Me llena mucho cuando se alegran por eso. También, ha sido para mí una instancia de aprendizaje.\
+                 Dicen que la persona que enseña aprende dos veces, y la verdad es que he descubierto muchas cosas que antes no tenía idea.',
+                'type':'is-info'
+            },
+            {
+                'name':'Angeles Aldunate',
+                'title':'Me encanta ver a las nuevas generaciones sintiéndose parte de los avances del mundo. Ver qué se les iluminan los ojos cuando les mostramos lo que están haciendo mujeres en STEM y que puedan entender que pueden ser parte de la creación de herramientas que utilizan en su día a día (FB, WhatsApp, Instagram, etc) No solo siendo mujeres si no que mujeres latinas que pueden cambiar el mundoooo. Me motivan más ellas a mi que yo a ellas jaja ! Y en la corporación todas unas bellas mujeres dispuestas a apañar y motivar al resto. Puros ejemplos a seguir. Me encanta ser parte de esta comunidad',
+                'type':'is-warning'},
+            {
+                'name':'Mariana Torres',
+                'title':'En el 2020 me uni como voluntaria en la sede Las Condes, con un poco de miedo porque no sabia si podria enseñarle a las niñas. Sin embargo tome el riesgo y me une a una maravillosa comunidad en donde hay mujeres\
+                 inspiradoras y motivadoras, cada dia se aprende algo nuevo. Luego realice mi pre-practica profesional en donde aprendi un monton de herramientas nuevas y trabajo en equipo.\
+                  Me uni, porque me gusta enseñar que programar no es difícil ni de otro mundo y tampoco depende del género, solo se necesita voluntad y deseo de aprender.',
+                'type':'is-success'},
         ]
     }
 })

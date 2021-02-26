@@ -94,7 +94,7 @@
         <div class="title">{{ $t('volunteer.titleTestimony') }}</div>
         <div class="subtitle">{{ $t('volunteer.subtitleTestimony') }}</div>
         <div class="columns is-multiline">
-          <div class="column is-one-fifth" v-for="(testimony, i) in datos('testimony')" :key="i">
+          <div class="column is-one-third" v-for="(testimony, i) in datos('testimony')" :key="i">
             <Testimony :name="testimony.name" :title="testimony.title" :type="testimony.type" />
           </div>
         </div>
