@@ -32,7 +32,7 @@
             {{$t('event.seeAll')}}
           </router-link>
         </div>
-        <div class="column" data-aos="fade-left" data-aos-delay="1000" data-aos-anchor-placement="center-center">
+        <div class="column" data-aos="fade-left" data-aos-delay="500" data-aos-anchor-placement="center-center">
           <Events> </Events>
         </div>
       </div>
