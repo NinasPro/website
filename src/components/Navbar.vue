@@ -1,5 +1,7 @@
 <template>
-  <b-navbar :transparent="true" :type="type" wrapper-class="container ninaspro-navbar" >
+  
+  <b-navbar :transparent="true" :type="type" wrapper-class="container ninaspro-navbar" centered>
+    
     <template slot="brand">
       <b-navbar-item tag="router-link" :to="{ path: '/' }">
         <img
@@ -8,36 +10,40 @@
         />
       </b-navbar-item>
     </template>
+    
+    <template #start>
+      <b-navbar-item tag="router-link" :to="{ path: '/' }" href="#iniciativas" v-smooth-scroll>
+        <p>{{$t('navbar.initiatives')}}</p>
+      </b-navbar-item>
+
+      <b-navbar-item tag="router-link" :to="{ path: '/' }" href="#information" v-smooth-scroll>
+        <p>{{$t('navbar.about')}}</p>
+      </b-navbar-item>
+
+      <b-navbar-item tag="router-link" :to="{ path: '/' }" href="#events" v-smooth-scroll>
+        <p>{{$t('navbar.events')}}</p>
+      </b-navbar-item>
+
+      <b-navbar-item tag="router-link" :to="{ path: '/' }" href="#collaborators" v-smooth-scroll>
+        <p>{{$t('navbar.allies')}}</p>
+      </b-navbar-item>
+
+      <b-navbar-item tag="router-link" :to="{ path: '/' }" href="#newsletter" v-smooth-scroll>
+        <p>{{$t('navbar.news')}}</p>
+      </b-navbar-item>
+
+    </template>
+
     <template #end>
-      <b-navbar-dropdown :label="`${$t('navbar.lang')}`" v-model="lang">
+      <!-- <b-navbar-dropdown :label="`${$t('navbar.lang')}`" v-model="lang">
         <b-navbar-item value="es" @click="handleChange('es')">
           Español
         </b-navbar-item>
         <b-navbar-item value="en" @click="handleChange('en')">
           English
         </b-navbar-item>
-      </b-navbar-dropdown>
-      <b-navbar-dropdown :label="`${$t('navbar.initiatives')}`" >
-        <b-navbar-item tag="router-link" :to="{ path: '/inspira/' }"  >
-          <p>{{$t('navbar.inspire')}}</p>
-        </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/empodera/' }"  > 
-          <p>{{$t('navbar.empower')}}</p>
-        </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/potencia/' }" >
-          <p>{{$t('navbar.power')}}</p>
-        </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/incentiva/' }" >
-          <p>{{$t('navbar.incentive')}}</p>
-        </b-navbar-item>
-      </b-navbar-dropdown>
+      </b-navbar-dropdown> -->
 
-      <b-navbar-item tag="router-link" :to="{ path: '/eventos/' }">
-        <p>{{$t('navbar.events')}}</p>
-      </b-navbar-item>
-      <b-navbar-item tag="router-link" :to="{ path: '/somos/' }">
-        <p>{{$t('navbar.about')}}</p>
-      </b-navbar-item>
       <b-navbar-item tag="div">
         <div class="buttons">
           <router-link :to="{ path: '/voluntariado'}">
@@ -46,11 +52,12 @@
               v-bind:class="{ 
                 'is-info':(type !== 'is-info'), 
                 'is-warning':(type == 'is-info')
-              }" rounded>
+              }" rounded outlined>
               {{$t('navbar.involved')}}
             </b-button>
           </router-link>
-          <router-link :to="{ path: '/donate'}">
+          
+          <a href="https://yodono.cl/institucion/546/ninas_pro">
             <b-button 
               id="dona-btn" 
               v-bind:class="{ 
@@ -59,7 +66,7 @@
               }" rounded outlined>
               {{$t('navbar.donate')}}
             </b-button>
-          </router-link>
+          </a>
         </div>
       </b-navbar-item>
       
@@ -93,13 +100,18 @@ export default {
 .ninaspro-navbar {
 
   .navbar-brand {
-    padding: 0px;
 
     img {
-      height: 5rem;
-      margin-top: 1rem;
+      position: absolute;
+      max-width: 10rem;
       max-height: 5rem;
-    }
+      height: 5rem;
+      top: 1rem;
+    } 
+  }
+
+  .navbar-start {
+    margin-left: 8rem;
   }
 
   .navbar-item {
@@ -109,6 +121,7 @@ export default {
 
     #involucrate-btn {
       margin-right: 20px;
+      border-width: 4px;
     }
 
     #dona-btn {
@@ -119,16 +132,27 @@ export default {
 
 @media only screen and (max-device-width: 1220px) {
   
-  .ninaspro-navbar {
+  // .ninaspro-navbar {
     
-    .navbar-brand {
+  //   .navbar-brand {
      
-      img {
-        height: 1.5rem;
-        margin-top: 0rem;
-        max-height: 1.5rem;
-      }
-    }  
+  //     img {
+  //       height: 1.5rem;
+  //       margin-top: 0rem;
+  //       max-height: 1.5rem;
+  //     }
+  //   }  
+  // }
+
+  .navbar-brand {
+
+    img {
+      position: absolute;
+      max-width: 7rem;
+      max-height: 4rem;
+      height: 4rem;
+      top: 1rem;
+    }
   }
 }
 
