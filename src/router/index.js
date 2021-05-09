@@ -12,9 +12,9 @@ export default new Router({
       props: { type: "is-primary" }
     },
     {
-      name: "about",
-      path: "/somos/",
-      component: () => import("@/views/About"),
+      name: "history",
+      path: "/historia/",
+      component: () => import("@/views/History"),
       props: { type: "is-info" }
     },
     {

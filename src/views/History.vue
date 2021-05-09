@@ -1,31 +1,10 @@
 <template>
-  <div id="about">
-    <Banner :type="type" :title="`${$t('navbar.about')}`"/>
-    
-    <section id="mision" class="container">
-      <div class="tile is-ancestor">
-        <div class="tile is-parent">
-          <div class="tile is-child">
-            <figure class="image is-1by1">
-              <img src="@/assets/empower.jpg" alt="Sororidad y Colaboración">
-            </figure>
-          </div>
-        </div>
-        <div class="tile is-parent is-vertical" >
-          <div :id="inf.id" :class="`tile is-child notification ${inf.type}`" v-for="(inf, i) in datos('data')" :key="i">
-              <p class="title"> {{inf.title}} </p>
-              <p> {{inf.texto}} </p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div id="history">
+    <Banner :type="type" :title="`${$t('navbar.history')}`"/>
 
     <!-- History -->
     <section id="historia" class="container">
-      <div class="title">{{$t('footer.history')}}</div>
-        <p v-for="(texto, i) in datos('history')" :key="i">
-          <span v-html="texto.text"/>
-        </p>
+      <Timeline />
     </section>
 
     <!-- Memorias -->
@@ -38,11 +17,12 @@
 <script>
 import Banner from "../components/Banner.vue";
 import Memorie from "../components/Memories.vue";
+import Timeline from "../components/Timeline.vue";
 import * as Informacion from '../data/about.js';
 import i18n from '../i18n'
 
 export default {
-  name: "About",
+  name: "History",
   data(){
     const lang=`${i18n.locale}`
     const data = Informacion.default
@@ -55,6 +35,7 @@ export default {
   components: {
     Banner,
     Memorie,
+    Timeline
   },
   props: {
     type: String
@@ -90,6 +71,14 @@ export default {
 
     .title {
       font-size: 2rem;
+    }
+
+    .subtitle {
+      font-size: 1.5rem;
+    }
+
+    .is-v-spaced {
+      padding: 3rem 1rem;
     }
 
     img {
