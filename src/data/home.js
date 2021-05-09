@@ -137,6 +137,24 @@ export default ({
                 'image':'logos/fintual.png',
                 'url':"https://fintual.cl/"
             }
+        ],
+        metrics: [
+            {
+                'name': 'Niñas',
+                'value': '1000'
+            },
+            {
+                'name': 'Horas Programando',
+                'value': '1 Millón'
+            },
+            {
+                'name': 'Sedes',
+                'value': '4'
+            },
+            {
+                'name': 'Voluntaries',
+                'value': '80'
+            }
         ]
     }
 })

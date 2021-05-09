@@ -31,21 +31,44 @@
       </div>
     </section>
 
+    <!-- Numbers -->
+    <section id="metrics" class="hero is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <nav class="level">
+            <div v-for="(item, i) in datos('metrics')" :key="i">
+              <div class="level-item has-text-centered">
+                <div>
+                  <p class="heading">{{item.name}}</p>
+                  <p class="title">{{item.value}}</p>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+
     <!--Collaborators and partners -->
     <section id="collaborators">
-      <div class="container" data-aos="fade-up" data-aos-delay="600">
+      <div class="container" data-aos="fade-up" data-aos-delay="200">
         <h1 class="title"> {{$t('home.titlePartners')}} </h1>
         <p class="subtitle">{{$t('home.subtitlePartners')}} </p>
+        <div class="buttons">
+          <b-button class="is-primary is-rounded " href="#">
+              {{$t('home.buttonPartnersMail')}}
+          </b-button>
+        </div>
         <Collaborators type="is-collaborators"></Collaborators>
       </div>
     </section>
 
     <!-- Newsletter Button -->
-    <section id="newsletter">
+    <!-- <section id="newsletter">
       <a class="button is-primary is-rounded is-large" href="http://eepurl.com/gn7I3r" target="_blank">
           {{$t('home.newsletter')}}
       </a>
-    </section>
+    </section> -->
     
   </div>
 </template>
@@ -87,8 +110,8 @@ export default {
               return this.data.en.projectsHome
             } else if(section=="information") {
               return this.data.en.information
-            } else if(section=="new") {
-              return this.data.en.news
+            } else if(section=="metrics") {
+              return this.data.en.metrics
             } else {
               return null
             }
@@ -97,8 +120,8 @@ export default {
               return this.data.es.projectsHome
             } else if(section=="information") {
               return this.data.es.information
-            } else if(section=="new") {
-              return this.data.es.news
+            } else if(section=="metrics") {
+              return this.data.es.metrics
             } else {
               return null
             }
@@ -131,7 +154,17 @@ export default {
     }
   }
 
-  #newsletter {
-    text-align: center; 
+  #metrics {
+    padding: 2rem 0 1rem 0;
   }
+
+  #collaborators {
+    .buttons {
+      margin-top: 5rem;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
 </style>

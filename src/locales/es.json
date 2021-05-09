@@ -37,8 +37,10 @@
         "subtitleProjects":"Categorizamos nuestras actividades en las siguientes iniciativas",
         "titleEvents":"Próximos eventos",
         "subtitleEvents":"Todos nuestros eventos son gratuitos, ¡revisa los requisitos e inscríbete!",
+        "titleMetrics":"Algunos Números",
         "titlePartners": "Nuestros Partners",
-        "subtitlePartners":"Agradecemos a las empresas, instituciones y organizaciones que confían en nosotras y nos ayudan a llegar a más niñas cada año.",
+        "subtitlePartners": "Agradecemos a las empresas, instituciones y organizaciones que confían en nosotras y nos ayudan a llegar a más niñas cada año.",
+        "buttonPartnersMail": "Quiero Sumar a mi Empresa",
         "titleNews":"Noticias",
         "seeAll":"Ver todas",
         "newsletter":"Subscribete al newsletter"
