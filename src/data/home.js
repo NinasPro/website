@@ -15,21 +15,25 @@ export default ({
             {'type':'left', 'image':'inspired.jpg', 'text':'Si tienes menos de 18 años. Diviértete, aprende y conecta con otras Niñas Pro como tú.', 'titulo':'¡Participa!', 'boton':'Ver proximas actividades', 'Path':'/voluntariado/'},
             {'type':'right', 'image':'django-girls.jpg', 'text':'Si quieres ayudarnos. Participa del voluntariado o ayúdanos a llegar a mas niñas a traves de donaciones.', 'titulo':'¡Involúcrate!', 'boton':'Mas información' ,'Path':'/proyectos/'},
         ],
-        news:[
-            {'title':'Titulo 1', 'type':'is-info', 'text':'Ver noticia completa', 'path':'/enconstruccion/'},
-            {'title':'Titulo 2', 'type':'is-info', 'text':'Ver noticia completa', 'path':'/enconstruccion/'},
-            {'title':'Titulo 3', 'type':'is-info', 'text':'Ver noticia completa', 'path':'/enconstruccion/'},
-        ],
-        collaborators : [
-            {'name':'uandes','image':'logos/uandes.png', 'url':"https://www.uandes.cl/"},
-            {'name':'fcfm','image':'logos/fcfm.png', 'url':"http://ingenieria.uchile.cl/"},
-            {'name':'udec','image':'logos/udec.png', 'url':"https://www.udec.cl/pexterno/"},
-            {'name':'imfd','image':'logos/imfd.png', 'url':"https://imfd.cl/"},
-            {'name':'technovation','image':'logos/technovation.png', 'url':"https://technovation.cl/"},
-            {'name':'oci','image':'logos/oci.png', 'url':"https://www.olimpiada-informatica.cl/"},
-            {'name':'fintual','image':'logos/fintual.png', 'url':"https://fintual.cl/"},
-            {'name':'cornershop','image':'logos/cornershop.png', 'url':"https://cornershopapp.com/es-cl/"},
+        metrics: [
+            {
+                'name': 'Niñas',
+                'value': '1820'
+            },
+            {
+                'name': 'Horas Programando',
+                'value': '+23K'
+            },
+            {
+                'name': 'Sedes',
+                'value': '4'
+            },
+            {
+                'name': 'Voluntaries',
+                'value': '82'
+            }
         ]
+
     },
     "es":{
         carousels: [
@@ -44,8 +48,8 @@ export default ({
                 'title': 'Curso Virtual 2021',
                 'subtitle': 'El 10 de Abril comenzó el curso anual de pensamiento computacional y programación competitiva para niñas en modalidad online.',
                 'image': 'banner-img-3.png',
-                'action': 'Próximas Actividades',
-                'link': '/eventos'
+                'action': '¿En qué consiste?',
+                'link': '/curso-anual'
             }
         ],
         projectsHome:[
@@ -82,13 +86,13 @@ export default ({
             {
                 'type':'left',
                 'image':'inspired.jpg',
-                'titulo':'Nuestra historia',
+                'titulo':'Quiénes Somos',
                 'text':'Niñas Pro nace el 2016 como una actividad universitaria de un grupo de estudiantes mujeres \
                         de la FCFM para aumentar el interés de niñas por la programación. \r Hoy estamos constuidas como \
                         una asociación sin fines de lucro y somos una red de más de 80 voluntarias distribuidas en varias \
                         regiones del país.',
-                'boton':'Conoce más',
-                'Path':'/somos/'
+                'boton':'Nuestra Historia',
+                'Path':'/historia/'
             },
             {
                 'type':'right',
@@ -104,11 +108,11 @@ export default ({
         metrics: [
             {
                 'name': 'Niñas',
-                'value': '1000'
+                'value': '1820'
             },
             {
                 'name': 'Horas Programando',
-                'value': '1 Millón'
+                'value': '+23K'
             },
             {
                 'name': 'Sedes',
@@ -116,7 +120,7 @@ export default ({
             },
             {
                 'name': 'Voluntaries',
-                'value': '80'
+                'value': '82'
             }
         ]
     }
