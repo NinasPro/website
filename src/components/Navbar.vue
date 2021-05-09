@@ -25,7 +25,7 @@
       </b-navbar-item>
 
       <b-navbar-item tag="router-link" :to="{ path: '/' }" href="#collaborators" v-smooth-scroll>
-        <p>{{$t('navbar.allies')}}</p>
+        <p>{{$t('navbar.alliances')}}</p>
       </b-navbar-item>
 
       <b-navbar-item tag="router-link" :to="{ path: '/' }" href="#newsletter" v-smooth-scroll>
@@ -131,18 +131,6 @@ export default {
 }
 
 @media only screen and (max-device-width: 1220px) {
-  
-  // .ninaspro-navbar {
-    
-  //   .navbar-brand {
-     
-  //     img {
-  //       height: 1.5rem;
-  //       margin-top: 0rem;
-  //       max-height: 1.5rem;
-  //     }
-  //   }  
-  // }
 
   .navbar-brand {
 

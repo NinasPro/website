@@ -60,9 +60,9 @@ export default new Router({
       props: { type: "is-info" }
     },
     {
-      name: "eventos",
-      path: "/eventos/",
-      component: () => import("@/views/Event"),
+      name: "alliances",
+      path: "/alliances/",
+      component: () => import("@/views/Alliances"),
       props: { type: "is-primary" }
     },
     {

@@ -58,8 +58,15 @@
           <b-button class="is-primary is-rounded " href="#">
               {{$t('home.buttonPartnersMail')}}
           </b-button>
+          <b-button tag="router-link" class="is-primary is-rounded" to="/alliances">
+              {{$t('home.buttonPartnersAll')}}
+          </b-button>
         </div>
-        <Collaborators type="is-collaborators"></Collaborators>
+
+        <div class="left-moved">
+          <ListOfItems :data="sponsorsList.gold" :detailed="true" category="auspicio gold" type='is-warning' />
+          <ListOfItems :data="patreonsList" :detailed="false" category="patrocinio" type='is-primary' />
+        </div>
       </div>
     </section>
 
@@ -76,10 +83,12 @@
 <script>
 import Carrousel from "../components/Carrousel.vue";
 import ProjectsHome from "../components/ProjectsHome.vue";
-import Collaborators from '../components/Collaborators.vue';
+import ListOfItems from '../components/ListOfItems.vue';
 import Information from '../components/Information.vue';
 import Event from '../components/Event.vue';
 import * as Data from '../data/home.js';
+import * as Patreons from '../data/patreons.js';
+import * as Sponsors from '../data/sponsors.js';
 import i18n from '../i18n'
 
 export default {
@@ -87,15 +96,20 @@ export default {
   data(){
     const lang=`${i18n.locale}`
     const data=Data.default
+    const patreons = Patreons.default
+    const sponsors = Sponsors.default
+
     return{
       lang,
-      data
+      data,
+      patreons,
+      sponsors
     }
   },
   components: {
     Carrousel,
     ProjectsHome,
-    Collaborators,
+    ListOfItems,
     Event,
     Information,
   },
@@ -128,6 +142,23 @@ export default {
         }
     }
   },
+  computed: {
+    patreonsList: function(){
+        if(this.lang == "en") {
+            return this.patreons.en.data
+        } else {
+            return this.patreons.es.data
+        } 
+    },
+
+    sponsorsList: function(){
+        if(this.lang == "en") {
+            return this.sponsors.en
+        } else {
+            return this.sponsors.es
+        } 
+    }
+  }
   
 };
 </script>
@@ -159,11 +190,27 @@ export default {
   }
 
   #collaborators {
+
+    .left-moved {
+        position: relative;
+        left: -45px;
+    }
+
     .buttons {
-      margin-top: 5rem;
+      margin-top: 3rem;
       display:flex;
       justify-content: center;
       align-items: center;
+    }
+  }
+
+  @media only screen and (max-device-width: 1220px) {
+
+    #collaborators {
+
+      .left-moved {
+        left: 0px;
+      }
     }
   }
 

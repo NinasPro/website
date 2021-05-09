@@ -1,0 +1,45 @@
+/* Collaborators are all the other friendly organizations, with which we carry out activities together and support each other. */
+
+export default ({
+    "es":{
+        data: [
+            {
+                'name': 'Instituto Milenio Fundamentos de los Datos',
+                'description': '',
+                'quote': '',
+                'image': 'logos/imfd.png',
+                'url': 'http://www.imfd.cl',
+            },
+            {
+                'name':'technovation',
+                'image':'logos/technovation.png',
+                'url':"https://technovation.cl/"
+            },
+            {
+                'name':'oci',
+                'image':'logos/oci.png',
+                'url':"https://www.olimpiada-informatica.cl/"
+            },
+            {
+                'name':'Corporación Cuac',
+                'image':'logos/cuac.png',
+                'url':"https://www.facebook.com/cuaccl/"
+            },
+            {
+                'name':'Amuji',
+                'image':'logos/amuji.png',
+                'url':"https://sites.google.com/view/amuji-chile/"
+            },
+            {
+                'name':'Par Explora O\'higgins',
+                'image':'logos/parexploraohiggins.png',
+                'url':"https://www.facebook.com/parexploraohiggins"
+            },
+            {
+                'name':'Par Explora Sur Poniente',
+                'image':'logos/parexplorasurponiente.png',
+                'url':"https://www.facebook.com/ParExploraSP/"
+            },
+        ],
+    }
+})
