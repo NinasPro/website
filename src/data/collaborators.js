@@ -40,6 +40,16 @@ export default ({
                 'image':'logos/parexplorasurponiente.png',
                 'url':"https://www.facebook.com/ParExploraSP/"
             },
+            {
+                'name':'Unidas Somos Más',
+                'image':'logos/unidassomosmas.png',
+                'url':"https://unidassomosmas.cl/"
+            },
+            {
+                'name':'Fundación Soy Más',
+                'image':'logos/soymas.png',
+                'url':"https://soymas.cl/"
+            },
         ],
     }
 })
