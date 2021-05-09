@@ -91,13 +91,18 @@ export default {
     
 
 @media only screen and (max-device-width: 1220px) {
-    .info-text {
-        padding: 30px 30px;
-    }
 
-    .info-img {
-        img {
-            width: 90%;
+    .info-div {
+        max-height: max-content;
+        
+        .info-text {
+            padding: 30px 30px;
+        }
+
+        .info-img {
+            img {
+                width: 90%;
+            }
         }
     }
 }
