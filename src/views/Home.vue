@@ -55,7 +55,7 @@
         <h1 class="title"> {{$t('home.titlePartners')}} </h1>
         <p class="subtitle">{{$t('home.subtitlePartners')}} </p>
         <div class="buttons">
-          <b-button class="is-primary is-rounded " href="#">
+          <b-button tag="a" class="is-primary is-rounded " href="mailto:recaudacion@ninaspro.cl?subject=Me gustaría colaborar con Niñas Pro">
               {{$t('home.buttonPartnersMail')}}
           </b-button>
           <b-button tag="router-link" class="is-primary is-rounded" to="/alliances">

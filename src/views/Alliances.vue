@@ -1,6 +1,6 @@
 <template>
     <div id="event">
-        <Banner :type="type" :title="`${$t('navbar.alliances')}`" />
+        <Banner :type="type" :title="`${$t('navbar.alliances')}`" :button="`También quiero Apoyar`" link="mailto:recaudacion@ninaspro.cl?subject=Me gustaría colaborar con Niñas Pro" />
         <collaborators />
     </div>    
 </template>
