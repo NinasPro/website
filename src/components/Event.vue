@@ -27,9 +27,14 @@
                 </div>
                 <h1 class="title"> {{event.event}} </h1>
                 <p> {{event.information}} </p>
-                <a class="button is-primary is-rounded" :href="event.link" target="_blank">
-                    {{$t('event.signUp')}}
-                </a>
+                <b-button tag="a" :href="event.link" class="is-primary is-rounded" :disabled="event.link === ''" target="_blank">
+                    <div v-if="event.link !== ''">
+                        {{$t('event.signUp')}}
+                    </div>
+                    <div v-else>
+                        {{$t('event.soon')}}
+                    </div>
+                </b-button>
             </div>
         </div>
     </div>
