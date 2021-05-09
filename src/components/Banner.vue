@@ -7,10 +7,10 @@
             <h1 class="title">
               {{title}}
             </h1>
-            <router-link :to="link" v-if="showButton"
-              :class="`button ${type} is-inverted is-rounded is-outlined`">
+            <b-button :href="link" tag="a" v-if="showButton"
+              :class="`${type} is-inverted is-rounded is-outlined`">
               {{button}}
-            </router-link>
+            </b-button>
           </div>
           <div class="column is-one-quarter np-banner-symbol">
             <img
