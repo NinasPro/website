@@ -32,7 +32,7 @@ export default ({
                 'locale':'Online','link':'http://eepurl.com/gn7I3r'
             },
             { 
-                'date': '2021-05-13 17:30',
+                'date': '2021-05-29 11:30',
                 'event': 'Transformando mentes',
                 'image':'ninastic.jpg',
                 'information': "En esta actividad de 1 hora, que preparamos junto a otras organizaciones con enfoque de género, \
