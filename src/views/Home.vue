@@ -24,17 +24,10 @@
 
     <!--Eventos -->
     <section id="events">
-      <div class="columns is-vcentered">
-        <div class="column is-4" data-aos="fade-right" data-aos-anchor-placement="center-center">
-          <h1 class="title"> {{$t('home.titleEvents')}} </h1>
-          <p class="subtitle"> {{$t('home.subtitleEvents')}} </p>
-          <router-link class="button is-rounded is-success" name="Mas información" title="Mas información" to='/eventos/'>
-            {{$t('event.seeAll')}}
-          </router-link>
-        </div>
-        <div class="column" data-aos="fade-left" data-aos-delay="500" data-aos-anchor-placement="center-center">
-          <Events> </Events>
-        </div>
+      <div class="container" >
+        <h1 class="title"> {{$t('home.titleEvents')}} </h1>
+        <p class="subtitle"> {{$t('home.subtitleEvents')}} </p>
+        <Event/>
       </div>
     </section>
 
@@ -62,7 +55,7 @@ import Carrousel from "../components/Carrousel.vue";
 import ProjectsHome from "../components/ProjectsHome.vue";
 import Collaborators from '../components/Collaborators.vue';
 import Information from '../components/Information.vue';
-import Events from '../components/EventHome.vue';
+import Event from '../components/Event.vue';
 import * as Data from '../data/home.js';
 import i18n from '../i18n'
 
@@ -80,7 +73,7 @@ export default {
     Carrousel,
     ProjectsHome,
     Collaborators,
-    Events,
+    Event,
     Information,
   },
   props: {
@@ -135,19 +128,6 @@ export default {
       font-size: 18px;
       text-align: center;
       margin-bottom: 40px;
-    }
-  }
-
-  #events {
-    padding-bottom: 100px;
-
-    .title, .subtitle {
-      text-align: left;
-      margin-left: 20%;
-      margin-right: 20%;
-    }
-    .button {
-      margin-left: 20%;
     }
   }
 
