@@ -19,19 +19,19 @@
           <div class="column is-4 is-offset-1">
             <div class="tile is-parent is-vertical">
               <div class="tile vspaced-tile">
-                <a class="button is-primary is-rounded is-fullwidth is-outlined" 
+                <a class="button is-primary is-rounded is-fullwidth" 
                 href="#volunteer-do" v-smooth-scroll>
                   {{ $t('volunteer.titleDo') }}
                 </a>
               </div>
               <div class="tile vspaced-tile">
-                <a class="button is-info is-rounded is-fullwidth is-outlined" 
+                <a class="button is-success is-rounded is-fullwidth" 
                 href="#volunteer-profile" v-smooth-scroll>
                   {{ $t('volunteer.titleProfile') }}
                 </a>
               </div>
               <!-- <div class="tile vspaced-tile">
-                <a class="button is-success is-rounded is-fullwidth is-outlined" 
+                <a class="button is-success is-rounded is-fullwidth" 
                 href="#volunteer-internship" v-smooth-scroll>
                   {{ $t('volunteer.titleInternships') }}
                 </a>
@@ -43,13 +43,13 @@
                 </a>
               </div> -->
               <div class="tile vspaced-tile">
-                <a class="button is-info is-rounded is-fullwidth is-outlined" 
+                <a class="button is-primary is-rounded is-fullwidth" 
                 href="#volunteer-testimony" v-smooth-scroll>
                  {{ $t('volunteer.titleTestimony') }}
                 </a>
               </div>
               <div class="tile vspaced-tile">
-                <a class="button is-success is-rounded is-fullwidth is-outlined" 
+                <a class="button is-success is-rounded is-fullwidth" 
                 href="#volunteer-signup" v-smooth-scroll>
                   {{ $t('volunteer.titleSignup') }}
                 </a>
