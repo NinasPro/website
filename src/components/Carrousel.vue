@@ -25,7 +25,6 @@
         </div>
       </section>
     </b-carousel-item>
-    <b-loading :is-full-page="false" v-model="isLoading" :can-cancel="false"></b-loading>
   </b-carousel>
 </template>
 
