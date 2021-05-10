@@ -19,16 +19,16 @@
         <div class="column is-2">
           <strong >{{$t('footer.about')}}</strong> 
           <ul>
-            <li><router-link class="footer-link" to="/somos#mision">{{$t('footer.purpose')}}</router-link></li>
-            <li><router-link class="footer-link" to="/somos#historia">{{$t('footer.history')}}</router-link></li>
-            <li><router-link class="footer-link" to="/equipo">{{$t('footer.team')}}</router-link></li>
+            <li><router-link class="footer-link" to="/somos">{{$t('footer.purpose')}}</router-link></li>
+            <li><router-link class="footer-link" to="/somos">{{$t('footer.history')}}</router-link></li>
+            <!-- <li><router-link class="footer-link" to="/equipo">{{$t('footer.team')}}</router-link></li> -->
             <li><router-link class="footer-link" to="/somos#memoria">{{$t('footer.memory')}}</router-link></li>
           </ul> 
         </div>
         <div class="column is-2">
           <strong >{{$t('footer.help')}}</strong> 
           <ul>
-            <li><router-link class="footer-link" to="/alliances/">{{$t('footer.alliances')}}</router-link></li>
+            <li><router-link class="footer-link" to="/alianzas/">{{$t('footer.alliances')}}</router-link></li>
             <li><router-link class="footer-link" to="/voluntariado/">{{$t('footer.volunteer')}}</router-link></li>
             <li><a class="footer-link" href="https://yodono.cl/institucion/546/ninas_pro">{{$t('footer.donate')}}</a></li>
           </ul>

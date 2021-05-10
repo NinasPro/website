@@ -92,7 +92,7 @@ export default ({
                         una asociación sin fines de lucro y somos una red de más de 80 voluntarias distribuidas en varias \
                         regiones del país.',
                 'boton':'Nuestra Historia',
-                'Path':'/historia/'
+                'Path':'/somos/'
             },
             {
                 'type':'right',

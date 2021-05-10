@@ -12,11 +12,22 @@
     </template>
     
     <template #start>
-      <b-navbar-item tag="router-link" :to="{ path: '/' }" href="#iniciativas" v-smooth-scroll>
-        <p>{{$t('navbar.initiatives')}}</p>
-      </b-navbar-item>
+      <b-navbar-dropdown class="condensed" :label="`${$t('navbar.initiatives')}`" boxed="true">
+        <b-navbar-item tag="router-link" :to="{ path: '/inspira' }">
+          <p>{{$t('navbar.inspire')}}</p>
+        </b-navbar-item>
+        <b-navbar-item tag="router-link" :to="{ path: '/incentiva' }">
+          <p>{{$t('navbar.incentive')}}</p>
+        </b-navbar-item>
+        <b-navbar-item tag="router-link" :to="{ path: '/empodera' }">
+          <p>{{$t('navbar.empower')}}</p>
+        </b-navbar-item>
+        <b-navbar-item tag="router-link" :to="{ path: '/potencia' }">
+          <p>{{$t('navbar.boost')}}</p>
+        </b-navbar-item>
+      </b-navbar-dropdown>
 
-      <b-navbar-item tag="router-link" :to="{ path: '/' }" href="#information" v-smooth-scroll>
+      <b-navbar-item tag="router-link" :to="{ path: '/somos' }">
         <p>{{$t('navbar.about')}}</p>
       </b-navbar-item>
 
@@ -24,7 +35,7 @@
         <p>{{$t('navbar.events')}}</p>
       </b-navbar-item>
 
-      <b-navbar-item tag="router-link" :to="{ path: '/' }" href="#collaborators" v-smooth-scroll>
+      <b-navbar-item tag="router-link" :to="{ path: '/alianzas' }">
         <p>{{$t('navbar.alliances')}}</p>
       </b-navbar-item>
 
@@ -112,6 +123,10 @@ export default {
 
   .navbar-start {
     margin-left: 8rem;
+
+    .condensed {
+      padding-right: 0;
+    }
   }
 
   .navbar-item {

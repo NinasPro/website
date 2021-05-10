@@ -1,6 +1,6 @@
 <template>
-  <div id="history">
-    <Banner :type="type" :title="`${$t('navbar.history')}`"/>
+  <div id="somos">
+    <Banner :type="type" :title="`${$t('navbar.about')}`"/>
 
     <!-- History -->
     <section id="historia" class="container">

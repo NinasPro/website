@@ -12,8 +12,8 @@ export default new Router({
       props: { type: "is-primary" }
     },
     {
-      name: "history",
-      path: "/historia/",
+      name: "somos",
+      path: "/somos/",
       component: () => import("@/views/History"),
       props: { type: "is-info" }
     },
@@ -60,8 +60,8 @@ export default new Router({
       props: { type: "is-info" }
     },
     {
-      name: "alliances",
-      path: "/alliances/",
+      name: "alianzas",
+      path: "/alianzas/",
       component: () => import("@/views/Alliances"),
       props: { type: "is-primary" }
     }
