@@ -3,12 +3,12 @@
 export default ({
     "en":{
         memory : [
-            {'title':'Memory 2019','url':'./Memorias/Memoria-2019.pdf'},
+            {'title':'Corporative Memory 2019','url':'./Memorias/MEMORIA-2019.pdf'},
         ]
     },
     "es":{
         memory : [
-            {'title':'Memoria 2019','url':'./Memorias/Memoria-2019.pdf'},
+            {'title':'Memoria Corporativa 2019','url':'./Memorias/MEMORIA-2019.pdf'},
         ]
     }
 })

@@ -7,7 +7,8 @@
                     <p class="memories-item-name"> {{memorie.title}} </p>
                 </div>
                 <div class="column is-one-fifth">
-                    <b-button tag="a" 
+                    <b-button tag="a"
+                        class="is-primary"
                         :href="memorie.url" 
                         target="_blank"
                         rounded> 
@@ -50,14 +51,18 @@ export default {
 </script>
     
 <style lang="scss" scoped>
+@import '../main.scss';
+
 .memories-container {
-    background-color:#fdca36 ;
-    padding: 50px 0;
+    // background-color:#fdca36
     margin: 30px 0 0 0;
+    padding: 50px 0;
 
     .memories-item {
-        margin: 20px 20%;
-        border-bottom: 1px #363636 solid; 
+        margin: 20px 10%;
+        border: 3px $primary dashed;
+        border-radius: 2rem;
+        padding: 0px 60px;
         
         .memories-item-name {
             font-size: 20px;
