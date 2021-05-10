@@ -2,8 +2,38 @@
   <div id="somos">
     <Banner :type="type" :title="`${$t('navbar.about')}`"/>
 
+    <!-- Mission and Vision -->
+    <section id="mision" class="container">
+      <div class="tile is-ancestor">
+        <div class="tile is-parent is-4">
+          <div class="tile is-child">
+            <figure class="image is-1by1">
+              <img src="@/assets/empower.jpg" alt="Sororidad y Colaboración">
+            </figure>
+          </div>
+        </div>
+        <div class="tile is-parent is-vertical" >
+          <article class="tile is-child notification is-info">
+              <p class="title"> Misión </p>
+              <p class="subtitle"> 
+                Empoderar a niñas y adolescentes a través de la enseñanza de programación 
+                e inspirar vocaciones científicas y tecnológicas.
+              </p>
+          </article>
+          <article class="tile is-child notification is-success">
+              <p class="title"> Visión </p>
+              <p class="subtitle"> 
+                Que todas las niñas de Chile vivan la ciencia y la tecnología libres de 
+                estereotipos de género.
+              </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- History -->
     <section id="historia" class="container">
+      <h1 class="custom-title"> Nuestra Historia </h1>
       <Timeline />
     </section>
 
@@ -40,50 +70,15 @@ export default {
   props: {
     type: String
   },
-  methods: {
-    //data according to language
-    datos(section) {
-      if(this.lang == "en") {
-            if(section=="data"){
-              return this.data.en.data
-            } else if(section=="history") {
-              return this.data.en.history
-            } else {
-              return null
-            }
-        } else {
-            if(section=="data") {
-              return this.data.es.data
-            } else if(section=="history") {
-              return this.data.es.history
-            } else {
-              return null
-            }
-        }
-    }
-  },
 };
 </script>
 
 <style lang="scss" scoped>
-  .tile {
-    border-radius: 25px;
-
-    .title {
-      font-size: 2rem;
-    }
-
-    .subtitle {
-      font-size: 1.5rem;
-    }
-
-    .is-v-spaced {
-      padding: 3rem 1rem;
-    }
-
-    img {
-      border-radius: 25px;
-    }
+  .custom-title {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5rem;
   }
 
   #mision, #historia {
