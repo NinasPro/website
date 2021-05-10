@@ -52,7 +52,7 @@
               v-bind:class="{ 
                 'is-info':(type !== 'is-info'), 
                 'is-warning':(type == 'is-info')
-              }" rounded outlined>
+              }" rounded>
               {{$t('navbar.involved')}}
             </b-button>
           </router-link>
@@ -63,7 +63,7 @@
               v-bind:class="{ 
                 'is-warning':(type !== 'is-warning' && type !== 'is-info'),
                 'is-primary':(type === 'is-warning' || type === 'is-info')
-              }" rounded outlined>
+              }" rounded>
               {{$t('navbar.donate')}}
             </b-button>
           </a>
