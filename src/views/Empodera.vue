@@ -1,93 +1,104 @@
 <template>
-  <div id="projects">
-    <PhotoBanner :type="type" :title="`${$t('empower.banner')}`" image="django-girls.jpg"/>
+  <div id="empodera">
+    <Banner :type="type" :title="`${$t('empower.banner')}`"/>
 
-    <section id="inspira">
-      <div class="container">
-        <h1 class="title">{{$t('empower.title')}}</h1>
-        <p class="subtitle" v-for="(texto, i) in datos('about')" :key="i">
-          <span v-html="texto.text"/>
-        </p>
-        <br>
-      </div>
-    </section>
-    <section id="equipo-empower">
-      <div class="container">
-        <h1 class="title"> {{$t('empower.titleTeam')}} </h1>
-          <Team :team="datos('team')"/>
-      </div>
-    </section>
-<!--
-    <section>
-      <div class="container">
-        <h1 class="title"> {{$t('empower.titlenovelties')}} </h1>
-        <div class="row columns" v-for="item in datos('news')" :key="item.id">
-          <div class="column is-4">
-            <img class="embed-responsive-item" :src="getImgUrl(item.image)" >
+    <div class="container">
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-8">
+          <div class="tile">
+            <div class="tile is-parent is-vertical">
+              <article class="tile is-child notification is-primary">
+                <p class="title">Objetivo</p>
+                <p class="subtitle">
+                  Entregar herramientas y fortalecer la seguridad de las 
+                  niñas para que sigan explorando y profundizando sus 
+                  aprendizajes de forma independiente.
+                </p>
+                <p class="subtitle">
+                  Derribar estereotipos de género relacionados a las
+                  areas de la ciencia, la ingeniería, la física y las
+                  matemáticas.
+                </p>
+              </article>
+              <article class="tile is-child">
+                <figure class="image is-4by4">
+                  <img src="@/assets/square-notebook.png">
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent is-vertical">
+              <article class="tile is-child">
+                <figure class="image is-4by4">
+                  <img src="@/assets/square-presenting.png">
+                </figure>
+              </article>
+              <article class="tile is-child notification is-light">
+                <p class="title">¿Cómo lo hacemos?</p>
+                <p class="subtitle">
+                  Realizamos cursos anuales de programación en C++,  
+                  al mismo tiempo que generamos espacios seguros, 
+                  libre de estereotipos de género y creamos una comunidad
+                  de niñas y mujeres con intereses en común.
+                </p>
+              </article>
+            </div>
           </div>
-          <div class="column">
-            <p class="subtitle"> {{item.description}} </p>
-            <a class="button is-rounded is-info" v-for="(url,i) in item.link" :key="i" :href="url.url" target="_blank"> {{url.title}} </a>
+          <div class="tile is-parent">
+            <article class="tile is-child notification is-primary">
+              <p class="title">¿Cómo participar?</p>
+              <p class="subtitle">
+                El periodo de postulación para las actividades de Empodera
+                comienza en Marzo cada año y durante la pandemia se realiza 
+                en formato online.
+              </p>
+              <div class="content">
+                <!-- Content -->
+              </div>
+            </article>
           </div>
         </div>
+        <div class="tile is-parent">
+          <article class="tile is-child notification is-success">
+            <div class="content">
+              <p class="title">Curso Anual de Programación Competitiva</p>
+              <p class="subtitle">
+                En este curso aprenderás a programar en un lenguaje llamado C++, 
+                que te permitirá dar instrucciones al computador para resolver 
+                interesantes problemas. Además desarrollarás habilidades socio-emocionales
+                como el trabajo en equipo, la tolerancia a la frustración, resolución de 
+                problemas, entre otras. 
+              </p>
+              <p class="subtitle"> 
+                No necesitas tener conocimientos de programación para participar, 
+                basta con tu motivación y compromiso. Este curso también te entregará 
+                los contenidos básicos para participar en la Olimpiada Chilena de 
+                Informática que se realiza todos los años la primera semana de Octubre.
+              </p>
+              <p> El curso se compone de: </p>
+              <ul>
+                <li> 18 clases online obligatorias </li>
+                <li> Actividades que deberás desarrollar en casa </li>
+                <li> Ceremonia de Cierre en Octubre </li>
+              </ul>
+            </div>
+          </article>
+        </div>
       </div>
-    </section>
-  -->
+    </div>
+
   </div>
 </template>
 
 <script>
-import PhotoBanner from "../components/PhotoBanner.vue";
-import Team from "../components/Team.vue";
-import * as Inspire from '../data/empower.js';
-import i18n from '../i18n'
+import Banner from "../components/Banner.vue";
 
 export default {
-  name: "Projects",
+  name: "Empodera",
   components: {
-    PhotoBanner,
-    Team,
-  },
-  data(){
-    const lang=`${i18n.locale}`
-    const data = Inspire.default
-    
-    return{
-      data,
-      lang,
-    }
+    Banner,
   },
   props: {
     type: String
-  },
-  methods: {
-    //data according to language
-    datos(section) {
-      if(this.lang == "en") {
-            if(section=="about"){
-              return this.data.en.about
-            } else if(section=="news"){
-              return this.data.en.news
-            } else if(section=="team"){
-              return this.data.en.team
-            } else {
-              return null
-            }
-        } else {
-            if(section=="about") {
-              return this.data.es.about
-            } else if(section=="news"){
-              return this.data.es.news
-            } else if(section=="team"){
-              return this.data.es.team
-            } else {
-              return null
-            }
-        }
-    },
-    getImgUrl(value) {
-        return require(`@/assets/${value}`)
-    }
   },
 };
 </script>
@@ -95,58 +106,8 @@ export default {
 <style lang="scss" scoped>
 @import '../main.scss';
 
-section {
-    margin: 160px 0;
-
-    .title {
-      font-size: 30px;
-      font-weight: 600;
-      text-align: center;
-      padding-bottom: 40px;
-      padding-top: 40px;
-    }
-
-    .subtitle {
-      font-size: 18px;
-      text-align: left;
-      margin-bottom: 40px;
-    }
-    a{
-      margin-right: 1%;
-    }
-  }
-
-#equipo-empower{
-  background-color: #fdca36;
-  margin: 50px 0px;
-}
-
-.description {
-  min-height: 500px;
-  padding: 150px 0px;
-  color: black;
-  font-size: 2rem;
-  font-weight: 600;
-
-  .title {
-    color: black;
-    font-size: 3rem;
-    padding: 20px 0px;
-  }
-}
-
-@media only screen and (max-device-width: 768px) {
-  .description {
-    min-height: 100px;
-    padding: 50px 0px;
-    font-size: 1rem;
-    font-weight: 400;
-
-    .title {
-      font-size: 2rem;
-      padding: 10px 0px;
-    }
-  }
+.container {
+  padding: 3rem 0;
 }
 
 </style>

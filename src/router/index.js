@@ -51,7 +51,7 @@ export default new Router({
       name: "empodera",
       path: "/empodera/",
       component: () => import("@/views/Empodera"),
-      props: { type: "is-info" }
+      props: { type: "is-primary" }
     },
     {
       name: "potencia",
@@ -64,13 +64,7 @@ export default new Router({
       path: "/alliances/",
       component: () => import("@/views/Alliances"),
       props: { type: "is-primary" }
-    },
-    {
-      name: "donate",
-      path: "/donate/",
-      component: () => import("@/views/Donate"),
-      props: { type: "is-success" }
-    },
+    }
   ],
   scrollBehavior (to, from, savedPosition) {
     if (savedPosition) {
