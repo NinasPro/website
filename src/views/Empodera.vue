@@ -22,14 +22,14 @@
               </article>
               <article class="tile is-child">
                 <figure class="image is-4by4">
-                  <img src="@/assets/square-notebook.png">
+                  <img src="@/assets/initiatives/square-notebook.png">
                 </figure>
               </article>
             </div>
             <div class="tile is-parent is-vertical">
               <article class="tile is-child">
                 <figure class="image is-4by4">
-                  <img src="@/assets/square-presenting.png">
+                  <img src="@/assets/initiatives/square-presenting.png">
                 </figure>
               </article>
               <article class="tile is-child notification is-light">
