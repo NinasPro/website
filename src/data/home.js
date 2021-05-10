@@ -49,7 +49,7 @@ export default ({
                 'subtitle': 'El 10 de Abril comenzó el curso anual de pensamiento computacional y programación competitiva para niñas en modalidad online.',
                 'image': 'banner-img-3.png',
                 'action': '¿En qué consiste?',
-                'link': '/curso-anual'
+                'link': '/empodera'
             }
         ],
         projectsHome:[
