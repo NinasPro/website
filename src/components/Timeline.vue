@@ -2,7 +2,7 @@
     <div class="timeline-main">
         <vue-timeline-update
             :date="new Date('2016-02-26')"
-            title="Primer curso de pensamiento computacional"
+            title="Primer curso de programación competitiva"
             description="Niñas Pro nace en el año 2016 como una agrupación de mujeres estudiantes
             de ingeniería que, al ser testigos de la poca participación femenina en sus salas de
             clases, comenzaron a realizar un curso gratuito de programación competitiva para niñas
