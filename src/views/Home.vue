@@ -58,7 +58,7 @@
           <b-button tag="a" class="is-primary is-rounded " href="mailto:recaudacion@ninaspro.cl?subject=Me gustaría colaborar con Niñas Pro">
               {{$t('home.buttonPartnersMail')}}
           </b-button>
-          <b-button tag="router-link" class="is-primary is-rounded" to="/alliances">
+          <b-button tag="router-link" class="is-primary is-rounded" to="/alianzas">
               {{$t('home.buttonPartnersAll')}}
           </b-button>
         </div>
