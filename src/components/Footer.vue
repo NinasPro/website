@@ -10,10 +10,10 @@
         <div class="column is-2">
           <strong >{{$t('footer.project')}}</strong> 
           <ul>
-            <li><router-link class="footer-link" to="/empodera/">{{$t('footer.empower')}}</router-link></li>
-            <li><router-link class="footer-link" to="/incentiva/">{{$t('footer.incentive')}}</router-link></li>
             <li><router-link class="footer-link" to="/inspira/">{{$t('footer.inspire')}}</router-link></li>
-            <li><router-link class="footer-link" to="/potencia/">{{$t('footer.power')}}</router-link></li>
+            <li><router-link class="footer-link" to="/incentiva/">{{$t('footer.incentive')}}</router-link></li>
+            <li><router-link class="footer-link" to="/empodera/">{{$t('footer.empower')}}</router-link></li>
+            <li><router-link class="footer-link" to="/potencia/">{{$t('footer.boost')}}</router-link></li>
           </ul>
         </div>
         <div class="column is-2">
