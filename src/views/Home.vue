@@ -24,35 +24,58 @@
 
     <!--Eventos -->
     <section id="events">
-      <div class="columns is-vcentered">
-        <div class="column is-4" data-aos="fade-right" data-aos-anchor-placement="center-center">
-          <h1 class="title"> {{$t('home.titleEvents')}} </h1>
-          <p class="subtitle"> {{$t('home.subtitleEvents')}} </p>
-          <router-link class="button is-rounded is-success" name="Mas información" title="Mas información" to='/eventos/'>
-            {{$t('event.seeAll')}}
-          </router-link>
-        </div>
-        <div class="column" data-aos="fade-left" data-aos-delay="1000" data-aos-anchor-placement="center-center">
-          <Events> </Events>
+      <div class="container" >
+        <h1 class="title"> {{$t('home.titleEvents')}} </h1>
+        <p class="subtitle"> {{$t('home.subtitleEvents')}} </p>
+        <Event/>
+      </div>
+    </section>
+
+    <!-- Numbers -->
+    <section id="metrics" class="hero is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <nav class="level">
+            <div v-for="(item, i) in datos('metrics')" :key="i">
+              <div class="level-item has-text-centered">
+                <div>
+                  <p class="heading">{{item.name}}</p>
+                  <p class="title">{{item.value}}</p>
+                </div>
+              </div>
+            </div>
+          </nav>
         </div>
       </div>
     </section>
 
     <!--Collaborators and partners -->
     <section id="collaborators">
-      <div class="container" data-aos="fade-up" data-aos-delay="600">
+      <div class="container" data-aos="fade-up" data-aos-delay="200">
         <h1 class="title"> {{$t('home.titlePartners')}} </h1>
         <p class="subtitle">{{$t('home.subtitlePartners')}} </p>
-        <Collaborators type="is-collaborators"></Collaborators>
+        <div class="buttons">
+          <b-button tag="a" class="is-primary is-rounded " href="mailto:recaudacion@ninaspro.cl?subject=Me gustaría colaborar con Niñas Pro">
+              {{$t('home.buttonPartnersMail')}}
+          </b-button>
+          <b-button tag="router-link" class="is-primary is-rounded" to="/alliances">
+              {{$t('home.buttonPartnersAll')}}
+          </b-button>
+        </div>
+
+        <div class="left-moved">
+          <ListOfItems :data="sponsorsList.gold" :detailed="true" category="auspicio gold" type='is-warning' />
+          <ListOfItems :data="patreonsList" :detailed="false" category="patrocinio" type='is-primary' />
+        </div>
       </div>
     </section>
 
     <!-- Newsletter Button -->
-    <section id="newsletter">
+    <!-- <section id="newsletter">
       <a class="button is-primary is-rounded is-large" href="http://eepurl.com/gn7I3r" target="_blank">
           {{$t('home.newsletter')}}
       </a>
-    </section>
+    </section> -->
     
   </div>
 </template>
@@ -60,10 +83,12 @@
 <script>
 import Carrousel from "../components/Carrousel.vue";
 import ProjectsHome from "../components/ProjectsHome.vue";
-import Collaborators from '../components/Collaborators.vue';
+import ListOfItems from '../components/ListOfItems.vue';
 import Information from '../components/Information.vue';
-import Events from '../components/EventHome.vue';
+import Event from '../components/Event.vue';
 import * as Data from '../data/home.js';
+import * as Patreons from '../data/patreons.js';
+import * as Sponsors from '../data/sponsors.js';
 import i18n from '../i18n'
 
 export default {
@@ -71,16 +96,21 @@ export default {
   data(){
     const lang=`${i18n.locale}`
     const data=Data.default
+    const patreons = Patreons.default
+    const sponsors = Sponsors.default
+
     return{
       lang,
-      data
+      data,
+      patreons,
+      sponsors
     }
   },
   components: {
     Carrousel,
     ProjectsHome,
-    Collaborators,
-    Events,
+    ListOfItems,
+    Event,
     Information,
   },
   props: {
@@ -94,8 +124,8 @@ export default {
               return this.data.en.projectsHome
             } else if(section=="information") {
               return this.data.en.information
-            } else if(section=="new") {
-              return this.data.en.news
+            } else if(section=="metrics") {
+              return this.data.en.metrics
             } else {
               return null
             }
@@ -104,14 +134,31 @@ export default {
               return this.data.es.projectsHome
             } else if(section=="information") {
               return this.data.es.information
-            } else if(section=="new") {
-              return this.data.es.news
+            } else if(section=="metrics") {
+              return this.data.es.metrics
             } else {
               return null
             }
         }
     }
   },
+  computed: {
+    patreonsList: function(){
+        if(this.lang == "en") {
+            return this.patreons.en.data
+        } else {
+            return this.patreons.es.data
+        } 
+    },
+
+    sponsorsList: function(){
+        if(this.lang == "en") {
+            return this.sponsors.en
+        } else {
+            return this.sponsors.es
+        } 
+    }
+  }
   
 };
 </script>
@@ -138,20 +185,33 @@ export default {
     }
   }
 
-  #events {
-    padding-bottom: 100px;
+  #metrics {
+    padding: 2rem 0 1rem 0;
+  }
 
-    .title, .subtitle {
-      text-align: left;
-      margin-left: 20%;
-      margin-right: 20%;
+  #collaborators {
+
+    .left-moved {
+        position: relative;
+        left: -45px;
     }
-    .button {
-      margin-left: 20%;
+
+    .buttons {
+      margin-top: 3rem;
+      display:flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
-  #newsletter {
-    text-align: center; 
+  @media only screen and (max-device-width: 1220px) {
+
+    #collaborators {
+
+      .left-moved {
+        left: 0px;
+      }
+    }
   }
+
 </style>

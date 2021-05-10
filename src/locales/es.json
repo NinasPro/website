@@ -3,28 +3,30 @@
         "initiatives":"Iniciativas",
         "inspire":"Inspira",
         "empower": "Empodera",
-        "power": "Potencia",
+        "boost": "Potencia",
         "incentive": "Incentiva",
         "events":"Eventos",
-        "about": "Somos",
+        "about":"Somos",
+        "history": "Historia",
+        "alliances": "Alianzas",
+        "news": "Noticias",
         "involved": "Involúcrate",
         "donate":"Dona",
         "lang":"ES"
     },
     "footer":{
         "about": "Somos",
-        "mission":"Misión",
-        "vision":"Visión",
-        "community":"Comunidad",
+        "purpose":"Misión y Visión",
+        "team":"Equipo",
         "history":"Historia",
         "memory":"Memorias",
-        "project":"Proyectos",
+        "project":"Iniciativas",
         "empower":"Empodera",
         "incentive":"Incentiva",
         "inspire":"Inspira",
-        "power":"Potencia",
+        "boost":"Potencia",
         "help":"¿Cómo ayudar?",
-        "member":"Alianzas",
+        "alliances":"Alianzas",
         "volunteer":"Voluntariado",
         "donate":"Donación",
         "contact":"Contáctanos",
@@ -35,8 +37,11 @@
         "subtitleProjects":"Categorizamos nuestras actividades en las siguientes iniciativas",
         "titleEvents":"Próximos eventos",
         "subtitleEvents":"Todos nuestros eventos son gratuitos, ¡revisa los requisitos e inscríbete!",
-        "titlePartners": "Nuestros Partners",
-        "subtitlePartners":"Agradecemos a las empresas, instituciones y organizaciones que confían en nosotras y nos ayudan a llegar a más niñas cada año.",
+        "titleMetrics":"Métricas de Impacto",
+        "titlePartners": "Nuestras Alianzas",
+        "subtitlePartners": "Cada año empresas e instituciones que confían en nosotras nos ayudan a llegar a más niñas. También colaboramos con otras organizaciones con enfoque de género o que fomentan las STEM para sumar esfuerzos y complementar nuestro trabajo.",
+        "buttonPartnersMail": "Quiero Sumar a mi Empresa",
+        "buttonPartnersAll": "Ver lista completa",
         "titleNews":"Noticias",
         "seeAll":"Ver todas",
         "newsletter":"Subscribete al newsletter"
@@ -44,6 +49,7 @@
     "event":
     {
         "signUp":"Postular",
+        "soon":"Próximamente",
         "seeAll":"Ver todos"
     },
     "volunteer":{
@@ -76,7 +82,7 @@
         "titleTeam":"Equipo",
         "titlenovelties":"Proyectos"
         },
-    "power":{
+    "boost":{
         "banner":"Iniciativa Potencia",
         "title":"¿En qué consiste la iniciativa potencia?",
         "titleTeam":"Equipo",

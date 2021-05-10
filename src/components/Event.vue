@@ -1,7 +1,8 @@
 <template>
+<div id="events-main">
     <div class="container">
-        <div class="columns event-item" v-for="(event, i) in eventos" :key="i">
-            <div class="column is-2">
+        <div class="columns is-mobile event-item" v-for="(event, i) in eventos" :key="i">
+            <div class="column is-2-desktop is-4-mobile">
                 <b-image ratio="1by1" :src="getImgUrl(event.image)" :rounded="true"></b-image>
             </div>
             <div class="column">
@@ -27,12 +28,18 @@
                 </div>
                 <h1 class="title"> {{event.event}} </h1>
                 <p> {{event.information}} </p>
-                <a class="button is-primary is-rounded" :href="event.link" target="_blank">
-                    {{$t('event.signUp')}}
-                </a>
+                <b-button tag="a" :href="event.link" class="is-primary is-rounded" :disabled="event.link === ''" target="_blank">
+                    <div v-if="event.link !== ''">
+                        {{$t('event.signUp')}}
+                    </div>
+                    <div v-else>
+                        {{$t('event.soon')}}
+                    </div>
+                </b-button>
             </div>
         </div>
     </div>
+</div>
     
 </template>
 <script>
@@ -101,8 +108,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../main.scss';
+
+.events-main {
+    background-color: $primary;
+}
+
 .event-item{
-    border-bottom: 1px #dbdbdb solid;
+    // border-bottom: 1px #dbdbdb solid;
+    border: 3px $primary dashed;
+    border-radius: 2rem;
+
     margin: 20px 30px;
     padding: 20px 0px;
 

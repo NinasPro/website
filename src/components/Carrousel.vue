@@ -1,13 +1,18 @@
 <template>
   <b-carousel :pause-hover="false" :pause-info="false" :interval="10000">
     <b-carousel-item v-for="(carousel,i) in datos" :key="i">
-      <section :class="`hero is-medium ${type}`">
+      <section :class="`hero is-medium full-size ${type}`">
         <div class="hero-body">
           <div class="container">
             <div class="columns is-8">
               <div class="column is-three-fifths banner-text">
                 <h1 class="title"> {{carousel.title}} </h1>
                 <h2 class="subtitle"> {{carousel.subtitle}} </h2>
+                <router-link :to="{ path: carousel.link}">
+                  <b-button class="is-info" rounded>
+                    {{carousel.action}}
+                  </b-button>
+                </router-link>
               </div>
               <div class="column banner-image">
                 <img
@@ -65,7 +70,7 @@ export default {
 <style lang="scss" scoped>
 
 .banner-text {
-  padding-top: 6rem;
+  padding-top: 5rem;
 
   h1 {
     font-size: 65px;
@@ -76,9 +81,15 @@ export default {
   }
 }
 
+button {
+  font-size: 20px;
+  border-width: 4px;
+}
+
 @media only screen and (max-device-width: 1220px) {
   .banner-text {
-    padding-top:0.75rem;
+    padding-top: 3rem;
+    padding-left: 2rem;
 
     h1 {
       font-size: 45px;

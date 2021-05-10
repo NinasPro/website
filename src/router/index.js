@@ -12,9 +12,9 @@ export default new Router({
       props: { type: "is-primary" }
     },
     {
-      name: "about",
+      name: "somos",
       path: "/somos/",
-      component: () => import("@/views/About"),
+      component: () => import("@/views/History"),
       props: { type: "is-info" }
     },
     {
@@ -45,13 +45,13 @@ export default new Router({
       name: "incentiva",
       path: "/incentiva/",
       component: () => import("@/views/Incentiva"),
-      props: { type: "is-info" }
+      props: { type: "is-success" }
     },
     {
       name: "empodera",
       path: "/empodera/",
       component: () => import("@/views/Empodera"),
-      props: { type: "is-info" }
+      props: { type: "is-primary" }
     },
     {
       name: "potencia",
@@ -60,17 +60,11 @@ export default new Router({
       props: { type: "is-info" }
     },
     {
-      name: "eventos",
-      path: "/eventos/",
-      component: () => import("@/views/Event"),
+      name: "alianzas",
+      path: "/alianzas/",
+      component: () => import("@/views/Alliances"),
       props: { type: "is-primary" }
-    },
-    {
-      name: "donate",
-      path: "/donate/",
-      component: () => import("@/views/Donate"),
-      props: { type: "is-success" }
-    },
+    }
   ],
   scrollBehavior (to, from, savedPosition) {
     if (savedPosition) {

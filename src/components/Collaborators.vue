@@ -1,17 +1,11 @@
 <template>
   
   <div class="container">
-    <div class="columns is-multiline is-mobile" >
-      <div class="column is-3-desktop is-6-mobile" 
-        v-for="(item, i) in datos" :key="i"
-        data-aos="fade-up" :data-aos-delay="700 + 100*i" data-aos-duration="1000" data-aos-anchor-placement="bottom-center"
-        align="center">
-          <a :href="item.url">
-            <img :src="getImgUrl(item.image)">
-          </a>
-      </div>
-      
-    </div>
+    <ListOfItems :data="sponsorsList.gold" :detailed="true" category="auspicio gold" type='is-warning' />
+    <ListOfItems :data="sponsorsList.silver" :detailed="false" category="auspicio silver" type='is-light' />
+    <ListOfItems :data="sponsorsList.bronze" :detailed="false" category="auspicio bronze" type='is-success' />
+    <ListOfItems :data="patreonsList" :detailed="false" category="patrocinio" type='is-primary' />
+    <ListOfItems :data="collaboratorsList" :detailed="false" category="colaboración" type="is-info" />
   </div>
 
   
@@ -19,15 +13,27 @@
 
 
 <script>
-import * as Partners from '../data/home.js';
+import * as Collaborators from '../data/collaborators.js';
+import * as Patreons from '../data/patreons.js';
+import * as Sponsors from '../data/sponsors.js';
+import ListOfItems from './ListOfItems.vue';
+
 export default {
   name: 'Collaborators',
   
   data () {
-    const data = Partners.default
+    const collaborators = Collaborators.default
+    const patreons = Patreons.default
+    const sponsors = Sponsors.default
+
     return {
-      data,
+      collaborators,
+      patreons,
+      sponsors
     }
+  },
+  components: {
+    ListOfItems
   },
   methods: {
     getImgUrl(value) {
@@ -36,15 +42,31 @@ export default {
   },
   computed:
     {
-        //data according to language
-        datos: function(){
+        //collaborators according to language
+        collaboratorsList: function(){
             if(this.lang == "en") {
-                return this.data.en.collaborators
+                return this.collaborators.en.data
             } else {
-                return this.data.es.collaborators
-            }
-            
+                return this.collaborators.es.data
+            }   
+        },
+
+        patreonsList: function(){
+            if(this.lang == "en") {
+                return this.patreons.en.data
+            } else {
+                return this.patreons.es.data
+            } 
+        },
+
+        sponsorsList: function(){
+            if(this.lang == "en") {
+                return this.sponsors.en
+            } else {
+                return this.sponsors.es
+            } 
         }
+
     }
   
 
@@ -53,7 +75,6 @@ export default {
 
 <style scoped>
 .container {
-  padding-top: 0px;
-  padding-left: 20px;
+  padding: 5rem 0;
 }
 </style>

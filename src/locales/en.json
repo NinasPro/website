@@ -4,28 +4,30 @@
       "initiatives":"Initiatives",
       "inspire":"Inspire",
       "empower": "Empower",
-      "power": "Power",
+      "boost": "Boost",
       "incentive": "Incentive",
       "events":"Events",
-      "about": "About",
+      "about":"About Us",
+      "history": "Historia",
+      "alliances": "Alianzas",
       "involved": "Get involved",
       "donate":"Donate",
       "lang":"EN"
   },
   "footer":{
     "about": "About",
-    "mission":"Mission",
-    "vision":"Vision",
+    "purpose":"Mission and Vision",
+    "team":"Team",
     "community":"Community",
     "history":"History",
     "memory":"Memories",
-    "project":"Projects",
+    "project":"Initiatives",
     "empower":"Empower",
     "incentive":"Incentive",
     "inspire":"Inspires",
-    "power":"Power",
+    "boost":"Boost",
     "help":"How to help?",
-    "member":"Alliance",
+    "alliances":"Alliance",
     "volunteer":"Volunteer",
     "donate":"Donation",
     "contact":"Contact Us",
@@ -36,8 +38,10 @@
     "subtitleProjects":"We categorize our activities in the following initiatives",
     "titleEvents":"Upcoming events",
     "subtitleEvents":"All of our events are free, check the requirements and sign up!",
+    "titleMetrics":"Some Numbers",
     "titlePartners": "Our Partners",
     "subtitlePartners":"We thank the companies, institutions and organizations that trust us and help us reach more girls every year.",
+    "buttonPartnersMail": "I want to support!",
     "titleNews":"News",
     "seeAll":"See All",
     "newsletter":"Subscribe to the newsletter"
@@ -45,6 +49,7 @@
   "event":
   {
     "signUp":"Postulate",
+    "soon":"Soon",
     "seeAll":"See All"
   },
   "volunteer":{
@@ -77,7 +82,7 @@
     "titleTeam":"Team",
     "titlenovelties":"Novelties"
   },
-  "power":{
+  "boost":{
     "banner":"Enhance Initiative",
     "title":"¿En qué consiste la iniciativa potencia?",
     "titleTeam":"Team",

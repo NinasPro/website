@@ -6,6 +6,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import i18n from './i18n'
 import VueSmoothScroll from 'vue2-smooth-scroll'
+import VueTimeline from "@growthbunker/vuetimeline";
 
 import App from "./App.vue";
 import router from "./router";
@@ -27,6 +28,10 @@ Vue.use(VueSmoothScroll, {
   duration: 600,
   updateHistory: false,
 });
+Vue.use(VueTimeline, {
+  theme: "light",
+});
+
 
 Vue.component("vue-fontawesome", FontAwesomeIcon);
 

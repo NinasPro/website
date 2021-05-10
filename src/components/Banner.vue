@@ -7,10 +7,10 @@
             <h1 class="title">
               {{title}}
             </h1>
-            <router-link :to="link" v-if="showButton"
-              :class="`button ${type} is-inverted is-rounded is-outlined`">
+            <b-button :href="link" tag="a" v-if="showButton"
+              :class="`${type} is-inverted is-rounded is-outlined`">
               {{button}}
-            </router-link>
+            </b-button>
           </div>
           <div class="column is-one-quarter np-banner-symbol">
             <img
@@ -56,7 +56,7 @@ export default {
 <style lang="scss" scoped>
 
 .hero.is-medium .hero-body {
-  padding: 2rem 5rem;
+  padding: 6rem 5rem 2rem 5rem;
   height: 18rem;
 
   .np-banner-header {
@@ -75,12 +75,11 @@ export default {
       height: 8rem;
     }
   }
-
 }
 
 @media only screen and (max-device-width: 1220px) {
   .hero.is-medium .hero-body {
-    padding: 2rem 3rem;
+    padding: 5rem 3rem 2rem 3rem;
     height: inherit;
 
     .np-banner-header {
