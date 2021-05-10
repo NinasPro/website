@@ -45,7 +45,7 @@ export default new Router({
       name: "incentiva",
       path: "/incentiva/",
       component: () => import("@/views/Incentiva"),
-      props: { type: "is-info" }
+      props: { type: "is-success" }
     },
     {
       name: "empodera",
