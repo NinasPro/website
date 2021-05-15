@@ -65,7 +65,7 @@
 
         <div class="left-moved">
           <ListOfItems :data="sponsorsList.gold" :detailed="true" category="auspicio gold" type='is-warning' />
-          <ListOfItems :data="patreonsList" :detailed="false" category="patrocinio" type='is-primary' />
+          <ListOfItems :data="patreonsList" :detailed="false" category="colaboración pro" type='is-primary' />
         </div>
       </div>
     </section>

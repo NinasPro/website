@@ -47,10 +47,12 @@
             </div>
             <div class="tile is-parent">
               <article class="tile is-child">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/CcE4y5NtLgk" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen></iframe>
+                <div class="videoWrapper">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/CcE4y5NtLgk" 
+                  title="YouTube video player" frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen></iframe>
+                </div>
               </article>
             </div>
           </div>
@@ -93,23 +95,19 @@
                   <b-button tag="a" class="is-primary" rounded inverted 
                   href="https://youtube.com/playlist?list=PLy7SgTVK30ORvNSp3Bz50yNA6PpSRXzQ_" 
                   target="_blank">
-                    Ver cápsulas de conceptos de electrónica
+                    Ver cápsulas de contenido
                   </b-button>
                 </div>
               </article>
             </div>
             <div class="tile is-parent">
               <article class="tile is-child">
-                <!-- <iframe width="560" height="315" 
-                src="https://www.youtube.com/embed/videoseries?list=PLy7SgTVK30ORvNSp3Bz50yNA6PpSRXzQ_" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-                </iframe> -->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_By4hSGquhc" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen></iframe>
+                <div class="videoWrapper">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/_By4hSGquhc" 
+                  title="YouTube video player" frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen></iframe>
+                </div>
               </article>
             </div>
           </div>

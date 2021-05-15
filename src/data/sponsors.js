@@ -3,24 +3,24 @@
 export default ({
     "es":{
         gold: [
-            {
-               'name': 'Fintual',
-               'description': '',
-               'quote': '',
-               'image': 'logos/fintual.png',
-               'url': 'http://www.fintual.cl',
-            },
+            // {
+            //    'name': 'Fintual',
+            //    'description': '',
+            //    'quote': '',
+            //    'image': 'logos/fintual.png',
+            //    'url': 'http://www.fintual.cl',
+            // },
         ],
         silver: [
         ],
         bronze : [
-            {
-                'name':'Vacasa',
-                'description': '',
-                'quote': '',
-                'image':'logos/vacasa.png',
-                'url':"https://www.vacasa.com/"
-            },
+            // {
+            //     'name':'Vacasa',
+            //     'description': '',
+            //     'quote': '',
+            //     'image':'logos/vacasa.png',
+            //     'url':"https://www.vacasa.com/"
+            // },
         ],
     }
 })

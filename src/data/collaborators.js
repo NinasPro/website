@@ -4,13 +4,6 @@ export default ({
     "es":{
         data: [
             {
-                'name': 'Instituto Milenio Fundamentos de los Datos',
-                'description': '',
-                'quote': '',
-                'image': 'logos/imfd.png',
-                'url': 'http://www.imfd.cl',
-            },
-            {
                 'name':'technovation',
                 'image':'logos/technovation.png',
                 'url':"https://technovation.cl/"
