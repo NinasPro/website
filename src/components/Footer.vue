@@ -100,6 +100,7 @@ export default {
 @media only screen and (max-device-width: 1220px) {
 
   .container {
+    width: 100%;
     padding: 2rem 20%;
   }
 
