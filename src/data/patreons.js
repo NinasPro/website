@@ -24,6 +24,13 @@ export default ({
                 'quote': '',
                 'image':'logos/udec.png',
                 'url':"https://www.udec.cl/pexterno/"
+            },
+            {
+                'name': 'Instituto Milenio Fundamentos de los Datos',
+                'description': '',
+                'quote': '',
+                'image': 'logos/imfd.png',
+                'url': 'http://www.imfd.cl',
             }
         ],
     }
