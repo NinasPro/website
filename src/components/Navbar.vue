@@ -12,7 +12,7 @@
     </template>
     
     <template #start>
-      <b-navbar-dropdown class="condensed" :label="`${$t('navbar.initiatives')}`" boxed="true">
+      <b-navbar-dropdown class="condensed" :label="`${$t('navbar.initiatives')}`" :boxed="true">
         <b-navbar-item tag="router-link" :to="{ path: '/inspira' }">
           <p>{{$t('navbar.inspire')}}</p>
         </b-navbar-item>
@@ -39,7 +39,7 @@
         <p>{{$t('navbar.alliances')}}</p>
       </b-navbar-item>
 
-      <b-navbar-item tag="router-link" :to="{ path: '/' }" href="#newsletter" v-smooth-scroll>
+      <b-navbar-item tag="a" href="https://blog.ninaspro.cl">
         <p>{{$t('navbar.news')}}</p>
       </b-navbar-item>
 
