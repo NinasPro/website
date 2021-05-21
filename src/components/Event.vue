@@ -47,6 +47,9 @@ import * as Events from '../data/events.js';
 var moment = require('moment')
 import i18n from '../i18n'
 export default {
+    props: {
+        "isCondensed": Boolean,
+    },
     data() {
         const event = Events.default;
         const lang=`${i18n.locale}`
@@ -101,7 +104,10 @@ export default {
                         
                     } 
                 }
-                return datos;
+                if (this.isCondensed)
+                    return datos.slice(0,3); 
+                else               
+                    return datos;
             }
         }
 }
@@ -110,12 +116,11 @@ export default {
 <style lang="scss" scoped>
 @import '../main.scss';
 
-.events-main {
-    background-color: $primary;
+#events-main {
+    padding-bottom: 3rem;
 }
 
 .event-item{
-    // border-bottom: 1px #dbdbdb solid;
     border: 3px $primary dashed;
     border-radius: 2rem;
 
