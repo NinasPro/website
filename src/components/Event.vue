@@ -28,13 +28,23 @@
                 </div>
                 <h1 class="title"> {{event.event}} </h1>
                 <p> {{event.information}} </p>
-                <b-button tag="a" :href="event.link" class="is-primary is-rounded" :disabled="event.link === ''" target="_blank">
-                    <div v-if="event.link !== ''">
+                <b-button 
+                    tag="a" 
+                    :href="event.link" 
+                    class="is-primary is-rounded" 
+                    :disabled="event.link === '' || event.status !== 'published'" 
+                    target="_blank">
+
+                    <div v-if="event.link !== '' && event.status === 'published'">
                         {{$t('event.signUp')}}
                     </div>
-                    <div v-else>
+                    <div v-else-if="event.status === 'completed'">
+                        {{$t('event.completed')}}
+                    </div>
+                    <div v-else-if="event.link === '' || event.status === 'soon'">
                         {{$t('event.soon')}}
                     </div>
+                    
                 </b-button>
             </div>
         </div>
