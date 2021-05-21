@@ -48,9 +48,10 @@
     },
     "event":
     {
-        "signUp":"Postular",
+        "signUp":"Inscribirme",
         "soon":"Próximamente",
-        "seeAll":"Ver todos"
+        "seeAll":"Ver todos",
+        "completed":"Inscripción Cerrada"
     },
     "volunteer":{
         "help":"Involúcrate",

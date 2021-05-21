@@ -27,7 +27,12 @@
       <div class="container" >
         <h1 class="title"> {{$t('home.titleEvents')}} </h1>
         <p class="subtitle"> {{$t('home.subtitleEvents')}} </p>
-        <Event/>
+        <Event :isCondensed="true" />
+        <div class="all-events">
+          <b-button tag="router-link" class="is-primary is-rounded" to="/eventos">
+            {{$t('event.seeAll')}}
+          </b-button>
+        </div>
       </div>
     </section>
 
@@ -187,6 +192,10 @@ export default {
 
   #metrics {
     padding: 2rem 0 1rem 0;
+  }
+
+  .all-events{
+    text-align: center;
   }
 
   #collaborators {

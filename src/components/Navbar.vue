@@ -31,7 +31,7 @@
         <p>{{$t('navbar.about')}}</p>
       </b-navbar-item>
 
-      <b-navbar-item tag="router-link" :to="{ path: '/' }" href="#events" v-smooth-scroll>
+      <b-navbar-item tag="router-link" :to="{ path: '/eventos' }">
         <p>{{$t('navbar.events')}}</p>
       </b-navbar-item>
 

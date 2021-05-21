@@ -28,13 +28,23 @@
                 </div>
                 <h1 class="title"> {{event.event}} </h1>
                 <p> {{event.information}} </p>
-                <b-button tag="a" :href="event.link" class="is-primary is-rounded" :disabled="event.link === ''" target="_blank">
-                    <div v-if="event.link !== ''">
+                <b-button 
+                    tag="a" 
+                    :href="event.link" 
+                    class="is-primary is-rounded" 
+                    :disabled="event.link === '' || event.status !== 'published'" 
+                    target="_blank">
+
+                    <div v-if="event.link !== '' && event.status === 'published'">
                         {{$t('event.signUp')}}
                     </div>
-                    <div v-else>
+                    <div v-else-if="event.status === 'completed'">
+                        {{$t('event.completed')}}
+                    </div>
+                    <div v-else-if="event.link === '' || event.status === 'soon'">
                         {{$t('event.soon')}}
                     </div>
+                    
                 </b-button>
             </div>
         </div>
@@ -47,6 +57,9 @@ import * as Events from '../data/events.js';
 var moment = require('moment')
 import i18n from '../i18n'
 export default {
+    props: {
+        "isCondensed": Boolean,
+    },
     data() {
         const event = Events.default;
         const lang=`${i18n.locale}`
@@ -101,7 +114,10 @@ export default {
                         
                     } 
                 }
-                return datos;
+                if (this.isCondensed)
+                    return datos.slice(0,3); 
+                else               
+                    return datos;
             }
         }
 }
@@ -110,12 +126,11 @@ export default {
 <style lang="scss" scoped>
 @import '../main.scss';
 
-.events-main {
-    background-color: $primary;
+#events-main {
+    padding-bottom: 3rem;
 }
 
 .event-item{
-    // border-bottom: 1px #dbdbdb solid;
     border: 3px $primary dashed;
     border-radius: 2rem;
 

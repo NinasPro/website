@@ -8,11 +8,9 @@
               <div class="column is-three-fifths banner-text">
                 <h1 class="title"> {{carousel.title}} </h1>
                 <h2 class="subtitle"> {{carousel.subtitle}} </h2>
-                <router-link :to="{ path: carousel.link}">
-                  <b-button class="is-info" rounded>
-                    {{carousel.action}}
-                  </b-button>
-                </router-link>
+                <b-button :tag="carousel.type" :href="carousel.link" :to="carousel.link" class="is-info" rounded>
+                  {{carousel.action}}
+                </b-button>
               </div>
               <div class="column banner-image">
                 <img
