@@ -45,7 +45,7 @@ export default ({
             },
             { 
                 'date': '2021-06-05 11:00',
-                'event': 'Foro 1: Empoderamiento Femenino',
+                'event': '1° Foro Empoderadas y Encuarentenadas',
                 'image':'events/empoderadas.png',
                 'information': "Primer foro del conjunto de actividades de Empoderadas y Encuarentenadas en el que \
                 hablaremos de empoderamiento femenino y activismo juvenil. \
@@ -68,11 +68,10 @@ export default ({
             },
             { 
                 'date': '2021-06-12 11:00',
-                'event': 'Foro 2: Empoderamiento Femenino',
+                'event': '2° Foro Empoderadas y Encuarentenadas',
                 'image':'events/empoderadas.png',
                 'information': "Segundo foro del conjunto de actividades de Empoderadas y Encuarentenadas en el que \
-                hablaremos de .... \
-                Participa en esta conversación junto a Miss Ghili, ONG Te Protejo y Minka.",
+                tendremos una conversación con Miss Ghili, ONG Te Protejo y Minka.",
                 'locale':'Online',
                 'link':'https://docs.google.com/forms/d/e/1FAIpQLSfW0IBcuTosxs1VQ9fAZoE5nuyvuwks3OUhUSV3BELUV8Ax1A/viewform',
                 'status':'published'
@@ -91,11 +90,10 @@ export default ({
             },
             { 
                 'date': '2021-06-19 11:00',
-                'event': 'Foro 3: ',
+                'event': '3° Foro Empoderadas y Encuarentenadas ',
                 'image':'events/empoderadas.png',
                 'information': "Tercer foro del conjunto de actividades de Empoderadas y Encuarentenadas en el que \
-                hablaremos de .... \
-                Participa en esta conversación junto a Paz Tondró, Cazadoras de Estrellas y Sailor Moon Cosplay.",
+                tendremos una conversación con Paz Tondró, Cazadoras de Estrellas y Sailor Moon Cosplay.",
                 'locale':'Online',
                 'link':'https://docs.google.com/forms/d/e/1FAIpQLSfW0IBcuTosxs1VQ9fAZoE5nuyvuwks3OUhUSV3BELUV8Ax1A/viewform',
                 'status':'published'
@@ -115,11 +113,10 @@ export default ({
             },
             { 
                 'date': '2021-06-26 11:00',
-                'event': 'Foro 3: ',
+                'event': '4° Foro Empoderadas y Encuarentenadas',
                 'image':'events/empoderadas.png',
                 'information': "Cuarto foro del conjunto de actividades de Empoderadas y Encuarentenadas en el que \
-                hablaremos de .... \
-                Participa en esta conversación junto a María José Ríos, Poli Mujica y Jocelyn Simmonds.",
+                conversaremos con María José Ríos, Poli Mujica y Jocelyn Simmonds.",
                 'locale':'Online',
                 'link':'https://docs.google.com/forms/d/e/1FAIpQLSfW0IBcuTosxs1VQ9fAZoE5nuyvuwks3OUhUSV3BELUV8Ax1A/viewform',
                 'status':'published'
