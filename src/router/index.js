@@ -64,6 +64,12 @@ export default new Router({
       path: "/alianzas/",
       component: () => import("@/views/Alliances"),
       props: { type: "is-primary" }
+    },
+    {
+      name: "eventos",
+      path: "/eventos/",
+      component: () => import("@/views/Events"),
+      props: { type: "is-primary" }
     }
   ],
   scrollBehavior (to, from, savedPosition) {
