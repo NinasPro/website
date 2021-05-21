@@ -30,7 +30,7 @@
         <Event :isCondensed="true" />
         <div class="all-events">
           <b-button tag="router-link" class="is-primary is-rounded" to="/eventos">
-            {{$t('home.buttonPartnersAll')}}
+            {{$t('event.seeAll')}}
           </b-button>
         </div>
       </div>
