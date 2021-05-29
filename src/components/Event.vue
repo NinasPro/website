@@ -102,7 +102,8 @@ export default {
                 var datos=[];
                 var array=this.sortJSON(this.datos(),'date','asc');
                 for(let i=0;i<array.length;i++){
-                    if(new Date(array[i].date)>new Date){
+                    let today = new Date();
+                    if(new Date(array[i].date)>new Date(today.setDate(today.getDate() - 1))){
                         datos.push(array[i]);
                     } else {
                         for(let day=2;day<=7;day++) {
