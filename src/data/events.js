@@ -35,7 +35,7 @@ export default ({
                 Participa en esta conversación junto a Sofía Huaiquil, Monserrat Lecaros y Valentina Díaz.",
                 'locale':'Online',
                 'link':'https://docs.google.com/forms/d/e/1FAIpQLSfW0IBcuTosxs1VQ9fAZoE5nuyvuwks3OUhUSV3BELUV8Ax1A/viewform',
-                'status':'published'
+                'status':'completed'
             },
             { 
                 'date': '2021-06-05 15:00',
@@ -47,7 +47,7 @@ export default ({
                 18 años. Solo 25 cupos disponibles.",
                 'locale':'Online',
                 'link':'https://docs.google.com/forms/d/e/1FAIpQLSfZTiBaVUyh4BachrVMoHNSXJym8425qjw3tNilIRxFGe2CIw/viewform',
-                'status':'published'
+                'status':'completed'
             },
             { 
                 'date': '2021-06-12 11:00',
