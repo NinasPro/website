@@ -10,6 +10,13 @@ export default ({
                'image': 'logos/fintual.png',
                'url': 'http://www.fintual.cl',
             },
+            {
+                'name': 'Cornershop',
+                'description': '',
+                'quote': '',
+                'image': 'logos/cornershop.png',
+                'url': 'https://cornershopapp.com/es-cl/',
+            },
         ],
         silver: [
         ],
