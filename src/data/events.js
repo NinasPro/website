@@ -57,7 +57,7 @@ export default ({
                 tendremos una conversación con Miss Ghili, ONG Te Protejo y Minka.",
                 'locale':'Online',
                 'link':'https://docs.google.com/forms/d/e/1FAIpQLSfW0IBcuTosxs1VQ9fAZoE5nuyvuwks3OUhUSV3BELUV8Ax1A/viewform',
-                'status':'published'
+                'status':'completed'
             },
             { 
                 'date': '2021-06-12 15:00',
@@ -69,7 +69,7 @@ export default ({
                 a mujeres entre 14 y 18 años. Solo 25 cupos disponibles.",
                 'locale':'Online',
                 'link':'https://docs.google.com/forms/d/e/1FAIpQLSfZTiBaVUyh4BachrVMoHNSXJym8425qjw3tNilIRxFGe2CIw/viewform',
-                'status':'published'
+                'status':'completed'
             },
             { 
                 'date': '2021-06-19 11:00',
