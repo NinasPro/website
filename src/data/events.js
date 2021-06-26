@@ -79,7 +79,7 @@ export default ({
                 tendremos una conversación con Paz Tondró, Cazadoras de Estrellas y Sailor Moon Cosplay.",
                 'locale':'Online',
                 'link':'https://docs.google.com/forms/d/e/1FAIpQLSfW0IBcuTosxs1VQ9fAZoE5nuyvuwks3OUhUSV3BELUV8Ax1A/viewform',
-                'status':'published'
+                'status':'completed'
             },
             { 
                 'date': '2021-06-19 15:00',
@@ -92,7 +92,7 @@ export default ({
                 tendrán su sección en nuestras RRSS!. Actividad enfocada a mujeres entre 14 y 18 años. Solo 25 cupos disponibles.",
                 'locale':'Online',
                 'link':'https://docs.google.com/forms/d/e/1FAIpQLSfZTiBaVUyh4BachrVMoHNSXJym8425qjw3tNilIRxFGe2CIw/viewform',
-                'status':'published'
+                'status':'completed'
             },
             { 
                 'date': '2021-06-26 11:00',
@@ -102,7 +102,7 @@ export default ({
                 conversaremos con María José Ríos, Poli Mujica y Jocelyn Simmonds.",
                 'locale':'Online',
                 'link':'https://docs.google.com/forms/d/e/1FAIpQLSfW0IBcuTosxs1VQ9fAZoE5nuyvuwks3OUhUSV3BELUV8Ax1A/viewform',
-                'status':'published'
+                'status':'completed'
             },
             { 
                 'date': '2021-06-26 15:00',

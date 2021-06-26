@@ -105,14 +105,9 @@ export default {
                     let today = new Date();
                     if(new Date(array[i].date)>new Date(today.setDate(today.getDate() - 1))){
                         datos.push(array[i]);
-                    } else {
-                        for(let day=2;day<=7;day++) {
-                            if((moment(array[i].date).fromNow()).includes(`${day} days ago`) ||  ((moment(array[i].date).fromNow()).includes('a day ago'))){
-                                datos.push(array[i]);
-                                break;
-                            }
-                        }
-                        
+                    }
+                    else if((moment(array[i].date).fromNow()).includes(`6 days ago`)){
+                        datos.push(array[i]);    
                     } 
                 }
                 if (this.isCondensed)

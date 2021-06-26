@@ -20,7 +20,7 @@
           </article>
           <article class="tile is-child">
             <figure class="image is-4by4">
-              <img src="@/assets/initiatives/adalovelace.png">
+              <img src="@/assets/initiatives/adalovelace.jpg">
             </figure>
           </article>
         </div>
@@ -60,14 +60,23 @@
       </div>
       <div class="tile is-ancestor">
         <div class="tile is-parent">
-          <div class="tile is-child notification is-info">
-            <p class="title">¡Próximo Evento!</p>
-            <p class="title">Inspiradas y Encuarentenadas</p>
+          <div class="tile is-child notification is-danger">
+            <p class="title">Empoderadas y Encuarentenadas</p>
             <p class="subtitle">
-              En Junio de este año 2021 realizaremos una semana de
+              En Junio de este año 2021 realizamos una semana de
               actividades para hablar de feminismo, salud mental, 
-              empoderamiento y mucho más. ¡No te lo pierdas!
+              empoderamiento y mucho más. ¡Los videos están 
+              disponibles en youtube!
             </p>
+
+            <div class="buttons">
+              <b-button tag="a" class="is-danger" rounded inverted href="https://www.youtube.com/playlist?list=PLy7SgTVK30OSjW-5FwowhMHXfIncxw-BB" target="_blank">
+              Videos
+              </b-button>
+              <b-button tag="a" class="is-danger" rounded inverted href="https://empoderadas.ninaspro.cl" target="_blank">
+              Sitio Empoderadas
+              </b-button>
+            </div>
           </div>
         </div>
         <div class="tile is-parent">

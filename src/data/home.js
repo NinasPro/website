@@ -48,7 +48,7 @@ export default ({
             {
                 'title': 'Conoce a Niñas Pro',
                 'subtitle': 'Empoderamos a niñas y adolescentes a través de la enseñanza de programación e Inspiramos vocaciones científicas y tecnológicas',
-                'image': 'banner-img-1.png',
+                'image': 'banner/banner-img-1.png',
                 'action': 'Involúcrate',
                 'link': '/voluntariado',
                 'type': 'router-link'
@@ -56,7 +56,7 @@ export default ({
             {
                 'title': 'Curso Virtual 2021',
                 'subtitle': 'El 10 de Abril comenzó el curso anual de pensamiento computacional y programación competitiva para niñas en modalidad online.',
-                'image': 'banner-img-3.png',
+                'image': 'banner/banner-img-3.png',
                 'action': '¿En qué consiste?',
                 'link': '/empodera',
                 'type': 'router-link'
@@ -87,7 +87,7 @@ export default ({
             {
                 'title':'Iniciativa Potencia',
                 'type':'is-success',
-                'image':'sororidad.jpg',
+                'image':'rosalind.jpeg',
                 'path':'/potencia/',
                 'description':'Cursos de nivel avanzado para potenciar las habilidades de las niñas que ya programan.'
             },
