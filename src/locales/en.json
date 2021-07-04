@@ -93,5 +93,8 @@
     "title":"¿En qué consiste la iniciativa empodera?",
     "titleTeam":"Team",
     "titlenovelties":"Novelties"
+  },
+  "pages":{
+      "conductcode":"Code of Conduct"
   }
 }
