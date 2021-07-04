@@ -70,6 +70,12 @@ export default new Router({
       path: "/eventos/",
       component: () => import("@/views/Events"),
       props: { type: "is-primary" }
+    },
+    {
+      name: "codigodeconducta",
+      path: "/codigodeconducta/",
+      component: () => import("@/views/ConductCode"),
+      props: { type: "is-primary" }
     }
   ],
   scrollBehavior (to, from, savedPosition) {
