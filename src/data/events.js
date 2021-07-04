@@ -114,7 +114,7 @@ export default ({
                 mujeres entre 14 y 18 años. Solo 25 cupos disponibles.",
                 'locale':'Online',
                 'link':'https://docs.google.com/forms/d/e/1FAIpQLSfZTiBaVUyh4BachrVMoHNSXJym8425qjw3tNilIRxFGe2CIw/viewform',
-                'status':'published'
+                'status':'completed'
             },
         ]
     }

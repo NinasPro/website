@@ -94,5 +94,8 @@
         "title":"¿En qué consiste la iniciativa empodera?",
         "titleTeam":"Equipo",
         "titlenovelties":"Proyectos"
+    },
+    "pages":{
+        "conductcode":"Código de Conducta"
     }
 }

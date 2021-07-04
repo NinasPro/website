@@ -23,6 +23,7 @@
             <li><router-link class="footer-link" to="/somos">{{$t('footer.history')}}</router-link></li>
             <!-- <li><router-link class="footer-link" to="/equipo">{{$t('footer.team')}}</router-link></li> -->
             <li><router-link class="footer-link" to="/somos#memoria">{{$t('footer.memory')}}</router-link></li>
+            <li><router-link class="footer-link" to="/codigodeconducta">{{$t('pages.conductcode')}}</router-link></li>
           </ul> 
         </div>
         <div class="column is-2">
