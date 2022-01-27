@@ -19,6 +19,20 @@ export default ({
             },
         ],
         silver: [
+            {
+                'name': 'Buda.com',
+                'description': '',
+                'quote': '',
+                'image': 'logos/buda.png',
+                'url': 'https://www.buda.com/',
+             },
+             {
+                'name': 'Synopsys Chile',
+                'description': '',
+                'quote': '',
+                'image': 'logos/synopsys.png',
+                'url': 'https://www.synopsys.com/',
+             }
         ],
         bronze : [
             {
