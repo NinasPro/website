@@ -11,6 +11,9 @@
                 <b-button :tag="carousel.type" :href="carousel.link" :to="carousel.link" class="is-info" rounded>
                   {{carousel.action}}
                 </b-button>
+                <a :tag="carousel.type" v-if="carousel.join_link" :href="carousel.join_link" class="is-info button is-rounded" style="margin-left: 5px" rounded>
+                  {{carousel.join_message}}
+                </a>
               </div>
               <div class="column banner-image">
                 <img

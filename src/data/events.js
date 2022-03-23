@@ -8,6 +8,15 @@ export default ({
     "es":{
         events: [
             { 
+                'date': '2022-04-23 10:00',
+                'event': 'Curso Anual 2022',
+                'image':'ninastic.jpg',
+                'information': "Curso Anual de programación competitiva en C++",
+                'locale':'Online',
+                'link':'https://bit.ly/postulacion2022ninaspro',
+                'status':'published'
+            },
+            { 
                 'date': '2021-04-10 10:00',
                 'event': 'Curso Anual 2021',
                 'image':'ninastic.jpg',
