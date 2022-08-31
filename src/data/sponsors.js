@@ -10,38 +10,39 @@ export default ({
                'image': 'logos/fintual.png',
                'url': 'http://www.fintual.cl',
             },
-            {
-                'name': 'Cornershop',
-                'description': '',
-                'quote': '',
-                'image': 'logos/cornershop.png',
-                'url': 'https://cornershopapp.com/es-cl/',
-            },
+            // {
+            //     'name': 'Cornershop',
+            //     'description': '',
+            //     'quote': '',
+            //     'image': 'logos/cornershop.png',
+            //     'url': 'https://cornershopapp.com/es-cl/',
+            // },
         ],
         silver: [
-            {
-                'name': 'Buda.com',
-                'description': '',
-                'quote': '',
-                'image': 'logos/buda.png',
-                'url': 'https://www.buda.com/',
-             },
-             {
-                'name': 'Synopsys Chile',
-                'description': '',
-                'quote': '',
-                'image': 'logos/synopsys.png',
-                'url': 'https://www.synopsys.com/',
-             }
+            
+            //  {
+            //     'name': 'Synopsys Chile',
+            //     'description': '',
+            //     'quote': '',
+            //     'image': 'logos/synopsys.png',
+            //     'url': 'https://www.synopsys.com/',
+            //  }
         ],
         bronze : [
-            {
-                'name':'Vacasa',
-                'description': '',
-                'quote': '',
-                'image':'logos/vacasa.png',
-                'url':"https://www.vacasa.com/"
-            },
+            // {
+            //     'name':'Vacasa',
+            //     'description': '',
+            //     'quote': '',
+            //     'image':'logos/vacasa.png',
+            //     'url':"https://www.vacasa.com/"
+            // },
+            // {
+            //     'name': 'Buda.com',
+            //     'description': '',
+            //     'quote': '',
+            //     'image': 'logos/buda.png',
+            //     'url': 'https://www.buda.com/',
+            //  },
         ],
     }
 })
