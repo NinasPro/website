@@ -3,7 +3,6 @@ export default ({
     "en":{
         carousels: [
             {'title': 'Welcome','subtitle': 'Empoderamos a niñas y adolescentes a través de la enseñanza de programación e Inspiramos vocaciones científicas y tecnológicas','image': 'banner-img-1.png'},
-            {'title': 'Curso Virtual 2021','subtitle': 'El 10 de Abril comenzará el curso anual de programación competitiva para niñas en modalidad online. ¡Postula para participar, escoge tu sede más cercana!','image': 'banner-img-3.png'}
         ],
         projectsHome:[
             {'title':'Empower Initiative','type':'is-danger','image':'laschicaspueden.jpg', 'path':'/empodera/','description':'Curso Anual de Programación Competitiva en C++'},
