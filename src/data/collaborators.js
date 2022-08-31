@@ -43,6 +43,13 @@ export default ({
                 'image':'logos/soymas.png',
                 'url':"https://soymas.cl/"
             },
+            {
+                'name': 'Beecrowd',
+                'description': '',
+                'quote': '',
+                'image': 'logos/beecrowd.png',
+                'url': 'https://www.beecrowd.com.br',
+            },
         ],
     }
 })
