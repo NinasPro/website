@@ -48,7 +48,7 @@ export default ({
                 'description': '',
                 'quote': '',
                 'image': 'logos/beecrowd.png',
-                'url': 'https://www.beecrowd.com.br',
+                'url': 'https://beecrowd.io',
             },
         ],
     }
