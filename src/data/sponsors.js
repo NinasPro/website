@@ -20,15 +20,15 @@ export default ({
         ],
         silver: [
             
-            //  {
-            //     'name': 'Synopsys Chile',
-            //     'description': '',
-            //     'quote': '',
-            //     'image': 'logos/synopsys.png',
-            //     'url': 'https://www.synopsys.com/',
-            //  }
         ],
         bronze : [
+            {
+            'name': 'Synopsys Chile',
+            'description': '',
+            'quote': '',
+            'image': 'logos/synopsys.png',
+            'url': 'https://www.synopsys.com/',
+            },
             // {
             //     'name':'Vacasa',
             //     'description': '',
