@@ -37,21 +37,20 @@ export default ({
     "es":{
         carousels: [
             {
+                'title': 'Curso Anual 2023',
+                'subtitle': 'El 22 de Abril comienza el curso anual de pensamiento computacional y programación competitiva para niñas.',
+                'image': 'banner/banner-img-3.png',
+                'action': '¿En qué consiste?',
+                'join_message': 'Inscríbete!',
+                'join_link': 'https://forms.gle/iJkPPoX6Mfvqcr8D9',
+                'type': 'router-link'
+            },
+            {
                 'title': 'Conoce a Niñas Pro',
                 'subtitle': 'Empoderamos a niñas y adolescentes a través de la enseñanza de programación e Inspiramos vocaciones científicas y tecnológicas',
                 'image': 'banner/banner-img-1.png',
                 'action': 'Involúcrate',
                 'link': '/voluntariado',
-                'type': 'router-link'
-            },
-            {
-                'title': 'Curso Virtual 2022',
-                'subtitle': 'El 23 de Abril comienza el curso anual de pensamiento computacional y programación competitiva para niñas en modalidad online.',
-                'image': 'banner/banner-img-3.png',
-                'action': '¿En qué consiste?',
-                'link': '/empodera',
-                'join_message': 'Inscríbete!',
-                'join_link': 'https://bit.ly/postulacion2022ninaspro',
                 'type': 'router-link'
             }
         ],
