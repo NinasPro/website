@@ -15,7 +15,7 @@ export default new Router({
       name: "somos",
       path: "/somos/",
       component: () => import("@/views/History"),
-      props: { type: "is-info" }
+      props: { type: "is-success" }
     },
     {
       name: "projects",
@@ -90,8 +90,6 @@ export default new Router({
       else{
         return { x: 0, y: 0 }
       }
-    }
-
-    
+    }  
   }
 });

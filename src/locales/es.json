@@ -12,7 +12,7 @@
         "news": "Noticias",
         "involved": "Involúcrate",
         "donate":"Dona",
-        "lang":"ES"
+        "lang":"Idioma"
     },
     "footer":{
         "about": "Somos",
@@ -48,6 +48,7 @@
     },
     "event":
     {
+        "noEvents":"No Hay Próximos Eventos",
         "signUp":"Inscribirme",
         "soon":"Próximamente",
         "seeAll":"Ver todos",

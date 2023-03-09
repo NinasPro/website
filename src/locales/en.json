@@ -1,5 +1,4 @@
 {
-  
   "navbar":{
       "initiatives":"Initiatives",
       "inspire":"Inspire",
@@ -8,11 +7,11 @@
       "incentive": "Incentive",
       "events":"Events",
       "about":"About Us",
-      "history": "Historia",
-      "alliances": "Alianzas",
+      "history": "History",
+      "alliances": "Alliances",
       "involved": "Get involved",
       "donate":"Donate",
-      "lang":"EN"
+      "lang":"Language"
   },
   "footer":{
     "about": "About",
@@ -27,8 +26,8 @@
     "inspire":"Inspires",
     "boost":"Boost",
     "help":"How to help?",
-    "alliances":"Alliance",
-    "volunteer":"Volunteer",
+    "alliances":"Alliances",
+    "volunteer":"Volunteering",
     "donate":"Donation",
     "contact":"Contact Us",
     "rrss":"Follow our social networks"
@@ -42,15 +41,18 @@
     "titlePartners": "Our Partners",
     "subtitlePartners":"We thank the companies, institutions and organizations that trust us and help us reach more girls every year.",
     "buttonPartnersMail": "I want to support!",
+    "buttonPartnersAll": "See the complete list",
     "titleNews":"News",
     "seeAll":"See All",
     "newsletter":"Subscribe to the newsletter"
   },
   "event":
   {
-    "signUp":"Postulate",
+    "noEvents":"No Upcoming Events",
+    "signUp":"Apply",
     "soon":"Soon",
-    "seeAll":"See All"
+    "seeAll":"See All",
+    "completed":"Registration Closed"
   },
   "volunteer":{
     "help":"Get Involved",

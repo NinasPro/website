@@ -3,10 +3,37 @@
 export default ({
     "en":{
         events: [
+            { 
+                'date': '2023-04-15 10:00',
+                'event': 'First Class of the 2023 Annual Workshop',
+                'image':'ninastic.jpg',
+                'information': "In this completely free workshop you will develop computational thinking by carrying out didactic activities and programming in C++ or Python. You will also learn about technology and join the beautiful community of Niñas Pro. Classes are held on Saturdays from 10:00 a.m. to 1:00 p.m. From April 15 to October in all our locations.",
+                'locale':'Online o Hibrid',
+                'link':'https://docs.google.com/forms/d/e/1FAIpQLSdAUJVUvg_sn-XLJiWAnX9Dpyvet4jJGpEYZSanGUr3TiU4hQ/viewform',
+                'status':'published'
+            },
         ]
     },
     "es":{
         events: [
+            { 
+                'date': '2023-04-15 10:00',
+                'event': 'Primera Clase del Curso Anual 2023',
+                'image':'ninastic.jpg',
+                'information': "En este taller, completamente gratuito, desarrollarás el pensamiento computacional mediante la realización de actividades didácticas y programando en C++ o Python. Además aprenderás sobre tecnología y te unirás a la linda comunidad de Niñas Pro. Las clases se realizan los días Sábados de 10:00 a 13:00 hrs. Desde el 15 de Abril hasta Octubre en todas nuestras sedes.",
+                'locale':'Online o Híbrido',
+                'link':'https://docs.google.com/forms/d/e/1FAIpQLSdAUJVUvg_sn-XLJiWAnX9Dpyvet4jJGpEYZSanGUr3TiU4hQ/viewform',
+                'status':'published'
+            },
+            { 
+                'date': '2023-03-06 17:00',
+                'event': 'Talleres "Niñas sin Límites" en Hub Providencia',
+                'image':'ninastic.jpg',
+                'information': "En este taller, completamente gratuito, desarrollarás el pensamiento computacional mediante la realización de actividades didácticas y programando en C++ o Python. Además aprenderás sobre tecnología y te unirás a la linda comunidad de Niñas Pro. Las clases se realizan los días Sábados de 10:00 a 13:00 hrs. Desde el 15 de Abril hasta Octubre en todas nuestras sedes.",
+                'locale':'José Manuel Infante 1415, Providencia',
+                'link':'https://docs.google.com/forms/d/e/1FAIpQLSdQLK41q_tJ0ADQTgopZamX2_cyPO01sQkTaV_qDW43N6epIQ/closedform',
+                'status':'published'
+            },
             { 
                 'date': '2022-04-23 10:00',
                 'event': 'Curso Anual 2022',
@@ -14,7 +41,7 @@ export default ({
                 'information': "Curso Anual de programación competitiva en C++",
                 'locale':'Online',
                 'link':'https://bit.ly/postulacion2022ninaspro',
-                'status':'published'
+                'status':'completed'
             },
             { 
                 'date': '2021-04-10 10:00',

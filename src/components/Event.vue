@@ -1,53 +1,64 @@
 <template>
 <div id="events-main">
     <div class="container">
-        <div class="columns is-mobile event-item" v-for="(event, i) in eventos" :key="i">
-            <div class="column is-2-desktop is-4-mobile">
-                <b-image ratio="1by1" :src="getImgUrl(event.image)" :rounded="true"></b-image>
-            </div>
-            <div class="column">
-                <div>
-                    <span class="event-detail-item">
-                        <vue-fontawesome :icon="['fas', 'map-marker-alt']"/> 
-                        {{event.locale}}
-                    </span>
-                    <span class="event-detail-item">
-                        <vue-fontawesome :icon="['fas', 'clock']"/>
-                        {{new Date(event.date).toLocaleTimeString(
-                            [], 
-                            { hour: '2-digit', minute: '2-digit' }
-                        )}}
-                    </span>
-                    <span class="event-detail-item">
-                        <vue-fontawesome :icon="['fas', 'calendar-alt']"/>
-                        {{new Date( event.date).toLocaleDateString(
-                            undefined, 
-                            {year: 'numeric', month: 'long', day: 'numeric' 
-                        })}}
-                    </span>
+        <template v-if="!eventos || !eventos.length">
+            <div class="no-events-message">{{$t('event.noEvents')}}</div>
+        </template>
+        <template v-else>
+            <div class="columns is-mobile event-item" v-for="(event, i) in eventos" :key="i">
+                <div class="column is-2-desktop is-3-mobile">
+                    <b-image ratio="1by1" :src="getImgUrl(event.image)" :rounded="true"></b-image>
                 </div>
-                <h1 class="title"> {{event.event}} </h1>
-                <p> {{event.information}} </p>
-                <b-button 
-                    tag="a" 
-                    :href="event.link" 
-                    class="is-primary is-rounded" 
-                    :disabled="event.link === '' || event.status !== 'published'" 
-                    target="_blank">
+                <div class="column">
+                    <div>
+                        <span class="event-detail-item">
+                            <vue-fontawesome :icon="['fas', 'map-marker-alt']"/> 
+                            {{event.locale}}
+                        </span>
+                        <span class="event-detail-item">
+                            <vue-fontawesome :icon="['fas', 'clock']"/>
+                            {{new Date(event.date).toLocaleTimeString(
+                                [], 
+                                { hour: '2-digit', minute: '2-digit' }
+                            )}}
+                        </span>
+                        <span class="event-detail-item">
+                            <vue-fontawesome :icon="['fas', 'calendar-alt']"/>
+                            {{new Date(event.date).toLocaleDateString(
+                                undefined, 
+                                {year: 'numeric', month: 'long', day: 'numeric' 
+                            })}}
+                        </span>
+                    </div>
+                    <h1 class="title"> {{event.event}} </h1>
+                    <p> {{event.information}} </p>
+                    <b-button 
+                        tag="a" 
+                        :href="event.link" 
+                        class="is-primary is-rounded" 
+                        :disabled="event.link === '' || event.status !== 'published'" 
+                        target="_blank">
 
-                    <div v-if="event.link !== '' && event.status === 'published'">
-                        {{$t('event.signUp')}}
-                    </div>
-                    <div v-else-if="event.status === 'completed'">
-                        {{$t('event.completed')}}
-                    </div>
-                    <div v-else-if="event.link === '' || event.status === 'soon'">
-                        {{$t('event.soon')}}
-                    </div>
-                    
-                </b-button>
+                        <div v-if="event.link !== '' && event.status === 'published'">
+                            {{$t('event.signUp')}}
+                        </div>
+                        <div v-else-if="event.status === 'completed'">
+                            {{$t('event.completed')}}
+                        </div>
+                        <div v-else-if="event.link === '' || event.status === 'soon'">
+                            {{$t('event.soon')}}
+                        </div>
+                    </b-button>
+                </div>
             </div>
-        </div>
+            <!-- <template v-if="isCondensed">
+                <div class="all-events">
+                    <b-button tag="router-link" class="is-primary is-rounded" to="/eventos">
+                        {{$t('event.seeAll')}}
+                    </b-button>
+                </div>
+            </template> -->
+        </template>
     </div>
 </div>
     
@@ -126,6 +137,13 @@ export default {
     padding-bottom: 3rem;
 }
 
+.no-events-message{
+    color: $primary;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
 .event-item{
     border: 3px $primary dashed;
     border-radius: 2rem;
@@ -144,5 +162,18 @@ export default {
     p {
         margin: 10px 0px 20px 0px;
     }
+}
+
+.all-events{
+    text-align: center;
+}
+
+@media only screen and (max-device-width: 1220px) {
+    .event-item{
+        .title {
+            font-size: 22px;
+            margin: 10px 0px;
+        }
+}
 }
 </style>

@@ -4,7 +4,7 @@
       <div class="columns">
         <div class="column is-2" >
           <a href="/">
-            <img class="logo" src="/img/logo.446afc59.png" alt="Corporación Niñas Pro" width="100" height="100" >
+            <img class="logo" src="@/assets/logo.png" alt="Corporación Niñas Pro" width="100" height="100" >
           </a>
         </div>
         <div class="column is-2">

@@ -28,11 +28,6 @@
         <h1 class="title"> {{$t('home.titleEvents')}} </h1>
         <p class="subtitle"> {{$t('home.subtitleEvents')}} </p>
         <Event :isCondensed="true" />
-        <div class="all-events">
-          <b-button tag="router-link" class="is-primary is-rounded" to="/eventos">
-            {{$t('event.seeAll')}}
-          </b-button>
-        </div>
       </div>
     </section>
 
@@ -73,6 +68,7 @@
           <ListOfItems :data="sponsorsList.silver" :detailed="false" category="auspicio silver" type='is-light' /> 
           <ListOfItems :data="sponsorsList.bronze" :detailed="false" category="auspicio bronze" type='is-success' />
           <ListOfItems :data="patreonsList" :detailed="false" category="colaboración pro" type='is-primary' />
+          <ListOfItems :data="collaboratorsList" :detailed="false" category="colaboración" type="is-info" />
         </div>
       </div>
     </section>
@@ -96,6 +92,7 @@ import Event from '../components/Event.vue';
 import * as Data from '../data/home.js';
 import * as Patreons from '../data/patreons.js';
 import * as Sponsors from '../data/sponsors.js';
+import * as Collaborators from '../data/collaborators.js';
 import i18n from '../i18n'
 
 export default {
@@ -105,12 +102,14 @@ export default {
     const data=Data.default
     const patreons = Patreons.default
     const sponsors = Sponsors.default
+    const collaborators = Collaborators.default
 
     return{
       lang,
       data,
       patreons,
-      sponsors
+      sponsors,
+      collaborators
     }
   },
   components: {
@@ -151,20 +150,16 @@ export default {
   },
   computed: {
     patreonsList: function(){
-        if(this.lang == "en") {
-            return this.patreons.en.data
-        } else {
-            return this.patreons.es.data
-        } 
+      return this.patreons.es.data
     },
 
     sponsorsList: function(){
-        if(this.lang == "en") {
-            return this.sponsors.en
-        } else {
-            return this.sponsors.es
-        } 
-    }
+      return this.sponsors.es
+    },
+
+    collaboratorsList: function(){
+      return this.collaborators.es.data
+    } 
   }
   
 };
@@ -194,10 +189,6 @@ export default {
 
   #metrics {
     padding: 2rem 0 1rem 0;
-  }
-
-  .all-events{
-    text-align: center;
   }
 
   #collaborators {

@@ -31,29 +31,29 @@
         <p>{{$t('navbar.about')}}</p>
       </b-navbar-item>
 
-      <b-navbar-item tag="router-link" :to="{ path: '/eventos' }">
+      <!-- <b-navbar-item tag="router-link" :to="{ path: '/eventos' }">
         <p>{{$t('navbar.events')}}</p>
-      </b-navbar-item>
+      </b-navbar-item> -->
 
       <b-navbar-item tag="router-link" :to="{ path: '/alianzas' }">
         <p>{{$t('navbar.alliances')}}</p>
       </b-navbar-item>
 
-      <b-navbar-item tag="a" href="https://blog.ninaspro.cl">
+      <!-- <b-navbar-item tag="a" href="https://blog.ninaspro.cl">
         <p>{{$t('navbar.news')}}</p>
-      </b-navbar-item>
+      </b-navbar-item> -->
 
     </template>
 
     <template #end>
-      <!-- <b-navbar-dropdown :label="`${$t('navbar.lang')}`" v-model="lang">
+      <b-navbar-dropdown :label="`${$t('navbar.lang')}`" v-model="lang">
         <b-navbar-item value="es" @click="handleChange('es')">
-          Español
+          español
         </b-navbar-item>
         <b-navbar-item value="en" @click="handleChange('en')">
-          English
+          english
         </b-navbar-item>
-      </b-navbar-dropdown> -->
+      </b-navbar-dropdown>
 
       <b-navbar-item tag="div">
         <div class="buttons">
@@ -130,7 +130,7 @@ export default {
   }
 
   .navbar-item {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     padding: 1rem 1.25rem;
 
