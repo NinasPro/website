@@ -4,7 +4,7 @@ export default ({
         carousels: [
             {
                 'title': '2023 Annual Workshop',
-                'subtitle': 'The annual computational thinking and competitive programming course for girls begins on April 15. You can choose between online or hybrid format.',
+                'subtitle': 'The annual computational thinking and competitive programming course for girls begins on April 22. You can choose between online or hybrid format.',
                 'image': 'banner/banner-img-1.png',
                 'join_message': '¡Apply!',
                 'join_link': 'https://forms.gle/iJkPPoX6Mfvqcr8D9',
@@ -96,7 +96,7 @@ export default ({
         carousels: [
             {
                 'title': 'Curso Anual 2023',
-                'subtitle': 'El 15 de Abril comienza el curso anual de pensamiento computacional y programación competitiva para niñas. Tú eliges entre formato onlina o híbrido.',
+                'subtitle': 'El 22 de Abril comienza el curso anual de pensamiento computacional y programación competitiva para niñas. Tú eliges entre formato onlina o híbrido.',
                 'image': 'banner/banner-img-1.png',
                 'action': '¿En qué consiste?',
                 'join_message': '¡Inscríbete!',
