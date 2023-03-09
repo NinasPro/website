@@ -38,10 +38,10 @@ export default ({
         carousels: [
             {
                 'title': 'Curso Anual 2023',
-                'subtitle': 'El 22 de Abril comienza el curso anual de pensamiento computacional y programación competitiva para niñas.',
-                'image': 'banner/banner-img-3.png',
+                'subtitle': 'El 15 de Abril comienza el curso anual de pensamiento computacional y programación competitiva para niñas. Tú eliges entre formato onlina o híbrido.',
+                'image': 'banner/banner-img-1.png',
                 'action': '¿En qué consiste?',
-                'join_message': 'Inscríbete!',
+                'join_message': '¡Inscríbete!',
                 'join_link': 'https://forms.gle/iJkPPoX6Mfvqcr8D9',
                 'type': 'router-link'
             },
@@ -49,7 +49,7 @@ export default ({
                 'title': 'Conoce a Niñas Pro',
                 'subtitle': 'Empoderamos a niñas y adolescentes a través de la enseñanza de programación e Inspiramos vocaciones científicas y tecnológicas',
                 'image': 'banner/banner-img-1.png',
-                'action': 'Involúcrate',
+                'action': 'Participa en el voluntariado',
                 'link': '/voluntariado',
                 'type': 'router-link'
             }

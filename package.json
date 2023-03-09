@@ -1,7 +1,4 @@
 {
-  "name": "website-vue",
-  "version": "0.1.0",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -9,54 +6,24 @@
     "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.34",
-    "@fortawesome/free-brands-svg-icons": "^5.15.2",
-    "@fortawesome/free-solid-svg-icons": "^5.15.2",
-    "@fortawesome/vue-fontawesome": "^2.0.2",
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/free-brands-svg-icons": "^6.3.0",
+    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@fortawesome/vue-fontawesome": "^2.0.10",
     "@growthbunker/vuetimeline": "^0.1.17",
+    "@vue/cli": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
     "aos": "^2.3.4",
-    "buefy": "^0.9.4",
-    "core-js": "^3.8.3",
-    "moment": "^2.29.1",
-    "toggle-details": "^0.3.2",
-    "vue": "^2.6.12",
-    "vue-coverflow": "^2.2.0",
-    "vue-glide-js": "^1.3.14",
-    "vue-i18n": "^8.22.4",
-    "vue-pdf": "^4.2.0",
-    "vue-router": "^3.5.1",
-    "vue2-smooth-scroll": "^1.5.0",
-    "vuex": "^3.6.2"
-  },
-  "devDependencies": {
-    "@babel/helper-compilation-targets": "^7.12.16",
-    "@vue/cli-plugin-babel": "^4.5.11",
-    "@vue/cli-plugin-eslint": "^4.5.11",
-    "@vue/cli-service": "^4.5.13",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "node-sass": "^4.14.1",
-    "sass-loader": "^8.0.2",
-    "vue-cli-plugin-i18n": "~1.0.1",
-    "vue-template-compiler": "^2.6.12"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ]
+    "buefy": "^0.9.23",
+    "bulma": "^0.9.4",
+    "i18n": "^0.15.1",
+    "moment": "^2.29.4",
+    "node-sass": "^8.0.0",
+    "sass-loader": "^13.2.0",
+    "vue": "^2.7.14",
+    "vue-i18n": "^8.28.2",
+    "vue-pdf": "^4.3.0",
+    "vue-router": "^3.6.5",
+    "vue2-smooth-scroll": "^1.6.0"
+  }
 }
