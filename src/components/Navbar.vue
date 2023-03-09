@@ -12,7 +12,7 @@
     </template>
     
     <template #start>
-      <b-navbar-dropdown class="condensed" :label="`${$t('navbar.initiatives')}`" :boxed="true">
+      <!-- <b-navbar-dropdown class="condensed" :label="`${$t('navbar.initiatives')}`" :boxed="true">
         <b-navbar-item tag="router-link" :to="{ path: '/inspira' }">
           <p>{{$t('navbar.inspire')}}</p>
         </b-navbar-item>
@@ -25,17 +25,21 @@
         <b-navbar-item tag="router-link" :to="{ path: '/potencia' }">
           <p>{{$t('navbar.boost')}}</p>
         </b-navbar-item>
-      </b-navbar-dropdown>
+      </b-navbar-dropdown> -->
 
-      <b-navbar-item tag="router-link" :to="{ path: '/somos' }">
+      <b-navbar-item tag="router-link" :to="{ path: '/' }" href="#projects" v-smooth-scroll>
+        <p>{{$t('navbar.initiatives')}}</p>
+      </b-navbar-item>
+
+      <b-navbar-item tag="router-link" :to="{ path: '/' }" href="#information" v-smooth-scroll>
         <p>{{$t('navbar.about')}}</p>
       </b-navbar-item>
 
-      <!-- <b-navbar-item tag="router-link" :to="{ path: '/eventos' }">
+      <b-navbar-item tag="router-link" :to="{ path: '/' }" href="#events" v-smooth-scroll>
         <p>{{$t('navbar.events')}}</p>
-      </b-navbar-item> -->
+      </b-navbar-item>
 
-      <b-navbar-item tag="router-link" :to="{ path: '/alianzas' }">
+      <b-navbar-item tag="router-link" :to="{ path: '/' }" href="#collaborators" v-smooth-scroll>
         <p>{{$t('navbar.alliances')}}</p>
       </b-navbar-item>
 
@@ -114,7 +118,7 @@ export default {
 
     img {
       position: absolute;
-      max-width: 10rem;
+      max-width: 8rem;
       max-height: 5rem;
       height: 5rem;
       top: 1rem;
@@ -132,7 +136,7 @@ export default {
   .navbar-item {
     font-size: 16px;
     font-weight: bold;
-    padding: 1rem 1.25rem;
+    padding: 1rem 0.80rem;
 
     #involucrate-btn {
       margin-right: 20px;

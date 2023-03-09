@@ -5,22 +5,21 @@
     <div class="container">
       <div class="tile is-ancestor">
         <div class="tile is-parent is-vertical is-4">
-          <article class="tile is-child notification is-danger">
+          <article class="tile is-child notification is-primary">
             <p class="title">Objetivo</p>
             <p class="subtitle">
-              Visibilizar a mujeres que se desarrollan en áreas de 
-              Ciencia, Tecnología, Física y Matemática (STEM) para
-              crear nuevos modelos de rol.
+              Generar espacios de aprendizaje de programación avanzada para niñas
+              y fomentar la participación en competencias de programación 
+              nacional.
             </p>
             <p class="subtitle">
-              Derribar estereotipos de género relacionados a las
-              areas de la ciencia, la ingeniería, la física y las
-              matemáticas.
+              Proponer desafíos y poner en práctica metodologías de aprendizaje continuo 
+              en un espacio de camaradería y compeñerismo.              
             </p>
           </article>
           <article class="tile is-child">
             <figure class="image is-4by4">
-              <img src="@/assets/initiatives/adalovelace.jpg">
+              <img src="@/assets/initiatives/square-winners.png">
             </figure>
           </article>
         </div>
@@ -28,7 +27,7 @@
           <div class="tile is-parent">
             <article class="tile is-child">
               <figure class="image is-4by4">
-                <img src="@/assets/initiatives/portrait-charlas.png">
+                <img src="@/assets/initiatives/portrait-zoom.png">
               </figure>
             </article>
           </div>
@@ -37,21 +36,27 @@
               <article class="tile is-child notification is-info spaced">
                 <p class="title">¿Cómo lo hacemos?</p>
                 <p class="subtitle">
-                  Organizamos encuentros en los que <b> Mujeres Pro </b> cuentan su experiencia
-                  y presentan su trabajo. Buscamos generar espacios de conversación
-                  donde las niñas puedan interactuar y resolver todas sus dudas.
+                  Realizamos cursos avanzados de programación en los que cubrimos
+                  contenidos relacionados con algoritmos clásicos, estructuras de datos, 
+                  eficiencia algorítmica, entre otros. También realizamos mentorías para ayudar a 
+                  las niñas que desean participar en competencias de programación de forma
+                  personalizada.
                 </p>
               </article>
             </div>
             <div class="tile is-parent">
-              <article class="tile is-child notification is-danger spaced">
+              <article class="tile is-child notification is-primary spaced">
                 <div class="content">
-                  <p class="title">Semana de Ada Lovelace</p>
+                  <p class="title">Olimpiada Chilena de Informática</p>
                   <p class="subtitle">
-                    El 2020 realizamos por primera vez una celebración en honor a Ada Lovelace
-                    en la que niñas y mujeres en STEM realizaron charlas y conversatorios.
+                    La Olimpiada Chilena de Informática es una competencia escolar en la que pueden 
+                    participar escolares de Chile. En esta competencia de 4 horas de duración, los 
+                    niños y niñas que participan deben resolver un conjunto de problemas usando
+                    código. 
                   </p>
-                  <b-button tag="a" class="is-danger" rounded inverted href="http://ada.ninaspro.cl" target="_blank">Ver sitio del evento</b-button>
+                  <b-button tag="a" class="is-primary" rounded inverted href="http://www.olimpiada-informatica.cl/" target="_blank">
+                    Ver página de la OCI
+                  </b-button>
                 </div>
               </article>
             </div>
@@ -60,35 +65,25 @@
       </div>
       <div class="tile is-ancestor">
         <div class="tile is-parent">
-          <div class="tile is-child notification is-danger">
-            <p class="title">Empoderadas y Encuarentenadas</p>
-            <p class="subtitle">
-              En Junio de este año 2021 realizamos una semana de
-              actividades para hablar de feminismo, salud mental, 
-              empoderamiento y mucho más. ¡Los videos están 
-              disponibles en youtube!
-            </p>
-
-            <div class="buttons">
-              <b-button tag="a" class="is-danger" rounded inverted href="https://www.youtube.com/playlist?list=PLy7SgTVK30OSjW-5FwowhMHXfIncxw-BB" target="_blank">
-              Videos
-              </b-button>
-              <b-button tag="a" class="is-danger" rounded inverted href="https://empoderadas.ninaspro.cl" target="_blank">
-              Sitio Empoderadas
-              </b-button>
+          <article class="tile is-child notification is-primary">
+            <div class="content">
+              <p class="title">Juntas a la Olimpiada Chilena de Informática</p>
+              <p class="subtitle">
+                Todos los años vamos acompañamos a las chicas a participar a la Olimpiada
+                Chilena de Informática (OCI), competencia escolar de programación.
+              </p>
+              <p class="subtitle">
+                Cerramos la actividad comiendo pizza y celebrando la experiencia vivida. 
+              </p>
             </div>
-          </div>
+          </article>
         </div>
         <div class="tile is-parent">
-          <div class="tile is-child">
-            <div class="videoWrapper">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/WXufVOR7Rog" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-              </iframe>
-            </div>
-          </div>
+          <article class="tile is-child">
+            <figure class="image">
+              <img src="@/assets/initiatives/portrait-group.png">
+            </figure>
+          </article>
         </div>
       </div>
       

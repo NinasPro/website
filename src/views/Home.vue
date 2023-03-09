@@ -3,7 +3,7 @@
     <Carrousel :type="type"/>
 
     <!--Iniciativas-->
-    <section id="iniciativas">
+    <section id="projects">
       <div class="container" data-aos="fade-up">
         <h1 class="title"> {{$t('home.titleProjects')}} </h1>
         <p class="subtitle"> {{$t('home.subtitleProjects')}} </p>
@@ -93,7 +93,7 @@ import * as Data from '../data/home.js';
 import * as Patreons from '../data/patreons.js';
 import * as Sponsors from '../data/sponsors.js';
 import * as Collaborators from '../data/collaborators.js';
-import i18n from '../i18n'
+import i18n from '../i18n';
 
 export default {
   name: "Home",

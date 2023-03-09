@@ -11,14 +11,23 @@
     </div>
     <div class="card-end">
       <router-link :to="path" :class="`button ${type} is-rounded`">
-        Ver Más
+        {{$t('home.readMore')}}
       </router-link>
     </div>
   </div>
 </template>
 
 <script>
+import i18n from '../i18n';
+
 export default {
+  data(){
+    const lang=`${i18n.locale}`
+
+    return{
+      lang
+    }
+  },
   props: {
     "type": String,
     "image": String,

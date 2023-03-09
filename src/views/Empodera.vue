@@ -47,9 +47,9 @@
             <article class="tile is-child notification is-primary">
               <p class="title">¿Cómo participar?</p>
               <p class="subtitle">
-                El periodo de postulación para las actividades de Empodera
-                comienza en Marzo cada año y durante la pandemia se realiza 
-                en formato online.
+                El periodo de postulación para el curso anual de programación
+                comienza en Marzo cada año y puedes escoger entre formato
+                virtual o híbrido.
               </p>
               <div class="content">
                 <!-- Content -->
@@ -62,7 +62,7 @@
             <div class="content">
               <p class="title">Curso Anual de Programación Competitiva</p>
               <p class="subtitle">
-                En este curso aprenderás a programar en un lenguaje llamado C++, 
+                En este curso aprenderás a programar en un lenguaje de programación 
                 que te permitirá dar instrucciones al computador para resolver 
                 interesantes problemas. Además desarrollarás habilidades socio-emocionales
                 como el trabajo en equipo, la tolerancia a la frustración, resolución de 
@@ -76,7 +76,7 @@
               </p>
               <p> El curso se compone de: </p>
               <ul>
-                <li> 18 clases online obligatorias </li>
+                <li> 20 clases obligatorias los días sábado de 10 a 13 hrs.</li>
                 <li> Actividades que deberás desarrollar en casa </li>
                 <li> Ceremonia de Cierre en Octubre </li>
               </ul>

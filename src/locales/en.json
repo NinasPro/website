@@ -1,6 +1,6 @@
 {
   "navbar":{
-      "initiatives":"Initiatives",
+      "initiatives":"Projects",
       "inspire":"Inspire",
       "empower": "Empower",
       "boost": "Boost",
@@ -34,7 +34,7 @@
   },
   "home":{
     "titleProjects":"How do we do it?",
-    "subtitleProjects":"We categorize our activities in the following initiatives",
+    "subtitleProjects":"Get to know our main projects",
     "titleEvents":"Upcoming events",
     "subtitleEvents":"All of our events are free, check the requirements and sign up!",
     "titleMetrics":"Some Numbers",
@@ -44,6 +44,7 @@
     "buttonPartnersAll": "See the complete list",
     "titleNews":"News",
     "seeAll":"See All",
+    "readMore":"Read More",
     "newsletter":"Subscribe to the newsletter"
   },
   "event":
@@ -56,7 +57,7 @@
   },
   "volunteer":{
     "help":"Get Involved",
-    "titleIntro":"Volunteering and Alliances",
+    "titleIntro":"Volunteering",
     "subtitleIntro":"All our activities are possible through volunteering and our alliances support. You can create a positive change too, giving a percentage of your time to empower girls and young women and to inspire scientific and technological vocations.",
     "invitationIntro":"See how you can join to the team.",
     "titleDo":"What do the volunteers do?",
@@ -73,25 +74,25 @@
     "subtitleSignup":"Complete the form to init the proccess."  
   },
   "inspire":{
-    "banner":"Inspire Initiative",
+    "banner":"Competitive Programming",
     "title":"¿En qué consiste la iniciativa inspira?",
     "titleTeam":"Team",
     "titlenovelties":"Novelties"
   },
   "incentive":{
-    "banner":"Incentive Initiative",
+    "banner":"Inspiring Activities",
     "title":"¿En qué consiste la iniciativa incentiva?",
     "titleTeam":"Team",
     "titlenovelties":"Novelties"
   },
   "boost":{
-    "banner":"Enhance Initiative",
+    "banner":"Arduino Quest",
     "title":"¿En qué consiste la iniciativa potencia?",
     "titleTeam":"Team",
     "titlenovelties":"Novelties"
   },
   "empower":{
-    "banner":"Empower Initiative",
+    "banner":"Annual Programming Workshop",
     "title":"¿En qué consiste la iniciativa empodera?",
     "titleTeam":"Team",
     "titlenovelties":"Novelties"

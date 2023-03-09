@@ -1,6 +1,6 @@
 {
     "navbar":{
-        "initiatives":"Iniciativas",
+        "initiatives":"Proyectos",
         "inspire":"Inspira",
         "empower": "Empodera",
         "boost": "Potencia",
@@ -10,7 +10,7 @@
         "history": "Historia",
         "alliances": "Alianzas",
         "news": "Noticias",
-        "involved": "Involúcrate",
+        "involved": "Voluntariado",
         "donate":"Dona",
         "lang":"Idioma"
     },
@@ -34,7 +34,7 @@
       },
     "home":{
         "titleProjects":"¿Cómo lo hacemos?",
-        "subtitleProjects":"Categorizamos nuestras actividades en las siguientes iniciativas",
+        "subtitleProjects":"Conoce nuestros proyectos principales",
         "titleEvents":"Próximos eventos",
         "subtitleEvents":"Todos nuestros eventos son gratuitos, ¡revisa los requisitos e inscríbete!",
         "titleMetrics":"Métricas de Impacto",
@@ -44,6 +44,7 @@
         "buttonPartnersAll": "Ver lista completa",
         "titleNews":"Noticias",
         "seeAll":"Ver todas",
+        "readMore":"Ver más",
         "newsletter":"Subscribete al newsletter"
     },
     "event":
@@ -55,8 +56,8 @@
         "completed":"Inscripción Cerrada"
     },
     "volunteer":{
-        "help":"Involúcrate",
-        "titleIntro":"Voluntariado y Alianzas",
+        "help":"Voluntariado",
+        "titleIntro":"Voluntariado",
         "subtitleIntro":"Todas nuestras actividades son posibles gracias al voluntariado y las alianzas estratégicas. Tú también puedes ser parte del cambio donando un porcentaje de tu tiempo para empoderar a niñas y adolescentes e inspirar vocaciones científicas y tecnológicas.",
         "invitationIntro":"Te invitamos a conocer cómo puedes sumarte al equipo.",
         "titleDo":"¿Qué hace el voluntariado?",
@@ -73,25 +74,25 @@
         "subtitleSignup":"Completa el formulario para iniciar el proceso"  
     },
     "inspire":{
-        "banner":"Iniciativa Inspira",
+        "banner":"Programación Competitiva",
         "title":"¿En qué consiste la iniciativa inspira?",
         "titleTeam":"Equipo",
         "titlenovelties":"Proyectos"
     },
     "incentive":{
-        "banner":"Iniciativa Incentiva",
+        "banner":"Actividades Inspiradoras",
         "title":"¿En qué consiste la iniciativa incentiva?",
         "titleTeam":"Equipo",
         "titlenovelties":"Proyectos"
         },
     "boost":{
-        "banner":"Iniciativa Potencia",
+        "banner":"Arduino Quest",
         "title":"¿En qué consiste la iniciativa potencia?",
         "titleTeam":"Equipo",
         "titlenovelties":"Proyectos"
     },
     "empower":{
-        "banner":"Iniciativa Empodera",
+        "banner":"Curso Anual de Programación",
         "title":"¿En qué consiste la iniciativa empodera?",
         "titleTeam":"Equipo",
         "titlenovelties":"Proyectos"

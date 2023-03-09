@@ -3,7 +3,7 @@
     <Banner :type="type" :title="`${$t('boost.banner')}`"/>
 
     <div class="container">
-      <div class="tile is-ancestor">
+      <!-- <div class="tile is-ancestor">
         <div class="tile is-parent">
           <article class="tile is-child notification is-primary">
             <p class="title">Objetivo</p>
@@ -29,57 +29,8 @@
             </p>
           </article>
         </div>
-      </div>
+      </div> -->
       <div class="tile is-ancestor">
-        <div class="tile is-vertical">
-          <div class="tile">
-            <div class="tile is-parent">
-              <article class="tile is-child notification is-info">
-                <div class="content">
-                  <p class="title">Invernal Campamento de Programación Competitiva</p>
-                  <p class="subtitle">
-                    El 2019 voluntarias de Niñas Pro acompañaron a las niñas del nivel avanzado del curso de 
-                    programación competitiva a este campamento universitario. En este campamento las chicas reforzaron
-                    sus aprendizajes y participaron en actividades intensivas durante una semana completa. 
-                  </p>
-                </div>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child">
-                <div class="videoWrapper">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/CcE4y5NtLgk" 
-                  title="YouTube video player" frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen></iframe>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="tile">
-            <div class="tile is-parent">
-              <article class="tile is-child">
-                <figure class="image">
-                  <img src="@/assets/initiatives/portrait-group.png">
-                </figure>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification is-primary">
-                <div class="content">
-                  <p class="title">Juntas a la Olimpiada Chilena de Informática</p>
-                  <p class="subtitle">
-                    Todos los años vamos acompañamos a las chicas a participar a la Olimpiada
-                    Chilena de Informática (OCI), competencia escolar de programación.
-                  </p>
-                  <p class="subtitle">
-                    Cuando era posible participar de forma presencial, la tradición era ir a 
-                    comer pizza todas juntas.
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
           <div class="tile">
             <div class="tile is-parent">
               <article class="tile is-child notification is-primary">

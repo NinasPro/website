@@ -10,7 +10,11 @@
               <article class="tile is-child notification is-success spaced">
                 <p class="title">Objetivo</p>
                 <p class="subtitle">
-                  Demostrar a niñas y adolescentes que ellas pueden aprender a programar
+                  Visibilizar a mujeres que se desempeñan en áreas científicas, ingeniería, 
+                  tecnología o matemáticas para crear modelos de rol.
+                </p>
+                <p class="subtitle">
+                  Demostrar a niñas y adolescentes que ellas pueden aprender sobre áreas STEM
                   y que puede ser muy entretenido. Motivarlas a que después de esta 
                   primera experiencia sigan aprendiendo.
                 </p>
@@ -21,8 +25,12 @@
                 <div class="content">
                   <p class="title">¿Cómo lo hacemos?</p>
                   <p class="subtitle">
-                    Realizamos talleres introductorios y personalizados de 2 a 6 horas de 
-                    programación o electrónica. Durante la pandemia los cursos son virtuales.
+                    Realizamos charlas inspiradoras y talleres introductorios de 2 a 4 horas de 
+                    programación o electrónica.
+                  </p>
+                  <p class="subtitle">
+                    Si eres una organización o colegio y te gustaría que hicieramos una charla o 
+                    taller solicita una cotización a contacto@ninaspro.cl
                   </p>
                 </div>
               </article>
@@ -31,7 +39,7 @@
           <div class="tile is-parent">
             <article class="tile is-child">
               <figure class="image is-4by4">
-                <img src="@/assets/initiatives/portrait-zoom.png">
+                <img src="@/assets/initiatives/portrait-charlas.png">
               </figure>
             </article>
           </div>

@@ -21,32 +21,32 @@ export default ({
         ],
         projectsHome:[
             {
-                'title':'Iniciativa Inspira', 
+                'title':'Inspiring Activities', 
                 'type':'is-info', 
                 'image':'lamarr.jpg', 
-                'path':'/inspira/', 
-                'description':'Charlas de Mujeres Pro y actividades de visibilización para crear modelos de rol.'
+                'path':'/incentiva/', 
+                'description':'Talks by Mujeres Pro and introduction workshops to new technologies to motivate learning.'
             },
             {
-                'title':'Iniciativa Incentiva',
+                'title':'Programming Annual Workshop',
+                'type':'is-primary',
+                'image':'laschicaspueden.jpg',
+                'path':'/empodera/',
+                'description':'Computational thinking and competitive programming course in Python or C++ for high school girls.'
+            },
+            {
+                'title':'Competitive Programming',
                 'type':'is-warning',
                 'image':'ninastic.jpg',
                 'path':'/incentiva/',
-                'description':'Talleres introductorios de 2 a 6 horas para motivar a las niñas a seguir aprendiendo.'
+                'description':'Classes and mentoring to train to participate in School Programming Competitions.'
             },
             {
-                'title':'Iniciativa Empodera',
-                'type':'is-danger',
-                'image':'laschicaspueden.jpg',
-                'path':'/empodera/',
-                'description':'Realizamos cursos anuales de programación para desarrollar nuevas habilidades.'
-            },
-            {
-                'title':'Iniciativa Potencia',
+                'title':'Arduino Quest',
                 'type':'is-success',
                 'image':'rosalind.jpeg',
                 'path':'/potencia/',
-                'description':'Cursos de nivel avanzado para potenciar las habilidades de las niñas que ya programan.'
+                'description':'Challenge carried out together with the Millennium Institute Fundational Research on Data to develop projects with Arduino.'
             },
         ],
         information:[
@@ -115,32 +115,32 @@ export default ({
         ],
         projectsHome:[
             {
-                'title':'Iniciativa Inspira', 
-                'type':'is-info', 
-                'image':'lamarr.jpg', 
-                'path':'/inspira/', 
-                'description':'Charlas de Mujeres Pro y actividades de visibilización para crear modelos de rol.'
-            },
-            {
-                'title':'Iniciativa Incentiva',
+                'title':'Actividades Inspiradoras',
                 'type':'is-warning',
                 'image':'ninastic.jpg',
                 'path':'/incentiva/',
-                'description':'Talleres introductorios de 2 a 6 horas para motivar a las niñas a seguir aprendiendo.'
+                'description':'Charlas de Mujeres Pro y talleres de introducción a nuevas tecnologías para motivar el aprendizaje.'
             },
             {
-                'title':'Iniciativa Empodera',
-                'type':'is-danger',
+                'title':'Curso Anual de Programación',
+                'type':'is-primary',
                 'image':'laschicaspueden.jpg',
                 'path':'/empodera/',
-                'description':'Realizamos cursos anuales de programación para desarrollar nuevas habilidades.'
+                'description':'Curso de programación en Python o C++ para desarrollar nuevas habilidades.'
             },
             {
-                'title':'Iniciativa Potencia',
+                'title':'Programación Competitiva', 
+                'type':'is-info', 
+                'image':'lamarr.jpg', 
+                'path':'/inspira/', 
+                'description':'Clases y mentorías para entrenar para participar en Competencias de Programación Escolar.'
+            },
+            {
+                'title':'Arduino Quest',
                 'type':'is-success',
                 'image':'rosalind.jpeg',
                 'path':'/potencia/',
-                'description':'Cursos de nivel avanzado para potenciar las habilidades de las niñas que ya programan.'
+                'description':'Desafío realizado junto al Instituto Milenio Fundamentos de los Datos para desarrollar proyectos con Arduino.'
             },
         ],
         information:[
