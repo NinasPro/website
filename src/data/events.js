@@ -7,7 +7,7 @@ export default ({
                 'date': '2023-04-22 10:00',
                 'event': 'First Class of the 2023 Annual Workshop',
                 'image':'ninastic.jpg',
-                'information': "In this completely free workshop you will develop computational thinking by carrying out didactic activities and programming in C++ or Python. You will also learn about technology and join the beautiful community of Niñas Pro. Classes are held on Saturdays from 10:00 a.m. to 1:00 p.m. From April 15 to October in all our locations.",
+                'information': "In this completely free workshop you will develop computational thinking by carrying out didactic activities and programming in C++ or Python. You will also learn about technology and join the beautiful community of Niñas Pro. Classes are held on Saturdays from 10:00 a.m. to 1:00 p.m. From April 22 to October in all our locations.",
                 'locale':'Online o Hibrid',
                 'link':'https://docs.google.com/forms/d/e/1FAIpQLSdAUJVUvg_sn-XLJiWAnX9Dpyvet4jJGpEYZSanGUr3TiU4hQ/viewform',
                 'status':'published'
@@ -20,7 +20,7 @@ export default ({
                 'date': '2023-04-22 10:00',
                 'event': 'Primera Clase del Curso Anual 2023',
                 'image':'ninastic.jpg',
-                'information': "En este taller, completamente gratuito, desarrollarás el pensamiento computacional mediante la realización de actividades didácticas y programando en C++ o Python. Además aprenderás sobre tecnología y te unirás a la linda comunidad de Niñas Pro. Las clases se realizan los días Sábados de 10:00 a 13:00 hrs. Desde el 15 de Abril hasta Octubre en todas nuestras sedes.",
+                'information': "En este taller, completamente gratuito, desarrollarás el pensamiento computacional mediante la realización de actividades didácticas y programando en C++ o Python. Además aprenderás sobre tecnología y te unirás a la linda comunidad de Niñas Pro. Las clases se realizan los días Sábados de 10:00 a 13:00 hrs. Desde el 22 de Abril hasta Octubre en todas nuestras sedes.",
                 'locale':'Online o Híbrido',
                 'link':'https://docs.google.com/forms/d/e/1FAIpQLSdAUJVUvg_sn-XLJiWAnX9Dpyvet4jJGpEYZSanGUr3TiU4hQ/viewform',
                 'status':'published'
