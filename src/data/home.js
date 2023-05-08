@@ -84,11 +84,11 @@ export default ({
             },
             {
                 'name': 'Headquarters',
-                'value': '4'
+                'value': '5'
             },
             {
                 'name': 'Volunteers',
-                'value': '82'
+                'value': '62'
             }
         ]
     },
@@ -178,11 +178,11 @@ export default ({
             },
             {
                 'name': 'Sedes',
-                'value': '4'
+                'value': '5'
             },
             {
                 'name': 'Voluntaries',
-                'value': '82'
+                'value': '62'
             }
         ]
     }

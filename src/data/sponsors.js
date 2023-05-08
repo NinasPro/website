@@ -10,6 +10,13 @@ export default ({
                'image': 'logos/fintual.png',
                'url': 'http://www.fintual.cl',
             },
+            {
+                'name': 'Falabella',
+                'description': '',
+                'quote': '',
+                'image': 'logos/falabella.png',
+                'url': 'https://investors.falabella.com/Spanish/quienes-somos/default.aspx',
+             }
             // {
             //     'name': 'Cornershop',
             //     'description': '',
