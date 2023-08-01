@@ -1,5 +1,5 @@
 <template>
-  <b-carousel :pause-hover="false" :pause-info="false" :interval="10000">
+  <b-carousel :pause-hover="true" :pause-info="false" :interval="10000">
     <b-carousel-item v-for="(carousel,i) in datos" :key="i">
       <section :class="`hero is-medium full-size ${type}`">
         <div class="hero-body">
@@ -16,10 +16,15 @@
                 </a>
               </div>
               <div class="column banner-image">
-                <img
-                   :src="getImgUrl(carousel.image)"
-                   alt="Corporación Niñas Pro"
-                 />
+                  <!-- If there's a video URL, render an iframe, else render the image -->
+                  <iframe v-if="carousel.video" 
+                          :src="carousel.video" 
+                          frameborder="0" 
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                          allowfullscreen>
+                  </iframe>
+
+                  <img v-else :src="getImgUrl(carousel.image)" alt="Corporación Niñas Pro" />
               </div>
             </div>
           </div>
@@ -87,6 +92,11 @@ button {
   border-width: 4px;
 }
 
+iframe {
+    width: 100%;
+    height: 300px;  // or a fixed height based on your design preference
+}
+
 @media only screen and (max-device-width: 1220px) {
   .banner-text {
     padding-top: 3rem;
@@ -107,5 +117,6 @@ button {
       max-width: 300px;
     }
   }
+  
 }
 </style>

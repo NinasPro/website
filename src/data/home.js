@@ -2,12 +2,21 @@
 export default ({
     "en":{
         carousels: [
+            /*
             {
                 'title': '2023 Annual Workshop',
                 'subtitle': 'The annual computational thinking and competitive programming course for girls begins on April 22. You can choose between online or hybrid format.',
                 'image': 'banner/banner-img-1.png',
                 'join_message': '¡Apply!',
                 'join_link': 'https://forms.gle/iJkPPoX6Mfvqcr8D9',
+                'type': 'router-link'
+            },*/
+            {
+                'title': 'Agricultura TV Interview',
+                'subtitle': 'Relive the interview with Camila Pinto, Executive Director of Niñas Pro on Agricultura TV',
+                'video': 'https://www.youtube.com/embed/TuUFx9nWJ30?autoplay=1&mute=1&t=00m23s',
+                'join_message': 'Watch in Youtube!',
+                'join_link': 'https://www.youtube.com/watch?v=TuUFx9nWJ30',
                 'type': 'router-link'
             },
             {
@@ -94,6 +103,7 @@ export default ({
     },
     "es":{
         carousels: [
+            /*
             {
                 'title': 'Curso Anual 2023',
                 'subtitle': 'El 22 de Abril comienza el curso anual de pensamiento computacional y programación competitiva para niñas. Tú eliges entre formato onlina o híbrido.',
@@ -101,6 +111,15 @@ export default ({
                 'action': '¿En qué consiste?',
                 'join_message': '¡Inscríbete!',
                 'join_link': 'https://forms.gle/iJkPPoX6Mfvqcr8D9',
+                'type': 'router-link'
+            },
+            */
+            {
+                'title': 'Entrevista Agricultura TV',
+                'subtitle': 'Revive la entrevista a Camila Pinto, Directora Ejecutiva de Niñas Pro en Agricultura TV',
+                'video': 'https://www.youtube.com/embed/TuUFx9nWJ30?autoplay=1&mute=1&t=00m00s',
+                'join_message': 'Ver en Youtube!',
+                'join_link': 'https://www.youtube.com/watch?v=TuUFx9nWJ30',
                 'type': 'router-link'
             },
             {
