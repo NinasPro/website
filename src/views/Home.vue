@@ -67,7 +67,7 @@
           <ListOfItems :data="sponsorsList.gold" :detailed="true" category="auspicio gold" type='is-warning' />
           <ListOfItems :data="sponsorsList.silver" :detailed="false" category="auspicio silver" type='is-light' /> 
           <ListOfItems :data="sponsorsList.bronze" :detailed="false" category="auspicio bronze" type='is-success' />
-          <ListOfItems :data="patreonsList" :detailed="false" category="colaboración pro" type='is-primary' />
+          <ListOfItems :data="patreonsList" :detailed="false" category="patrocinadores" type='is-primary' />
           <ListOfItems :data="collaboratorsList" :detailed="false" category="colaboración" type="is-info" />
         </div>
       </div>
