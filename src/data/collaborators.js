@@ -14,34 +14,9 @@ export default ({
                 'url':"https://www.olimpiada-informatica.cl/"
             },
             {
-                'name':'Corporación Cuac',
-                'image':'logos/cuac.png',
-                'url':"https://www.facebook.com/cuaccl/"
-            },
-            {
-                'name':'Amuji',
-                'image':'logos/amuji.png',
-                'url':"https://sites.google.com/view/amuji-chile/"
-            },
-            {
-                'name':'Par Explora O\'higgins',
-                'image':'logos/parexploraohiggins.png',
-                'url':"https://www.facebook.com/parexploraohiggins"
-            },
-            {
-                'name':'Par Explora Sur Poniente',
-                'image':'logos/parexplorasurponiente.png',
-                'url':"https://www.facebook.com/ParExploraSP/"
-            },
-            {
                 'name':'Unidas Somos Más',
                 'image':'logos/unidassomosmas.png',
                 'url':"https://unidassomosmas.cl/"
-            },
-            {
-                'name':'Fundación Soy Más',
-                'image':'logos/soymas.png',
-                'url':"https://soymas.cl/"
             },
             {
                 'name': 'Beecrowd',
@@ -50,6 +25,26 @@ export default ({
                 'image': 'logos/beecrowd.png',
                 'url': 'https://beecrowd.io',
             },
+            {
+                'name': 'AEDIA',
+                'image': 'logos/aedia.png',
+                'url': 'https://linktr.ee/aedia.ethics'
+            },
+            {
+                'name': 'Hub Providencia',
+                'image': 'logos/hub-providencia.png',
+                'url': 'https://providencia.cl/provi/site/artic/20191001/pags/20191001171155.html'
+            },
+            {
+                'name': 'Fablab',
+                'image': 'logos/fablab.png',
+                'url': 'http://www.fablab.uchile.cl'
+            },
+            {
+                'name': 'ProgCompCL',
+                'image': 'logos/progcompcl.png',
+                'url': 'https://campamento2023.progcomp.cl'
+            }
         ],
     }
 })

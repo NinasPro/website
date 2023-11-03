@@ -31,6 +31,20 @@ export default ({
                 'quote': '',
                 'image': 'logos/imfd.png',
                 'url': 'http://www.imfd.cl',
+            },
+            {
+                'name': 'puc',
+                'description': '',
+                'quote': '',
+                'image': 'logos/puc.png',
+                'url': 'https://www.uc.cl'
+            },
+            {
+                'name': 'utfsm',
+                'description': '',
+                'quote': '',
+                'image': 'logos/utfsm.png',
+                'url': 'https://usm.cl'
             }
         ],
     }

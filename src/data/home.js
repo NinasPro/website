@@ -12,6 +12,14 @@ export default ({
                 'type': 'router-link'
             },*/
             {
+                'title': 'Pre-registration Annual Course 2024',
+                'subtitle': 'If you are a woman and next year 2024 you will take I, II, III or IV middle school, secure your spot for our annual course in this pre-registration',
+                'video': 'https://www.youtube.com/embed/TuUFx9nWJ30?autoplay=1&mute=1&t=00m00s',
+                'join_message': 'Sign-Up!',
+                'join_link': 'https://ninaspro.cl/#/empodera/',
+                'type': 'router-link'
+            },
+            {
                 'title': 'Agricultura TV Interview',
                 'subtitle': 'Relive the interview with Camila Pinto, Executive Director of Niñas Pro on Agricultura TV',
                 'video': 'https://www.youtube.com/embed/TuUFx9nWJ30?autoplay=1&mute=1&t=00m23s',
@@ -114,6 +122,14 @@ export default ({
                 'type': 'router-link'
             },
             */
+            {
+                'title': 'Pre-inscripción Curso Anual 2024',
+                'subtitle': 'Si eres mujer y el próximo año 2024 cursarás I, II, III o IV medio asegura tu cupo de nuestro curso anual en esta pre-inscripción',
+                'video': 'https://www.youtube.com/embed/TuUFx9nWJ30?autoplay=1&mute=1&t=00m00s',
+                'join_message': '¡Inscribete!',
+                'join_link': 'https://ninaspro.cl/#/empodera/',
+                'type': 'router-link'
+            },
             {
                 'title': 'Entrevista Agricultura TV',
                 'subtitle': 'Revive la entrevista a Camila Pinto, Directora Ejecutiva de Niñas Pro en Agricultura TV',

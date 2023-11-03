@@ -4,6 +4,24 @@ export default ({
     "en":{
         events: [
             { 
+                'date': '2023-11-18 10:00',
+                'event': 'Geometric Art Workshop with Turtle',
+                'image':'invitacion_actividad_pro.png',
+                'information': "Exclusive for students of Niñas Pro",
+                'locale':'Fablab, FCFM Universidad de Chile',
+                'link':'',
+                'status':'published'
+            },
+            { 
+                'date': '2023-12-15 10:00',
+                'event': 'Chilean Olympiad of Informatics - National Final',
+                'image':'OCI.png',
+                'information': "",
+                'locale':'Región Metropolitana',
+                'link':'https://www.olimpiada-informatica.cl/oci-2023',
+                'status':'published'
+            },
+            { 
                 'date': '2023-04-22 10:00',
                 'event': 'First Class of the 2023 Annual Workshop',
                 'image':'ninastic.jpg',
@@ -16,6 +34,24 @@ export default ({
     },
     "es":{
         events: [
+            { 
+                'date': '2023-11-18 10:00',
+                'event': 'Taller de Arte Geométrico con Turtle',
+                'image':'invitacion_actividad_pro.png',
+                'information': "Exclusivo para alumnas de Niñas Pro",
+                'locale':'Fablab, FCFM Universidad de Chile',
+                'link':'',
+                'status':'published'
+            },
+            { 
+                'date': '2023-12-15 10:00',
+                'event': 'Olimpiada Chilena de Informática - Final Nacional',
+                'image':'OCI.png',
+                'information': "",
+                'locale':'Región Metropolitana',
+                'link':'https://www.olimpiada-informatica.cl/oci-2023',
+                'status':'published'
+            },
             { 
                 'date': '2023-04-22 10:00',
                 'event': 'Primera Clase del Curso Anual 2023',
