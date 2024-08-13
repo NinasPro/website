@@ -30,11 +30,18 @@ export default ({
         ],
         bronze : [
             {
-            'name': 'Synopsys Chile',
-            'description': '',
-            'quote': '',
-            'image': 'logos/synopsys.png',
-            'url': 'https://www.synopsys.com/',
+                'name': 'Synopsys Chile',
+                'description': '',
+                'quote': '',
+                'image': 'logos/synopsys.png',
+                'url': 'https://www.synopsys.com/',
+            },
+            {
+                'name': 'Itau Chile',
+                'description': '',
+                'quote': '',
+                'image': 'logos/itau.png',
+                'url': 'https://ww2.itau.cl/personas',
             },
             // {
             //     'name':'Vacasa',
