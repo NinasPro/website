@@ -68,3 +68,4 @@ Para agregar el nuevo integrante se debe dirigir al archivo .js correspondiente 
 
 Para crear o cambiar un titulo o botones genéricos de la ventana correspondiente, debe dirigirse a los archivos .json para cada idioma y cambiar o crear una nueva lista u opción.
 
+
