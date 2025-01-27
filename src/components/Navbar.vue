@@ -72,7 +72,7 @@
             </b-button>
           </router-link>
           
-          <a href="https://yodono.cl/institucion/546/ninas_pro">
+          <a href="https://yodono.cl/proyecto/395/NiasProMujeresProinspirandovocacionesenniasdeChile">
             <b-button 
               id="dona-btn" 
               v-bind:class="{ 

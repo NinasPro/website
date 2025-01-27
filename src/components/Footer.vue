@@ -31,7 +31,7 @@
           <ul>
             <li><router-link class="footer-link" to="/alianzas/">{{$t('footer.alliances')}}</router-link></li>
             <li><router-link class="footer-link" to="/voluntariado/">{{$t('footer.volunteer')}}</router-link></li>
-            <li><a class="footer-link" href="https://yodono.cl/institucion/546/ninas_pro">{{$t('footer.donate')}}</a></li>
+            <li><a class="footer-link" href="https://yodono.cl/proyecto/395/NiasProMujeresProinspirandovocacionesenniasdeChile">{{$t('footer.donate')}}</a></li>
           </ul>
         </div>
         <div class="column is-3 is-offset-1">

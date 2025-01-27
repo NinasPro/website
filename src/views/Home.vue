@@ -64,11 +64,11 @@
         </div>
 
         <div class="left-moved">
-          <ListOfItems :data="sponsorsList.gold" :detailed="true" category="auspicio gold" type='is-warning' />
-          <ListOfItems :data="sponsorsList.silver" :detailed="false" category="auspicio silver" type='is-light' /> 
-          <ListOfItems :data="sponsorsList.bronze" :detailed="false" category="auspicio bronze" type='is-success' />
+          <!--<ListOfItems :data="sponsorsList.gold" :detailed="true" category="auspicio gold" type='is-warning' />-->
+          <!--<ListOfItems :data="sponsorsList.silver" :detailed="false" category="auspicio silver" type='is-light' /> -->
+          <!--<ListOfItems :data="sponsorsList.bronze" :detailed="false" category="auspicio bronze" type='is-success' />-->
           <ListOfItems :data="patreonsList" :detailed="false" category="patrocinadores" type='is-primary' />
-          <ListOfItems :data="collaboratorsList" :detailed="false" category="colaboración" type="is-info" />
+          <!--<ListOfItems :data="collaboratorsList" :detailed="false" category="colaboración" type="is-info" />-->
         </div>
       </div>
     </section>
@@ -79,7 +79,7 @@
           {{$t('home.newsletter')}}
       </a>
     </section> -->
-    
+
   </div>
 </template>
 
@@ -159,13 +159,13 @@ export default {
 
     collaboratorsList: function(){
       return this.collaborators.es.data
-    } 
+    }
   }
-  
+
 };
 </script>
 
-<style lang="scss" scoped>  
+<style lang="scss" scoped>
   .column, .columns {
     border: 0px;
   }

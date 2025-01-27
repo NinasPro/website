@@ -123,11 +123,11 @@ export default ({
             },
             */
             {
-                'title': 'Pre-inscripción Curso Anual 2024',
-                'subtitle': 'Si eres mujer y el próximo año 2024 cursarás I, II, III o IV medio asegura tu cupo de nuestro curso anual en esta pre-inscripción',
-                'video': 'https://www.youtube.com/embed/TuUFx9nWJ30?autoplay=1&mute=1&t=00m00s',
-                'join_message': '¡Inscribete!',
-                'join_link': 'https://ninaspro.cl/#/empodera/',
+                'title': 'Pre-inscripción Curso Anual 2025',
+                'subtitle': 'Si eres mujer y este 2025 cursarás I, II, III o IV medio asegura tu cupo de nuestro curso anual en esta pre-inscripción',
+                'image': 'banner/banner-img-4.png',
+                'action': '¡Inscribete!',
+                'link': '/empodera/',
                 'type': 'router-link'
             },
             {
@@ -216,7 +216,7 @@ export default ({
                 'value': '5'
             },
             {
-                'name': 'Voluntaries',
+                'name': 'Voluntarias y voluntarios',
                 'value': '62'
             }
         ]
