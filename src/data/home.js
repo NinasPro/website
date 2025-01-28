@@ -12,21 +12,21 @@ export default ({
                 'type': 'router-link'
             },*/
             {
-                'title': 'Pre-registration Annual Course 2024',
-                'subtitle': 'If you are a woman and next year 2024 you will take I, II, III or IV middle school, secure your spot for our annual course in this pre-registration',
-                'video': 'https://www.youtube.com/embed/TuUFx9nWJ30?autoplay=1&mute=1&t=00m00s',
-                'join_message': 'Sign-Up!',
-                'join_link': 'https://ninaspro.cl/#/empodera/',
+                'title': 'Pre-registration Annual Courses 2024',
+                'subtitle': 'If you are a woman and in 2025 you will be in 8th grade, I, II, III, or IV middle school, secure your spot in one of our annual programming or artificial intelligence courses through this pre-registration.',
+                'image': 'banner/banner-img-4.png',
+                'action': 'Sign Up!',
+                'link': '/empodera/',
                 'type': 'router-link'
             },
-            {
+            /*{
                 'title': 'Agricultura TV Interview',
                 'subtitle': 'Relive the interview with Camila Pinto, Executive Director of Niñas Pro on Agricultura TV',
                 'video': 'https://www.youtube.com/embed/TuUFx9nWJ30?autoplay=1&mute=1&t=00m23s',
                 'join_message': 'Watch in Youtube!',
                 'join_link': 'https://www.youtube.com/watch?v=TuUFx9nWJ30',
                 'type': 'router-link'
-            },
+            },*/
             {
                 'title': 'Volunteering',
                 'subtitle': 'We empower girls through teaching them to code and inspiring them to explore scientific and technological areas.',
@@ -123,21 +123,21 @@ export default ({
             },
             */
             {
-                'title': 'Pre-inscripción Curso Anual 2025',
-                'subtitle': 'Si eres mujer y este 2025 cursarás I, II, III o IV medio asegura tu cupo de nuestro curso anual en esta pre-inscripción',
+                'title': 'Pre-inscripción Cursos Anuales 2025',
+                'subtitle': 'Si eres mujer y este 2025 cursarás 8vo básico, I, II, III o IV medio asegura tu cupo en uno de nuestros cursos de programación o inteligencia artificial en esta pre-inscripción.',
                 'image': 'banner/banner-img-4.png',
                 'action': '¡Inscribete!',
                 'link': '/empodera/',
                 'type': 'router-link'
             },
-            {
+            /*{
                 'title': 'Entrevista Agricultura TV',
                 'subtitle': 'Revive la entrevista a Camila Pinto, Directora Ejecutiva de Niñas Pro en Agricultura TV',
                 'video': 'https://www.youtube.com/embed/TuUFx9nWJ30?autoplay=1&mute=1&t=00m00s',
                 'join_message': 'Ver en Youtube!',
                 'join_link': 'https://www.youtube.com/watch?v=TuUFx9nWJ30',
                 'type': 'router-link'
-            },
+            },*/
             {
                 'title': 'Voluntariado en Niñas Pro',
                 'subtitle': 'Empoderamos a niñas y adolescentes a través de la enseñanza de programación e Inspiramos vocaciones científicas y tecnológicas. \
