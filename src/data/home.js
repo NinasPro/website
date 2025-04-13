@@ -11,6 +11,7 @@ export default ({
                 'join_link': 'https://forms.gle/iJkPPoX6Mfvqcr8D9',
                 'type': 'router-link'
             },*/
+            /*
             {
                 'title': 'Pre-registration Annual Courses 2024',
                 'subtitle': 'If you are a woman and in 2025 you will be in 8th grade, I, II, III, or IV middle school, secure your spot in one of our annual programming or artificial intelligence courses through this pre-registration.',
@@ -18,7 +19,7 @@ export default ({
                 'action': 'Sign Up!',
                 'link': '/empodera/',
                 'type': 'router-link'
-            },
+            }, */
             /*{
                 'title': 'Agricultura TV Interview',
                 'subtitle': 'Relive the interview with Camila Pinto, Executive Director of Niñas Pro on Agricultura TV',
@@ -122,6 +123,7 @@ export default ({
                 'type': 'router-link'
             },
             */
+            /*
             {
                 'title': 'Pre-inscripción Cursos Anuales 2025',
                 'subtitle': 'Si eres mujer y este 2025 cursarás 8vo básico, I, II, III o IV medio asegura tu cupo en uno de nuestros cursos de programación o inteligencia artificial en esta pre-inscripción.',
@@ -129,7 +131,7 @@ export default ({
                 'action': '¡Inscribete!',
                 'link': '/empodera/',
                 'type': 'router-link'
-            },
+            }, */
             /*{
                 'title': 'Entrevista Agricultura TV',
                 'subtitle': 'Revive la entrevista a Camila Pinto, Directora Ejecutiva de Niñas Pro en Agricultura TV',
