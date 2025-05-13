@@ -53,6 +53,7 @@
     <section id="collaborators">
       <div class="container" data-aos="fade-up" data-aos-delay="200">
         <h1 class="title"> {{$t('home.titlePartners')}} </h1>
+
         <p class="subtitle">{{$t('home.subtitlePartners')}} </p>
         <div class="buttons">
           <b-button tag="a" class="is-primary is-rounded " href="mailto:recaudacion@ninaspro.cl?subject=Me gustaría colaborar con Niñas Pro">
@@ -70,6 +71,18 @@
           <ListOfItems :data="patreonsList" :detailed="false" category="patrocinadores" type='is-primary' />
           <!--<ListOfItems :data="collaboratorsList" :detailed="false" category="colaboración" type="is-info" />-->
         </div>
+      </div>
+    </section>
+
+    <!--Github partner -->
+    <section id="github">
+      <div class="github-inline" data-aos="fade-up" data-aos-delay="200">
+        <h1 class="github-text"> {{$t('home.githubPartner')}} </h1>
+          <img
+              src="@/assets/logos/githubeducation.png"
+              alt="GitHub Education"
+              width="150"
+          />
       </div>
     </section>
 
@@ -214,6 +227,20 @@ export default {
         left: 0px;
       }
     }
+  }
+
+
+  .github-inline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .github-text {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
   }
 
 </style>

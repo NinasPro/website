@@ -45,7 +45,8 @@
     "titleNews":"News",
     "seeAll":"See All",
     "readMore":"Read More",
-    "newsletter":"Subscribe to the newsletter"
+    "newsletter":"Subscribe to the newsletter",
+    "githubPartner": "We are a GitHub School thanks to"
   },
   "event":
   {
