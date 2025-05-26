@@ -1,104 +1,113 @@
 {
-    "navbar":{
-        "initiatives":"Proyectos",
-        "inspire":"Inspira",
+    "navbar": {
+        "initiatives": "Proyectos",
+        "inspire": "Inspira",
         "empower": "Empodera",
         "boost": "Potencia",
         "incentive": "Incentiva",
-        "events":"Eventos",
-        "about":"Somos",
+        "events": "Eventos",
+        "about": "Nosotras",
         "history": "Historia",
         "alliances": "Alianzas",
-        "news": "Noticias",
-        "involved": "Voluntariado",
-        "donate":"Dona",
-        "lang":"Idioma"
+        "involved": "Involúcrate",
+        "donate": "Donar",
+        "lang": "Idioma"
     },
-    "footer":{
-        "about": "Somos",
-        "purpose":"Misión y Visión",
-        "team":"Equipo",
-        "history":"Historia",
-        "memory":"Memorias",
-        "project":"Iniciativas",
-        "empower":"Empodera",
-        "incentive":"Incentiva",
-        "inspire":"Inspira",
-        "boost":"Potencia",
-        "help":"¿Cómo ayudar?",
-        "alliances":"Alianzas",
-        "volunteer":"Voluntariado",
-        "donate":"Donación",
-        "contact":"Contáctanos",
-        "rrss":"Sigue nuestras redes sociales"
-      },
-    "home":{
-        "titleProjects":"¿Cómo lo hacemos?",
-        "subtitleProjects":"Conoce nuestros proyectos principales",
-        "titleEvents":"Próximos eventos",
-        "subtitleEvents":"Todos nuestros eventos son gratuitos, ¡revisa los requisitos e inscríbete!",
-        "titleMetrics":"Métricas de Impacto",
-        "titlePartners": "Nuestras Alianzas",
-        "subtitlePartners": "Cada año empresas e instituciones que confían en nosotras nos ayudan a llegar a más niñas. También colaboramos con otras organizaciones con enfoque de género o que fomentan las STEM para sumar esfuerzos y complementar nuestro trabajo.",
-        "buttonPartnersMail": "Quiero Sumar a mi Empresa",
+    "footer": {
+        "about": "Nosotras",
+        "purpose": "Misión y Visión",
+        "team": "Equipo",
+        "community": "Comunidad",
+        "history": "Historia",
+        "memory": "Memorias",
+        "project": "Iniciativas",
+        "empower": "Empodera",
+        "incentive": "Incentiva",
+        "inspire": "Inspira",
+        "boost": "Potencia",
+        "help": "¿Cómo ayudar?",
+        "alliances": "Alianzas",
+        "volunteer": "Voluntariado",
+        "donate": "Donación",
+        "contact": "Contáctanos",
+        "rrss": "Síguenos en redes sociales"
+    },
+    "home": {
+        "titleProjects": "¿Cómo lo hacemos?",
+        "subtitleProjects": "Conoce nuestros principales proyectos",
+        "titleEvents": "Próximos eventos",
+        "subtitleEvents": "Todos nuestros eventos son gratuitos, ¡revisa los requisitos e inscríbete!",
+        "titleMetrics": "Algunos Números",
+        "titlePartners": "Nuestros Aliados",
+        "subtitlePartners": "Agradecemos a las empresas, instituciones y organizaciones que confían en nosotras y nos ayudan a llegar a más niñas cada año.",
+        "buttonPartnersMail": "¡Quiero apoyar!",
         "buttonPartnersAll": "Ver lista completa",
-        "titleNews":"Noticias",
-        "seeAll":"Ver todas",
-        "readMore":"Ver más",
-        "newsletter":"Subscribete al newsletter",
-        "githubPartner": "Somos GitHub School gracias a"
+        "titleNews": "Noticias",
+        "seeAll": "Ver Todo",
+        "readMore": "Leer Más",
+        "newsletter": "Suscríbete al newsletter",
+        "githubPartner": "Somos una GitHub School gracias a"
     },
-    "event":
-    {
-        "noEvents":"No Hay Próximos Eventos",
-        "signUp":"Inscribirme",
-        "soon":"Próximamente",
-        "seeAll":"Ver todos",
-        "completed":"Inscripción Cerrada"
+    "event": {
+        "noEvents": "No hay eventos próximos",
+        "signUp": "Postular",
+        "soon": "Pronto",
+        "seeAll": "Ver Todo",
+        "completed": "Postulación Cerrada"
     },
-    "volunteer":{
-        "help":"Voluntariado",
-        "titleIntro":"Voluntariado",
-        "subtitleIntro":"Todas nuestras actividades son posibles gracias al voluntariado y las alianzas estratégicas. Tú también puedes ser parte del cambio donando un porcentaje de tu tiempo para empoderar a niñas y adolescentes e inspirar vocaciones científicas y tecnológicas.",
-        "invitationIntro":"Te invitamos a conocer cómo puedes sumarte al equipo.",
-        "titleDo":"¿Qué hace el voluntariado?",
-        "subtitleDo":"Las personas voluntarias son el motor de Niñas Pro",
-        "titleProfile":"Perfil del voluntariado",
-        "subtitleProfile":"Las caracteristicas que nos unen y nos caracterizan son",
-        "titleInternships":"Prácticas Profesionales",
-        "subtitleInternships":"Conoce cómo puedes hacer tu práctica en Niñas Pro",
-        "titleAlliances":"Alianzas y Voluntariado Corporativo",
-        "subtitleAlliances":"Si representas a una empresa, mira cómo podemos comenzar a trabajar juntos",
-        "titleTestimony":"Testimonios",
-        "subtitleTestimony":"Esto piensan quienes han participado del voluntariado",
-        "titleSignup":"¡Quiero Unirme!",
-        "subtitleSignup":"Completa el formulario para iniciar el proceso"  
+    "volunteer": {
+        "help": "Involúcrate",
+        "titleIntro": "Voluntariado",
+        "subtitleIntro": "Todas nuestras actividades son posibles a través del voluntariado y el apoyo de nuestras alianzas. Tú también puedes crear un cambio positivo, dando un porcentaje de tu tiempo para empoderar a niñas y jóvenes e inspirar vocaciones científicas y tecnológicas.",
+        "invitationIntro": "Mira cómo puedes unirte al equipo.",
+        "titleDo": "¿Qué hacen los voluntarios?",
+        "subtitleDo": "Los voluntarios son el corazón de Niñas Pro",
+        "titleProfile": "Perfil de Voluntarios",
+        "subtitleProfile": "Revisa qué tienen en común nuestros voluntarios.",
+        "titleInternships": "Pasantías",
+        "subtitleInternships": "Mira las oportunidades de pasantía en Niñas Pro",
+        "titleAlliances": "Alianzas y Voluntariado Corporativo",
+        "subtitleAlliances": "Si representas a una empresa, podemos trabajar juntos",
+        "titleTestimony": "Testimonios",
+        "subtitleTestimony": "Mira qué dicen nuestros voluntarios sobre la experiencia",
+        "titleSignup": "¡Únete al equipo!",
+        "subtitleSignup": "Completa el formulario para iniciar el proceso."
     },
-    "inspire":{
-        "banner":"Programación Competitiva",
-        "title":"¿En qué consiste la iniciativa inspira?",
-        "titleTeam":"Equipo",
-        "titlenovelties":"Proyectos"
+    "inspire": {
+        "banner": "Programación Competitiva",
+        "title": "¿En qué consiste la iniciativa inspira?",
+        "titleTeam": "Equipo",
+        "titlenovelties": "Novedades"
     },
-    "incentive":{
-        "banner":"Actividades Inspiradoras",
-        "title":"¿En qué consiste la iniciativa incentiva?",
-        "titleTeam":"Equipo",
-        "titlenovelties":"Proyectos"
-        },
-    "boost":{
-        "banner":"Arduino Quest",
-        "title":"¿En qué consiste la iniciativa potencia?",
-        "titleTeam":"Equipo",
-        "titlenovelties":"Proyectos"
+    "incentive": {
+        "banner": "Actividades Inspiradoras",
+        "title": "¿En qué consiste la iniciativa incentiva?",
+        "titleTeam": "Equipo",
+        "titlenovelties": "Novedades"
     },
-    "empower":{
-        "banner":"Curso Anual de Programación",
-        "title":"¿En qué consiste la iniciativa empodera?",
-        "titleTeam":"Equipo",
-        "titlenovelties":"Proyectos"
+    "boost": {
+        "banner": "Arduino Quest",
+        "title": "¿En qué consiste la iniciativa potencia?",
+        "titleTeam": "Equipo",
+        "titlenovelties": "Novedades"
     },
-    "pages":{
-        "conductcode":"Código de Conducta"
+    "empower": {
+        "banner": "Taller Anual de Programación",
+        "title": "¿En qué consiste la iniciativa empodera?",
+        "titleTeam": "Equipo",
+        "titlenovelties": "Novedades",
+        "titleIntro": "Objetivo",
+        "subtitleIntro": "Entregar herramientas y fortalecer la seguridad de las niñas para que sigan explorando y profundizando sus aprendizajes de forma independiente.",
+        "titleObjective": "Objetivos",
+        "subtitleObjective": "Nuestros principales objetivos para el programa",
+        "titleParticipate": "¿Cómo Participar?",
+        "subtitleParticipate": "Conoce el proceso de postulación",
+        "titleCourse": "Información del Curso",
+        "subtitleCourse": "Detalles sobre nuestro curso anual de programación",
+        "titleSignup": "Inscripción",
+        "subtitleSignup": "Completa el formulario para iniciar tu proceso de postulación"
+    },
+    "pages": {
+        "conductcode": "Código de Conducta"
     }
 }
