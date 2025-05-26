@@ -1,6 +1,6 @@
 <template>
   <div id="volunteer">
-    <Banner :type="type" :title="`${$t('volunteer.help')}`" />
+    <Banner :type="type" :title="$t('volunteer.help')" />
 
     <section id="volunteer-intro">
       <div class="container">
@@ -30,18 +30,6 @@
                   {{ $t('volunteer.titleProfile') }}
                 </a>
               </div>
-              <!-- <div class="tile vspaced-tile">
-                <a class="button is-success is-rounded is-fullwidth" 
-                href="#volunteer-internship" v-smooth-scroll>
-                  {{ $t('volunteer.titleInternships') }}
-                </a>
-              </div> -->
-              <!-- <div class="tile vspaced-tile">
-                <a class="button is-primary is-rounded is-fullwidth is-outlined" 
-                href="#volunteer-alliance" v-smooth-scroll>
-                  {{ $t('volunteer.titleAlliances') }}
-                </a>
-              </div> -->
               <div class="tile vspaced-tile">
                 <a class="button is-primary is-rounded is-fullwidth" 
                 href="#volunteer-testimony" v-smooth-scroll>
@@ -70,25 +58,6 @@
       <Profile />
     </section>
 
-    <!-- <section id="volunteer-internship">
-      <div class="container">
-        <div class="title">{{ $t('volunteer.titleInternships') }}</div>
-        <div class="subtitle">{{ $t('volunteer.subtitleInternships') }}</div>
-        <div class="columns">
-          <div class="column" v-for="(item, i) in datos('projects')" :key="i">
-            <News :title="item.title" :type="item.type" :text="item.text" :path="item.path" />
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- <section id="volunteer-alliance">
-      <div class="container">
-        <div class="title">{{ $t('volunteer.titleAlliances') }}</div>
-        <div class="subtitle">{{ $t('volunteer.subtitleAlliances') }}</div>
-      </div>
-    </section> -->
-
     <section id="volunteer-testimony">
       <div class="container">
         <div class="title">{{ $t('volunteer.titleTestimony') }}</div>
@@ -106,65 +75,73 @@
         <div class="title">{{ $t('volunteer.titleSignup') }}</div>
         <div class="subtitle">{{ $t('volunteer.subtitleSignup') }}</div>
         <div class="form">
-        <iframe src="https://forms.gle/H79E5RKtaeefZFmX7" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          <div style="height: 90vh; width: 100%;" id="inline-embed-container">
+            <!-- NeetoForm widget will be added here -->
+          </div>
         </div>
       </div>
     </section>
-
   </div>
 </template>
 
 <script>
-// This is necessary to access the Banner component
-import Banner from '../components/Banner.vue'
-import Profile from '../components/VolunteerProfile.vue'
-import Do from '../components/VolunteerDo.vue'
-import Testimony from '../components/Testimony.vue'
-// import News from '../components/News.vue'
-import * as Data from '../data/volunteer.js'
-import i18n from '../i18n'
+import Banner from "@/components/Banner.vue"
+import Profile from "@/components/VolunteerProfile.vue"
+import Do from "@/components/VolunteerDo.vue"
+import Testimony from "@/components/Testimony.vue"
+import * as Data from '@/data/volunteer.js'
 
 export default {
   name: 'Volunteer',
-  data() {
-    const data = Data.default
-    const lang = `${i18n.locale}`
-    return {
-      data,
-      lang
-    }
-  },
   components: {
     Banner,
     Profile,
     Do,
-    Testimony,
-    // News
+    Testimony
   },
   props: {
-    type: String
+    type: {
+      type: String,
+      required: true
+    }
+  },
+  data() {
+    return {
+      data: Data.default
+    }
   },
   methods: {
-    //data according to language
     datos(section) {
-      if (this.lang == 'en') {
-        if (section == 'projects') {
-          return this.data.en.projects
-        } else if (section == 'testimony') {
+      if (this.$i18n.locale === 'en') {
+        if (section === 'testimony') {
           return this.data.en.testimony
-        } else {
-          return null
         }
       } else {
-        if (section == 'projects') {
-          return this.data.es.projects
-        } else if (section == 'testimony') {
+        if (section === 'testimony') {
           return this.data.es.testimony
-        } else {
-          return null
         }
       }
+      return null
     }
+  },
+  mounted() {
+    // Initialize NeetoForm if needed
+    window.neetoForm = window.neetoForm || { embed: function(){(neetoForm.q=neetoForm.q||[]).push(arguments)} }
+    
+    // Load the NeetoForm script
+    const script = document.createElement('script')
+    script.src = 'https://ninaspro.neetoform.com/javascript/embed.js'
+    script.async = true
+    document.head.appendChild(script)
+
+    // Initialize the form
+    window.neetoForm.embed({
+      type: "inline",
+      id: "5f7ec94f-f3b0-48d7-9815-1357f2d0a3b2",
+      organization: "ninaspro",
+      elementSelector: "#inline-embed-container",
+      styles: { height: "100%", width: "100%"},
+    })
   }
 }
 </script>
@@ -206,5 +183,7 @@ section {
   } 
 }
 
-
+.vspaced-tile {
+  margin-bottom: 1rem;
+}
 </style>
