@@ -2,28 +2,28 @@
 With those institutions we must sign a collaboration contract or alliances contracts. */
 
 export default ({
-    "es":{
+    "es": {
         data: [
             {
-                'name':'uandes',
+                'name': 'uandes',
                 'description': '',
                 'quote': '',
-                'image':'logos/uandes.png',
-                'url':"https://www.uandes.cl/"
+                'image': 'logos/uandes.png',
+                'url': "https://www.uandes.cl/"
             },
             {
-                'name':'fcfm',
+                'name': 'fcfm',
                 'description': '',
                 'quote': '',
-                'image':'logos/fcfm.png',
-                'url':"http://ingenieria.uchile.cl/"
+                'image': 'logos/fcfm.png',
+                'url': "http://ingenieria.uchile.cl/"
             },
             {
-                'name':'udec',
+                'name': 'udec',
                 'description': '',
                 'quote': '',
-                'image':'logos/udec.png',
-                'url':"https://www.udec.cl/pexterno/"
+                'image': 'logos/udec.png',
+                'url': "https://www.udec.cl/pexterno/"
             },
             {
                 'name': 'puc',
@@ -38,7 +38,14 @@ export default ({
                 'quote': '',
                 'image': 'logos/utfsm.png',
                 'url': 'https://usm.cl'
-            }
+            },
+            {
+                'name': 'Synopsys Chile',
+                'description': '',
+                'quote': '',
+                'image': 'logos/synopsys.png',
+                'url': 'https://www.synopsys.com/',
+            },
         ],
     }
 })
