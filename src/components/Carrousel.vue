@@ -8,7 +8,7 @@
               <div class="column is-three-fifths banner-text">
                 <h1 class="title"> {{carousel.title}} </h1>
                 <h2 class="subtitle"> {{carousel.subtitle}} </h2>
-                <b-button :tag="carousel.type" :href="carousel.link" :to="carousel.link" class="is-info" rounded>
+                <b-button :tag="carousel.type" v-if="carousel.link" :href="carousel.link" :to="carousel.link" class="is-info" rounded>
                   {{carousel.action}}
                 </b-button>
                 <a :tag="carousel.type" v-if="carousel.join_link" :href="carousel.join_link" class="is-info button is-rounded" style="margin-left: 5px" rounded>
