@@ -69,7 +69,7 @@
           <!--<ListOfItems :data="sponsorsList.silver" :detailed="false" category="auspicio silver" type='is-light' /> -->
           <!--<ListOfItems :data="sponsorsList.bronze" :detailed="false" category="auspicio bronze" type='is-success' />-->
           <ListOfItems :data="patreonsList" :detailed="false" category="patrocinadores" type='is-primary' />
-          <!--<ListOfItems :data="collaboratorsList" :detailed="false" category="colaboración" type="is-info" />-->
+          <ListOfItems :data="collaboratorsList" :detailed="false" category="colaboración" type="is-info" />
         </div>
       </div>
     </section>

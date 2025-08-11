@@ -41,7 +41,13 @@ export default {
     },
     methods: {
         getImgUrl(value) {
-            return require(`@/assets/${value}`)
+            let imagePath = ''
+            try {
+                imagePath = require(`@/assets/${value}`)
+            } catch {
+                imagePath = value
+            }
+            return imagePath
     }
   },
 }
