@@ -173,7 +173,7 @@ export default ({
                 'join_link': 'https://arduino-race.ninaspro.cl/',
             },
             {
-                'title': '¡Inscripciones abiertas a Arduino Quest 2025!',
+                'title': '¡Arduino Quest 2025!',
                 'subtitle': '¿Quieres aprender electrónica y programación con Arduino?. Si eres estudiante de enseñanza media o quieres ser mentora, ¡esta es tu oportunidad!. Curso gratuito en agosto, con clases online y actividades presenciales en Concepción.',
                 'image': 'banner/banner-img-1.png',
                 'join_message': 'Participa!',
