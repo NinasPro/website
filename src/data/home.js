@@ -37,7 +37,15 @@ export default ({
                 'type': 'router-link'
             },*/
             {
-                'title': 'Applications Open for Arduino Quest 2025!',
+                'title': 'Arduino Race 2025!',
+                'subtitle': 'Want to learn electronics and programming with Arduino?. If you’re a high school student or want to become a mentor, this is your chance!. Free course in August, with online classes and in-person activities in Santiago, Chile.',
+                'image': 'banner/banner-img-1.png',
+                'join_message': 'Participate',
+                'join_link': 'https://arduino-race.ninaspro.cl/',
+
+            },
+            {
+                'title': 'Arduino Quest 2025!',
                 'subtitle': 'Want to learn electronics and programming with Arduino?. If you’re a high school student or want to become a mentor, this is your chance!. Free course in August, with online classes and in-person activities in Concepción, Chile.',
                 'image': 'banner/banner-img-1.png',
                 'join_message': 'Participate',
@@ -157,6 +165,13 @@ export default ({
                 'link': '/voluntariado',
                 'type': 'router-link'
             },*/
+            {
+                'title': '¡Inscripciones abiertas a Arduino Race 2025!',
+                'subtitle': '¿Quieres aprender electrónica y programación con Arduino?. Si eres estudiante de enseñanza media o quieres ser mentora, ¡esta es tu oportunidad!. Curso gratuito en agosto, con clases online y actividades presenciales en Santiago.',
+                'image': 'banner/banner-img-1.png',
+                'join_message': 'Participa!',
+                'join_link': 'https://arduino-race.ninaspro.cl/',
+            },
             {
                 'title': '¡Inscripciones abiertas a Arduino Quest 2025!',
                 'subtitle': '¿Quieres aprender electrónica y programación con Arduino?. Si eres estudiante de enseñanza media o quieres ser mentora, ¡esta es tu oportunidad!. Curso gratuito en agosto, con clases online y actividades presenciales en Concepción.',
