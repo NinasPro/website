@@ -37,19 +37,25 @@ export default ({
                 'type': 'router-link'
             },*/
             {
-                'title': 'Arduino Race 2025!',
-                'subtitle': 'Want to learn electronics and programming with Arduino?. If you’re a high school student or want to become a mentor, this is your chance!. Free course in August, with online classes and in-person activities in Santiago, Chile.',
+                'title': 'Registration Open for Basic Computational Thinking 2026!',
+                'subtitle': 'Want to learn programming in Python?. If you’re a high school student or want to become a mentor, this is your chance!. Free course in March 2026, with online classes and in-person activities in different cities in Chile.',
                 'image': 'banner/banner-img-1.png',
                 'join_message': 'Participate',
-                'join_link': 'https://arduino-race.ninaspro.cl/',
-
+                'join_link': 'https://pensamiento-computacional.ninaspro.cl/'
             },
             {
-                'title': 'Arduino Quest 2025!',
-                'subtitle': 'Want to learn electronics and programming with Arduino?. If you’re a high school student or want to become a mentor, this is your chance!. Free course in August, with online classes and in-person activities in Concepción, Chile.',
+                'title': 'Registration Open for Competitive Programming in C++ 2026!',
+                'subtitle': 'Want to learn programming in C++?. If you’re a high school student or want to become a mentor, this is your chance!. Free course in March 2026, with online classes and in-person activities in different cities in Chile.',
                 'image': 'banner/banner-img-1.png',
                 'join_message': 'Participate',
-                'join_link': 'https://arduino-quest.ninaspro.cl/',
+                'join_link': 'https://programacion-competitiva.ninaspro.cl/',
+            },
+            {
+                'title': 'Registration Open for Machine Learning 2026!',
+                'subtitle': 'Want to learn machine learning?. If you’re a high school student or want to become a mentor, this is your chance!. Free course in March 2026, with online classes and in-person activities in different cities in Chile.',
+                'image': 'banner/banner-img-1.png',
+                'join_message': 'Participate',
+                'join_link': 'https://machine-learning.ninaspro.cl/',
 
             }
         ],
@@ -166,19 +172,27 @@ export default ({
                 'type': 'router-link'
             },*/
             {
-                'title': '¡Inscripciones abiertas a Arduino Race 2025!',
-                'subtitle': '¿Quieres aprender electrónica y programación con Arduino?. Si eres estudiante de enseñanza media o quieres ser mentora, ¡esta es tu oportunidad!. Curso gratuito en agosto, con clases online y actividades presenciales en Santiago.',
+                'title': 'Inscripciones abiertas para Pensamiento Computacional Básico 2026!',
+                'subtitle': '¿Quieres aprender programación en Python?. Si eres estudiante de enseñanza media o quieres ser mentora, ¡esta es tu oportunidad!. Curso gratuito, con clases online y actividades presenciales en ciudades de Chile.',
                 'image': 'banner/banner-img-1.png',
-                'join_message': 'Participa!',
-                'join_link': 'https://arduino-race.ninaspro.cl/',
+                'join_message': 'Participar',
+                'join_link': 'https://pensamiento-computacional.ninaspro.cl/'
             },
             {
-                'title': '¡Arduino Quest 2025!',
-                'subtitle': '¿Quieres aprender electrónica y programación con Arduino?. Si eres estudiante de enseñanza media o quieres ser mentora, ¡esta es tu oportunidad!. Curso gratuito en agosto, con clases online y actividades presenciales en Concepción.',
+                'title': 'Inscripciones abiertas para Programación Competitiva en C++ 2026!',
+                'subtitle': '¿Quieres aprender programación en C++?. Si eres estudiante de enseñanza media o quieres ser mentora, ¡esta es tu oportunidad!. Curso gratuito, con clases online y actividades presenciales en ciudades de Chile.',
                 'image': 'banner/banner-img-1.png',
-                'join_message': 'Participa!',
-                'join_link': 'https://arduino-quest.ninaspro.cl/',
+                'join_message': 'Participar',
+                'join_link': 'https://programacion-competitiva.ninaspro.cl/',
             },
+            {
+                'title': 'Inscripciones abiertas para Machine Learning 2026!',
+                'subtitle': '¿Quieres aprender machine learning?. Si eres estudiante de enseñanza media o quieres ser mentora, ¡esta es tu oportunidad!. Curso gratuito, con clases online y actividades presenciales en ciudades de Chile.',
+                'image': 'banner/banner-img-1.png',
+                'join_message': 'Participar',
+                'join_link': 'https://machine-learning.ninaspro.cl/',
+
+            }
         ],
         projectsHome: [
             {
